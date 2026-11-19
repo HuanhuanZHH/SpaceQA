@@ -1,0 +1,167 @@
+{
+  "evidenceId": "EV-b56956ba0ace8fadc0217dd8",
+  "findingId": "NEURAL-513a5b23ca3189432a56",
+  "sourceCard": "04_评分卡/AIA_AR_sample_p86y2cz08y.json",
+  "sourceFinding": {
+    "findingId": "NEURAL-513a5b23ca3189432a56",
+    "checkId": "C38",
+    "ruleVersion": "eight-localizer-20261104",
+    "dirId": "AIA_AR_sample_p86y2cz08y",
+    "sampleId": "AIA_AR_sample_p86y2cz08y:fuxobRZ6K8mVkZGml7BG.png.json",
+    "defectType": "L3-MIS",
+    "sourceKind": "independent_RGB_model",
+    "detail": "overcoverage；原始图像预测与当前标注对比，尚未获独立科学确认",
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/fuxobRZ6K8mVkZGml7BG.png",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/fuxobRZ6K8mVkZGml7BG.png",
+      "bbox": [
+        3499.6,
+        1708.5,
+        3670.2,
+        1869.9
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        4096,
+        4096
+      ],
+      "frame_id": "320efb792f81fc474f843823f710198de8a6d1c2694d1b1427f93edc26030c4b",
+      "annotation_pointer": "/hek_event_annotation/matched_events/0/bbox_polygon_pixel"
+    },
+    "severity": {
+      "metric": "excess_annotation_fraction",
+      "value": 0.6799999999999999,
+      "unit": "ratio"
+    },
+    "measurements": {
+      "mask_iou": 0.32,
+      "coverage_reference": 1.0,
+      "coverage_annotation": 0.32,
+      "area_ratio": 3.125,
+      "normalized_distance": 0.0017423909969758024
+    },
+    "confidence": 0.8384486436843872,
+    "fusion_class_probability": 0.8547943830490112,
+    "fusion_group_probability": null,
+    "candidate_trigger": "fine_classifier",
+    "risk_weight_source": "fine_classifier",
+    "weighted_burden": 0.8547943830490112,
+    "checkpoint_sha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+    "scoreEligible": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/fuxobRZ6K8mVkZGml7BG.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/fuxobRZ6K8mVkZGml7BG.png",
+      "data_sha256": "320efb792f81fc474f843823f710198de8a6d1c2694d1b1427f93edc26030c4b",
+      "label_sha256": "8623dbb169051c6254fe03615fc137c8d2f5b9ad53622d2a678d985745c549a2"
+    },
+    "probability": 0.8384486436843872,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:18.876174+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "fuxobRZ6K8mVkZGml7BG.png",
+      "labelCreateTime": "2026-09-28T18:46:47.120927",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "fuxobRZ6K8mVkZGml7BG.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2018-11-21T03:02:00",
+      "endTime": "2018-11-21T03:02:00",
+      "timestamp": "2026-09-28T18:46:47.120972",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0193",
+      "dateObs": "2018-11-21T03:02:00",
+      "dateEnd": null,
+      "tObs": "2018-11-21T03:02:00Z",
+      "rsunObs": 971.293001,
+      "dpcLevel": null,
+      "dsunObs": 147803840431.01,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 1,
+      "image_time": "2018-11-21T03:02:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-006038",
+          "kb_archivid": "id-006040",
+          "solar_object_locator": "id-006039",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2018-11-21 03:31:22",
+          "event_endtime": "2018-11-21 07:31:22",
+          "event_npixels": "8999",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "2713819904",
+          "area_atdiskcenteruncert": "100551000",
+          "area_raw": "1658499968",
+          "area_unit": "km2",
+          "area_uncert": "65408100",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              3635.2,
+              1708.5
+            ],
+            [
+              3499.6,
+              1739.0
+            ],
+            [
+              3534.6,
+              1869.9
+            ],
+            [
+              3670.2,
+              1839.3
+            ],
+            [
+              3635.2,
+              1708.5
+            ]
+          ],
+          "concept_swapped": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "8623dbb169051c6254fe03615fc137c8d2f5b9ad53622d2a678d985745c549a2",
+  "originalLabelHashMatches": true
+}

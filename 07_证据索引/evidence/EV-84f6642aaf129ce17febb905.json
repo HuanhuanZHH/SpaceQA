@@ -1,0 +1,182 @@
+{
+  "evidenceId": "EV-84f6642aaf129ce17febb905",
+  "findingId": "NEURAL-3c245abd908e81139d12",
+  "sourceCard": "04_评分卡/AIA_AR_sample_3mogtggl50.json",
+  "sourceFinding": {
+    "findingId": "NEURAL-3c245abd908e81139d12",
+    "checkId": "C38",
+    "ruleVersion": "eight-localizer-20261104",
+    "dirId": "AIA_AR_sample_3mogtggl50",
+    "sampleId": "AIA_AR_sample_3mogtggl50:v6vLCKgDaMh3fmCoZ5hj.png.json",
+    "defectType": "L3-MIS",
+    "sourceKind": "independent_RGB_model",
+    "detail": "undercoverage；原始图像预测与当前标注对比，尚未获独立科学确认",
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/data/v6vLCKgDaMh3fmCoZ5hj.png",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/data/v6vLCKgDaMh3fmCoZ5hj.png",
+      "bbox": [
+        2696.8,
+        1953.3,
+        3024.2,
+        2173.3
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        4096,
+        4096
+      ],
+      "frame_id": "54dbbbf36b657505c9f281dcd1c7212309fa544e1a432e8a8c77616878c87af6",
+      "annotation_pointer": "/hek_event_annotation/matched_events/0/bbox_polygon_pixel"
+    },
+    "severity": {
+      "metric": "uncovered_reference_fraction",
+      "value": 0.6533957845433256,
+      "unit": "ratio"
+    },
+    "measurements": {
+      "mask_iou": 0.34660421545667447,
+      "coverage_reference": 0.34660421545667447,
+      "coverage_annotation": 1.0,
+      "area_ratio": 0.34660421545667447,
+      "normalized_distance": 0.009816119208247156
+    },
+    "confidence": 0.9094655513763428,
+    "fusion_class_probability": 0.5193374156951904,
+    "fusion_group_probability": null,
+    "candidate_trigger": "fine_classifier",
+    "risk_weight_source": "fine_classifier",
+    "weighted_burden": 0.5193374156951904,
+    "checkpoint_sha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+    "scoreEligible": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/label/v6vLCKgDaMh3fmCoZ5hj.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/data/v6vLCKgDaMh3fmCoZ5hj.png",
+      "data_sha256": "54dbbbf36b657505c9f281dcd1c7212309fa544e1a432e8a8c77616878c87af6",
+      "label_sha256": "4865c7f66726b2e6b9d4ad5c613bd69c845bc9c844f6d33ccfd7363dd0cdf656"
+    },
+    "probability": 0.9094655513763428,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:10.065750+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "v6vLCKgDaMh3fmCoZ5hj.png",
+      "labelCreateTime": "2026-09-28T18:46:19.110407",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "v6vLCKgDaMh3fmCoZ5hj.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2018-07-17T04:52:00",
+      "endTime": "2018-07-17T04:52:00",
+      "timestamp": "2026-09-28T18:46:19.110435",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0304",
+      "dateObs": "2018-07-17T04:52:00",
+      "dateEnd": null,
+      "tObs": "2018-07-17T04:52:00Z",
+      "rsunObs": 944.010171,
+      "dpcLevel": null,
+      "dsunObs": 152075486757.81,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 1,
+      "image_time": "2018-07-17T04:52:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-005989",
+          "kb_archivid": "id-005990",
+          "solar_object_locator": "id-005989",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2018-07-17 04:00:00",
+          "event_endtime": "2018-07-17 08:00:00",
+          "area_atdiskcenter": "1538939520",
+          "area_unit": "km2",
+          "unsignedflux": "7750.4228515625",
+          "magfluxunit": "emx",
+          "highsheararea": "9926484992",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "109.86100006103516",
+          "meangradienthorz": "40.07699966430664",
+          "meangradientvert": "109.8239974975586",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "29.10700035095215",
+          "meantwistalpha": "0.002079959958791733",
+          "meanshearangle": "24.888999938964844",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "0.2332843542098999",
+          "meancurrenthelicity": "0.00044629001058638096",
+          "absnetcurrenthelicity": "6.119999885559082",
+          "unsignedcurrenthelicity": "438.1549987792969",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              2703.3,
+              1953.3
+            ],
+            [
+              3024.2,
+              1969.6
+            ],
+            [
+              3012.5,
+              2173.3
+            ],
+            [
+              2696.8,
+              2157.4
+            ],
+            [
+              2703.3,
+              1953.3
+            ]
+          ],
+          "concept_swapped": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "4865c7f66726b2e6b9d4ad5c613bd69c845bc9c844f6d33ccfd7363dd0cdf656",
+  "originalLabelHashMatches": true
+}

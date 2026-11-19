@@ -1,0 +1,719 @@
+{
+  "version": "eight-class-ledger-1.0",
+  "dirId": "ULF_sample_xfnogkdey9",
+  "family": "ULF_sample",
+  "sampleCount": 16,
+  "confirmedProblemSamples": 1,
+  "observedTechnicalScore": 93.75,
+  "fullQualityScore": null,
+  "officialScore": null,
+  "officialPrecision": null,
+  "officialRecall": null,
+  "officialF1": null,
+  "scoringFormula": "100*(1-distinct confirmed eligible problem samples / all registered label samples)",
+  "scoreMeaning": "已实现范围内的观测技术分；不是软件得分、完整质量分或官方q",
+  "defects": {
+    "L0-01": {
+      "name": "数据文件缺失",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 1,
+      "locatedInstances": 1,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 15,
+        "fail": 1,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 15,
+        "fail": 1,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0625,
+      "proportionEstimate": 0.0625,
+      "proportionBounds": [
+        0.0625,
+        0.0625
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 1.0
+    },
+    "L2-G": {
+      "name": "边界与位置偏差",
+      "denominator": 16,
+      "applicableSamples": 0,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 16
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 16
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": 0.0,
+      "proportionBounds": [
+        0.0,
+        0.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": null
+    },
+    "L2-P": {
+      "name": "类别标注错误",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-T": {
+      "name": "时段起止时刻抖动",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-F": {
+      "name": "元数据尺寸矛盾",
+      "denominator": 16,
+      "applicableSamples": 0,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 16
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 16
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": 0.0,
+      "proportionBounds": [
+        0.0,
+        0.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": null
+    },
+    "L3-06": {
+      "name": "漏标",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-07": {
+      "name": "虚标",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-MIS": {
+      "name": "覆盖不足或覆盖过度",
+      "denominator": 16,
+      "applicableSamples": 0,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 16
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 16
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": 0.0,
+      "proportionBounds": [
+        0.0,
+        0.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": null
+    }
+  },
+  "dimensions": [
+    {
+      "id": "completeness",
+      "name": "完整性",
+      "defectCodes": [
+        "L0-01"
+      ],
+      "confirmedSamples": 1,
+      "denominator": 16,
+      "observedTechnicalScore": 93.75,
+      "score": 93.75,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 16,
+      "completedChecks": 16,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "annotationQuality",
+      "name": "标注质量",
+      "defectCodes": [
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "confirmedSamples": 0,
+      "denominator": 16,
+      "observedTechnicalScore": 100.0,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": 0.0,
+      "applicableCheckDenominator": 64,
+      "completedChecks": 0,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "sampleCorrespondence",
+      "name": "样本对应",
+      "defectCodes": [
+        "L0-01",
+        "L2-F"
+      ],
+      "confirmedSamples": 1,
+      "denominator": 16,
+      "observedTechnicalScore": 93.75,
+      "score": 93.75,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 16,
+      "completedChecks": 16,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "coverageDistribution",
+      "name": "覆盖与分布",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": 0.0,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "Evidence-gated formal contract checks; missing prerequisites are undetermined",
+      "checkResults": [
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C41",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C41.evidence.json",
+            "contentHash": "e35d9d2099bed95a4bb4971c584200958dc91b3d5c613275c7cd24a951ae929c",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C42",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C42.evidence.json",
+            "contentHash": "08a482325c9b2471fdf2faef1a0b9befd4d0d9d8417c479530d7183a6d39bbe8",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C43",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C43.evidence.json",
+            "contentHash": "aa1e7dae912560d308693482da0a0dc5206eae78f603506787bb7b42fa380ab5",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C44",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C44.evidence.json",
+            "contentHash": "2d5ad2ccb840be5eafe79afd79a29140d07a82c362682dd07ba4a50aa433c45d",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        }
+      ]
+    },
+    {
+      "id": "traceability",
+      "name": "文档与来源追溯",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": 0.0,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "Evidence-gated formal contract checks; missing prerequisites are undetermined",
+      "checkResults": [
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C45",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C45.evidence.json",
+            "contentHash": "ea65dbe73daad4cb4227f1a9d2d2761de1c026099e0e5a515cf67aad4eec0a43",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C46",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C46.evidence.json",
+            "contentHash": "02776dd758db9d7ffa27f625e8921d9a3ec76daf6da8778b64af5c9b0f321380",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C47",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C47.evidence.json",
+            "contentHash": "99444db047db2670b80d94cbbd0fd716d8885fa20eedcb05487d0c3350bd9c66",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        }
+      ]
+    },
+    {
+      "id": "usageConditions",
+      "name": "使用条件",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": 0.0,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "Evidence-gated formal contract checks; missing prerequisites are undetermined",
+      "checkResults": [
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C48",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C48.evidence.json",
+            "contentHash": "ff95d29f4c72d43efc234e9ee439cc3699f167ae845c5360db530170c5c3d459",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C49",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C49.evidence.json",
+            "contentHash": "bbf848b913e67ad3484913cca19db14f0247365e79ac43486d39505f2a77ae65",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        },
+        {
+          "status": "undetermined",
+          "reason": "Missing versioned target and basis",
+          "checkId": "C50",
+          "runId": "LTH-20261110T024329Z-ecf52cd8",
+          "dirId": "ULF_sample_xfnogkdey9",
+          "version": "formal-1.0-20261110",
+          "evidenceRef": {
+            "path": "C50.evidence.json",
+            "contentHash": "a76c8e94e72159f3049f089ddf8e3fb1f274ac7727f06beebd0c8a9fb9616249",
+            "capturedBy": "formal-1.0-20261110"
+          }
+        }
+      ]
+    }
+  ],
+  "severity": [
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-1afa1466a3da4e85eeb7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    }
+  ],
+  "scientificCheckCoverage": 0.2,
+  "applicableChecks": 80,
+  "completedChecks": 16,
+  "distribution": {
+    "emptyAnnotations": 10,
+    "emptyAnnotationRatio": 0.625,
+    "objectCount": 11,
+    "meanObjectDensity": 0.6875,
+    "categoryHistogram": {
+      "Pi2": 11
+    },
+    "temporal": {
+      "observedWindows": 16,
+      "first": "2013-03-20T02:00:00",
+      "last": "2022-06-08T00:59:59",
+      "positiveGapCount": 15,
+      "maxPositiveGapSeconds": 77338801.0,
+      "overlappingWindows": 0,
+      "interpretation": "标注声明的观测时间分布；缺连续覆盖目标，不把抽样日期间隔直接当缺陷"
+    },
+    "interpretation": "空标注与分布差异是描述统计；没有目标/事件参考时不等于漏标或虚标"
+  },
+  "provenance": {
+    "labelVersions": {
+      "V1.0.0.0": 16
+    },
+    "anonymousAuthors": 16,
+    "interpretation": "匿名化按发放约定处理；不能当作来源错误扣分"
+  },
+  "usage": {
+    "acceptance": "undetermined",
+    "ingestion": "conditional",
+    "selection": "conditional",
+    "advice": "隔离缺文件/契约冲突记录；定位疑点进入人工复核后再用于科学选数"
+  },
+  "pollution": {
+    "formula": "100 * sum(probability_i,c for probability_i,c >= threshold_c) / N",
+    "sampleCount": 16,
+    "thresholds": {
+      "L0-01": 0.5,
+      "L2-G": 0.5,
+      "L2-P": 0.5,
+      "L2-T": 0.5,
+      "L2-F": 0.5,
+      "L3-06": 0.5,
+      "L3-07": 0.5,
+      "L3-MIS": 0.5
+    },
+    "defects": {
+      "L0-01": {
+        "threshold": 0.5,
+        "overThresholdSamples": 1,
+        "probabilitySum": 1.0,
+        "pollutionIndexContribution": 6.25,
+        "missingProbabilitySamples": 15,
+        "sampleDetails": [
+          {
+            "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-G": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L2-P": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L2-T": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L2-F": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L3-06": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L3-07": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L3-MIS": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      }
+    },
+    "pollutionIndex": 6.25,
+    "rankingDirection": "ascending",
+    "meaning": "模型/规则观测污染指数；越低越好。八类缺陷允许同一样本重复计入；没有独立真值时不是官方污染率。"
+  },
+  "localizationPolicy": {
+    "tolerances": {
+      "bbox": {
+        "iouThreshold": 0.5,
+        "normalizedCenterDistanceThreshold": 0.05
+      },
+      "polygon": {
+        "iouThreshold": 0.5,
+        "boundaryHausdorffPixel": 3.0
+      },
+      "timeInterval": {
+        "endpointToleranceSeconds": 2.0,
+        "overlapRatioThreshold": 0.5
+      },
+      "metadata": {
+        "relativeDimensionError": 0.02
+      }
+    },
+    "referenceRequired": true,
+    "withoutReference": "candidate; 不将模型输出自证为命中"
+  },
+  "expertOutlierPolicy": {
+    "method": "median_mad",
+    "zThreshold": 3.5,
+    "minimumExperts": 3,
+    "aggregate": "trimmed_mean",
+    "recordExcludedExperts": true
+  },
+  "runId": "LTH-20261110T024329Z-ecf52cd8",
+  "fullQualityScoreReason": "Six-dimension weights and approval not frozen",
+  "findings": [
+    {
+      "findingId": "C31-1afa1466a3da4e85eeb7",
+      "checkId": "C31",
+      "ruleVersion": "eight-class-ledger-1.0",
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+      "defectType": "L0-01",
+      "aliasCodes": [
+        "L0-03"
+      ],
+      "verdict": "fail",
+      "findingStage": "confirmed",
+      "sourceKind": "rule",
+      "scoreEligible": true,
+      "locator": {
+        "type": "file",
+        "path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+        "annotation_pointer": null,
+        "expected_data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv"
+      },
+      "detail": "标注存在，对应数据文件缺失",
+      "severity": {
+        "metric": "missing_file",
+        "value": 1.0,
+        "unit": "file",
+        "normalized": 1.0,
+        "tolerance": null,
+        "unavailableReason": "No calibrated physical severity or tolerance; model probabilities are not degree measurements"
+      },
+      "measurements": {},
+      "probability": 1.0,
+      "impact": {
+        "label": "待根据任务语义复核影响"
+      },
+      "evidence": {
+        "label_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+        "data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+        "label_sha256": "67b93f2407c4df592079f9ef7e052fd8f962f94cc7ff91d9e86aa3e5748bce1e",
+        "data_sha256_from_inventory": null,
+        "data_hash_verification": "fresh SHA256"
+      },
+      "runId": "LTH-20261110T024329Z-ecf52cd8",
+      "datasetId": "ULF_sample",
+      "datasetVersion": "V1.0.0.0",
+      "status": "fail",
+      "evidenceRef": [
+        "EV-f87e1c8969b897a8d457d702"
+      ],
+      "affectedScope": {
+        "unit": "registered_sample",
+        "numerator": 1,
+        "denominator": 16
+      },
+      "criticality": "critical",
+      "basis": {
+        "ruleVersion": "eight-class-ledger-1.0",
+        "source": null,
+        "scientificGroundTruth": false
+      },
+      "notApplicableReason": null,
+      "confirmedOrPending": "confirmed"
+    }
+  ],
+  "evidenceIds": [
+    "EV-f87e1c8969b897a8d457d702"
+  ]
+}

@@ -1,0 +1,655 @@
+{
+  "version": "eight-class-ledger-1.0",
+  "dirId": "EPB_seg_sample_z443g9dgh7",
+  "family": "EPB_seg_sample",
+  "sampleCount": 16,
+  "confirmedProblemSamples": 8,
+  "observedTechnicalScore": 50.0,
+  "fullQualityScore": null,
+  "officialScore": null,
+  "officialPrecision": null,
+  "officialRecall": null,
+  "officialF1": null,
+  "scoringFormula": "100*(1-distinct confirmed eligible problem samples / all registered label samples)",
+  "scoreMeaning": "已实现范围内的观测技术分；不是软件得分、完整质量分或官方q",
+  "defects": {
+    "L0-01": {
+      "name": "数据文件缺失",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 1,
+      "locatedInstances": 1,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 15,
+        "fail": 1,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 15,
+        "fail": 1,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0625,
+      "proportionEstimate": 0.0625,
+      "proportionBounds": [
+        0.0625,
+        0.0625
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 1.0
+    },
+    "L2-G": {
+      "name": "边界与位置偏差",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-P": {
+      "name": "类别标注错误",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 5,
+      "locatedInstances": 6,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 5,
+        "undetermined": 11,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 11,
+        "fail": 5,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.3125,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.3125,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.3125
+    },
+    "L2-T": {
+      "name": "时段起止时刻抖动",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-F": {
+      "name": "元数据尺寸矛盾",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 3,
+      "locatedInstances": 3,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 12,
+        "fail": 3,
+        "undetermined": 1,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 12,
+        "fail": 3,
+        "undetermined": 1,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.1875,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.1875,
+        0.25
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.9375
+    },
+    "L3-06": {
+      "name": "漏标",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-07": {
+      "name": "虚标",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-MIS": {
+      "name": "覆盖不足或覆盖过度",
+      "denominator": 16,
+      "applicableSamples": 16,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 16,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    }
+  },
+  "dimensions": [
+    {
+      "id": "completeness",
+      "name": "完整性",
+      "defectCodes": [
+        "L0-01"
+      ],
+      "confirmedSamples": 1,
+      "denominator": 16,
+      "observedTechnicalScore": 93.75,
+      "score": 93.75,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 16,
+      "completedChecks": 16,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "annotationQuality",
+      "name": "标注质量",
+      "defectCodes": [
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "confirmedSamples": 7,
+      "denominator": 16,
+      "observedTechnicalScore": 56.25,
+      "score": null,
+      "state": "fail",
+      "checkCoverage": 0.17857142857142858,
+      "applicableCheckDenominator": 112,
+      "completedChecks": 20,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "sampleCorrespondence",
+      "name": "样本对应",
+      "defectCodes": [
+        "L0-01",
+        "L2-F"
+      ],
+      "confirmedSamples": 4,
+      "denominator": 16,
+      "observedTechnicalScore": 75.0,
+      "score": null,
+      "state": "fail",
+      "checkCoverage": 0.96875,
+      "applicableCheckDenominator": 32,
+      "completedChecks": 31,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "coverageDistribution",
+      "name": "覆盖与分布",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "traceability",
+      "name": "文档与来源追溯",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "usageConditions",
+      "name": "使用条件",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    }
+  ],
+  "severity": [
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "51ffa5c6d27cee60ffd68566f1cfdc63137e53cd6dd8d4fa53e687417ad60894",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-ce933a6324e6066c3c4d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-a3a699a937d3e31bc850"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "8b04fd0af616999d362f75706dc8bbaf6b4cc49799181de58e04553451883a60",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-7e42ef9e8a524a21abc8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "702eb7eed7420fad0a6658bf14ecf25f8fe024f180bef7e8079bde398c5db522",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-2b328984128661c44795"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "1cc4cc4d3aba1ac34c9e3ea4e77660f5fc872461c0bf65e1ea327818c5ea9026",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-2a8fc7e8903b5fecd16d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "02ac18d61402efa27d7e95bdee75b8190f5e4cd394d7c16c0c4673f576b107dd",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-d12669506ea91b68e051",
+        "C33-d00c2acffbde8f8e8be6"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "e8198410ba68711e18ec6900e451d7a28de75a13ee851a0c28ca8116bb42a5b8",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-7fde1d9277da842730c9"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "6ba2bf2cad6d3a939d82ff46dd485c4dced0274d89857e6d8a803f7c31e74212",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-0201dcd6a2338cd65b59"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_z443g9dgh7",
+      "sampleId": "1cc4cc4d3aba1ac34c9e3ea4e77660f5fc872461c0bf65e1ea327818c5ea9026",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-6d95db0fde6b893730ec"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    }
+  ],
+  "scientificCheckCoverage": 0.28125,
+  "applicableChecks": 128,
+  "completedChecks": 36,
+  "distribution": {
+    "emptyAnnotations": 0,
+    "emptyAnnotationRatio": 0.0,
+    "objectCount": 22,
+    "meanObjectDensity": 1.375,
+    "categoryHistogram": {
+      "__OOV__": 6,
+      "EPB": 16
+    },
+    "temporal": {
+      "observedWindows": 16,
+      "first": "2014-03-08T22:41:38",
+      "last": "2022-10-19T00:24:49",
+      "positiveGapCount": 15,
+      "maxPositiveGapSeconds": 239335816.0,
+      "overlappingWindows": 0,
+      "interpretation": "标注声明的观测时间分布；缺连续覆盖目标，不把抽样日期间隔直接当缺陷"
+    },
+    "interpretation": "空标注与分布差异是描述统计；没有目标/事件参考时不等于漏标或虚标"
+  },
+  "provenance": {
+    "labelVersions": {
+      "V0.0.0.1": 16
+    },
+    "anonymousAuthors": 16,
+    "interpretation": "匿名化按发放约定处理；不能当作来源错误扣分"
+  },
+  "usage": {
+    "acceptance": "undetermined",
+    "ingestion": "conditional",
+    "selection": "conditional",
+    "advice": "隔离缺文件/契约冲突记录；定位疑点进入人工复核后再用于科学选数"
+  },
+  "pollution": {
+    "formula": "100 * sum(probability_i,c for probability_i,c >= threshold_c) / N",
+    "sampleCount": 16,
+    "thresholds": {
+      "L0-01": 0.5,
+      "L2-G": 0.5,
+      "L2-P": 0.5,
+      "L2-T": 0.5,
+      "L2-F": 0.5,
+      "L3-06": 0.5,
+      "L3-07": 0.5,
+      "L3-MIS": 0.5
+    },
+    "defects": {
+      "L0-01": {
+        "threshold": 0.5,
+        "overThresholdSamples": 1,
+        "probabilitySum": 1.0,
+        "pollutionIndexContribution": 6.25,
+        "missingProbabilitySamples": 15,
+        "sampleDetails": [
+          {
+            "sampleId": "51ffa5c6d27cee60ffd68566f1cfdc63137e53cd6dd8d4fa53e687417ad60894",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-G": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L2-P": {
+        "threshold": 0.5,
+        "overThresholdSamples": 5,
+        "probabilitySum": 5.0,
+        "pollutionIndexContribution": 31.25,
+        "missingProbabilitySamples": 11,
+        "sampleDetails": [
+          {
+            "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "8b04fd0af616999d362f75706dc8bbaf6b4cc49799181de58e04553451883a60",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "702eb7eed7420fad0a6658bf14ecf25f8fe024f180bef7e8079bde398c5db522",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "1cc4cc4d3aba1ac34c9e3ea4e77660f5fc872461c0bf65e1ea327818c5ea9026",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "02ac18d61402efa27d7e95bdee75b8190f5e4cd394d7c16c0c4673f576b107dd",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-T": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L2-F": {
+        "threshold": 0.5,
+        "overThresholdSamples": 3,
+        "probabilitySum": 3.0,
+        "pollutionIndexContribution": 18.75,
+        "missingProbabilitySamples": 13,
+        "sampleDetails": [
+          {
+            "sampleId": "e8198410ba68711e18ec6900e451d7a28de75a13ee851a0c28ca8116bb42a5b8",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "6ba2bf2cad6d3a939d82ff46dd485c4dced0274d89857e6d8a803f7c31e74212",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "1cc4cc4d3aba1ac34c9e3ea4e77660f5fc872461c0bf65e1ea327818c5ea9026",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L3-06": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L3-07": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      },
+      "L3-MIS": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 16,
+        "sampleDetails": []
+      }
+    },
+    "pollutionIndex": 56.25,
+    "rankingDirection": "ascending",
+    "meaning": "模型/规则观测污染指数；越低越好。八类缺陷允许同一样本重复计入；没有独立真值时不是官方污染率。"
+  },
+  "localizationPolicy": {
+    "tolerances": {
+      "bbox": {
+        "iouThreshold": 0.5,
+        "normalizedCenterDistanceThreshold": 0.05
+      },
+      "polygon": {
+        "iouThreshold": 0.5,
+        "boundaryHausdorffPixel": 3.0
+      },
+      "timeInterval": {
+        "endpointToleranceSeconds": 2.0,
+        "overlapRatioThreshold": 0.5
+      },
+      "metadata": {
+        "relativeDimensionError": 0.02
+      }
+    },
+    "referenceRequired": true,
+    "withoutReference": "candidate; 不将模型输出自证为命中"
+  },
+  "expertOutlierPolicy": {
+    "method": "median_mad",
+    "zThreshold": 3.5,
+    "minimumExperts": 3,
+    "aggregate": "trimmed_mean",
+    "recordExcludedExperts": true
+  },
+  "runId": "LTH-20261110T022340Z-e89d7feb"
+}

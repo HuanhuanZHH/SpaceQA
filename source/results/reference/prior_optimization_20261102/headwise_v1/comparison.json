@@ -1,0 +1,429 @@
+{
+  "status": "complete",
+  "seconds": 32.18142727203667,
+  "validation_records": 18610,
+  "test_records": 18450,
+  "packages": 30,
+  "profile_count": 2,
+  "policies_frozen_before_test": true,
+  "frozen_validation_policy_sha256": "3facbed22d9d313f697877369bbdb8c55983a7a1eec0b5013dac2df3e906b3d4",
+  "test_used_for_selection": false,
+  "cached_prediction_file_sha256_checks": 40,
+  "input_hash_checks": 741200,
+  "gpu_forward_passes": 0,
+  "new_training": false,
+  "interpretation": "P0-derived technical proxy; unknown bits masked; exploratory historical re-evaluation",
+  "footprints": {
+    "f1": {
+      "routes": [
+        "deeplab_mobilenet",
+        "gbdt_prior_v1",
+        "ijepa_finetune",
+        "pruned_seed20261101",
+        "pruned_seed20261102",
+        "resnet18_unet"
+      ],
+      "checkpoints": {
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/deeplab_mobilenet.pt": {
+          "bytes": 44966459,
+          "sha256": "8a4675e1586c603211ac79f36f84ffd49ea4985636a7815806379f8eb30b110b"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/pruned_seed20261102.pt": {
+          "bytes": 692247,
+          "sha256": "e7acf5c72cce6ae6cca55425599ff10a4d68191744bbedf0df71da70b348074f"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/pruned_seed20261101.pt": {
+          "bytes": 692247,
+          "sha256": "a8ff2c9ada1d61ab45aa702beed59629cc06433a1aaa7496746c8edb5095fa7f"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/model_G.pkl": {
+          "bytes": 539311,
+          "sha256": "c37b0959f11ecc451c008e6f9713276dd3bad84ecf0c4c30d49e31791ef9b48b"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/model_C.pkl": {
+          "bytes": 546775,
+          "sha256": "96d8d5455382a1edbbeeaab90ac84c05b9a3e811e61032c305555575ca8c12d0"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/model_D.pkl": {
+          "bytes": 544735,
+          "sha256": "fa545e2c1a370e61ed1373f1b7634a426567057bb01e791ebfa6674c99833f2b"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/vectorizer.pkl": {
+          "bytes": 17483,
+          "sha256": "bd443385eedfce861ba7d6aff70ca3d5839acee411405f25cb72db9d3b719636"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/resnet18_unet.pt": {
+          "bytes": 50115539,
+          "sha256": "e8cf151ce0f006c55e86a69369920986418e7c199b79c417f2ed228355f822f4"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/ijepa_finetune.pt": {
+          "bytes": 1262820734,
+          "sha256": "0dbd5858b7103945fb66168395f760b5211a22d89a87c9dcc9ae8aa689b93585"
+        }
+      },
+      "checkpoint_bytes": 1360935530,
+      "initialization": {
+        "/staff/tangjiarui/OPC/models/ijepa_vith14_1k": {
+          "bytes": 2523110622,
+          "verification": "current file sizes; full initializer hashes not repeated in this cached comparison"
+        }
+      },
+      "initialization_bytes": 2523110622,
+      "checkpoints_plus_initialization_bytes": 3884046152,
+      "container_measured": false,
+      "note": "Runtime packages, source and final image still require actual packaging and timing acceptance"
+    },
+    "high_recall_review": {
+      "routes": [
+        "deeplab_mobilenet",
+        "gbdt_prior_v1",
+        "pruned_seed20261102",
+        "resnet18_unet",
+        "yolo11_detect_backbone"
+      ],
+      "checkpoints": {
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/yolo11_detect_backbone.pt": {
+          "bytes": 6267723,
+          "sha256": "4ebbb5cc1d36e6a33b3656b3b4841e5b11bd22c025e862b2cb5e81000b132b01"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/deeplab_mobilenet.pt": {
+          "bytes": 44966459,
+          "sha256": "8a4675e1586c603211ac79f36f84ffd49ea4985636a7815806379f8eb30b110b"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/pruned_seed20261102.pt": {
+          "bytes": 692247,
+          "sha256": "e7acf5c72cce6ae6cca55425599ff10a4d68191744bbedf0df71da70b348074f"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/model_G.pkl": {
+          "bytes": 539311,
+          "sha256": "c37b0959f11ecc451c008e6f9713276dd3bad84ecf0c4c30d49e31791ef9b48b"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/model_C.pkl": {
+          "bytes": 546775,
+          "sha256": "96d8d5455382a1edbbeeaab90ac84c05b9a3e811e61032c305555575ca8c12d0"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/model_D.pkl": {
+          "bytes": 544735,
+          "sha256": "fa545e2c1a370e61ed1373f1b7634a426567057bb01e791ebfa6674c99833f2b"
+        },
+        "/staff/tangjiarui/OPC/inference_prior_20261102/gbdt/vectorizer.pkl": {
+          "bytes": 17483,
+          "sha256": "bd443385eedfce861ba7d6aff70ca3d5839acee411405f25cb72db9d3b719636"
+        },
+        "/staff/tangjiarui/OPC/opc-agent/runs/all-family-training-20261031/checkpoints/resnet18_unet.pt": {
+          "bytes": 50115539,
+          "sha256": "e8cf151ce0f006c55e86a69369920986418e7c199b79c417f2ed228355f822f4"
+        }
+      },
+      "checkpoint_bytes": 103690272,
+      "initialization": {
+        "/staff/tangjiarui/OPC/models/image-model-pilot/yolo11n.pt": {
+          "bytes": 5613764,
+          "verification": "current file sizes; full initializer hashes not repeated in this cached comparison"
+        }
+      },
+      "initialization_bytes": 5613764,
+      "checkpoints_plus_initialization_bytes": 109304036,
+      "container_measured": false,
+      "note": "Runtime packages, source and final image still require actual packaging and timing acceptance"
+    }
+  },
+  "validation_summaries": [
+    {
+      "variant": "f1",
+      "records": 18610,
+      "overall": {
+        "TP": 3302,
+        "FP": 381,
+        "FN": 230,
+        "TN": 38717,
+        "precision": 0.896551724137931,
+        "recall": 0.934881087202718,
+        "F1": 0.9153153153153153,
+        "FPR": 0.009744743976673999
+      },
+      "overall_all_tiers": {
+        "TP": 3302,
+        "FP": 383,
+        "FN": 230,
+        "TN": 49881,
+        "precision": 0.8960651289009498,
+        "recall": 0.934881087202718,
+        "F1": 0.9150616599695164,
+        "FPR": 0.0076197676269298105
+      },
+      "macro_F1_24": 0.802631681401607,
+      "P1_macro_F1_6": 0.5925925925925926,
+      "P0_sample_FPR": 0.0005373455131649651,
+      "P0_family_macro_sample_FPR": 0.0042388814822411375,
+      "groups": {
+        "G": {
+          "TP": 499,
+          "FP": 74,
+          "FN": 99,
+          "TN": 13106,
+          "precision": 0.8708551483420593,
+          "recall": 0.8344481605351171,
+          "F1": 0.852263023057216,
+          "FPR": 0.005614567526555387
+        },
+        "C": {
+          "TP": 195,
+          "FP": 189,
+          "FN": 65,
+          "TN": 14439,
+          "precision": 0.5078125,
+          "recall": 0.75,
+          "F1": 0.6055900621118012,
+          "FPR": 0.012920426579163249
+        },
+        "D": {
+          "TP": 2608,
+          "FP": 118,
+          "FN": 66,
+          "TN": 11172,
+          "precision": 0.9567131327953045,
+          "recall": 0.975317875841436,
+          "F1": 0.965925925925926,
+          "FPR": 0.010451727192205492
+        }
+      }
+    },
+    {
+      "variant": "high_recall_review",
+      "records": 18610,
+      "overall": {
+        "TP": 3334,
+        "FP": 488,
+        "FN": 198,
+        "TN": 38610,
+        "precision": 0.8723181580324437,
+        "recall": 0.9439411098527747,
+        "F1": 0.9067174326896927,
+        "FPR": 0.012481456852012891
+      },
+      "overall_all_tiers": {
+        "TP": 3334,
+        "FP": 494,
+        "FN": 198,
+        "TN": 49770,
+        "precision": 0.8709508881922675,
+        "recall": 0.9439411098527747,
+        "F1": 0.9059782608695652,
+        "FPR": 0.00982810759191469
+      },
+      "macro_F1_24": 0.78632967912105,
+      "P1_macro_F1_6": 0.5674018379281537,
+      "P0_sample_FPR": 0.0016120365394948952,
+      "P0_family_macro_sample_FPR": 0.012217189769687116,
+      "groups": {
+        "G": {
+          "TP": 500,
+          "FP": 77,
+          "FN": 98,
+          "TN": 13103,
+          "precision": 0.8665511265164645,
+          "recall": 0.8361204013377926,
+          "F1": 0.851063829787234,
+          "FPR": 0.005842185128983308
+        },
+        "C": {
+          "TP": 226,
+          "FP": 293,
+          "FN": 34,
+          "TN": 14335,
+          "precision": 0.43545279383429675,
+          "recall": 0.8692307692307693,
+          "F1": 0.5802310654685494,
+          "FPR": 0.020030079299972654
+        },
+        "D": {
+          "TP": 2608,
+          "FP": 118,
+          "FN": 66,
+          "TN": 11172,
+          "precision": 0.9567131327953045,
+          "recall": 0.975317875841436,
+          "F1": 0.965925925925926,
+          "FPR": 0.010451727192205492
+        }
+      }
+    }
+  ],
+  "test_summaries": [
+    {
+      "variant": "f1",
+      "records": 18450,
+      "overall": {
+        "TP": 3247,
+        "FP": 425,
+        "FN": 243,
+        "TN": 38320,
+        "precision": 0.8842592592592593,
+        "recall": 0.9303724928366762,
+        "F1": 0.9067299636972913,
+        "FPR": 0.010969157310620726
+      },
+      "overall_all_tiers": {
+        "TP": 3247,
+        "FP": 433,
+        "FN": 243,
+        "TN": 49382,
+        "precision": 0.8823369565217392,
+        "recall": 0.9303724928366762,
+        "F1": 0.9057182705718271,
+        "FPR": 0.008692160995684031
+      },
+      "macro_F1_24": 0.8108553741465484,
+      "P1_macro_F1_6": 0.7067084875908405,
+      "P0_sample_FPR": 0.002168021680216802,
+      "P0_family_macro_sample_FPR": 0.004774799323319368,
+      "groups": {
+        "G": {
+          "TP": 447,
+          "FP": 100,
+          "FN": 96,
+          "TN": 13057,
+          "precision": 0.8171846435100548,
+          "recall": 0.8232044198895028,
+          "F1": 0.8201834862385321,
+          "FPR": 0.00760051683514479
+        },
+        "C": {
+          "TP": 165,
+          "FP": 222,
+          "FN": 73,
+          "TN": 14300,
+          "precision": 0.4263565891472868,
+          "recall": 0.6932773109243697,
+          "F1": 0.528,
+          "FPR": 0.015287150530229996
+        },
+        "D": {
+          "TP": 2635,
+          "FP": 103,
+          "FN": 74,
+          "TN": 10963,
+          "precision": 0.962381300219138,
+          "recall": 0.9726836471022517,
+          "F1": 0.9675050486506334,
+          "FPR": 0.009307789625881076
+        }
+      }
+    },
+    {
+      "variant": "high_recall_review",
+      "records": 18450,
+      "overall": {
+        "TP": 3280,
+        "FP": 532,
+        "FN": 210,
+        "TN": 38213,
+        "precision": 0.8604407135362014,
+        "recall": 0.9398280802292264,
+        "F1": 0.898384004382361,
+        "FPR": 0.013730803974706414
+      },
+      "overall_all_tiers": {
+        "TP": 3280,
+        "FP": 546,
+        "FN": 210,
+        "TN": 49269,
+        "precision": 0.8572922111866179,
+        "recall": 0.9398280802292264,
+        "F1": 0.896664844177146,
+        "FPR": 0.010960554049984944
+      },
+      "macro_F1_24": 0.7996737572283362,
+      "P1_macro_F1_6": 0.6751400560224091,
+      "P0_sample_FPR": 0.003794037940379404,
+      "P0_family_macro_sample_FPR": 0.01394517702412755,
+      "groups": {
+        "G": {
+          "TP": 448,
+          "FP": 104,
+          "FN": 95,
+          "TN": 13053,
+          "precision": 0.8115942028985508,
+          "recall": 0.8250460405156538,
+          "F1": 0.8182648401826484,
+          "FPR": 0.007904537508550582
+        },
+        "C": {
+          "TP": 197,
+          "FP": 325,
+          "FN": 41,
+          "TN": 14197,
+          "precision": 0.3773946360153257,
+          "recall": 0.8277310924369747,
+          "F1": 0.5184210526315789,
+          "FPR": 0.02237983748794932
+        },
+        "D": {
+          "TP": 2635,
+          "FP": 103,
+          "FN": 74,
+          "TN": 10963,
+          "precision": 0.962381300219138,
+          "recall": 0.9726836471022517,
+          "F1": 0.9675050486506334,
+          "FPR": 0.009307789625881076
+        }
+      }
+    }
+  ],
+  "infeasible_validation_recall_targets": {
+    "f1": [
+      {
+        "family": "AIA_AR_sample",
+        "group": "C",
+        "recall": 0.7325581395348837,
+        "note": "Maximum F1 within P0 cap"
+      },
+      {
+        "family": "HMI_AR_sample",
+        "group": "C",
+        "recall": 0.6633663366336634,
+        "note": "Maximum F1 within P0 cap"
+      },
+      {
+        "family": "EPB_seg_sample",
+        "group": "G",
+        "recall": 0.5555555555555556,
+        "note": "Maximum F1 within P0 cap"
+      },
+      {
+        "family": "DMSP_SSUSI",
+        "group": "G",
+        "recall": 0.5,
+        "note": "Maximum F1 within P0 cap"
+      },
+      {
+        "family": "DMSP_SSUSI",
+        "group": "C",
+        "recall": 0.42857142857142855,
+        "note": "Maximum F1 within P0 cap"
+      }
+    ],
+    "high_recall_review": [
+      {
+        "family": "EPB_seg_sample",
+        "group": "G",
+        "recall": 0.5679012345679012,
+        "note": "Recall .8 infeasible under P0 cap and cached compact pool; maximum attainable recall then F1"
+      },
+      {
+        "family": "DMSP_SSUSI",
+        "group": "G",
+        "recall": 0.5,
+        "note": "Recall .8 infeasible under P0 cap and cached compact pool; maximum attainable recall then F1"
+      },
+      {
+        "family": "DMSP_SSUSI",
+        "group": "C",
+        "recall": 0.5,
+        "note": "Recall .8 infeasible under P0 cap and cached compact pool; maximum attainable recall then F1"
+      }
+    ]
+  }
+}

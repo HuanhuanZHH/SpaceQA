@@ -1,0 +1,80 @@
+{
+  "version": "sixdim-scoring-1.1-20261110",
+  "status": "implemented_evidence_gated_not_full_acceptance",
+  "component": "Independent CPU postprocessor; R4 image and separate 0.7.0 candidate unchanged",
+  "weights": {
+    "version": "sixdim-equal-approved-20261110",
+    "weights": {
+      "completeness": 1,
+      "annotationQuality": 1,
+      "sampleCorrespondence": 1,
+      "coverageDistribution": 1,
+      "traceability": 1,
+      "usageConditions": 1
+    },
+    "basis": "Project policy: retain equal dimension importance from the legacy arithmetic mean. Literature informs dimension definitions, not a prescribed numeric vector. Require all six dimensions determinate; do not inherit exclusion of unknown dimensions or critical caps.",
+    "approvedBy": "项目用户（本次对话明确批准）",
+    "approvalStatus": "approved",
+    "approvalEvidence": {
+      "type": "user_message",
+      "quote": "权重之前根据文献和我工作记忆弄过，就批准",
+      "date": "2026-11-10"
+    },
+    "recordedAt": "2026-11-10T04:44:25.066782+00:00",
+    "sourceReferences": [
+      {
+        "path": "source/spec/quality_spec.yaml",
+        "sha256": "68445c2a9d25028d8f8aaeff424b70f0ec27d2e1d2ddebe269ff69c9391846ae"
+      },
+      {
+        "path": "source/src/spaceqa_agent/engine.py",
+        "sha256": "de405655d62d32644544f0560693be2fcf402828230588f712b236a9177f6d59"
+      }
+    ]
+  },
+  "formula": "S = sum(w_d*S_d)/sum(w_d), only when all six registered dimensions are determinate and a genuine approved policy is supplied",
+  "dimensionFormula": "S_d = 100*sum(w_i*q_i)/sum(w_i), all applicable checks must have finite q in [0,1]",
+  "unknownPolicy": "Keep unknown checks in applicable denominator; do not renormalize to known checks; all explicitly not applicable gives null",
+  "scope": "C45 observed local integrity and C50 local decoding can be measured against pinned input evidence; they do not prove independent publisher identity, licensing or scientific annotation correctness",
+  "program": "rescore_six_dimensions.py -> src/spaceqa_agent/formal_checks.py",
+  "pending": [
+    {
+      "dimension": "annotationQuality",
+      "required": "Independent annotation reference and accepted spatial/time tolerances; P0/HEK/model candidates are not substitutes"
+    },
+    {
+      "dimension": "sampleCorrespondence",
+      "required": "Missing image or measurement evidence, where applicable; do not hide missing-file samples by dropping them"
+    },
+    {
+      "dimension": "coverageDistribution",
+      "required": "Approved required classes/minimum counts, target time/spatial/channel cells, independent target distribution and TV tolerance, split-group protocol"
+    },
+    {
+      "dimension": "traceability",
+      "required": "Verified source and processing lineage plus actual declaration/measurement comparison; local hashes cover only integrity"
+    },
+    {
+      "dimension": "usageConditions",
+      "required": "Actual license/authorization and intended-use constraints with evidence review; decoding alone is insufficient"
+    }
+  ],
+  "tests": {
+    "count": 34,
+    "status": "pass",
+    "scope": "includes genuine missing/invalid evidence boundaries and an explicit synthetic full six-score arithmetic fixture; fixture score 75 is not a data result"
+  },
+  "actualReplays": {
+    "families": [
+      "AIA_AR_sample",
+      "EPB_seg_sample",
+      "ULF_sample"
+    ],
+    "recordsPerFamily": 16,
+    "registeredFilesPerFamily": 32,
+    "localIntegrityPassedFiles": 31,
+    "localDecodePassedFiles": 31,
+    "fullQualityScore": null,
+    "directory": "approved_weight_replays"
+  }
+}

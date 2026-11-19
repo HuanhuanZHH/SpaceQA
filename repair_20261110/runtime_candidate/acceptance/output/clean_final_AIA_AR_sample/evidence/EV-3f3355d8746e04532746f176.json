@@ -1,0 +1,116 @@
+{
+  "finding": {
+    "findingId": "C31-1b2d1632bd5e8b860e98",
+    "checkId": "C31",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_p86y2cz08y",
+    "sampleId": "277a22983550ecca9b663eac1177ee2315f6880669e435f63de3f4f68f1a3342",
+    "defectType": "L0-01",
+    "aliasCodes": [
+      "L0-03"
+    ],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "file",
+      "path": "/input/AIA_AR_sample_p86y2cz08y/label/5GInex_lneM8BMjSNn2r.png.json",
+      "annotation_pointer": null,
+      "expected_data_path": "/input/AIA_AR_sample_p86y2cz08y/data/5GInex_lneM8BMjSNn2r.png"
+    },
+    "detail": "标注存在，对应数据文件缺失",
+    "severity": {
+      "metric": "missing_file",
+      "value": 1.0,
+      "unit": "file",
+      "normalized": 1.0,
+      "tolerance": null,
+      "unavailableReason": "No calibrated physical severity or tolerance; model probabilities are not degree measurements"
+    },
+    "measurements": {},
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/input/AIA_AR_sample_p86y2cz08y/label/5GInex_lneM8BMjSNn2r.png.json",
+      "data_path": "/input/AIA_AR_sample_p86y2cz08y/data/5GInex_lneM8BMjSNn2r.png",
+      "label_sha256": "00f8d6bd76158d467c98743f14974f6f30dafedf01ff3681be116be0086672ea",
+      "data_sha256_from_inventory": null,
+      "data_hash_verification": "fresh SHA256"
+    },
+    "runId": "LTH-20261110T034436Z-8eb62f84",
+    "datasetId": "AIA_AR_sample",
+    "datasetVersion": "V1.0.0.0",
+    "status": "fail",
+    "evidenceRef": [
+      "EV-3f3355d8746e04532746f176"
+    ],
+    "affectedScope": {
+      "unit": "registered_sample",
+      "numerator": 1,
+      "denominator": 16
+    },
+    "criticality": "critical",
+    "basis": {
+      "ruleVersion": "eight-class-ledger-1.0",
+      "source": null,
+      "scientificGroundTruth": false
+    },
+    "notApplicableReason": null,
+    "confirmedOrPending": "confirmed"
+  },
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "5GInex_lneM8BMjSNn2r.png",
+      "labelCreateTime": "2026-09-28T18:49:03.764875",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "5GInex_lneM8BMjSNn2r.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2020-02-16T09:18:00",
+      "endTime": "2020-02-16T09:18:00",
+      "timestamp": "2026-09-28T18:49:03.764912",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0304",
+      "dateObs": "2020-02-16T09:18:00",
+      "dateEnd": null,
+      "tObs": "2020-02-16T09:18:00Z",
+      "rsunObs": 971.258817,
+      "dpcLevel": null,
+      "dsunObs": 147809042434.38,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": false,
+      "event_count": 0,
+      "image_time": "2020-02-16T09:18:00",
+      "event_types": [],
+      "matched_events": []
+    }
+  },
+  "labelSha256": "00f8d6bd76158d467c98743f14974f6f30dafedf01ff3681be116be0086672ea",
+  "inputMount": "/input",
+  "originalDataPath": "/input/AIA_AR_sample_p86y2cz08y/data/5GInex_lneM8BMjSNn2r.png",
+  "capturedBy": "publish_run-20261110",
+  "runId": "LTH-20261110T034436Z-8eb62f84"
+}

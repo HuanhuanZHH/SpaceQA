@@ -1,0 +1,15 @@
+{
+  "version": "repeat-20261110-v1",
+  "runs": 2,
+  "scope": "12 original input packages, fresh 21 experts and conditional B, no historical prediction reuse",
+  "probabilityAbsoluteTolerance": 1e-06,
+  "coordinateAbsoluteTolerancePixels": 1e-06,
+  "discreteDecisionTolerance": 0,
+  "scoreAbsoluteTolerance": 1e-09,
+  "basis": "Engineering reproducibility gate for identical frozen software/input; not scientific localization tolerance",
+  "seed": 20261104,
+  "bSeed": 20261109,
+  "gpu": "icarus0 GPU1 and icarus1 GPU1; same package pinned to same host across rounds",
+  "onMismatch": "retain both runs and report exact differences; do not round away or pick favorable run",
+  "assignment": "sorted full dirId list index modulo 2; 0=icarus0, 1=icarus1"
+}

@@ -1,0 +1,11 @@
+# Allowlist: private data, weights, experiments and local settings never enter
+# the rule-only Docker build context.
+**
+!pyproject.toml
+!README.md
+!src/
+!src/**
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/
+src/spaceqa_agent/web/roadshow-ranking.*

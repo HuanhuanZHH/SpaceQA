@@ -1,0 +1,202 @@
+{
+  "status": "complete",
+  "same_final_prediction_bits": false,
+  "changed_bits": 6,
+  "original_full_21": {
+    "TP": 2238,
+    "FP": 114,
+    "FN": 119,
+    "TN": 82330,
+    "precision": 0.951530612244898,
+    "recall": 0.9495120916419177,
+    "F1": 0.9505202803142918,
+    "FPR": 0.0013827567803600018
+  },
+  "compact_full_21": {
+    "TP": 2238,
+    "FP": 114,
+    "FN": 119,
+    "TN": 82330,
+    "precision": 0.951530612244898,
+    "recall": 0.9495120916419177,
+    "F1": 0.9505202803142918,
+    "FPR": 0.0013827567803600018
+  },
+  "per_family": [
+    {
+      "family": "AIA_AR_sample",
+      "records": 1880,
+      "original": {
+        "TP": 424,
+        "FP": 56,
+        "FN": 48,
+        "TN": 9776,
+        "precision": 0.8833333333333333,
+        "recall": 0.8983050847457628,
+        "F1": 0.8907563025210085,
+        "FPR": 0.005695687550854353
+      },
+      "compact": {
+        "TP": 425,
+        "FP": 56,
+        "FN": 47,
+        "TN": 9776,
+        "precision": 0.8835758835758836,
+        "recall": 0.9004237288135594,
+        "F1": 0.8919202518363064,
+        "FPR": 0.005695687550854353
+      },
+      "bit_changes": 2
+    },
+    {
+      "family": "HMI_AR_sample",
+      "records": 1880,
+      "original": {
+        "TP": 436,
+        "FP": 51,
+        "FN": 58,
+        "TN": 9680,
+        "precision": 0.8952772073921971,
+        "recall": 0.8825910931174089,
+        "F1": 0.8888888888888888,
+        "FPR": 0.005240982427294215
+      },
+      "compact": {
+        "TP": 435,
+        "FP": 51,
+        "FN": 59,
+        "TN": 9680,
+        "precision": 0.8950617283950617,
+        "recall": 0.8805668016194332,
+        "F1": 0.8877551020408163,
+        "FPR": 0.005240982427294215
+      },
+      "bit_changes": 4
+    },
+    {
+      "family": "CME_C2_sample",
+      "records": 6280,
+      "original": {
+        "TP": 591,
+        "FP": 0,
+        "FN": 1,
+        "TN": 38128,
+        "precision": 1.0,
+        "recall": 0.9983108108108109,
+        "F1": 0.9991546914623838,
+        "FPR": 0.0
+      },
+      "compact": {
+        "TP": 591,
+        "FP": 0,
+        "FN": 1,
+        "TN": 38128,
+        "precision": 1.0,
+        "recall": 0.9983108108108109,
+        "F1": 0.9991546914623838,
+        "FPR": 0.0
+      },
+      "bit_changes": 0
+    },
+    {
+      "family": "EPB_seg_sample",
+      "records": 748,
+      "original": {
+        "TP": 256,
+        "FP": 0,
+        "FN": 0,
+        "TN": 5093,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": 0.0
+      },
+      "compact": {
+        "TP": 256,
+        "FP": 0,
+        "FN": 0,
+        "TN": 5093,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": 0.0
+      },
+      "bit_changes": 0
+    },
+    {
+      "family": "DMSP_SSUSI",
+      "records": 172,
+      "original": {
+        "TP": 67,
+        "FP": 7,
+        "FN": 12,
+        "TN": 1174,
+        "precision": 0.9054054054054054,
+        "recall": 0.8481012658227848,
+        "F1": 0.8758169934640523,
+        "FPR": 0.0059271803556308214
+      },
+      "compact": {
+        "TP": 67,
+        "FP": 7,
+        "FN": 12,
+        "TN": 1174,
+        "precision": 0.9054054054054054,
+        "recall": 0.8481012658227848,
+        "F1": 0.8758169934640523,
+        "FPR": 0.0059271803556308214
+      },
+      "bit_changes": 0
+    },
+    {
+      "family": "ULF_sample",
+      "records": 3800,
+      "original": {
+        "TP": 464,
+        "FP": 0,
+        "FN": 0,
+        "TN": 18479,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": 0.0
+      },
+      "compact": {
+        "TP": 464,
+        "FP": 0,
+        "FN": 0,
+        "TN": 18479,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": 0.0
+      },
+      "bit_changes": 0
+    }
+  ],
+  "records": 18450,
+  "routes": [
+    "qlora",
+    "supervised_seed20261031",
+    "supervised_seed20261101",
+    "supervised_seed20261102",
+    "distilled_seed20261031",
+    "distilled_seed20261101",
+    "distilled_seed20261102",
+    "pruned_seed20261031",
+    "pruned_seed20261101",
+    "pruned_seed20261102",
+    "unet",
+    "attention_unet",
+    "unetpp",
+    "resnet18_unet",
+    "deeplab_mobilenet",
+    "yolo11_detect_backbone",
+    "yolo11_segment_backbone",
+    "yolov8_segment_backbone",
+    "dino_finetune",
+    "ijepa_finetune",
+    "gbdt_prior_v1"
+  ],
+  "scope": "same held-out test, masked P0-derived technical proxy; compact weights fresh forward; no test fitting"
+}

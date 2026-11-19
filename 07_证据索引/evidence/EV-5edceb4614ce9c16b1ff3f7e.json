@@ -1,0 +1,241 @@
+{
+  "evidenceId": "EV-5edceb4614ce9c16b1ff3f7e",
+  "findingId": "C33-712b24a33e561a0f30aa",
+  "sourceCard": "04_评分卡/AIA_AR_sample_p86y2cz08y.json",
+  "sourceFinding": {
+    "findingId": "C33-712b24a33e561a0f30aa",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_p86y2cz08y",
+    "sampleId": "AIA_AR_sample_p86y2cz08y:oO5EIoS6KfzxNVrbaFaw.png.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/oO5EIoS6KfzxNVrbaFaw.png.json",
+      "annotation_pointer": "/hek_event_annotation/matched_events/0/event_type",
+      "bbox": [
+        1104.3,
+        1054.0,
+        1739.6,
+        2103.6
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        4096,
+        4096
+      ],
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/oO5EIoS6KfzxNVrbaFaw.png"
+    },
+    "detail": "类别'CH'不属于声明的任务类别集合['AR']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 1.0,
+      "unit": "ratio",
+      "normalized": 1.0
+    },
+    "measurements": {
+      "actual": "CH",
+      "allowed": [
+        "AR"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 1.0,
+      "invalid_object_count": 2,
+      "classified_object_count": 2
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/oO5EIoS6KfzxNVrbaFaw.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/oO5EIoS6KfzxNVrbaFaw.png",
+      "label_sha256": "13f783005508ab97fb91c02934bf159c2c5870a9210339c291ebdd716329dfa6",
+      "data_sha256_from_inventory": "2efbedd0f52fae14f964d12a4e0ee73705e9367d0a571dbaf222d21df24e786c",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:19.966350+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "oO5EIoS6KfzxNVrbaFaw.png",
+      "labelCreateTime": "2026-09-28T18:44:32.112761",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "oO5EIoS6KfzxNVrbaFaw.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2017-04-23T03:00:00",
+      "endTime": "2017-04-23T03:00:00",
+      "timestamp": "2026-09-28T18:44:32.112806",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0211",
+      "dateObs": "2017-04-23T03:00:00",
+      "dateEnd": null,
+      "tObs": "2017-04-23T03:00:00Z",
+      "rsunObs": 954.281188,
+      "dpcLevel": null,
+      "dsunObs": 150438695736.09,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 2,
+      "image_time": "2017-04-23T03:00:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-005757",
+          "kb_archivid": "id-005758",
+          "solar_object_locator": "id-005757",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-04-23 04:00:00",
+          "event_endtime": "2017-04-23 08:00:00",
+          "ar_noaanum": "12651",
+          "area_atdiskcenter": "2763890432",
+          "area_unit": "km2",
+          "unsignedflux": "16059.66015625",
+          "magfluxunit": "emx",
+          "highsheararea": "100257161216",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "101.23799896240234",
+          "meangradienthorz": "57.28300094604492",
+          "meangradientvert": "99.33699798583984",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "41.34199905395508",
+          "meantwistalpha": "0.0475284606218338",
+          "meanshearangle": "34.611000061035156",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "0.7045287489891052",
+          "meancurrenthelicity": "0.014428540132939816",
+          "absnetcurrenthelicity": "406.4230041503906",
+          "unsignedcurrenthelicity": "1398.166015625",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "3.503000020980835",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1350.8,
+              1054.0
+            ],
+            [
+              1739.6,
+              2103.6
+            ],
+            [
+              1557.5,
+              2090.9
+            ],
+            [
+              1104.3,
+              1469.1
+            ],
+            [
+              1350.8,
+              1054.0
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005759",
+          "kb_archivid": "id-005760",
+          "solar_object_locator": "id-005759",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-04-23 04:00:00",
+          "event_endtime": "2017-04-23 08:00:00",
+          "area_atdiskcenter": "495830400",
+          "area_unit": "km2",
+          "unsignedflux": "1513.2738",
+          "magfluxunit": "emx",
+          "highsheararea": "4059674880",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "114.26599884033203",
+          "meangradienthorz": "60.40599822998047",
+          "meangradientvert": "109.9219970703125",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "31.17099952697754",
+          "meantwistalpha": "0.07364031672477722",
+          "meanshearangle": "26.32200050354004",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "0.4216044843196869",
+          "meancurrenthelicity": "0.015257660299539566",
+          "absnetcurrenthelicity": "57.643001556396484",
+          "unsignedcurrenthelicity": "189.65199279785156",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1361.4,
+              1981.4
+            ],
+            [
+              1455.1,
+              2282.7
+            ],
+            [
+              1304.1,
+              2349.0
+            ],
+            [
+              1215.3,
+              2063.3
+            ],
+            [
+              1361.4,
+              1981.4
+            ]
+          ],
+          "concept_swapped": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "13f783005508ab97fb91c02934bf159c2c5870a9210339c291ebdd716329dfa6",
+  "originalLabelHashMatches": true
+}

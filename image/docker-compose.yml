@@ -1,0 +1,20 @@
+services:
+  evaluate:
+    image: localhost/spaceqa-agent:0.6.1-final-r4-20261110
+    network_mode: none
+    shm_size: 2gb
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp:rw,exec,nosuid,size=4g]
+    volumes:
+      - ${SPACEQA_INPUT:?set absolute input path}:/input:ro
+      - ${SPACEQA_OUTPUT:?set absolute output path}:/output:rw
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${SPACEQA_GPU_ID:?set an authorized idle GPU}"]
+              capabilities: [gpu]
+    command: [evaluate, --input, /input/${SPACEQA_PACKAGE:?set dirId}, --family, "${SPACEQA_FAMILY:?set family}", --output, /output/${SPACEQA_RUN:?set new output name}, --release-profile, roadshow-b-v1]

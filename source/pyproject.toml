@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spaceqa-agent"
+version = "0.6.1"
+description = "Evidence-first space-science dataset quality evaluation with reproducible expert experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["space-science", "data-quality", "reproducibility", "agent"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+spaceqa = "spaceqa_agent.cli:main"
+spaceqa-audit = "spaceqa_agent.audit:main"
+spaceqa-review = "spaceqa_agent.refinement:main"
+spaceqa-review-mcp = "spaceqa_agent.review_mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["spaceqa_agent*"]
+
+[tool.setuptools.package-data]
+spaceqa_agent = [
+  "assets/*.json", "assets/agent/*.json", "assets/spec/*.json", "assets/spec/*.yaml", "assets/agent/*.yaml",
+  "web/app.js", "web/chat.css", "web/chat.html", "web/chat.js", "web/locale.js",
+  "web/index.html", "web/styles.css", "web/evaluation.html", "web/evaluation.js",
+  "web/roadshow-ranking.html", "web/roadshow-ranking.json", "web/roadshow-ranking.csv"
+]

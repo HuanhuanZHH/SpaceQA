@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "spaceqa-fine-review": {
+      "command": "ssh",
+      "args": ["-o", "BatchMode=yes", "user@server", "env", "PYTHONPATH=/absolute/path/to/spaceqa-agent/src", "/absolute/path/to/python", "-m", "spaceqa_agent.review_mcp", "--eight-classes", "--case-root", "/absolute/path/to/cases"]
+    }
+  }
+}

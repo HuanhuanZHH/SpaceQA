@@ -1,0 +1,138 @@
+{
+  "evidenceId": "EV-4b22e575ee393b61e97bac9d",
+  "findingId": "C33-df8e3fa2286a428ac460",
+  "sourceCard": "04_评分卡/AIA_AR_sample_7qn2pdeube.json",
+  "sourceFinding": {
+    "findingId": "C33-df8e3fa2286a428ac460",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_7qn2pdeube",
+    "sampleId": "AIA_AR_sample_7qn2pdeube:vJpzWaos0v6int3qXbPF.png.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/feb1587ad422420c71111b3e23d795dffd34b04eca07a5eec022abbff1426fa6/AIA_AR_sample_7qn2pdeube/label/vJpzWaos0v6int3qXbPF.png.json",
+      "annotation_pointer": "/hek_event_annotation/matched_events/0/event_type"
+    },
+    "detail": "类别'CH'不属于声明的任务类别集合['AR']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 1.0,
+      "unit": "ratio",
+      "normalized": 1.0
+    },
+    "measurements": {
+      "actual": "CH",
+      "allowed": [
+        "AR"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 1.0,
+      "invalid_object_count": 1,
+      "classified_object_count": 1
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/feb1587ad422420c71111b3e23d795dffd34b04eca07a5eec022abbff1426fa6/AIA_AR_sample_7qn2pdeube/label/vJpzWaos0v6int3qXbPF.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/feb1587ad422420c71111b3e23d795dffd34b04eca07a5eec022abbff1426fa6/AIA_AR_sample_7qn2pdeube/data/vJpzWaos0v6int3qXbPF.png",
+      "label_sha256": "3a3accd20abef42af0cf81f52bc616dc5b1f7736fa021d18f73b70669279a0bb",
+      "data_sha256_from_inventory": "c73b9c44b82c71193b25242bc3bf5287aef56c38dbcacac2022b767fd3074cfb",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:12.571758+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "vJpzWaos0v6int3qXbPF.png",
+      "labelCreateTime": "2026-09-28T18:50:30.756067",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "vJpzWaos0v6int3qXbPF.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2021-02-10T16:04:00",
+      "endTime": "2021-02-10T16:04:00",
+      "timestamp": "2026-09-28T18:50:30.756100",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0211",
+      "dateObs": "2021-02-10T16:04:00",
+      "dateEnd": null,
+      "tObs": "2021-02-10T16:04:00Z",
+      "rsunObs": 972.569368,
+      "dpcLevel": null,
+      "dsunObs": 147609869049.47,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 1,
+      "image_time": "2021-02-10T16:04:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-006682",
+          "kb_archivid": "id-006683",
+          "solar_object_locator": "id-006682",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2021-02-10 16:00:00",
+          "event_endtime": "2021-02-10 20:00:00",
+          "area_atdiskcenter": "244513584.0",
+          "unsignedflux": "2478.427978515625",
+          "highsheararea": "1366278016.0",
+          "meangradienttotal": "114.73699951171875",
+          "meangradienthorz": "36.83000183105469",
+          "meangradientvert": "115.89399719238281",
+          "meaninclinationgamma": "26.089000701904297",
+          "meantwistalpha": "0.0009031899971887469",
+          "meanshearangle": "22.628999710083008",
+          "meanvertcurrentdensity": "-0.18279007077217102",
+          "meancurrenthelicity": "0.00023824999516364187",
+          "absnetcurrenthelicity": "0.9520000219345093",
+          "unsignedcurrenthelicity": "137.98500061035156",
+          "log_r_value": "0.0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": null,
+          "concept_swapped": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "3a3accd20abef42af0cf81f52bc616dc5b1f7736fa021d18f73b70669279a0bb",
+  "originalLabelHashMatches": true
+}

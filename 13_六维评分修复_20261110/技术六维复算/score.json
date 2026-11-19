@@ -1,0 +1,2366 @@
+{
+  "version": "sixdim-observed-confirmed-plus-pending-20261110",
+  "scoreScope": "scoped_observation_and_candidate_scenario",
+  "weights": {
+    "completeness": 1,
+    "annotationQuality": 1,
+    "sampleCorrespondence": 1,
+    "coverageDistribution": 1,
+    "traceability": 1,
+    "usageConditions": 1
+  },
+  "aggregation": "arithmetic_mean_of_unrounded_dimension_scores",
+  "findingsSourceSha256": "75bcbe7abbb1d4fc035480e5245c8157c14822ae292032a4f6359d3829153b28",
+  "weightPolicySha256": "2cf88dfa960cd38fca4d5cb5cf68318a7348cfb61ae43c9cebdf35a832059e30",
+  "findingRecords": 10817,
+  "registeredSamples": 24782,
+  "s6StatusCounts": {
+    "pass": 263214,
+    "fail": 3088,
+    "undetermined": 0,
+    "not_applicable": 6300
+  },
+  "formalFullScoresAvailable": 0,
+  "packages": {
+    "AIA_AR_sample_3mogtggl50": {
+      "datasetId": "AIA_AR_sample",
+      "sampleCount": 1838,
+      "sixDimensionObservedScore": 95.71091766412768,
+      "dimensionScores": {
+        "completeness": 99.34711643090316,
+        "annotationQuality": 80.9031556039173,
+        "sampleCorrespondence": 99.34711643090316,
+        "coverageDistribution": 94.88574537540805,
+        "traceability": 100.0,
+        "usageConditions": 99.78237214363439
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 99.34711643090316,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 1838,
+          "numerator": 1826,
+          "confirmedSamples": 12,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 12,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 80.9031556039173,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 1838,
+          "numerator": 1487,
+          "confirmedSamples": 282,
+          "candidateSamples": 346,
+          "intersectionSamples": 277,
+          "affectedSamples": 351,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 99.34711643090316,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 1838,
+          "numerator": 1826,
+          "confirmedSamples": 12,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 12,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 94.88574537540805,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 5514,
+          "numerator": 5232,
+          "statusCounts": {
+            "pass": 5232,
+            "fail": 282,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 1556,
+              "fail": 282,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 9190,
+          "numerator": 9190,
+          "statusCounts": {
+            "pass": 9190,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.78237214363439,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 5514,
+          "numerator": 5502,
+          "statusCounts": {
+            "pass": 5502,
+            "fail": 12,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 1826,
+              "fail": 12,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/AIA_AR_sample_3mogtggl50.json"
+    },
+    "AIA_AR_sample_7qn2pdeube": {
+      "datasetId": "AIA_AR_sample",
+      "sampleCount": 1838,
+      "sixDimensionObservedScore": 98.32547454963124,
+      "dimensionScores": {
+        "completeness": 99.83677910772579,
+        "annotationQuality": 91.78454842219804,
+        "sampleCorrespondence": 99.83677910772579,
+        "coverageDistribution": 98.54914762422924,
+        "traceability": 100.0,
+        "usageConditions": 99.9455930359086
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 99.83677910772579,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 1838,
+          "numerator": 1835,
+          "confirmedSamples": 3,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 3,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 91.78454842219804,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 1838,
+          "numerator": 1687,
+          "confirmedSamples": 80,
+          "candidateSamples": 144,
+          "intersectionSamples": 73,
+          "affectedSamples": 151,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 99.83677910772579,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 1838,
+          "numerator": 1835,
+          "confirmedSamples": 3,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 3,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 98.54914762422924,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 5514,
+          "numerator": 5434,
+          "statusCounts": {
+            "pass": 5434,
+            "fail": 80,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 1758,
+              "fail": 80,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 9190,
+          "numerator": 9190,
+          "statusCounts": {
+            "pass": 9190,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.9455930359086,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 5514,
+          "numerator": 5511,
+          "statusCounts": {
+            "pass": 5511,
+            "fail": 3,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 1835,
+              "fail": 3,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/AIA_AR_sample_7qn2pdeube.json"
+    },
+    "AIA_AR_sample_p86y2cz08y": {
+      "datasetId": "AIA_AR_sample",
+      "sampleCount": 1838,
+      "sixDimensionObservedScore": 93.96687220408657,
+      "dimensionScores": {
+        "completeness": 98.85745375408052,
+        "annotationQuality": 74.15669205658324,
+        "sampleCorrespondence": 98.85745375408052,
+        "coverageDistribution": 92.31048240841494,
+        "traceability": 100.0,
+        "usageConditions": 99.61915125136018
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 98.85745375408052,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 1838,
+          "numerator": 1817,
+          "confirmedSamples": 21,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 21,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 74.15669205658324,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 1838,
+          "numerator": 1363,
+          "confirmedSamples": 424,
+          "candidateSamples": 471,
+          "intersectionSamples": 420,
+          "affectedSamples": 475,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 98.85745375408052,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 1838,
+          "numerator": 1817,
+          "confirmedSamples": 21,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 21,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 92.31048240841494,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 5514,
+          "numerator": 5090,
+          "statusCounts": {
+            "pass": 5090,
+            "fail": 424,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 1414,
+              "fail": 424,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 9190,
+          "numerator": 9190,
+          "statusCounts": {
+            "pass": 9190,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.61915125136018,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 5514,
+          "numerator": 5493,
+          "statusCounts": {
+            "pass": 5493,
+            "fail": 21,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 1817,
+              "fail": 21,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/AIA_AR_sample_p86y2cz08y.json"
+    },
+    "AIA_AR_sample_z4h764sf2d": {
+      "datasetId": "AIA_AR_sample",
+      "sampleCount": 1838,
+      "sixDimensionObservedScore": 99.12948857453755,
+      "dimensionScores": {
+        "completeness": 100.0,
+        "annotationQuality": 94.77693144722525,
+        "sampleCorrespondence": 100.0,
+        "coverageDistribution": 100.0,
+        "traceability": 100.0,
+        "usageConditions": 100.0
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 1838,
+          "numerator": 1838,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 94.77693144722525,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 1838,
+          "numerator": 1742,
+          "confirmedSamples": 0,
+          "candidateSamples": 96,
+          "intersectionSamples": 0,
+          "affectedSamples": 96,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 1838,
+          "numerator": 1838,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 5514,
+          "numerator": 5514,
+          "statusCounts": {
+            "pass": 5514,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 9190,
+          "numerator": 9190,
+          "statusCounts": {
+            "pass": 9190,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 5514,
+          "numerator": 5514,
+          "statusCounts": {
+            "pass": 5514,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 1838,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/AIA_AR_sample_z4h764sf2d.json"
+    },
+    "EPB_seg_sample_fbbqy66u2d": {
+      "datasetId": "EPB_seg_sample",
+      "sampleCount": 788,
+      "sixDimensionObservedScore": 94.77580372250424,
+      "dimensionScores": {
+        "completeness": 97.71573604060913,
+        "annotationQuality": 79.31472081218274,
+        "sampleCorrespondence": 92.38578680203045,
+        "coverageDistribution": 100.0,
+        "traceability": 100.0,
+        "usageConditions": 99.23857868020305
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 97.71573604060913,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 788,
+          "numerator": 770,
+          "confirmedSamples": 18,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 18,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 79.31472081218274,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 788,
+          "numerator": 625,
+          "confirmedSamples": 119,
+          "candidateSamples": 50,
+          "intersectionSamples": 6,
+          "affectedSamples": 163,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 92.38578680203045,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 788,
+          "numerator": 728,
+          "confirmedSamples": 60,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 60,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 788,
+          "numerator": 788,
+          "statusCounts": {
+            "pass": 788,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 1576
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 788
+            },
+            "S6-D2": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 788
+            },
+            "S6-D3": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 3940,
+          "numerator": 3940,
+          "statusCounts": {
+            "pass": 3940,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.23857868020305,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 2364,
+          "numerator": 2346,
+          "statusCounts": {
+            "pass": 2346,
+            "fail": 18,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 770,
+              "fail": 18,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/EPB_seg_sample_fbbqy66u2d.json"
+    },
+    "EPB_seg_sample_mc4t7fou91": {
+      "datasetId": "EPB_seg_sample",
+      "sampleCount": 787,
+      "sixDimensionObservedScore": 89.43950303543696,
+      "dimensionScores": {
+        "completeness": 93.64675984752223,
+        "annotationQuality": 61.372299872935194,
+        "sampleCorrespondence": 83.73570520965693,
+        "coverageDistribution": 100.0,
+        "traceability": 100.0,
+        "usageConditions": 97.8822532825074
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 93.64675984752223,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 787,
+          "numerator": 737,
+          "confirmedSamples": 50,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 50,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 61.372299872935194,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 787,
+          "numerator": 483,
+          "confirmedSamples": 232,
+          "candidateSamples": 85,
+          "intersectionSamples": 13,
+          "affectedSamples": 304,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 83.73570520965693,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 787,
+          "numerator": 659,
+          "confirmedSamples": 128,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 128,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 787,
+          "numerator": 787,
+          "statusCounts": {
+            "pass": 787,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 1574
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 787
+            },
+            "S6-D2": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 787
+            },
+            "S6-D3": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 3935,
+          "numerator": 3935,
+          "statusCounts": {
+            "pass": 3935,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 97.8822532825074,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 2361,
+          "numerator": 2311,
+          "statusCounts": {
+            "pass": 2311,
+            "fail": 50,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 737,
+              "fail": 50,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/EPB_seg_sample_mc4t7fou91.json"
+    },
+    "EPB_seg_sample_qmn05l7r91": {
+      "datasetId": "EPB_seg_sample",
+      "sampleCount": 788,
+      "sixDimensionObservedScore": 100.0,
+      "dimensionScores": {
+        "completeness": 100.0,
+        "annotationQuality": 100.0,
+        "sampleCorrespondence": 100.0,
+        "coverageDistribution": 100.0,
+        "traceability": 100.0,
+        "usageConditions": 100.0
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 788,
+          "numerator": 788,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 788,
+          "numerator": 788,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 788,
+          "numerator": 788,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 788,
+          "numerator": 788,
+          "statusCounts": {
+            "pass": 788,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 1576
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 788
+            },
+            "S6-D2": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 788
+            },
+            "S6-D3": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 3940,
+          "numerator": 3940,
+          "statusCounts": {
+            "pass": 3940,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 2364,
+          "numerator": 2364,
+          "statusCounts": {
+            "pass": 2364,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 788,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/EPB_seg_sample_qmn05l7r91.json"
+    },
+    "EPB_seg_sample_z443g9dgh7": {
+      "datasetId": "EPB_seg_sample",
+      "sampleCount": 787,
+      "sixDimensionObservedScore": 85.32401524777637,
+      "dimensionScores": {
+        "completeness": 91.61372299872936,
+        "annotationQuality": 48.66581956797967,
+        "sampleCorrespondence": 74.45997458703938,
+        "coverageDistribution": 100.0,
+        "traceability": 100.0,
+        "usageConditions": 97.20457433290979
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 91.61372299872936,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 787,
+          "numerator": 721,
+          "confirmedSamples": 66,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 66,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 48.66581956797967,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 787,
+          "numerator": 383,
+          "confirmedSamples": 318,
+          "candidateSamples": 121,
+          "intersectionSamples": 35,
+          "affectedSamples": 404,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 74.45997458703938,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 787,
+          "numerator": 586,
+          "confirmedSamples": 201,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 201,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 787,
+          "numerator": 787,
+          "statusCounts": {
+            "pass": 787,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 1574
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 787
+            },
+            "S6-D2": {
+              "pass": 0,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 787
+            },
+            "S6-D3": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 3935,
+          "numerator": 3935,
+          "statusCounts": {
+            "pass": 3935,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 97.20457433290979,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 2361,
+          "numerator": 2295,
+          "statusCounts": {
+            "pass": 2295,
+            "fail": 66,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 721,
+              "fail": 66,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 787,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/EPB_seg_sample_z443g9dgh7.json"
+    },
+    "ULF_sample_09b7y3z4hn": {
+      "datasetId": "ULF_sample",
+      "sampleCount": 3570,
+      "sixDimensionObservedScore": 99.24525365701837,
+      "dimensionScores": {
+        "completeness": 100.0,
+        "annotationQuality": 100.0,
+        "sampleCorrespondence": 100.0,
+        "coverageDistribution": 95.47152194211017,
+        "traceability": 100.0,
+        "usageConditions": 100.0
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 3570,
+          "numerator": 3570,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 3570,
+          "numerator": 3570,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 100.0,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 3570,
+          "numerator": 3570,
+          "confirmedSamples": 0,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 0,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 95.47152194211017,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 10710,
+          "numerator": 10225,
+          "statusCounts": {
+            "pass": 10225,
+            "fail": 485,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 3085,
+              "fail": 485,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 17850,
+          "numerator": 17850,
+          "statusCounts": {
+            "pass": 17850,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 10710,
+          "numerator": 10710,
+          "statusCounts": {
+            "pass": 10710,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/ULF_sample_09b7y3z4hn.json"
+    },
+    "ULF_sample_0yu0mc7d5a": {
+      "datasetId": "ULF_sample",
+      "sampleCount": 3570,
+      "sixDimensionObservedScore": 96.39433551198258,
+      "dimensionScores": {
+        "completeness": 98.4593837535014,
+        "annotationQuality": 87.03081232492997,
+        "sampleCorrespondence": 98.4593837535014,
+        "coverageDistribution": 94.92997198879551,
+        "traceability": 100.0,
+        "usageConditions": 99.48646125116713
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 98.4593837535014,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 3570,
+          "numerator": 3515,
+          "confirmedSamples": 55,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 55,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 87.03081232492997,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 3570,
+          "numerator": 3107,
+          "confirmedSamples": 0,
+          "candidateSamples": 463,
+          "intersectionSamples": 0,
+          "affectedSamples": 463,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 98.4593837535014,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 3570,
+          "numerator": 3515,
+          "confirmedSamples": 55,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 55,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 94.92997198879551,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 10710,
+          "numerator": 10167,
+          "statusCounts": {
+            "pass": 10167,
+            "fail": 543,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 3027,
+              "fail": 543,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 17850,
+          "numerator": 17850,
+          "statusCounts": {
+            "pass": 17850,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.48646125116713,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 10710,
+          "numerator": 10655,
+          "statusCounts": {
+            "pass": 10655,
+            "fail": 55,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 3515,
+              "fail": 55,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/ULF_sample_0yu0mc7d5a.json"
+    },
+    "ULF_sample_ta382376ar": {
+      "datasetId": "ULF_sample",
+      "sampleCount": 3570,
+      "sixDimensionObservedScore": 96.90320572673514,
+      "dimensionScores": {
+        "completeness": 99.69187675070027,
+        "annotationQuality": 86.69467787114846,
+        "sampleCorrespondence": 99.69187675070027,
+        "coverageDistribution": 95.44351073762839,
+        "traceability": 100.0,
+        "usageConditions": 99.89729225023342
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 99.69187675070027,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 3570,
+          "numerator": 3559,
+          "confirmedSamples": 11,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 11,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 86.69467787114846,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 3570,
+          "numerator": 3095,
+          "confirmedSamples": 0,
+          "candidateSamples": 475,
+          "intersectionSamples": 0,
+          "affectedSamples": 475,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 99.69187675070027,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 3570,
+          "numerator": 3559,
+          "confirmedSamples": 11,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 11,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 95.44351073762839,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 10710,
+          "numerator": 10222,
+          "statusCounts": {
+            "pass": 10222,
+            "fail": 488,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 3082,
+              "fail": 488,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 17850,
+          "numerator": 17850,
+          "statusCounts": {
+            "pass": 17850,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.89729225023342,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 10710,
+          "numerator": 10699,
+          "statusCounts": {
+            "pass": 10699,
+            "fail": 11,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 3559,
+              "fail": 11,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/ULF_sample_ta382376ar.json"
+    },
+    "ULF_sample_xfnogkdey9": {
+      "datasetId": "ULF_sample",
+      "sampleCount": 3570,
+      "sixDimensionObservedScore": 96.2822906940554,
+      "dimensionScores": {
+        "completeness": 98.99159663865547,
+        "annotationQuality": 84.84593837535014,
+        "sampleCorrespondence": 98.99159663865547,
+        "coverageDistribution": 95.20074696545285,
+        "traceability": 100.0,
+        "usageConditions": 99.66386554621849
+      },
+      "dimensions": {
+        "completeness": {
+          "score": 98.99159663865547,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31"
+          ],
+          "denominator": 3570,
+          "numerator": 3534,
+          "confirmedSamples": 36,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 36,
+          "unit": "registered_sample"
+        },
+        "annotationQuality": {
+          "score": 84.84593837535014,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C32",
+            "C33",
+            "C34",
+            "C35",
+            "C36",
+            "C37",
+            "C38"
+          ],
+          "denominator": 3570,
+          "numerator": 3029,
+          "confirmedSamples": 0,
+          "candidateSamples": 541,
+          "intersectionSamples": 0,
+          "affectedSamples": 541,
+          "unit": "registered_sample"
+        },
+        "sampleCorrespondence": {
+          "score": 98.99159663865547,
+          "basis": "confirmed_eligible_or_candidate_sample_union",
+          "checkIds": [
+            "C31",
+            "C35"
+          ],
+          "denominator": 3570,
+          "numerator": 3534,
+          "confirmedSamples": 36,
+          "candidateSamples": 0,
+          "intersectionSamples": 0,
+          "affectedSamples": 36,
+          "unit": "registered_sample"
+        },
+        "coverageDistribution": {
+          "score": 95.20074696545285,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-D1",
+            "S6-D2",
+            "S6-D3"
+          ],
+          "denominator": 10710,
+          "numerator": 10196,
+          "statusCounts": {
+            "pass": 10196,
+            "fail": 514,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-D1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D2": {
+              "pass": 3056,
+              "fail": 514,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-D3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "traceability": {
+          "score": 100.0,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-T1",
+            "S6-T2",
+            "S6-T3",
+            "S6-T4",
+            "S6-T5"
+          ],
+          "denominator": 17850,
+          "numerator": 17850,
+          "statusCounts": {
+            "pass": 17850,
+            "fail": 0,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-T1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T2": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T4": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-T5": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        },
+        "usageConditions": {
+          "score": 99.66386554621849,
+          "basis": "determinate_scoped_S6_slots",
+          "checkIds": [
+            "S6-U1",
+            "S6-U2",
+            "S6-U3"
+          ],
+          "denominator": 10710,
+          "numerator": 10674,
+          "statusCounts": {
+            "pass": 10674,
+            "fail": 36,
+            "undetermined": 0,
+            "not_applicable": 0
+          },
+          "byCheck": {
+            "S6-U1": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U2": {
+              "pass": 3534,
+              "fail": 36,
+              "undetermined": 0,
+              "not_applicable": 0
+            },
+            "S6-U3": {
+              "pass": 3570,
+              "fail": 0,
+              "undetermined": 0,
+              "not_applicable": 0
+            }
+          },
+          "unit": "sample_check_slot"
+        }
+      },
+      "fullQualityScore": null,
+      "formalAcceptance": "evidence_incomplete",
+      "formalEvidencePath": "13_六维评分修复_20261110/12包正式验收/ULF_sample_xfnogkdey9.json"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "single run across checks and sibling datasets",
+  "storage": "in-process immutable inventory plus output artifacts",
+  "writeTriggers": ["file parsed", "check completed", "evidence emitted"],
+  "readers": ["pipeline", "scorer", "reporter"],
+  "consistency": "single writer; stable identifiers; no cross-run reuse",
+  "crossRunPersistence": false
+}

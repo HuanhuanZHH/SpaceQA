@@ -1,0 +1,274 @@
+{
+  "evidenceId": "EV-40e065c2c1f722fc96ff2a7a",
+  "findingId": "C33-2536c112d4e40d0296ed",
+  "sourceCard": "04_评分卡/AIA_AR_sample_3mogtggl50.json",
+  "sourceFinding": {
+    "findingId": "C33-2536c112d4e40d0296ed",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_3mogtggl50",
+    "sampleId": "AIA_AR_sample_3mogtggl50:ZB5DBNFrbNhgMDcVkYpS.png.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/label/ZB5DBNFrbNhgMDcVkYpS.png.json",
+      "annotation_pointer": "/hek_event_annotation/matched_events/1/event_type",
+      "bbox": [
+        943.2,
+        1227.5,
+        1112.0,
+        1361.0
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        4096,
+        4096
+      ],
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/data/ZB5DBNFrbNhgMDcVkYpS.png"
+    },
+    "detail": "类别'CH'不属于声明的任务类别集合['AR']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 0.25,
+      "unit": "ratio",
+      "normalized": 0.25
+    },
+    "measurements": {
+      "actual": "CH",
+      "allowed": [
+        "AR"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 0.25,
+      "invalid_object_count": 1,
+      "classified_object_count": 4
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/label/ZB5DBNFrbNhgMDcVkYpS.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/86e990ec307fc61a688715b3ae267346cea18e770792426cc00fb77966c36049/AIA_AR_sample_3mogtggl50/data/ZB5DBNFrbNhgMDcVkYpS.png",
+      "label_sha256": "b5113641c02b9e339b938c12c66f9ce828312192d2019eaa878d56aeea241425",
+      "data_sha256_from_inventory": "899654c28853ada493ce0d9cebe85312ac2d771dda3927fd7d9c7dad3b39e378",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:08.090907+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "ZB5DBNFrbNhgMDcVkYpS.png",
+      "labelCreateTime": "2026-09-28T18:43:49.340395",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "ZB5DBNFrbNhgMDcVkYpS.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2016-10-24T18:42:00",
+      "endTime": "2016-10-24T18:42:00",
+      "timestamp": "2026-09-28T18:43:49.340426",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0335",
+      "dateObs": "2016-10-24T18:42:00",
+      "dateEnd": null,
+      "tObs": "2016-10-24T18:42:00Z",
+      "rsunObs": 965.250024,
+      "dpcLevel": null,
+      "dsunObs": 148729164067.35,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 4,
+      "image_time": "2016-10-24T18:42:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-005551",
+          "kb_archivid": "id-005553",
+          "solar_object_locator": "id-005552",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2016-10-24 18:57:35",
+          "event_endtime": "2016-10-24 22:57:35",
+          "event_npixels": "35782",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "8839279616.0",
+          "area_atdiskcenteruncert": "555441984",
+          "area_raw": "6675460096",
+          "area_unit": "km2",
+          "area_uncert": "440420000",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              2916.4,
+              2202.0
+            ],
+            [
+              3179.3,
+              2202.0
+            ],
+            [
+              3179.8,
+              2491.1
+            ],
+            [
+              2916.8,
+              2491.1
+            ],
+            [
+              2916.4,
+              2202.0
+            ]
+          ]
+        },
+        {
+          "SOL_standard": "id-005554",
+          "kb_archivid": "id-005556",
+          "solar_object_locator": "id-005555",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2016-10-24 18:57:35",
+          "event_endtime": "2016-10-24 22:57:35",
+          "event_npixels": "4329",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "1320249984.0",
+          "area_atdiskcenteruncert": "83996704",
+          "area_raw": "807926016",
+          "area_unit": "km2",
+          "area_uncert": "53388600",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              943.7,
+              1227.7
+            ],
+            [
+              1112.0,
+              1227.5
+            ],
+            [
+              1111.5,
+              1360.8
+            ],
+            [
+              943.2,
+              1361.0
+            ],
+            [
+              943.7,
+              1227.7
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005557",
+          "kb_archivid": "id-005559",
+          "solar_object_locator": "id-005558",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2016-10-24 18:57:35",
+          "event_endtime": "2016-10-24 22:57:35",
+          "event_npixels": "6904",
+          "event_clippedspatial": "T",
+          "area_atdiskcenter": "3995460096.0",
+          "area_atdiskcenteruncert": "607064000",
+          "area_raw": "1288540032",
+          "area_unit": "km2",
+          "area_uncert": "194408992",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              465.2,
+              2122.8
+            ],
+            [
+              615.4,
+              2122.6
+            ],
+            [
+              616.2,
+              2511.8
+            ],
+            [
+              466.9,
+              2512.0
+            ],
+            [
+              465.2,
+              2122.8
+            ]
+          ]
+        },
+        {
+          "SOL_standard": "id-005560",
+          "kb_archivid": "id-005562",
+          "solar_object_locator": "id-005561",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2016-10-24 18:57:35",
+          "event_endtime": "2016-10-24 22:57:35",
+          "event_npixels": "40634",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "15394499584.0",
+          "area_atdiskcenteruncert": "815019008",
+          "area_raw": "7580469760",
+          "area_unit": "km2",
+          "area_uncert": "430912992",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": null
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "b5113641c02b9e339b938c12c66f9ce828312192d2019eaa878d56aeea241425",
+  "originalLabelHashMatches": true
+}

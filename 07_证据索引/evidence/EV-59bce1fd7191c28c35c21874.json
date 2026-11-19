@@ -1,0 +1,613 @@
+{
+  "evidenceId": "EV-59bce1fd7191c28c35c21874",
+  "findingId": "C33-1a09fafecc0eb86db566",
+  "sourceCard": "04_评分卡/AIA_AR_sample_p86y2cz08y.json",
+  "sourceFinding": {
+    "findingId": "C33-1a09fafecc0eb86db566",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_p86y2cz08y",
+    "sampleId": "AIA_AR_sample_p86y2cz08y:r02M2AtBUf6J80ac78dq.png.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/r02M2AtBUf6J80ac78dq.png.json",
+      "annotation_pointer": "/hek_event_annotation/matched_events/5/event_type",
+      "bbox": [
+        575.8,
+        1220.9,
+        1352.7,
+        2007.0
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        4096,
+        4096
+      ],
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/r02M2AtBUf6J80ac78dq.png"
+    },
+    "detail": "类别'CH'不属于声明的任务类别集合['AR']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 0.6,
+      "unit": "ratio",
+      "normalized": 0.6
+    },
+    "measurements": {
+      "actual": "CH",
+      "allowed": [
+        "AR"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 0.6,
+      "invalid_object_count": 6,
+      "classified_object_count": 10
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/r02M2AtBUf6J80ac78dq.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/r02M2AtBUf6J80ac78dq.png",
+      "label_sha256": "2a5f150310550ff54ff556d44116766f61a333d7142080c2f196ada421d972ef",
+      "data_sha256_from_inventory": "1dc50de2f276866e51a1926996637ec1b36af62cc0dc7861120d27ece16e16f5",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:20.306606+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "r02M2AtBUf6J80ac78dq.png",
+      "labelCreateTime": "2026-09-28T18:44:14.234376",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "r02M2AtBUf6J80ac78dq.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2017-02-23T11:48:00",
+      "endTime": "2017-02-23T11:48:00",
+      "timestamp": "2026-09-28T18:44:14.234426",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0193",
+      "dateObs": "2017-02-23T11:48:00",
+      "dateEnd": null,
+      "tObs": "2017-02-23T11:48:00Z",
+      "rsunObs": 969.676643,
+      "dpcLevel": null,
+      "dsunObs": 148050213436.06,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 10,
+      "image_time": "2017-02-23T11:48:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-005625",
+          "kb_archivid": "id-005626",
+          "solar_object_locator": "id-005625",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2017-02-23 12:00:00",
+          "event_endtime": "2017-02-23 16:00:00",
+          "ar_noaanum": "12638",
+          "area_atdiskcenter": "1873727744",
+          "area_unit": "km2",
+          "unsignedflux": "14035.4296875",
+          "magfluxunit": "emx",
+          "highsheararea": "68834377728",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "102.8239974975586",
+          "meangradienthorz": "59.39099884033203",
+          "meangradientvert": "102.75199890136719",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "39.22600173950195",
+          "meantwistalpha": "0.05583415925502777",
+          "meanshearangle": "33.74300003051758",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "0.31874075531959534",
+          "meancurrenthelicity": "0.02213303931057453",
+          "absnetcurrenthelicity": "469.57501220703125",
+          "unsignedcurrenthelicity": "1474.7750244140625",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "3.994999885559082",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1045.0,
+              1224.3
+            ],
+            [
+              1224.8,
+              1801.1
+            ],
+            [
+              978.2,
+              1911.5
+            ],
+            [
+              808.5,
+              1366.5
+            ],
+            [
+              1045.0,
+              1224.3
+            ]
+          ]
+        },
+        {
+          "SOL_standard": "id-005627",
+          "kb_archivid": "id-005628",
+          "solar_object_locator": "id-005627",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-02-23 12:00:00",
+          "event_endtime": "2017-02-23 16:00:00",
+          "area_atdiskcenter": "58281864",
+          "area_unit": "km2",
+          "unsignedflux": "133.16000366210938",
+          "magfluxunit": "emx",
+          "highsheararea": "681404032",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "128.0959930419922",
+          "meangradienthorz": "57.75199890136719",
+          "meangradientvert": "133.42999267578125",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "41.229000091552734",
+          "meantwistalpha": "-0.06502694636583328",
+          "meanshearangle": "29.132999420166016",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "-0.18998190760612488",
+          "meancurrenthelicity": "-0.012377720326185226",
+          "absnetcurrenthelicity": "3.428999900817871",
+          "unsignedcurrenthelicity": "13.437999725341797",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1604.8,
+              1916.9
+            ],
+            [
+              1618.0,
+              1952.2
+            ],
+            [
+              1599.7,
+              1958.4
+            ],
+            [
+              1586.4,
+              1923.2
+            ],
+            [
+              1604.8,
+              1916.9
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005629",
+          "kb_archivid": "id-005630",
+          "solar_object_locator": "id-005629",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2017-02-23 12:00:00",
+          "event_endtime": "2017-02-23 16:00:00",
+          "ar_noaanum": "12637",
+          "area_atdiskcenter": "769879936",
+          "area_unit": "km2",
+          "unsignedflux": "1376.5989",
+          "magfluxunit": "emx",
+          "highsheararea": "2568305920",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "121.13600158691406",
+          "meangradienthorz": "50.07099914550781",
+          "meangradientvert": "126.13099670410156",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "29.917999267578125",
+          "meantwistalpha": "0.08955079317092896",
+          "meanshearangle": "22.73200035095215",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "0.6739591360092163",
+          "meancurrenthelicity": "0.018736209720373154",
+          "absnetcurrenthelicity": "58.775001525878906",
+          "unsignedcurrenthelicity": "157.03700256347656",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "1.7309999465942383",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1798.7,
+              1265.7
+            ],
+            [
+              1941.5,
+              1685.7
+            ],
+            [
+              1711.4,
+              1757.0
+            ],
+            [
+              1567.0,
+              1331.9
+            ],
+            [
+              1798.7,
+              1265.7
+            ]
+          ]
+        },
+        {
+          "SOL_standard": "id-005631",
+          "kb_archivid": "id-005632",
+          "solar_object_locator": "id-005631",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-02-23 12:00:00",
+          "event_endtime": "2017-02-23 16:00:00",
+          "ar_noaanum": "12636",
+          "area_atdiskcenter": "234861088",
+          "area_unit": "km2",
+          "unsignedflux": "2662.0471",
+          "magfluxunit": "emx",
+          "highsheararea": "12448198656",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "93.85299682617188",
+          "meangradienthorz": "62.8390007019043",
+          "meangradientvert": "92.5790023803711",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "36.47800064086914",
+          "meantwistalpha": "0.07686957716941833",
+          "meanshearangle": "34.10900115966797",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "-0.9132384657859802",
+          "meancurrenthelicity": "0.012315560132265091",
+          "absnetcurrenthelicity": "52.36600112915039",
+          "unsignedcurrenthelicity": "214.66799926757812",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1881.4,
+              3029.0
+            ],
+            [
+              2091.8,
+              3419.1
+            ],
+            [
+              1920.5,
+              3448.2
+            ],
+            [
+              1712.8,
+              3063.6
+            ],
+            [
+              1881.4,
+              3029.0
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005633",
+          "kb_archivid": "id-005634",
+          "solar_object_locator": "id-005633",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-02-23 12:00:00",
+          "event_endtime": "2017-02-23 16:00:00",
+          "area_atdiskcenter": "51578052",
+          "area_unit": "km2",
+          "unsignedflux": "621.7472",
+          "magfluxunit": "emx",
+          "meangradienttotal": "73.24299621582031",
+          "meangradienthorz": "39.38600158691406",
+          "meangradientvert": "71.09300231933594",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "21.731000900268555",
+          "meantwistalpha": "0.05141184851527214",
+          "meanshearangle": "16.569000244140625",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "-1.282952070236206",
+          "meancurrenthelicity": "0.01446256972849369",
+          "absnetcurrenthelicity": "15.446000099182129",
+          "unsignedcurrenthelicity": "52.25600051879883",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              1027.2,
+              907.0
+            ],
+            [
+              1037.7,
+              953.4
+            ],
+            [
+              1006.8,
+              972.9
+            ],
+            [
+              1013.1,
+              936.1
+            ],
+            [
+              1027.2,
+              907.0
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005635",
+          "kb_archivid": "id-005637",
+          "solar_object_locator": "id-005636",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-02-23 12:03:34",
+          "event_endtime": "2017-02-23 16:03:34",
+          "event_npixels": "45276",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "10947800064",
+          "area_atdiskcenteruncert": "722643008",
+          "area_raw": "8361950208",
+          "area_unit": "km2",
+          "area_uncert": "570867008",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              1110.3,
+              1220.9
+            ],
+            [
+              1352.7,
+              1828.9
+            ],
+            [
+              817.9,
+              2007.0
+            ],
+            [
+              575.8,
+              1399.0
+            ],
+            [
+              1110.3,
+              1220.9
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005641",
+          "kb_archivid": "id-005643",
+          "solar_object_locator": "id-005642",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2017-02-23 12:03:34",
+          "event_endtime": "2017-02-23 16:03:34",
+          "event_npixels": "17429",
+          "event_clippedspatial": "T",
+          "area_atdiskcenter": "6593509070.258",
+          "area_atdiskcenteruncert": "425119008",
+          "area_raw": "3221070080",
+          "area_unit": "km2",
+          "area_uncert": "185456000",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              1005.2,
+              811.3
+            ],
+            [
+              1066.5,
+              964.8
+            ],
+            [
+              878.7,
+              1027.4
+            ],
+            [
+              817.6,
+              874.1
+            ],
+            [
+              1005.2,
+              811.3
+            ]
+          ]
+        },
+        {
+          "SOL_standard": "id-005644",
+          "kb_archivid": "id-005646",
+          "solar_object_locator": "id-005645",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2017-02-23 12:03:34",
+          "event_endtime": "2017-02-23 16:03:34",
+          "event_npixels": "28098",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "8151207807.942",
+          "area_atdiskcenteruncert": "414108992",
+          "area_raw": "5191399936",
+          "area_unit": "km2",
+          "area_uncert": "270692000",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              1962.4,
+              3017.2
+            ],
+            [
+              2178.4,
+              3559.6
+            ],
+            [
+              1871.2,
+              3662.0
+            ],
+            [
+              1655.2,
+              3119.3
+            ],
+            [
+              1962.4,
+              3017.2
+            ]
+          ]
+        },
+        {
+          "SOL_standard": "id-005647",
+          "kb_archivid": "id-005649",
+          "solar_object_locator": "id-005648",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-02-23 12:03:34",
+          "event_endtime": "2017-02-23 16:03:34",
+          "event_npixels": "5269",
+          "event_clippedspatial": "T",
+          "area_atdiskcenter": "4122640128",
+          "area_atdiskcenteruncert": "329840000",
+          "area_raw": "973723008",
+          "area_unit": "km2",
+          "area_uncert": "76581600",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": null,
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "id-005650",
+          "kb_archivid": "id-005652",
+          "solar_object_locator": "id-005651",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2017-02-23 12:03:34",
+          "event_endtime": "2017-02-23 16:03:34",
+          "event_npixels": "12965",
+          "event_clippedspatial": "F",
+          "area_atdiskcenter": "2511190016",
+          "area_atdiskcenteruncert": "199456992",
+          "area_raw": "2396049920",
+          "area_unit": "km2",
+          "area_uncert": "197200000",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": [
+            [
+              1809.4,
+              1518.5
+            ],
+            [
+              2019.9,
+              1735.2
+            ],
+            [
+              1809.9,
+              1746.0
+            ],
+            [
+              1803.8,
+              1544.6
+            ],
+            [
+              1809.4,
+              1518.5
+            ]
+          ],
+          "concept_swapped": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "2a5f150310550ff54ff556d44116766f61a333d7142080c2f196ada421d972ef",
+  "originalLabelHashMatches": true
+}

@@ -1,0 +1,438 @@
+{
+  "route": "gbdt_prior_v1",
+  "thresholds": [
+    [
+      0.81,
+      0.75,
+      0.99
+    ],
+    [
+      0.91,
+      0.87,
+      0.99
+    ],
+    [
+      1.01,
+      1.01,
+      0.86
+    ],
+    [
+      0.67,
+      0.99,
+      0.99
+    ],
+    [
+      0.72,
+      0.9600000000000001,
+      0.99
+    ],
+    [
+      1.01,
+      1.01,
+      0.62
+    ]
+  ],
+  "threshold_order": [
+    "AIA_AR_sample",
+    "HMI_AR_sample",
+    "CME_C2_sample",
+    "EPB_seg_sample",
+    "DMSP_SSUSI",
+    "ULF_sample"
+  ],
+  "groups": [
+    "G",
+    "C",
+    "D"
+  ],
+  "threshold_source": "val only; threshold ties prefer fewer false positives then higher threshold",
+  "threshold_trace": [
+    {
+      "family": "AIA_AR_sample",
+      "group": "G",
+      "threshold": 0.81,
+      "val_F1": 0.9067796610169492,
+      "TP": 214,
+      "FP": 22,
+      "FN": 22,
+      "known_samples": 2201
+    },
+    {
+      "family": "AIA_AR_sample",
+      "group": "C",
+      "threshold": 0.75,
+      "val_F1": 0.4952978056426332,
+      "TP": 79,
+      "FP": 154,
+      "FN": 7,
+      "known_samples": 2460
+    },
+    {
+      "family": "AIA_AR_sample",
+      "group": "D",
+      "threshold": 0.99,
+      "val_F1": 1.0,
+      "TP": 247,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 2460
+    },
+    {
+      "family": "HMI_AR_sample",
+      "group": "G",
+      "threshold": 0.91,
+      "val_F1": 0.8780487804878049,
+      "TP": 234,
+      "FP": 28,
+      "FN": 37,
+      "known_samples": 1962
+    },
+    {
+      "family": "HMI_AR_sample",
+      "group": "C",
+      "threshold": 0.87,
+      "val_F1": 0.48725212464589235,
+      "TP": 86,
+      "FP": 166,
+      "FN": 15,
+      "known_samples": 2295
+    },
+    {
+      "family": "HMI_AR_sample",
+      "group": "D",
+      "threshold": 0.99,
+      "val_F1": 1.0,
+      "TP": 279,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 2295
+    },
+    {
+      "family": "CME_C2_sample",
+      "group": "G",
+      "threshold": 1.01,
+      "val_F1": 0.0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 7597
+    },
+    {
+      "family": "CME_C2_sample",
+      "group": "C",
+      "threshold": 1.01,
+      "val_F1": 0.0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 8044
+    },
+    {
+      "family": "CME_C2_sample",
+      "group": "D",
+      "threshold": 0.86,
+      "val_F1": 0.8689859363434493,
+      "TP": 587,
+      "FP": 87,
+      "FN": 90,
+      "known_samples": 8044
+    },
+    {
+      "family": "EPB_seg_sample",
+      "group": "G",
+      "threshold": 0.67,
+      "val_F1": 0.19376026272577998,
+      "TP": 59,
+      "FP": 469,
+      "FN": 22,
+      "known_samples": 949
+    },
+    {
+      "family": "EPB_seg_sample",
+      "group": "C",
+      "threshold": 0.99,
+      "val_F1": 1.0,
+      "TP": 59,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 949
+    },
+    {
+      "family": "EPB_seg_sample",
+      "group": "D",
+      "threshold": 0.99,
+      "val_F1": 1.0,
+      "TP": 155,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 949
+    },
+    {
+      "family": "DMSP_SSUSI",
+      "group": "G",
+      "threshold": 0.72,
+      "val_F1": 0.358974358974359,
+      "TP": 7,
+      "FP": 22,
+      "FN": 3,
+      "known_samples": 230
+    },
+    {
+      "family": "DMSP_SSUSI",
+      "group": "C",
+      "threshold": 0.9600000000000001,
+      "val_F1": 0.4444444444444444,
+      "TP": 4,
+      "FP": 0,
+      "FN": 10,
+      "known_samples": 230
+    },
+    {
+      "family": "DMSP_SSUSI",
+      "group": "D",
+      "threshold": 0.99,
+      "val_F1": 1.0,
+      "TP": 36,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 230
+    },
+    {
+      "family": "ULF_sample",
+      "group": "G",
+      "threshold": 1.01,
+      "val_F1": 0.0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 4516
+    },
+    {
+      "family": "ULF_sample",
+      "group": "C",
+      "threshold": 1.01,
+      "val_F1": 0.0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 4516
+    },
+    {
+      "family": "ULF_sample",
+      "group": "D",
+      "threshold": 0.62,
+      "val_F1": 1.0,
+      "TP": 1270,
+      "FP": 0,
+      "FN": 0,
+      "known_samples": 3592
+    }
+  ],
+  "hyperparameters": {
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.08,
+    "min_samples_leaf": 30,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 20261102,
+    "class_weight": "balanced"
+  },
+  "sklearn_version": "1.7.2",
+  "numpy_version": "2.2.6",
+  "train_sha256": "3b4cf96425cb393a4c27e1f6c59a26f0f32682d6342d432aded41a99771a7a5c",
+  "val_sha256": "b1ec2c53b73e2da04595ede4849344302fca55c25ed0925aca17c6d640d5f270",
+  "train_coverage": {
+    "AIA_AR_sample|P0": 2187,
+    "AIA_AR_sample|P1": 2187,
+    "AIA_AR_sample|P2": 2186,
+    "AIA_AR_sample|P3": 2175,
+    "AIA_AR_sample|P4": 2162,
+    "HMI_AR_sample|P0": 2087,
+    "HMI_AR_sample|P1": 2087,
+    "HMI_AR_sample|P2": 2085,
+    "HMI_AR_sample|P3": 2080,
+    "HMI_AR_sample|P4": 2063,
+    "CME_C2_sample|P0": 7607,
+    "CME_C2_sample|P1": 7606,
+    "CME_C2_sample|P2": 7603,
+    "CME_C2_sample|P3": 7580,
+    "CME_C2_sample|P4": 7530,
+    "EPB_seg_sample|P0": 964,
+    "EPB_seg_sample|P1": 955,
+    "EPB_seg_sample|P2": 935,
+    "EPB_seg_sample|P3": 909,
+    "EPB_seg_sample|P4": 871,
+    "DMSP_SSUSI|P0": 194,
+    "DMSP_SSUSI|P1": 192,
+    "DMSP_SSUSI|P2": 184,
+    "DMSP_SSUSI|P3": 181,
+    "DMSP_SSUSI|P4": 172,
+    "ULF_sample|P0": 4262,
+    "ULF_sample|P1": 4247,
+    "ULF_sample|P2": 4243,
+    "ULF_sample|P3": 4223,
+    "ULF_sample|P4": 4193
+  },
+  "heads": [
+    {
+      "group": "G",
+      "samples": 81049,
+      "positives": 2602,
+      "families": {
+        "AIA_AR_sample": 9701,
+        "CME_C2_sample": 35769,
+        "DMSP_SSUSI": 923,
+        "EPB_seg_sample": 4634,
+        "HMI_AR_sample": 8854,
+        "ULF_sample": 21168
+      },
+      "packages": {
+        "AIA_AR_sample|P0": 2187,
+        "AIA_AR_sample|P1": 2106,
+        "AIA_AR_sample|P2": 1987,
+        "AIA_AR_sample|P3": 1818,
+        "AIA_AR_sample|P4": 1603,
+        "HMI_AR_sample|P0": 2087,
+        "HMI_AR_sample|P1": 1986,
+        "HMI_AR_sample|P2": 1851,
+        "HMI_AR_sample|P3": 1618,
+        "HMI_AR_sample|P4": 1312,
+        "CME_C2_sample|P0": 7607,
+        "CME_C2_sample|P1": 7588,
+        "CME_C2_sample|P2": 7372,
+        "CME_C2_sample|P3": 6786,
+        "CME_C2_sample|P4": 6416,
+        "EPB_seg_sample|P0": 964,
+        "EPB_seg_sample|P1": 955,
+        "EPB_seg_sample|P2": 935,
+        "EPB_seg_sample|P3": 909,
+        "EPB_seg_sample|P4": 871,
+        "DMSP_SSUSI|P0": 194,
+        "DMSP_SSUSI|P1": 192,
+        "DMSP_SSUSI|P2": 184,
+        "DMSP_SSUSI|P3": 181,
+        "DMSP_SSUSI|P4": 172,
+        "ULF_sample|P0": 4262,
+        "ULF_sample|P1": 4247,
+        "ULF_sample|P2": 4243,
+        "ULF_sample|P3": 4223,
+        "ULF_sample|P4": 4193
+      },
+      "model_sha256": "c37b0959f11ecc451c008e6f9713276dd3bad84ecf0c4c30d49e31791ef9b48b",
+      "seconds": 5.098031722009182
+    },
+    {
+      "group": "C",
+      "samples": 85950,
+      "positives": 1121,
+      "families": {
+        "AIA_AR_sample": 10897,
+        "CME_C2_sample": 37926,
+        "DMSP_SSUSI": 923,
+        "EPB_seg_sample": 4634,
+        "HMI_AR_sample": 10402,
+        "ULF_sample": 21168
+      },
+      "packages": {
+        "AIA_AR_sample|P0": 2187,
+        "AIA_AR_sample|P1": 2187,
+        "AIA_AR_sample|P2": 2186,
+        "AIA_AR_sample|P3": 2175,
+        "AIA_AR_sample|P4": 2162,
+        "HMI_AR_sample|P0": 2087,
+        "HMI_AR_sample|P1": 2087,
+        "HMI_AR_sample|P2": 2085,
+        "HMI_AR_sample|P3": 2080,
+        "HMI_AR_sample|P4": 2063,
+        "CME_C2_sample|P0": 7607,
+        "CME_C2_sample|P1": 7606,
+        "CME_C2_sample|P2": 7603,
+        "CME_C2_sample|P3": 7580,
+        "CME_C2_sample|P4": 7530,
+        "EPB_seg_sample|P0": 964,
+        "EPB_seg_sample|P1": 955,
+        "EPB_seg_sample|P2": 935,
+        "EPB_seg_sample|P3": 909,
+        "EPB_seg_sample|P4": 871,
+        "DMSP_SSUSI|P0": 194,
+        "DMSP_SSUSI|P1": 192,
+        "DMSP_SSUSI|P2": 184,
+        "DMSP_SSUSI|P3": 181,
+        "DMSP_SSUSI|P4": 172,
+        "ULF_sample|P0": 4262,
+        "ULF_sample|P1": 4247,
+        "ULF_sample|P2": 4243,
+        "ULF_sample|P3": 4223,
+        "ULF_sample|P4": 4193
+      },
+      "model_sha256": "96d8d5455382a1edbbeeaab90ac84c05b9a3e811e61032c305555575ca8c12d0",
+      "seconds": 5.045909802895039
+    },
+    {
+      "group": "D",
+      "samples": 81498,
+      "positives": 12355,
+      "families": {
+        "AIA_AR_sample": 10897,
+        "CME_C2_sample": 37926,
+        "DMSP_SSUSI": 923,
+        "EPB_seg_sample": 4634,
+        "HMI_AR_sample": 10402,
+        "ULF_sample": 16716
+      },
+      "packages": {
+        "AIA_AR_sample|P0": 2187,
+        "AIA_AR_sample|P1": 2187,
+        "AIA_AR_sample|P2": 2186,
+        "AIA_AR_sample|P3": 2175,
+        "AIA_AR_sample|P4": 2162,
+        "HMI_AR_sample|P0": 2087,
+        "HMI_AR_sample|P1": 2087,
+        "HMI_AR_sample|P2": 2085,
+        "HMI_AR_sample|P3": 2080,
+        "HMI_AR_sample|P4": 2063,
+        "CME_C2_sample|P0": 7607,
+        "CME_C2_sample|P1": 7606,
+        "CME_C2_sample|P2": 7603,
+        "CME_C2_sample|P3": 7580,
+        "CME_C2_sample|P4": 7530,
+        "EPB_seg_sample|P0": 964,
+        "EPB_seg_sample|P1": 955,
+        "EPB_seg_sample|P2": 935,
+        "EPB_seg_sample|P3": 909,
+        "EPB_seg_sample|P4": 871,
+        "DMSP_SSUSI|P0": 194,
+        "DMSP_SSUSI|P1": 192,
+        "DMSP_SSUSI|P2": 184,
+        "DMSP_SSUSI|P3": 181,
+        "DMSP_SSUSI|P4": 172,
+        "ULF_sample|P0": 4262,
+        "ULF_sample|P1": 4031,
+        "ULF_sample|P2": 3403,
+        "ULF_sample|P3": 2499,
+        "ULF_sample|P4": 2521
+      },
+      "model_sha256": "fa545e2c1a370e61ed1373f1b7634a426567057bb01e791ebfa6674c99833f2b",
+      "seconds": 4.86648462805897
+    }
+  ],
+  "feature_count": 566,
+  "feature_source_sha256": "07cb9c11703a7956ebcffeac143ea7f15d2b67983eb3da1720a41f5e0c164157",
+  "forbidden_inputs": [
+    "target",
+    "truth_valid",
+    "tier",
+    "split",
+    "IDs",
+    "data/label/source paths",
+    "clean comparisons",
+    "P0 counterpart"
+  ],
+  "additional_CME_input": "current label image_time only, label SHA verified",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

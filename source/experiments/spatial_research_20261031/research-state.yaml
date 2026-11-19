@@ -1,0 +1,20 @@
+status: completed_bounded_round
+date: 2026-10-31
+objective: spatial defect detection for P1 and P2-P4
+remote_root: /staff/tangjiarui/OPC/opc-agent/runs/spatial-research-20261031
+device: GPU1
+preserve_service: port8001_GPU0
+budget_minutes: 90
+hypotheses: [dense_unet, frozen_dinov2, frozen_ijepa, resolution_ablation, group_crossfit]
+primary_families: [EPB_seg_sample, DMSP_SSUSI]
+truth: public_clean_derived_technical_proxy_not_expert_truth
+formal_scoring_enabled: false
+completed_fits: 8
+eligible_base_samples: 1623
+tier_records: 7799
+artifact_checks_passed: 386
+P1_spatial_geometry_gap: unresolved
+omission_gap: unresolved
+technical_test_status: exposed_regression
+official_A10_verified: false
+next_priority: native_roi_and_global_proposals_with_real_subtle_localization

@@ -1,0 +1,115 @@
+{
+  "status": "pass",
+  "scope": "Runtime repair and end-to-end execution validation only, narrowed by user; not full DEL acceptance or two independent 12-package rounds",
+  "completedUtc": "2026-11-10T03:48:41.964887+00:00",
+  "imageId": "9dc9faaf070a4e5a98cb0642f6a3d0299a15a17c6a811c3d27d3da23dd97d323",
+  "tag": "localhost/spaceqa-agent:0.6.1-final-r4-20261110",
+  "archiveSha256": "4ed612123e2b97898719e5b3f439c0d910e10726c80fb5d270e6666e02b18a18",
+  "archiveChecksumVerified": true,
+  "loadedIntoEmptyStorage": true,
+  "network": "none",
+  "readOnlyImageAndInput": true,
+  "externalSourceDependencyModelMounts": false,
+  "sharedMemory": "2 GiB",
+  "hardware": "NVIDIA A100-PCIE-40GB; GPU1 on icarus0 and icarus1",
+  "fullPackageRuns": [
+    {
+      "host": "icarus1",
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "audit": {
+        "status": "pass",
+        "runId": "LTH-20261110T031732Z-c55ef24b",
+        "samples": 1838,
+        "findings": 518,
+        "confirmedSamples": 83,
+        "score": 95.4842219804135,
+        "errors": []
+      },
+      "processExitWaitStatus": [
+        0
+      ],
+      "completedUtc": "2026-11-10T03:40:50.057241+00:00"
+    },
+    {
+      "host": "icarus0",
+      "dirId": "AIA_AR_sample_3mogtggl50",
+      "audit": {
+        "status": "pass",
+        "runId": "LTH-20261110T031743Z-02100d10",
+        "samples": 1838,
+        "findings": 1939,
+        "confirmedSamples": 294,
+        "score": 84.00435255712732,
+        "errors": []
+      },
+      "processExitWaitStatus": [
+        0
+      ],
+      "completedUtc": "2026-11-10T03:44:22.264146+00:00"
+    }
+  ],
+  "cleanStorageSmoke": [
+    {
+      "family": "AIA_AR_sample",
+      "records": 16,
+      "readable": 15,
+      "experts": 21,
+      "wallSeconds": 71.85735249519348,
+      "runId": "LTH-20261110T034436Z-8eb62f84",
+      "status": "pass",
+      "receipt": "repair_20261110/runtime_candidate/acceptance/clean_final_AIA_AR_sample.json"
+    },
+    {
+      "family": "EPB_seg_sample",
+      "records": 16,
+      "readable": 15,
+      "experts": 21,
+      "wallSeconds": 56.69907212257385,
+      "runId": "LTH-20261110T034547Z-445e0435",
+      "status": "pass",
+      "receipt": "repair_20261110/runtime_candidate/acceptance/clean_final_EPB_seg_sample.json"
+    },
+    {
+      "family": "ULF_sample",
+      "records": 16,
+      "readable": 15,
+      "experts": 21,
+      "wallSeconds": 55.29712772369385,
+      "runId": "LTH-20261110T034644Z-7d73a2ea",
+      "status": "pass",
+      "receipt": "repair_20261110/runtime_candidate/acceptance/clean_final_ULF_sample.json"
+    }
+  ],
+  "initialFailures": "full_repeat_failed_shm: default shared memory caused DataLoader bus error; retained and rerun from raw inputs",
+  "stoppedScope": "No further full-package queue or two-round comparison; no candidate report/PPT publication after scope change",
+  "sourceTests": {
+    "passed": 256,
+    "log": "repair_20261110/unittest_release3.log"
+  },
+  "offlineDockerfileRebuild": {
+    "command": [
+      "podman",
+      "--root",
+      "/tmp/spaceqa-rootless-20261102/storage",
+      "--runroot",
+      "/tmp/spaceqa-rootless-20261102/runroot",
+      "--storage-driver=vfs",
+      "--storage-opt",
+      "vfs.ignore_chown_errors=true",
+      "--cgroup-manager=cgroupfs",
+      "--events-backend=file",
+      "--runtime=/staff/tangjiarui/OPC/compact_release_20261107/build/runtime/crun",
+      "build",
+      "--network=none",
+      "--pull-never",
+      "-t",
+      "localhost/spaceqa-agent:dev-rebuild-validation-20261110",
+      "-f",
+      "/staff/tangjiarui/OPC/LTH团队-SpaceQA智能体/image/Dockerfile",
+      "/staff/tangjiarui/OPC/LTH团队-SpaceQA智能体"
+    ],
+    "returncode": 0,
+    "seconds": 102.23607110977173,
+    "scope": "Offline development rebuild from frozen R4 base; independent validation tag; not the published runtime image"
+  }
+}

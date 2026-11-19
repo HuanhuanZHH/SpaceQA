@@ -1,0 +1,1244 @@
+{
+  "status": "pass",
+  "readOnly": true,
+  "auditedAt": "2026-11-05T05:55:17.036778+00:00",
+  "checks": 57910,
+  "packageCount": 12,
+  "totals": {
+    "totalSamples": 24782,
+    "freshImageForwards": 10332,
+    "confirmedSamples": 1690,
+    "candidateOnlySamples": 1872,
+    "foundSamples": 3562,
+    "missingDataSamples": 272,
+    "csvTimeDomainsRead": 0,
+    "csvNumericAxesRead": 1479
+  },
+  "perClass": {
+    "L0-01": {
+      "confirmedSamples": 272,
+      "candidateSamples": 0,
+      "foundSamples": 272,
+      "locatedSamples": 272,
+      "sampleOnlyCandidateSamples": 0
+    },
+    "L2-G": {
+      "confirmedSamples": 0,
+      "candidateSamples": 207,
+      "foundSamples": 207,
+      "locatedSamples": 188,
+      "sampleOnlyCandidateSamples": 19
+    },
+    "L2-P": {
+      "confirmedSamples": 1260,
+      "candidateSamples": 46,
+      "foundSamples": 1306,
+      "locatedSamples": 1306,
+      "sampleOnlyCandidateSamples": 0
+    },
+    "L2-T": {
+      "confirmedSamples": 0,
+      "candidateSamples": 1433,
+      "foundSamples": 1433,
+      "locatedSamples": 1433,
+      "sampleOnlyCandidateSamples": 0
+    },
+    "L2-F": {
+      "confirmedSamples": 255,
+      "candidateSamples": 0,
+      "foundSamples": 255,
+      "locatedSamples": 255,
+      "sampleOnlyCandidateSamples": 0
+    },
+    "L3-06": {
+      "confirmedSamples": 0,
+      "candidateSamples": 803,
+      "foundSamples": 803,
+      "locatedSamples": 212,
+      "sampleOnlyCandidateSamples": 591
+    },
+    "L3-07": {
+      "confirmedSamples": 0,
+      "candidateSamples": 321,
+      "foundSamples": 321,
+      "locatedSamples": 207,
+      "sampleOnlyCandidateSamples": 114
+    },
+    "L3-MIS": {
+      "confirmedSamples": 0,
+      "candidateSamples": 576,
+      "foundSamples": 576,
+      "locatedSamples": 174,
+      "sampleOnlyCandidateSamples": 402
+    }
+  },
+  "packages": [
+    {
+      "package": "AIA_AR_sample_3mogtggl50",
+      "sourceHashes": {
+        "samples.jsonl": "563c08e63309a5bfb945f1c54254a10cd7d9d56cfbf332b0b3a448dc4bb0f14a",
+        "predictions.jsonl": "ab2f057bdbb4b793cf5c4e40c315379d3e9cade7bd249be11f0521d64003c0b1",
+        "scorecard.json": "ae939958cff6f712e7b825ac29a5cb549a3dc859998e6b31434a26ebfeac02a6",
+        "regions.jsonl": "c63a2083a54284623c137a1c5dbd890588c3488e110a7b174e2f49dc86dbaad8",
+        "coverage.json": "5691158f8c712c3f846b817474f22a846aa943501690362a12ad200dbd7b642a"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 1826,
+        "expectedReadableImageSamples": 1826,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 96.90346478391439,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 12,
+          "locatedSamples": 12,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 12,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 68,
+          "locatedSamples": 63,
+          "locatedCandidateSamples": 63,
+          "sampleOnlyCandidateSamples": 5,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 282,
+          "locatedSamples": 282,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 282,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 216,
+          "locatedSamples": 15,
+          "locatedCandidateSamples": 15,
+          "sampleOnlyCandidateSamples": 201,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 16,
+          "locatedSamples": 4,
+          "locatedCandidateSamples": 4,
+          "sampleOnlyCandidateSamples": 12,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 192,
+          "locatedSamples": 63,
+          "locatedCandidateSamples": 63,
+          "sampleOnlyCandidateSamples": 129,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "AIA_AR_sample_7qn2pdeube",
+      "sourceHashes": {
+        "samples.jsonl": "7fa7f7344bbbc906f42a5b6bcd1ecdaa922c90f9ae7ecf7ababedaec182f60ea",
+        "predictions.jsonl": "1b80440ae067762f8df8e17d239ff60746197aa17ed7ee52817065e2889cbb95",
+        "scorecard.json": "09cfbac97958905599de5bff8e7021f5bc20c59f2bf05f1c9bad9e2d0ff17638",
+        "regions.jsonl": "8c9f881326ca6513dba3d16816901d2f6423cbb1deb9c53db6d370dd27e079d0",
+        "coverage.json": "eae575047a641a3d590bbd25e954180bbacd634d48b29590bba65bdc191cd507"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 1835,
+        "expectedReadableImageSamples": 1835,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 93.75127600925043,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 3,
+          "locatedSamples": 3,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 3,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 17,
+          "locatedSamples": 16,
+          "locatedCandidateSamples": 16,
+          "sampleOnlyCandidateSamples": 1,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 80,
+          "locatedSamples": 80,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 80,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 87,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 87,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 1,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 1,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 22,
+          "locatedSamples": 11,
+          "locatedCandidateSamples": 11,
+          "sampleOnlyCandidateSamples": 11,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "AIA_AR_sample_p86y2cz08y",
+      "sourceHashes": {
+        "samples.jsonl": "e441c4e484cdc265795cb200773457e9d6472bdb222e0f5c347f2f5dd9eea9b7",
+        "predictions.jsonl": "abe3bf76013b511cdc8a2413a132ab8bf638803cbe62cce93497174cf664977b",
+        "scorecard.json": "0b3723d62708881a8124036302ed500a72fa0fc25de0e494af56bc99481284be",
+        "regions.jsonl": "08e604b63e4de4f2342a0f09387bff72cc1e57611e769bc3a0c20a5a11fe8887",
+        "coverage.json": "546cfc4cbb4cb4ef974da84e307bd6c4ff62ee6fc44dbe98123907a01b44f474"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 1817,
+        "expectedReadableImageSamples": 1817,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 98.87653804197907,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 21,
+          "locatedSamples": 21,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 21,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 122,
+          "locatedSamples": 109,
+          "locatedCandidateSamples": 109,
+          "sampleOnlyCandidateSamples": 13,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 424,
+          "locatedSamples": 424,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 424,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 256,
+          "locatedSamples": 21,
+          "locatedCandidateSamples": 21,
+          "sampleOnlyCandidateSamples": 235,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 48,
+          "locatedSamples": 8,
+          "locatedCandidateSamples": 8,
+          "sampleOnlyCandidateSamples": 40,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 362,
+          "locatedSamples": 100,
+          "locatedCandidateSamples": 100,
+          "sampleOnlyCandidateSamples": 262,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "AIA_AR_sample_z4h764sf2d",
+      "sourceHashes": {
+        "samples.jsonl": "c4bec499f359b3aa38962266d30aec1b1c6d880c1faa8e534281a68c671e7048",
+        "predictions.jsonl": "8203a190749e26b4764cc66db21a608fbca76790323e4566325a195bc4e1801b",
+        "scorecard.json": "870a15e600173fe2d8e863d2ecbbc27c0f95514cc83665f30b09116a9b2ddd44",
+        "regions.jsonl": "c4c59620d9394eae0e6abc6111f5c7f1014daabd21d83dd699dec5401740eac9",
+        "coverage.json": "97b4360aadfda09437356661ac642872016769b156cf400d9f57f51c1d228c2d"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 1838,
+        "expectedReadableImageSamples": 1838,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 93.6851035868749,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 68,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 68,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "EPB_seg_sample_fbbqy66u2d",
+      "sourceHashes": {
+        "samples.jsonl": "4e1d654cc586ca4ea0787806cde440680330c61df1b9c3a25cb1f7922feb9249",
+        "predictions.jsonl": "9723bbefe6097839fc8f31b41074de2b411d84aa704cb6716b9895a7a376c3e3",
+        "scorecard.json": "f7e5bfaa055c3484a1380540ae24ba3f2966510cbef80fa1601b3c0718f55683",
+        "regions.jsonl": "22adce88215cc7c2698f55ead043e78e0d0adc98878d1d0709878d7148b046ad",
+        "coverage.json": "4198e7f562d8a44f08dda0443c750543a4a8779f39c2a9945aeba77d5cf93175"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 770,
+        "expectedReadableImageSamples": 770,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 6.246208013035357,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 18,
+          "locatedSamples": 18,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 18,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 82,
+          "locatedSamples": 82,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 82,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 42,
+          "locatedSamples": 42,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 42,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 32,
+          "locatedSamples": 32,
+          "locatedCandidateSamples": 32,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 50,
+          "locatedSamples": 38,
+          "locatedCandidateSamples": 38,
+          "sampleOnlyCandidateSamples": 12,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "EPB_seg_sample_mc4t7fou91",
+      "sourceHashes": {
+        "samples.jsonl": "7de56d91d81d7df699d334fe12aa41aeecb94b76d8791d272f1e682416adb01c",
+        "predictions.jsonl": "2084640662846a72a5dfad8aa220683dfbf03af3fc8b2739af13105d4c07514b",
+        "scorecard.json": "ed5618fac6fc763fc525e3919d36d3a763fa28ad2a45bd1de3f52401524887f4",
+        "regions.jsonl": "c7d4227d1bb91c4e9f5033e63fe52b2b70a8cf822b2ea11f78de40adc3dead5d",
+        "coverage.json": "8035dc60e6ec83026f753126e0d73301475f4e7886718e0f5c1296dafcdef696"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 737,
+        "expectedReadableImageSamples": 737,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 5.96008379990235,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 50,
+          "locatedSamples": 50,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 50,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 174,
+          "locatedSamples": 174,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 174,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 78,
+          "locatedSamples": 78,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 78,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 63,
+          "locatedSamples": 63,
+          "locatedCandidateSamples": 63,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 85,
+          "locatedSamples": 68,
+          "locatedCandidateSamples": 68,
+          "sampleOnlyCandidateSamples": 17,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "EPB_seg_sample_qmn05l7r91",
+      "sourceHashes": {
+        "samples.jsonl": "dde1bd630ab30320b2ecd863a9e59f89f074d35bdc8c9aac2e157262ebfccb31",
+        "predictions.jsonl": "8d4937b5820ab9d0939f663967dfa12e43d297568d424ed0273650ea3d954da6",
+        "scorecard.json": "d49838e8adc753b26fc0ef1ffa90523af4deefea81892980e54e0a24f62278d0",
+        "regions.jsonl": "52b156859898315e3629d0e5293f1054da9bd9b86b2157343c16ae7282aae760",
+        "coverage.json": "7be79ea76101a8654cb8142a98388f71f7601dfae54852a77ce99d95055b6e8f"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 788,
+        "expectedReadableImageSamples": 788,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 6.45813956623897,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "EPB_seg_sample_z443g9dgh7",
+      "sourceHashes": {
+        "samples.jsonl": "4c076848d23cb2271ea3203f7f5ee665acb984d694a15f5f5afb3fa761eb8d47",
+        "predictions.jsonl": "378da43108fab95983f94f665ba4a8b43ce8558e499c1e59c107980b935f284c",
+        "scorecard.json": "9da83bf96e17d848d3259e104faafe910adda50698859c257fa8a5f3955736b3",
+        "regions.jsonl": "9ba4c4864d065cde9e8a8b1addcbc493c5d98d5a7e80388cf5e6863a15dcea93",
+        "coverage.json": "ae9be5db3e15a47b062f79c2f5b29801d503a7b112a8b662090743743063f008"
+      },
+      "inference": {
+        "status": "complete",
+        "gpu": 1,
+        "actualFreshImageForwards": 721,
+        "expectedReadableImageSamples": 721,
+        "ratio": 1.0,
+        "modelRoute": "no_presence_loss",
+        "batch": 16,
+        "checkpointSha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+        "measuredPackageSeconds": 5.955506532918662,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 66,
+          "locatedSamples": 66,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 66,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 218,
+          "locatedSamples": 218,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 218,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 135,
+          "locatedSamples": 135,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 135,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 81,
+          "locatedSamples": 81,
+          "locatedCandidateSamples": 81,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 121,
+          "locatedSamples": 89,
+          "locatedCandidateSamples": 89,
+          "sampleOnlyCandidateSamples": 32,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "ULF_sample_09b7y3z4hn",
+      "sourceHashes": {
+        "samples.jsonl": "6ef658f13bbdaec7090686e91aabb1397035537ef076c2c323a37639f97bd534",
+        "predictions.jsonl": "869a7031c5235a99a9e1fe415c6d0266f0ba0aaa0599932ebbe482b9e11c2c04",
+        "scorecard.json": "ec406d72536f252ba471665463a78e49af2cab7b87d05c9ecdb60581c7811049",
+        "regions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "coverage.json": "7cd44da9d3a31c05b690f3bfc9227a213a821c7118d584f273ca285f922f4b9c"
+      },
+      "inference": {
+        "status": "not_pixel_task",
+        "gpu": 1,
+        "actualFreshImageForwards": 0,
+        "expectedReadableImageSamples": 0,
+        "ratio": null,
+        "modelRoute": "not_pixel_task",
+        "batch": 16,
+        "checkpointSha256": null,
+        "measuredPackageSeconds": 0.17089983820915222,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "ULF_sample_0yu0mc7d5a",
+      "sourceHashes": {
+        "samples.jsonl": "ea40f7eef63d2e7a3252ac9f5bd39c916fe7fdf0073e5e5805f737c801e51c87",
+        "predictions.jsonl": "4f575598008cf19dedd800674e234bb5a628a6eca11e563b6e0a390ee811a7de",
+        "scorecard.json": "ba91cee53a6e139ac53a43db44d2a90dcc45ed89c8813a1beff8f9c2d178dcaf",
+        "regions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "coverage.json": "e67906cf24f4091087416a246c8567380f5567c34e3dc002c33d4b7ebcd9e7cc"
+      },
+      "inference": {
+        "status": "not_pixel_task",
+        "gpu": 1,
+        "actualFreshImageForwards": 0,
+        "expectedReadableImageSamples": 0,
+        "ratio": null,
+        "modelRoute": "not_pixel_task",
+        "batch": 16,
+        "checkpointSha256": null,
+        "measuredPackageSeconds": 0.16436859965324402,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 55,
+          "locatedSamples": 55,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 55,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 3,
+          "locatedSamples": 3,
+          "locatedCandidateSamples": 3,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 460,
+          "locatedSamples": 460,
+          "locatedCandidateSamples": 460,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "ULF_sample_ta382376ar",
+      "sourceHashes": {
+        "samples.jsonl": "d8f01791ec2e699d06e15333d78531748fbab1b85e3d7c782d8848879a7b8b5b",
+        "predictions.jsonl": "64452abe226d3bc0c4f0c3bbcca11874c7b9c5e222b81bf024c17913f5ac8334",
+        "scorecard.json": "f440c9e8859ec7b6a017b6d99dd84a17d4076ce71cd1e97ecc8f53311d12f2fd",
+        "regions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "coverage.json": "2a86109aaab1e1b1403c08789e6c1ff6e81b82fdf3a32915e2ed2d06b97f0a6b"
+      },
+      "inference": {
+        "status": "not_pixel_task",
+        "gpu": 1,
+        "actualFreshImageForwards": 0,
+        "expectedReadableImageSamples": 0,
+        "ratio": null,
+        "modelRoute": "not_pixel_task",
+        "batch": 16,
+        "checkpointSha256": null,
+        "measuredPackageSeconds": 0.1685826019383967,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 11,
+          "locatedSamples": 11,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 11,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 30,
+          "locatedSamples": 30,
+          "locatedCandidateSamples": 30,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 445,
+          "locatedSamples": 445,
+          "locatedCandidateSamples": 445,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    },
+    {
+      "package": "ULF_sample_xfnogkdey9",
+      "sourceHashes": {
+        "samples.jsonl": "6087d7b13f6ad4bb5b05f92b7b53da75c00b438005780a6f9838dacbb771e5f0",
+        "predictions.jsonl": "81c3c83112fff488ec7de0fb5b5105ef61753fcfa6b57f93962cc0da30337adf",
+        "scorecard.json": "fe949f9d2f201b20aa764ef5c913702eeee77708a46cd6d1acb471bb9f5cbf1f",
+        "regions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "coverage.json": "38a179e1a1cdc9c1d26d1456e82f8881796ea393f9f6e006a80133128c5cecbc"
+      },
+      "inference": {
+        "status": "not_pixel_task",
+        "gpu": 1,
+        "actualFreshImageForwards": 0,
+        "expectedReadableImageSamples": 0,
+        "ratio": null,
+        "modelRoute": "not_pixel_task",
+        "batch": 16,
+        "checkpointSha256": null,
+        "measuredPackageSeconds": 0.16275671683251858,
+        "input": "raw RGB only; annotations enter comparison after neural forward; ULF is CSV and not a pixel model task",
+        "oldRegionCacheReused": false
+      },
+      "localization": {
+        "L0-01": {
+          "classifiedPositiveSamples": 36,
+          "locatedSamples": 36,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 36,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-G": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-P": {
+          "classifiedPositiveSamples": 13,
+          "locatedSamples": 13,
+          "locatedCandidateSamples": 13,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-T": {
+          "classifiedPositiveSamples": 528,
+          "locatedSamples": 528,
+          "locatedCandidateSamples": 528,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L2-F": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-06": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-07": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        },
+        "L3-MIS": {
+          "classifiedPositiveSamples": 0,
+          "locatedSamples": 0,
+          "locatedCandidateSamples": 0,
+          "sampleOnlyCandidateSamples": 0,
+          "directRuleConfirmedSamples": 0,
+          "scientificVisualAdjudicatedSamples": 0,
+          "locationMeaning": "file/field direct checks or explicitly questioned input/model region/interval; location itself does not establish truth"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "No independent official defect truth was available; these are source integrity and stage/coverage checks, not accuracy certification."
+  ]
+}

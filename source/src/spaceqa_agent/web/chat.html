@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>SpaceQA · 数据集质量助手</title>
+  <link rel="stylesheet" href="/chat.css">
+  <script src="/locale.js" defer></script>
+  <script src="/chat.js" defer></script>
+</head>
+<body data-locale-source="zh">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="数据集对话">
+      <a class="brand" id="home-link" href="/chat.html?new=1" aria-label="返回SpaceQA欢迎首页，保留历史会话">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3v26M3 16h26M6.8 6.8l18.4 18.4M6.8 25.2L25.2 6.8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="6.5" fill="currentColor"/></svg>
+        <span>SpaceQA<span class="brand-caption">空间科学数据质量助手</span></span>
+      </a>
+      <button class="new-button" id="new-session" type="button"><span aria-hidden="true">＋</span> 新建数据集对话</button>
+      <div class="sidebar-section"><span>最近的数据集</span><span id="session-count"></span><button class="icon-button" id="refresh-sessions" type="button" aria-label="刷新会话列表" title="刷新列表">↻</button></div>
+      <nav class="session-list" id="session-list" aria-label="会话列表"><p class="sidebar-empty">正在连接你的工作空间…</p></nav>
+      <div class="sidebar-footer"><span class="connection-dot" id="connection-dot"></span><span id="connection-label">连接中</span><a href="/index.html" title="打开原分析工作台">分析工作台 ↗</a></div>
+    </aside>
+    <button class="sidebar-scrim" id="sidebar-scrim" type="button" aria-label="关闭侧边栏" hidden></button>
+    <main class="main-panel">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="mobile-menu" type="button" aria-label="打开会话列表" aria-expanded="false">☰</button>
+        <div class="conversation-heading"><h1 id="conversation-title">数据集质量助手</h1><span id="conversation-subtitle">让每一个质量结论都有据可查</span></div>
+        <div class="topbar-actions"><div class="model-badge" id="model-badge" title="模型连接状态"><span class="model-dot"></span><span id="model-label">分析工作空间</span></div><button class="language-button topbar-language" id="language-toggle" type="button" title="切换到英文">EN</button></div>
+      </header>
+      <div class="notice" id="notice" role="status" hidden><span id="notice-text"></span><button id="notice-action" type="button" hidden>重试</button><button class="notice-close" id="notice-close" type="button" aria-label="关闭提示">×</button></div>
+      <div class="conversation-scroll" id="conversation-scroll">
+        <div class="dataset-drop-hint" id="dataset-drop-hint" hidden><span>＋</span><strong>放下数据集，立即查看已有分析</strong><small>保留报告来源和原始评价时间</small></div>
+        <section class="welcome" id="welcome">
+          <div class="welcome-kicker">SPACE SCIENCE · DATA QUALITY</div>
+          <svg class="welcome-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4v40M4 24h40M9.8 9.8l28.4 28.4M9.8 38.2L38.2 9.8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="8" fill="currentColor"/></svg>
+          <h2>从一个数据集，<br>开始一次有依据的检查。</h2>
+          <p>选择服务器上的数据包，或上传 ZIP。助手会自动分析数据与标注，你可以继续追问问题、位置和判断依据。</p>
+          <div class="welcome-actions"><button class="primary-button" id="welcome-select" type="button">浏览服务器文件夹 <span aria-hidden="true">↗</span></button><button class="text-button" id="welcome-upload" type="button">上传 ZIP 文件</button></div>
+          <button class="demo-dataset" id="demo-dataset" type="button" draggable="true" hidden><span class="demo-folder" aria-hidden="true">▱</span><span class="demo-copy"><strong id="demo-title">示例数据集</strong><span id="demo-description"></span><small id="demo-name"></small></span><span class="demo-drag-label">拖入对话区<br>或点击添加 ↗</span></button>
+          <div class="suggestions" aria-label="你可以这样提问">
+            <button type="button" data-suggestion="请总结这个数据集的质量，区分已确认问题和待复核疑点。"><span class="suggestion-symbol" aria-hidden="true">◎</span><strong>整体质量怎么样？</strong><span>查看检出比例与主要问题</span></button>
+            <button type="button" data-suggestion="哪些样本存在问题？请给出可核查的位置和证据。"><span class="suggestion-symbol" aria-hidden="true">⌖</span><strong>问题具体在哪里？</strong><span>回到样本、标注和图像区域</span></button>
+            <button type="button" data-suggestion="哪些结论已被证据确认，哪些还需要人工复核？"><span class="suggestion-symbol" aria-hidden="true">◇</span><strong>这些结论可靠吗？</strong><span>了解检查范围与判断依据</span></button>
+          </div>
+          <div class="welcome-note">原始数据与输入标注保留原貌。模型候选与已确认缺陷分别展示。</div>
+        </section>
+        <div class="conversation-content" id="conversation-content" hidden>
+          <nav class="workspace-tabs" aria-label="数据集分析视图">
+            <button id="view-overview" class="active" type="button" aria-pressed="true">质量总览</button>
+            <button id="view-cases" type="button" aria-pressed="false">案例库 <span id="case-count-badge"></span></button>
+            <button id="view-conversation" type="button" aria-pressed="false">对话追问</button>
+            <a href="/roadshow-ranking.html" style="align-self:center;margin-left:auto;padding:8px 14px;color:#315ead;font-size:13px;text-decoration:none">路演12包排序 ↗</a>
+          </nav>
+          <p id="workspace-source" class="workspace-source"></p>
+          <section class="live-run-panel" aria-label="现场整包重评"><div class="live-run-heading"><div><span class="eyebrow">LIVE EVALUATION</span><h3>真实执行，逐步可见</h3><p>规则核验 · 八类融合 · 独立图像定位 · 六维报告</p></div><button id="live-run-button" class="primary-button" type="button">现场重评整包 ▶</button></div><div id="live-run-status" hidden></div><p class="live-scope">EPB / AIA路演包支持现场重评；21个上游专家复用已校验预测缓存。其余包可载入已有报告或执行常规分析。</p></section>
+          <section id="insights-view" class="insights-view" aria-label="八类缺陷质量画像">
+            <div class="section-heading"><div><span class="eyebrow">从总体到证据</span><h2>这个数据集，质量如何？</h2></div><button id="insights-refresh" class="text-button" type="button">刷新结果 ↻</button></div>
+            <div id="insights-loading" class="panel-empty">正在读取八类缺陷统计…</div>
+            <div id="insights-content" hidden>
+              <div id="insight-metrics" class="insight-metrics"></div>
+              <section class="pollution-panel" aria-label="八类污染指数与排序依据">
+                <div class="section-heading compact"><div><h3>八类污染指数</h3><p>按概率阈值累计，指数越低越好；同一样本可在多个类别中重复计入。</p></div><span id="pollution-total" class="subtle-tag">未生成</span></div>
+                <div id="pollution-summary" class="pollution-summary"></div>
+                <div class="axis-table-wrap"><table class="axis-table pollution-table"><thead><tr><th>缺陷</th><th>阈值</th><th>超阈值样本</th><th>概率和</th><th>污染指数贡献</th><th>证据说明</th></tr></thead><tbody id="pollution-table-body"></tbody></table></div>
+                <p id="pollution-note" class="portrait-note"></p>
+              </section>
+              <section class="tier-browser" aria-label="九档样本档案">
+                <div class="section-heading compact"><div><h3>九档样本档案</h3><p>先看样本属于哪一档，再点入查看文件名、图像或 CSV 波形。一个样本可以同时进入多个缺陷档。</p></div></div>
+                <div id="tier-cards" class="tier-cards"></div>
+                <div id="tier-sample-panel" class="tier-sample-panel" hidden>
+                  <div class="tier-sample-heading"><div><strong id="tier-sample-title">样本列表</strong><span id="tier-sample-caption"></span></div><button id="tier-sample-close" class="text-button" type="button">收起</button></div>
+                  <div id="tier-sample-list" class="tier-sample-grid"></div>
+                  <div class="case-pagination"><button id="tier-prev" class="secondary-button" type="button" disabled>← 上一页</button><span id="tier-page-label"></span><button id="tier-next" class="secondary-button" type="button" disabled>下一页 →</button></div>
+                </div>
+              </section>
+              <div class="quality-portrait">
+                <div class="portrait-heading"><div><h3>八类检出画像分</h3><p>0–100分，越高越好</p></div><button id="download-radar" class="text-button" type="button">下载八维图 SVG ↓</button></div>
+                <div id="quality-radar" class="quality-radar" aria-label="八维质量雷达图"></div>
+                <div class="radar-legend"><span><i class="legend-confirmed"></i>检出画像（规则＋模型）</span><span><i class="legend-all"></i>仅已确认问题（参考）</span><span><i class="legend-unknown"></i>不适用或未覆盖：不补分</span></div>
+                <p id="radar-formula" class="portrait-note"></p>
+              </div>
+              <div class="section-heading compact"><div><h3>逐类统计与证据</h3><p>点击任一类，进入对应案例。不同缺陷可出现在同一样本。</p></div><button id="show-all-cases" class="text-button" type="button">浏览全部案例 →</button></div>
+              <div class="axis-table-wrap"><table class="axis-table"><thead><tr><th>缺陷类型</th><th>已确认</th><th>仅候选</th><th>检出画像分</th><th>执行与覆盖</th><th><span class="sr-only">操作</span></th></tr></thead><tbody id="axis-table-body"></tbody></table></div>
+              <details class="dimension-details" open><summary>六维评价规范与检查覆盖 <span>与八类缺陷分别展示</span></summary><div id="six-dimension-grid" class="six-dimension-grid"></div><div id="coverage-explanation" class="coverage-explanation"></div></details>
+              <details class="dimension-details"><summary>定位容差与专家融合审计 <span>只在有独立参考时计命中</span></summary><div id="localization-policy" class="coverage-explanation"></div><div id="expert-audit" class="coverage-gaps"></div></details>
+              <details class="dimension-details"><summary>为什么有些检查无法判定？ <span>查看原因与下一步</span></summary><div id="coverage-gaps" class="coverage-gaps"></div></details>
+              <details class="demo-guide"><summary>录屏演示指引 <span>四步展示完整链路</span></summary><ol><li>查看八类画像，说明问题数量、分数与检查范围。</li><li>点击缺陷类别，筛选已确认问题与待复核候选。</li><li>打开案例，核对原图、输入标注、定位与逐案分析。</li><li>点击大模型解释或进入对话，追问判断依据并导出报告。</li></ol></details>
+              <div id="overview-export" class="evidence-links"></div>
+            </div>
+          </section>
+          <section id="cases-view" class="cases-view" aria-label="问题案例库" hidden>
+            <div class="section-heading"><div><span class="eyebrow">每一个判断，都回到样本</span><h2 id="cases-title">问题案例库</h2></div><button id="cases-refresh" class="text-button" type="button">刷新 ↻</button></div>
+            <div class="case-filters"><label><span class="sr-only">缺陷类型</span><select id="case-defect-filter"><option value="">全部缺陷类型</option></select></label><label><span class="sr-only">确认状态</span><select id="case-stage-filter"><option value="">全部状态</option><option value="confirmed">已确认问题</option><option value="candidate">待复核候选</option></select></label><label class="case-search"><span aria-hidden="true">⌕</span><input id="case-search" type="search" placeholder="搜索样本或判断依据…" maxlength="100" aria-label="搜索案例"></label></div>
+            <p id="case-results-caption" class="case-results-caption">正在读取案例…</p>
+            <div id="case-list" class="case-grid"></div>
+            <div class="case-pagination"><button id="cases-prev" class="secondary-button" type="button" disabled>← 上一页</button><span id="case-page-label"></span><button id="cases-next" class="secondary-button" type="button" disabled>下一页 →</button></div>
+          </section>
+          <section id="conversation-view" aria-label="与质量助手对话" hidden>
+          <section class="analysis-panel" id="analysis-panel" aria-label="分析进度" hidden>
+            <div class="analysis-heading"><span class="analysis-icon" id="analysis-icon" aria-hidden="true">◌</span><div><strong id="analysis-title">正在准备分析</strong><p id="analysis-phase"></p></div><span class="elapsed" id="analysis-elapsed"></span></div>
+            <div class="analysis-source" id="analysis-source" hidden></div>
+            <div class="progress-meta"><span id="progress-count"></span><span id="progress-percent"></span></div>
+            <div class="progress-track" id="analysis-progress" role="progressbar" aria-label="数据集分析进度"><span id="analysis-progress-fill"></span></div>
+            <details class="tool-details" id="tool-details"><summary><span>查看检查步骤</span><span class="steps-count" id="steps-count"></span></summary><ol id="analysis-steps"></ol></details>
+            <button class="retry-analysis text-button" id="retry-analysis" type="button" hidden>重新分析此数据集 ↻</button>
+          </section>
+          <div class="messages" id="messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+          <div class="conversation-placeholder" id="conversation-placeholder" hidden>正在读取会话…</div>
+          </section>
+        </div>
+      </div>
+      <footer class="composer-area">
+        <form class="composer" id="message-form">
+          <label class="sr-only" for="message-input">向数据质量助手提问</label>
+          <textarea id="message-input" rows="1" maxlength="8000" placeholder="选择数据集后，追问它的质量、问题与证据…" disabled></textarea>
+          <div class="composer-bottom"><button class="attach-button" id="composer-attach" type="button" aria-label="添加数据集" title="选择或上传数据集">＋</button><span class="composer-hint" id="composer-hint">每个数据集保留一段独立对话</span><button class="send-button" id="send-message" type="submit" aria-label="发送消息" disabled><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 15V5m0 0L5.5 9.5M10 5l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+        </form>
+        <p class="composer-footnote">分数与数量来自实际检查结果；模型疑点需结合定位证据复核。</p>
+      </footer>
+    </main>
+  </div>
+  <dialog class="dataset-dialog" id="dataset-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-heading"><div><span class="eyebrow">开始新的检查</span><h2 id="dialog-title">添加一个数据集</h2></div><button class="icon-button" id="dialog-close" type="button" aria-label="关闭数据集选择窗口">×</button></div>
+    <div class="dialog-tabs" role="tablist" aria-label="数据来源"><button class="active" id="tab-existing" type="button" role="tab" aria-controls="panel-existing" aria-selected="true">服务器文件夹</button><button id="tab-upload" type="button" role="tab" aria-controls="panel-upload" aria-selected="false">上传 ZIP</button></div>
+    <section id="panel-existing" role="tabpanel" aria-labelledby="tab-existing">
+      <div class="folder-location"><span class="server-label">服务器</span><nav class="folder-breadcrumbs" id="folder-breadcrumbs" aria-label="服务器目录路径"></nav><button class="icon-button" id="refresh-folders" type="button" aria-label="刷新当前目录">↻</button></div>
+      <div class="dataset-filters"><label class="dataset-search"><span aria-hidden="true">⌕</span><input id="dataset-search" type="search" placeholder="筛选当前目录…" aria-label="筛选当前目录文件夹"></label><label class="sr-only" for="family-filter">筛选数据类型</label><select id="family-filter"><option value="">全部类型</option></select></div>
+      <div class="folder-column-head"><span>名称</span><span>数据类型 / 内容</span></div>
+      <div class="dataset-list folder-list" id="dataset-list" aria-live="polite"><p class="dialog-empty">正在读取服务器文件夹…</p></div>
+      <div class="folder-selection"><div><strong id="selected-folder-label">选择一个数据集文件夹</strong><small id="selected-folder-description">浏览服务器目录，找到想要查看的数据包</small></div><button class="primary-button" id="add-selected-dataset" type="button" disabled>添加并查看分析</button></div>
+      <p class="dialog-note">优先读取已有评价报告，可立即查看结论；报告时间与来源会明确显示。无已有报告时自动启动分析。大型数据包无需下载到本机。</p>
+    </section>
+    <section id="panel-upload" role="tabpanel" aria-labelledby="tab-upload" hidden>
+      <input class="sr-only" id="zip-input" type="file" accept=".zip,application/zip">
+      <button class="drop-zone" id="drop-zone" type="button"><span class="upload-glyph" aria-hidden="true">↥</span><strong>拖放 ZIP 到这里</strong><span>或点击选择文件</span><small>数据文件与标注一起打包 · 一次上传一个数据集</small></button>
+      <div class="upload-progress" id="upload-progress" hidden><div><strong id="upload-name"></strong><button class="text-button" id="cancel-upload" type="button">取消上传</button></div><p id="upload-status"></p><div class="progress-track" id="upload-progress-track" role="progressbar" aria-label="ZIP上传进度"><span id="upload-progress-fill"></span></div></div>
+      <p class="dialog-note">上传完成后自动建立会话并分析。大包请使用服务器数据包，避免经浏览器重复传输。</p>
+    </section>
+    <p class="dialog-error" id="dialog-error" role="alert" hidden></p>
+  </dialog>
+  <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-dialog-title">
+    <div class="case-dialog-header"><div><span id="case-dialog-kicker" class="eyebrow">样本证据</span><h2 id="case-dialog-title">案例详情</h2></div><button id="case-dialog-close" class="icon-button" type="button" aria-label="关闭案例详情">×</button></div>
+    <div id="case-detail-loading" class="panel-empty">正在读取样本与定位…</div>
+    <div id="case-detail-content" hidden>
+      <div id="case-detail-badges" class="case-detail-badges"></div>
+      <div class="case-detail-layout">
+        <div class="case-visual-column">
+          <div class="preview-toolbar"><strong id="case-preview-title">原始样本</strong><label><input id="toggle-input-annotations" type="checkbox" checked> 输入标注</label><label><input id="toggle-defect-location" type="checkbox" checked> 问题定位</label></div>
+          <div id="case-visual" class="case-visual"></div>
+          <p id="case-visual-caption" class="case-visual-caption"></p>
+          <div id="case-measurements" class="case-measurements"></div>
+          <details class="label-details"><summary>查看原始 JSON 标注 <span id="case-label-name"></span></summary><pre id="case-label-json"></pre></details>
+          <details class="label-details"><summary>规则、定位与版本记录</summary><pre id="case-evidence-json"></pre></details>
+        </div>
+        <div class="case-analysis-column"><div class="analysis-card"><span class="eyebrow">逐案分析 · 来自实际证据</span><h3>为什么判定这个问题？</h3><div id="case-analysis-sections"></div></div><div class="case-llm-panel"><div><strong>用自然语言解释这个案例</strong><p>只解释当前样本的已有证据，保留确认与待复核状态。</p></div><button id="case-explain" class="primary-button" type="button">让大模型解释此案例 ✳</button><div id="case-llm-answer" class="case-llm-answer" hidden></div><span id="case-llm-source" class="case-llm-source"></span><button id="case-ask-chat" class="text-button" type="button">到对话中继续追问 →</button></div></div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

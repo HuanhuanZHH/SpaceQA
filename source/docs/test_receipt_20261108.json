@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-08",
+  "workspace": "spaceqa-agent",
+  "commands": [
+    {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "status": "pass",
+      "tests": 238,
+      "passed": 238,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 4,
+      "elapsedSeconds": 91.982,
+      "skipReasons": [
+        "Windows symlink privilege unavailable",
+        "optional scipy localizer dependency unavailable"
+      ]
+    },
+    {
+      "command": "python -m compileall -q src scripts tools tests deploy",
+      "status": "pass"
+    },
+    {
+      "command": "python scripts/reproduce.py verify --manifest configs/source_manifest_20261108_final.json",
+      "status": "pass",
+      "manifestFiles": 484,
+      "frozenScientificSourceChecks": 17,
+      "confusionMetricChecks": 3960
+    },
+    {
+      "command": "python -m unittest discover -s tests -v (opc-agent legacy prototype)",
+      "status": "pass",
+      "tests": 35,
+      "passed": 35
+    },
+    {
+      "command": "python benchmark/benchmark_candidates.py (opc-agent legacy prototype)",
+      "status": "pass",
+      "candidates": {
+        "A_schema_pairing": {"f1": 0.2, "elapsedSeconds": 0.4897},
+        "B_single_package_rules": {"f1": 0.6154, "elapsedSeconds": 0.1761},
+        "C_rules_plus_sibling_diff": {"f1": 0.9412, "elapsedSeconds": 0.2322}
+      }
+    }
+  ],
+  "scope": "CPU/local regression and historical package evidence; not official hidden-set metrics or A10 acceptance"
+}

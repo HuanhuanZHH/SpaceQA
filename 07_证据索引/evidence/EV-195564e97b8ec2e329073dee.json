@@ -1,0 +1,111 @@
+{
+  "evidenceId": "EV-195564e97b8ec2e329073dee",
+  "findingId": "REFRESH-52b6e832bed0d5e2baa0",
+  "sourceCard": "04_评分卡/ULF_sample_ta382376ar.json",
+  "sourceFinding": {
+    "findingId": "REFRESH-52b6e832bed0d5e2baa0",
+    "checkId": "C33",
+    "ruleVersion": "fresh-localization-20261105-v1",
+    "dirId": "ULF_sample_ta382376ar",
+    "sampleId": "ULF_sample_ta382376ar:4nZ1gyQ8sBDPskpBwAmJ.csv.json",
+    "defectType": "L2-P",
+    "sourceKind": "within_annotation_consistency",
+    "detail": "事件明细类别'ULF-X9'与该标注声明的event_types['Pi2']不一致；保留为类别候选，不自动证明物理类别错误。",
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/4nZ1gyQ8sBDPskpBwAmJ.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/4nZ1gyQ8sBDPskpBwAmJ.csv",
+      "annotation_pointer": "/ulf_event_annotation/matched_events/0/kind"
+    },
+    "measurements": {
+      "actual": "ULF-X9",
+      "allowed": [
+        "Pi2"
+      ],
+      "contract_source": "within-current-label event_types summary, not independent scientific truth"
+    },
+    "severity": null,
+    "confidence": null,
+    "fusion_class_probability": 0.9948965311050415,
+    "weighted_burden": 0.9948965311050415,
+    "candidate_trigger": "model_category_positive_and_summary_conflict",
+    "scientific_confirmation": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "scoreEligible": false,
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/4nZ1gyQ8sBDPskpBwAmJ.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/4nZ1gyQ8sBDPskpBwAmJ.csv",
+      "label_sha256": "065d5d5ea8929dd2c6c5f310542a2df10039a0aadc506196ab44b5b8ba8f6b4b"
+    },
+    "probability": null,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:33.126576+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "identifier": "id-008032",
+      "fileName": "4nZ1gyQ8sBDPskpBwAmJ.csv",
+      "labelCreateTime": "2026-09-29T08:01:59.052880Z",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "4nZ1gyQ8sBDPskpBwAmJ.csv",
+      "relativePath": ".",
+      "modality": "timeseries",
+      "fileFormat": "csv",
+      "startTime": "2013-11-22T01:00:00Z",
+      "endTime": "2013-11-22T01:59:59Z",
+      "timestamp": "2026-09-29T08:01:59.052888Z",
+      "project": "",
+      "observatoryType": "ground",
+      "observatoryName": "anonymous",
+      "dataType": "geomagnetic_timeseries"
+    },
+    "science_annotation": {
+      "observatory": "anonymous",
+      "network": "anonymous",
+      "instrument": "anonymous",
+      "components": [
+        "H",
+        "D",
+        "Z",
+        "T"
+      ],
+      "sampling_rate_hz": 1,
+      "duration_s": 3600,
+      "n_points": 3600,
+      "units": "nT (H/Z/T), deg (D)",
+      "level": "L1 (raw 1Hz)",
+      "dateObs": "2013-11-22T01:00:00Z"
+    },
+    "ulf_event_annotation": {
+      "has_events": true,
+      "event_count": 1,
+      "event_types": [
+        "Pi2"
+      ],
+      "matched_events": [
+        {
+          "start_dt": "2013-11-22T01:00:00",
+          "end_dt": "2013-11-22T01:10:00",
+          "kind": "ULF-X9",
+          "source": "F006/_entries_p2pi2.jsonl"
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "065d5d5ea8929dd2c6c5f310542a2df10039a0aadc506196ab44b5b8ba8f6b4b",
+  "originalLabelHashMatches": true
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "podman",
+    "--root",
+    "/tmp/spaceqa-rootless-20261102/storage",
+    "--runroot",
+    "/tmp/spaceqa-rootless-20261102/runroot",
+    "--storage-driver=vfs",
+    "--storage-opt",
+    "vfs.ignore_chown_errors=true",
+    "--cgroup-manager=cgroupfs",
+    "--events-backend=file",
+    "--runtime=/staff/tangjiarui/OPC/compact_release_20261107/build/runtime/crun",
+    "build",
+    "--network=none",
+    "--pull-never",
+    "-t",
+    "localhost/spaceqa-agent:dev-rebuild-validation-20261110",
+    "-f",
+    "/staff/tangjiarui/OPC/LTH\u56e2\u961f-SpaceQA\u667a\u80fd\u4f53/image/Dockerfile",
+    "/staff/tangjiarui/OPC/LTH\u56e2\u961f-SpaceQA\u667a\u80fd\u4f53"
+  ],
+  "returncode": 0,
+  "seconds": 102.23607110977173,
+  "scope": "Offline development rebuild from frozen R4 base; independent validation tag; not the published runtime image"
+}

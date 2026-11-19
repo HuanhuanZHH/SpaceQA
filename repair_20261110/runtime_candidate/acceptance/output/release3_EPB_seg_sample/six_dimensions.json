@@ -1,0 +1,1024 @@
+{
+  "version": "six-observation-20261106-v2",
+  "samples": 16,
+  "dimensions": {
+    "completeness": {
+      "id": "completeness",
+      "name": "完整性",
+      "displayScore": 96.875,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "文件与标注可读取",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 32,
+      "scopeChecksApplicable": 32,
+      "scopeCounts": {
+        "pass": 31,
+        "fail": 1
+      },
+      "scoreBounds": [
+        96.875,
+        96.875
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-C1",
+          "name": "引用数据文件存在",
+          "counts": {
+            "pass": 15,
+            "fail": 1
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "completeness",
+              "checkId": "S6-C1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "completeness",
+              "checkId": "S6-C1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            },
+            {
+              "sampleId": "51ffa5c6d27cee60ffd68566f1cfdc63137e53cd6dd8d4fa53e687417ad60894",
+              "dimension": "completeness",
+              "checkId": "S6-C1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "exists": false
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "3c1a254093a3f7d94e11e8db98f85b50a15e864ca0147128ad001a1e38f92900"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-C2",
+          "name": "标注JSON可解析",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "completeness",
+              "checkId": "S6-C2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": "JSON对象解析成功",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "completeness",
+              "checkId": "S6-C2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": "JSON对象解析成功",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        }
+      ],
+      "reason": "文件与标注可读取；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "annotation_quality": {
+      "id": "annotation_quality",
+      "name": "标注质量",
+      "displayScore": 84.375,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "类别、几何及事件时段结构一致性",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 32,
+      "scopeChecksApplicable": 32,
+      "scopeCounts": {
+        "fail": 5,
+        "pass": 27,
+        "not_applicable": 16
+      },
+      "scoreBounds": [
+        84.375,
+        84.375
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-A1",
+          "name": "对象类别符合当前任务词表",
+          "counts": {
+            "fail": 5,
+            "pass": 11
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "actual": [
+                  "__OOV__"
+                ],
+                "allowed": [
+                  "EPB"
+                ]
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "actual": [
+                  "EPB"
+                ],
+                "allowed": [
+                  "EPB"
+                ]
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-A2",
+          "name": "给定几何顶点有限且面积非零",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "objects": 1,
+                "invalid": []
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "objects": 1,
+                "invalid": []
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-A3",
+          "name": "给定事件起止可解析且顺序有效",
+          "counts": {
+            "not_applicable": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前未提供事件时段对象",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前未提供事件时段对象",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        }
+      ],
+      "reason": "类别、几何及事件时段结构一致性；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "sample_correspondence": {
+      "id": "sample_correspondence",
+      "name": "样本对应",
+      "displayScore": 91.48936170212765,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "文件名、引用和尺寸对应",
+      "scopeCheckCoverage": 0.9791666666666666,
+      "scopeChecksCompleted": 47,
+      "scopeChecksApplicable": 48,
+      "scopeCounts": {
+        "pass": 43,
+        "fail": 4,
+        "undetermined": 1
+      },
+      "scoreBounds": [
+        89.58333333333333,
+        91.66666666666667
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-P1",
+          "name": "标注声明文件名与数据文件对应",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "06eG3nQGSKTX2ArnL7Ab.png",
+                "actual": "06eG3nQGSKTX2ArnL7Ab.png"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": "/basic_annotation/fileName"
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "0Cm1GX7hRQeosL4Riphy.png",
+                "actual": "0Cm1GX7hRQeosL4Riphy.png"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": "/basic_annotation/fileName"
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-P2",
+          "name": "登记数据引用可定位到当前包",
+          "counts": {
+            "pass": 15,
+            "fail": 1
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            },
+            {
+              "sampleId": "51ffa5c6d27cee60ffd68566f1cfdc63137e53cd6dd8d4fa53e687417ad60894",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "expected": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.png",
+                "exists": false
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "3c1a254093a3f7d94e11e8db98f85b50a15e864ca0147128ad001a1e38f92900"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-P3",
+          "name": "显式声明尺寸与实测尺寸一致",
+          "counts": {
+            "pass": 12,
+            "undetermined": 1,
+            "fail": 3
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": "声明的整图尺寸与当前PNG头逐字段比较",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": "声明的整图尺寸与当前PNG头逐字段比较",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            },
+            {
+              "sampleId": "e8198410ba68711e18ec6900e451d7a28de75a13ee851a0c28ca8116bb42a5b8",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": "声明的整图尺寸与当前PNG头逐字段比较",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0qksvUM8KKpc1NFl8TOE.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0qksvUM8KKpc1NFl8TOE.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "01155d83a3b1189445806cb03c6564a1047678832f45e7ff2d4f95fd702ddaf4"
+            }
+          ]
+        }
+      ],
+      "reason": "文件名、引用和尺寸对应；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "coverage_distribution": {
+      "id": "coverage_distribution",
+      "name": "覆盖与分布",
+      "displayScore": 100.0,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "已声明数量、类别和时间范围一致性",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 16,
+      "scopeChecksApplicable": 16,
+      "scopeCounts": {
+        "not_applicable": 32,
+        "pass": 16
+      },
+      "scoreBounds": [
+        100.0,
+        100.0
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-D1",
+          "name": "声明对象数量等于实际记录数量",
+          "counts": {
+            "not_applicable": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "无独立声明数量；已统计当前对象数量，不假设期望数量",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "无独立声明数量；已统计当前对象数量，不假设期望数量",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-D2",
+          "name": "声明类别集合与对象类别集合一致",
+          "counts": {
+            "not_applicable": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "无独立声明类别集合；不假定均衡分布",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "无独立声明类别集合；不假定均衡分布",
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-D3",
+          "name": "声明观测起止可解析且顺序有效",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "interval": [
+                  "2014-03-24T23:36:42",
+                  "2014-03-24T23:36:42"
+                ]
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "interval": [
+                  "2022-10-19T00:24:49",
+                  "2022-10-19T00:24:49"
+                ]
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        }
+      ],
+      "reason": "已声明数量、类别和时间范围一致性；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "documentation_provenance": {
+      "id": "documentation_provenance",
+      "name": "文档与来源追溯",
+      "displayScore": 100.0,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "标注头、版本与源文件追溯",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 80,
+      "scopeChecksApplicable": 80,
+      "scopeCounts": {
+        "pass": 80
+      },
+      "scoreBounds": [
+        100.0,
+        100.0
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-T1",
+          "name": "标注头记录文件名",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "06eG3nQGSKTX2ArnL7Ab.png"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": "/label_header/fileName"
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "0Cm1GX7hRQeosL4Riphy.png"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": "/label_header/fileName"
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T2",
+          "name": "标注版本可定位",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "V0.0.0.1"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": "/label_header/labelVersion"
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "V0.0.0.1"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": "/label_header/labelVersion"
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T3",
+          "name": "标注生成时间可解析",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "2026-03-16 12:03:30"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": "/label_header"
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "2026-03-16 12:03:30"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": "/label_header"
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T4",
+          "name": "标注生成方法已记录",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T4",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "manual"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": "/label_header/annotationMethod"
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T4",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "manual"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": "/label_header/annotationMethod"
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T5",
+          "name": "当前标注SHA256与登记值一致",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T5",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121",
+                "actual": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T5",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614",
+                "actual": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        }
+      ],
+      "reason": "标注头、版本与源文件追溯；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "usage_conditions": {
+      "id": "usage_conditions",
+      "name": "使用条件",
+      "displayScore": 97.91666666666667,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "离线检查工具的技术接入条件",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 48,
+      "scopeChecksApplicable": 48,
+      "scopeCounts": {
+        "pass": 47,
+        "fail": 1
+      },
+      "scoreBounds": [
+        97.91666666666667,
+        97.91666666666667
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-U1",
+          "name": "当前数据格式符合图像/时序输入约定",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "extension": ".png",
+                "scope": "离线质量检查工具接入"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "extension": ".png",
+                "scope": "离线质量检查工具接入"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-U2",
+          "name": "数据头可读取并识别",
+          "counts": {
+            "pass": 15,
+            "fail": 1
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "data_present": true,
+                "header_readable": true,
+                "scope": "文件头，不等于全量像素科学审查"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "data_present": true,
+                "header_readable": true,
+                "scope": "文件头，不等于全量像素科学审查"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            },
+            {
+              "sampleId": "51ffa5c6d27cee60ffd68566f1cfdc63137e53cd6dd8d4fa53e687417ad60894",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "data_present": false,
+                "header_readable": false,
+                "scope": "文件头，不等于全量像素科学审查"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0G8B2f_ZmmPLYB1mDsjV.png",
+                "annotation_pointer": null
+              },
+              "labelSha256": "3c1a254093a3f7d94e11e8db98f85b50a15e864ca0147128ad001a1e38f92900"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-U3",
+          "name": "模态声明与当前文件类型一致",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "56482719b0b2314b79838f4533f762c3bda6028be896b452bc3f99531e9b1b2b",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "image",
+                "actual": "image"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/06eG3nQGSKTX2ArnL7Ab.png",
+                "annotation_pointer": "/basic_annotation/modality"
+              },
+              "labelSha256": "c19c7f12ad1543567adab838827377914472011731667cc3ef7a9e260d645121"
+            },
+            {
+              "sampleId": "1b5df6f821be8db524643d65465dd1b69418c36e4e98cb333a057c8386ed0657",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "image",
+                "actual": "image"
+              },
+              "locator": {
+                "label_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.json",
+                "data_path": "/input/EPB_seg_sample_z443g9dgh7/0Cm1GX7hRQeosL4Riphy.png",
+                "annotation_pointer": "/basic_annotation/modality"
+              },
+              "labelSha256": "d2fc6950658d3c6fd189d927cb37bfada47cb8fbf5bb7794b7b134cfada9f614"
+            }
+          ]
+        }
+      ],
+      "reason": "离线检查工具的技术接入条件；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    }
+  },
+  "formula": "100 * pass / (pass + fail); 证据未决保留在适用分母及区间中，不计为通过或失败；不适用单列",
+  "scope": "六维技术观测画像；区别于完整科学质量分和官方成绩",
+  "formalEvaluation": {
+    "eligible": false,
+    "score": null,
+    "blockers": [
+      "存在证据未决检查；未决项仍保留在适用分母",
+      "未在输入清单中声明已提供规范、字段字典、用途和可比性材料"
+    ],
+    "rule": "六维正式分仅在六维适用检查完成、规范材料齐全且实现与规范一致时计算"
+  },
+  "limitations": [
+    "覆盖分布只核对声明与记录的一致性，不证明总体代表性。",
+    "匿名化身份不扣分；追溯分仅核验标注头、版本及文件链路，不认证原始观测来源。",
+    "使用条件分仅针对离线质量检查工具的技术接入，不确认许可、再分发权或特定科学用途。"
+  ],
+  "runId": "LTH-20261110T024219Z-eafd2294"
+}

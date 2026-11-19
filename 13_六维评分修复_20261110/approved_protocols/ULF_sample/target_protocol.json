@@ -1,0 +1,119 @@
+{
+  "status": "evidence_incomplete_weights_approved",
+  "dirId": "ULF_sample_xfnogkdey9",
+  "datasetId": "ULF_sample",
+  "datasetVersion": "v34",
+  "intendedUse": null,
+  "sourceRunId": "LTH-20261110T034644Z-7d73a2ea",
+  "evidenceSource": {
+    "path": "/staff/tangjiarui/OPC/LTH团队-SpaceQA智能体/repair_20261110/runtime_candidate/acceptance/output/clean_final_ULF_sample/predictions.jsonl",
+    "sha256": "35a2b445268204d9beb591c0d7b98c5e95bc8cc3e89f188b3ebb9090ca66c10c"
+  },
+  "checks": {
+    "C41": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Approved required classes and minimum unique sample count per class; trusted class table"
+    },
+    "C42": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Approved required time/spatial/channel cells and sampling plan; trusted measurements"
+    },
+    "C43": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Independent target distribution, fixed bins and validated TV threshold"
+    },
+    "C44": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Actual split assignment and source grouping, or an explicit approved no-split scope"
+    },
+    "C45": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": "Local byte-consistency check against actual prior run input fingerprints; not publisher identity or independent scientific provenance",
+      "records": "integrity_records.json",
+      "weight": 1,
+      "missingRequirement": "Independent publisher identity and lineage remain unverified; generated records only test consistency against the preceding real input snapshot",
+      "datasetId": "ULF_sample",
+      "datasetVersion": "v34",
+      "scope": "observed_local_integrity_only"
+    },
+    "C46": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Reviewed lineage/annotation-method evidence with reviewer and hashes"
+    },
+    "C47": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Actual declared/measured values and justified numeric tolerances"
+    },
+    "C48": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Authorized use/license evidence and actual reviewer; do not infer open licensing"
+    },
+    "C49": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": null,
+      "records": null,
+      "weight": 1,
+      "missingRequirement": "Approved intended use, mandatory conditions and verified supporting evidence"
+    },
+    "C50": {
+      "version": "sixdim-target-draft-20261110",
+      "basis": "Actual decoding of every registered data and label file in this source run; includes missing files in denominator; not a permission assessment",
+      "records": "access_records.json",
+      "weight": 1,
+      "missingRequirement": "Local decoding measurements only; do not infer legal permission or scientific fitness",
+      "scope": "observed_local_decoding_only"
+    }
+  },
+  "composite": {
+    "version": "sixdim-equal-approved-20261110",
+    "weights": {
+      "completeness": 1,
+      "annotationQuality": 1,
+      "sampleCorrespondence": 1,
+      "coverageDistribution": 1,
+      "traceability": 1,
+      "usageConditions": 1
+    },
+    "basis": "Project policy: retain equal dimension importance from the legacy arithmetic mean. Literature informs dimension definitions, not a prescribed numeric vector. Require all six dimensions determinate; do not inherit exclusion of unknown dimensions or critical caps.",
+    "approvedBy": "项目用户（本次对话明确批准）",
+    "approvalStatus": "approved",
+    "approvalEvidence": {
+      "type": "user_message",
+      "quote": "权重之前根据文献和我工作记忆弄过，就批准",
+      "date": "2026-11-10"
+    },
+    "recordedAt": "2026-11-10T04:44:25.066782+00:00",
+    "sourceReferences": [
+      {
+        "path": "source/spec/quality_spec.yaml",
+        "sha256": "68445c2a9d25028d8f8aaeff424b70f0ec27d2e1d2ddebe269ff69c9391846ae"
+      },
+      {
+        "path": "source/src/spaceqa_agent/engine.py",
+        "sha256": "de405655d62d32644544f0560693be2fcf402828230588f712b236a9177f6d59"
+      }
+    ]
+  },
+  "scopeWarning": "A document draft is not approval. Local integrity/decoding observations do not fill missing semantic truth, representative distribution, publisher provenance or license evidence."
+}

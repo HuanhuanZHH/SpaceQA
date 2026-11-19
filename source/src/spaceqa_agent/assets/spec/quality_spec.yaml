@@ -1,0 +1,444 @@
+{
+  "specVersion": "1.0.0",
+  "ruleVersion": "2026.10.31-7",
+  "authoritative": true,
+  "statuses": [
+    "通过",
+    "不通过",
+    "待判定",
+    "不适用"
+  ],
+  "dimensions": [
+    {
+      "id": "completeness",
+      "name": "完整性",
+      "checks": [
+        "C01",
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "id": "annotationQuality",
+      "name": "标注质量",
+      "checks": [
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C09",
+        "C10"
+      ]
+    },
+    {
+      "id": "sampleCorrespondence",
+      "name": "样本对应关系",
+      "checks": [
+        "C02",
+        "C03",
+        "C05",
+        "C06"
+      ]
+    },
+    {
+      "id": "coverageDistribution",
+      "name": "覆盖与分布",
+      "checks": [
+        "C08",
+        "C10"
+      ]
+    },
+    {
+      "id": "traceability",
+      "name": "文档与来源追溯",
+      "checks": [
+        "C11"
+      ]
+    },
+    {
+      "id": "usageConditions",
+      "name": "使用条件",
+      "checks": [
+        "C12"
+      ]
+    }
+  ],
+  "aggregation": {
+    "formulaVersion": "1.0.0",
+    "checkScore": "For every confirmed failure in a dimension, ratio = affectedScope.ratio when numeric, otherwise 1/defaultAffectedDenominator. penalty = min(singleFindingPenaltyCap, 100 * ratio * criticalMultiplier), where criticalMultiplier applies only when criticality is 关键. dimensionScore = max(0, 100 - sum(penalty)).",
+    "singleFindingPenaltyCap": 25.0,
+    "criticalMultiplier": 2.0,
+    "criticalCap": 59.0,
+    "criticalRatioSlope": 10.0,
+    "defaultAffectedDenominator": "dataFileCount + labelFileCount, lower-bounded at 1 and recorded in each scorecard.scoringInputs",
+    "dimensionScore": "Use findings whose checkId maps to the dimension and is enabled. If no completed or no determined check exists, score=null. Otherwise use checkScore. pending creates range [score * completedCheckCount / relevantCheckCount, score].",
+    "totalScore": "Arithmetic mean of non-null dimension scores. If confirmed critical failures exist, criticalAffectedRatio is the sum of their affected ratios using the same default fallback, capped at 1. criticalCeiling=max(0, criticalCap-criticalRatioSlope*criticalAffectedRatio), and totalScore=min(mean, criticalCeiling).",
+    "ranking": "totalScore desc, critical defect count asc, datasetId asc",
+    "uncomputable": "null and excluded; never imputed as 0 or 100"
+  },
+  "pollutionIndex": {
+    "formula": "100 * sum(probability_i,c for probability_i,c >= threshold_c) / N",
+    "unit": "sample-level probability density points",
+    "thresholds": {
+      "L0-01": 0.5,
+      "L2-G": 0.5,
+      "L2-P": 0.5,
+      "L2-T": 0.5,
+      "L2-F": 0.5,
+      "L3-06": 0.5,
+      "L3-07": 0.5,
+      "L3-MIS": 0.5
+    },
+    "overlapPolicy": "A sample may contribute to more than one defect class; class contributions are not mutually exclusive.",
+    "ranking": "pollutionIndex ascending; genuine ties remain tied and directory order is display-only",
+    "interpretation": "Model/rule observation. Without independent truth it is not official pollution rate, precision, recall or F1. Deterministic confirmed findings use probability 1.0 for this diagnostic only.",
+    "missingProbability": "Retain the sample in N and report missingProbabilitySamples; never treat missing probability as zero."
+  },
+  "localizationTolerance": {
+    "status": "project_default_not_official_unless_overridden",
+    "referenceRequirement": "A locator is a confirmed hit only against an independent reference; without one it remains candidate.",
+    "bbox": {
+      "hitRule": "IoU >= 0.50 OR normalized center distance <= 0.05",
+      "iouThreshold": 0.5,
+      "normalizedCenterDistanceThreshold": 0.05
+    },
+    "polygon": {
+      "iouThreshold": 0.5,
+      "boundaryHausdorffPixel": 3.0,
+      "geometryNote": "The stdlib fallback uses polygon bounding boxes; exact polygon IoU requires the optional geometry implementation."
+    },
+    "timeInterval": {
+      "endpointToleranceSeconds": 2.0,
+      "overlapRatioThreshold": 0.5
+    },
+    "metadata": {
+      "relativeDimensionError": 0.02
+    }
+  },
+  "expertOutlierPolicy": {
+    "method": "median_mad",
+    "zThreshold": 3.5,
+    "minimumExperts": 3,
+    "aggregate": "trimmed_mean",
+    "recordExcludedExperts": true,
+    "fallback": "If fewer than minimumExperts or MAD is zero, retain all finite outputs and record the fallback.",
+    "reproducible": true
+  },
+  "criticalDefects": [
+    "FILE_CORRUPT",
+    "JSON_INVALID",
+    "L0-01",
+    "L0-03",
+    "LABEL_REFERENCE_MISSING"
+  ],
+  "tolerances": {
+    "polygonBoundsPixel": 0,
+    "meanVertexDisplacementPixel": 0.5,
+    "relativeAreaError": 0.02,
+    "timeOffsetSecond": 0
+  },
+  "scope": "Nested data/label and flat PNG/CSV plus JSON packages; image, event, segmentation, rectangle, and timeseries annotations; sibling quality versions sharing stable filenames and event identifiers",
+  "limitedBoundary": "Semantic error confirmation requires a unique explicitly declared clean/P0 sibling. Geometry/count/coverage differences on nonidentical images require validated content alignment and remain pending without it. Unchanged ULF metadata contradicting the raw data are retained as attribution-unresolved diagnostics. L0-01 and L0-03 share the same published observable definition; missing-reference findings retain both candidate codes.",
+  "typeCorrespondence": [
+    {
+      "dataType": "AIA/HMI/CME",
+      "datasetType": "image-event annotation",
+      "dimensions": [
+        "completeness",
+        "annotationQuality",
+        "sampleCorrespondence",
+        "coverageDistribution",
+        "traceability",
+        "usageConditions"
+      ],
+      "defects": [
+        "L0-01",
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "checks": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "scope": "PNG/JPEG plus JSON annotation; stable sample identifier and declared clean/P0 sibling when semantic comparison is claimed",
+      "limitedBoundary": "Changed pixels or absent independent reference keep semantic geometry/count conclusions pending",
+      "notApplicable": []
+    },
+    {
+      "dataType": "EPB",
+      "datasetType": "segmentation annotation",
+      "dimensions": [
+        "completeness",
+        "annotationQuality",
+        "sampleCorrespondence",
+        "coverageDistribution",
+        "traceability",
+        "usageConditions"
+      ],
+      "defects": [
+        "L0-01",
+        "L2-G",
+        "L2-P",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "checks": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "scope": "Image plus polygon/mask JSON; polygon coordinates must be in the declared image coordinate system",
+      "limitedBoundary": "A rectangle supplied by the source is retained as a rectangle; it is not silently converted into a predicted polygon",
+      "notApplicable": [
+        "C07: no event start/end time field in the segmentation contract"
+      ]
+    },
+    {
+      "dataType": "DMSP",
+      "datasetType": "image-event annotation",
+      "dimensions": [
+        "completeness",
+        "annotationQuality",
+        "sampleCorrespondence",
+        "coverageDistribution",
+        "traceability",
+        "usageConditions"
+      ],
+      "defects": [
+        "L0-01",
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "checks": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "scope": "Image plus event JSON; event identifiers and timestamps are required for cross-tier comparisons",
+      "limitedBoundary": "Anonymized names do not establish station identity or scientific correctness",
+      "notApplicable": []
+    },
+    {
+      "dataType": "ULF",
+      "datasetType": "CSV time series plus event JSON",
+      "dimensions": [
+        "completeness",
+        "annotationQuality",
+        "sampleCorrespondence",
+        "coverageDistribution",
+        "traceability",
+        "usageConditions"
+      ],
+      "defects": [
+        "L0-01",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "checks": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "scope": "CSV numeric channels and event intervals; raw cadence and coverage are measured before semantic claims",
+      "limitedBoundary": "Without a complete field dictionary, an unchanged metadata contradiction is attribution-unresolved",
+      "notApplicable": [
+        "C05: geometric boundary comparison is not applicable to scalar time series"
+      ]
+    }
+  ],
+  "checkBoundaries": [
+    {
+      "checkId": "C01",
+      "defectType": "L0-01",
+      "trigger": "referenced data file is absent",
+      "edgeState": "不通过",
+      "basis": "file path and hash inventory"
+    },
+    {
+      "checkId": "C02",
+      "defectType": "L0-01/L0-03",
+      "trigger": "label-to-data reference cannot be resolved",
+      "edgeState": "待判定 when the published code is ambiguous",
+      "basis": "paired path and identifier lookup"
+    },
+    {
+      "checkId": "C03",
+      "defectType": "sample correspondence",
+      "trigger": "orphan or duplicate references",
+      "edgeState": "不通过",
+      "basis": "one-to-one pairing table"
+    },
+    {
+      "checkId": "C04",
+      "defectType": "L2-P",
+      "trigger": "declared class violates the applicable data contract",
+      "edgeState": "不通过 or 待判定 without a class dictionary",
+      "basis": "JSON pointer and contract"
+    },
+    {
+      "checkId": "C05",
+      "defectType": "L2-G/L3-MIS",
+      "trigger": "geometry or coverage can be compared in one coordinate system",
+      "edgeState": "待判定 without independent reference",
+      "basis": "pixel/mask comparison"
+    },
+    {
+      "checkId": "C06",
+      "defectType": "L2-F",
+      "trigger": "declared shape/size disagrees with the source",
+      "edgeState": "不通过",
+      "basis": "metadata versus measured dimensions"
+    },
+    {
+      "checkId": "C07",
+      "defectType": "L2-T",
+      "trigger": "event start/end values are parseable",
+      "edgeState": "不通过 or 不适用 by contract",
+      "basis": "time order and tolerance"
+    },
+    {
+      "checkId": "C08",
+      "defectType": "coverageDistribution",
+      "trigger": "class/event/time coverage is measurable",
+      "edgeState": "通过 with measured denominator",
+      "basis": "coverage statistics"
+    },
+    {
+      "checkId": "C09",
+      "defectType": "L3-06/L3-07",
+      "trigger": "independent clean/reference or validated content alignment exists",
+      "edgeState": "待判定 otherwise",
+      "basis": "one-to-one instance matching"
+    },
+    {
+      "checkId": "C10",
+      "defectType": "L3-MIS",
+      "trigger": "reference and target share a valid alignment",
+      "edgeState": "待判定 without alignment",
+      "basis": "area/interval coverage difference"
+    },
+    {
+      "checkId": "C11",
+      "defectType": "traceability",
+      "trigger": "documentation and provenance materials are supplied",
+      "edgeState": "待判定 when absent",
+      "basis": "document/version/hash chain"
+    },
+    {
+      "checkId": "C12",
+      "defectType": "usageConditions",
+      "trigger": "usage, permission and comparison conditions are declared",
+      "edgeState": "待判定 when absent",
+      "basis": "declared usage contract"
+    }
+  ],
+  "notApplicableMatrix": [
+    {
+      "checkId": "C05",
+      "datasetTypes": [
+        "CSV time series plus event JSON"
+      ],
+      "notApplicable": true,
+      "reason": "no geometric image boundary exists"
+    },
+    {
+      "checkId": "C07",
+      "datasetTypes": [
+        "segmentation annotation"
+      ],
+      "notApplicable": true,
+      "reason": "no event endpoint field is declared"
+    },
+    {
+      "checkId": "C04",
+      "datasetTypes": [
+        "all"
+      ],
+      "notApplicable": false,
+      "reason": "class contract or explicit missing dictionary must be reported"
+    }
+  ],
+  "scopeBoundary": {
+    "supportedDataTypes": [
+      "AIA",
+      "HMI",
+      "CME",
+      "EPB",
+      "DMSP",
+      "ULF"
+    ],
+    "requiredMaterials": [
+      "data files",
+      "JSON/CSV labels",
+      "declared dimensions or cadence",
+      "provenance/usage documents when available"
+    ],
+    "excludedClaims": [
+      "automatic repair",
+      "downstream training quality",
+      "instrument calibration",
+      "physical noise causation",
+      "cross-source physical consistency"
+    ],
+    "statusWhenBoundaryHit": "待判定 with missing material and next action; never remove an applicable check from the denominator"
+  },
+  "consistencyAudit": {
+    "dimensionsCovered": true,
+    "everyDefectMapped": true,
+    "everyCheckRegistered": true,
+    "fourStatusesDefined": true,
+    "lastReviewed": "2026-11-08",
+    "implementationReference": "spaceqa_agent.quality_ledger + localization_metrics + pollution_metrics + expert_robustness"
+  }
+}

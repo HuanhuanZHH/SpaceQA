@@ -1,0 +1,769 @@
+{
+  "version": "DEL4-executable-20261110-v2",
+  "checks": [
+    {
+      "checkId": "C31",
+      "defectType": "L0-01",
+      "name": "数据文件缺失",
+      "object": "样本及对象定位",
+      "criterion": "当前标注引用的数据路径不存在；按样本去重。存在只证明该项通过。",
+      "threshold": {
+        "value": null,
+        "basis": "不存在性布尔判据"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "文件存在性为确定性布尔判据，不由模型候选或置信度决定；存在只证明该机械检查项通过。",
+      "programRole": "按来源记录保留文件缺失规则确认及证据位置，再按样本去重计分；本次未重查生产源码函数实现。",
+      "dimensionIds": [
+        "completeness",
+        "sampleCorrespondence"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 272,
+      "currentCandidateRecords": 0,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "布尔不存在性判据，不设数值容差。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C31",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C32",
+      "defectType": "L2-G",
+      "name": "边界与位置偏差",
+      "object": "样本及对象定位",
+      "criterion": "图像边界/位置差异需独立参考及坐标对齐；尚无冻结科学阈值，保持待判定。",
+      "threshold": {
+        "value": null,
+        "basis": "无经独立验证的通用科学阈值"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "产生待复核候选；模型置信度不等于科学真实性或缺陷严重程度。",
+      "programRole": "保留新运行冻结状态，按样本去重、计分和排序。",
+      "dimensionIds": [
+        "annotationQuality"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 0,
+      "currentCandidateRecords": 552,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "未冻结通用科学容差；候选筛查阈值不作为科学确认标准。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C32",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C33",
+      "defectType": "L2-P",
+      "name": "类别标注错误",
+      "object": "样本及对象定位",
+      "criterion": "恢复原始类别词表契约：集合外类别按原始账本确认计分；属于规则契约判断，不代表独立科学错类核验。",
+      "threshold": {
+        "value": null,
+        "ruleCondition": "声明类别不属于冻结任务词表allowedLabels",
+        "contractTolerance": {
+          "allowedOutOfVocabularyCount": 0,
+          "unit": "category_code"
+        },
+        "basis": "当前词表契约精确比较，不容许集合外类别；这不是科学错类阈值，科学确认仍缺冻结的通用阈值及独立参考。"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "词表规则确认与模型科学候选分开：模型或一致性检查可提示候选，但不能独立确认科学错类。",
+      "programRole": "按来源记录保留原始任务词表契约的确定性确认，集合外类别进入规则问题；科学类别是否错误仍需独立参考。具体生产函数待版本绑定，本次不伪称重新实现或核验。",
+      "dimensionIds": [
+        "annotationQuality"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 3340,
+      "currentCandidateRecords": 50,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "词表契约按约定类别编码精确比较，集合外类别容许数为0；科学语义错类另需独立参考，不将规则确认升级为科学确认。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C33",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C34",
+      "defectType": "L2-T",
+      "name": "时段起止时刻抖动",
+      "object": "样本及对象定位",
+      "criterion": "时间差异需明确时间字段语义及独立事件参考；尚无冻结科学阈值。",
+      "threshold": {
+        "value": null,
+        "basis": "无经独立验证的通用科学阈值"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "产生待复核候选；模型置信度不等于科学真实性或缺陷严重程度。",
+      "programRole": "保留新运行冻结状态，按样本去重、计分和排序。",
+      "dimensionIds": [
+        "annotationQuality"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 0,
+      "currentCandidateRecords": 1531,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "未冻结通用科学容差；候选筛查阈值不作为科学确认标准。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C34",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C35",
+      "defectType": "L2-F",
+      "name": "元数据尺寸矛盾",
+      "object": "样本及对象定位",
+      "criterion": "标签声明图像宽高与实际图像头不相等；容差0像素。CSV或没有声明尺寸字段时不适用。",
+      "threshold": {
+        "value": 0,
+        "unit": "pixel",
+        "basis": "声明尺寸必须相等"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "声明整图整数宽高与实际图像头的一致性为确定性技术判据，不由模型候选或置信度决定。",
+      "programRole": "按来源记录保留尺寸规则确认及声明/实际值，容差0像素，再按样本去重计分；本次未重查生产源码函数实现。",
+      "dimensionIds": [
+        "annotationQuality",
+        "sampleCorrespondence"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 255,
+      "currentCandidateRecords": 0,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "0像素；只比较声明整图尺寸与实际图像头，不是配准或定位容差。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C35",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C36",
+      "defectType": "L3-06",
+      "name": "漏标",
+      "object": "样本及对象定位",
+      "criterion": "漏标检测为模型候选；需可见性、对象匹配及独立参考确认。",
+      "threshold": {
+        "value": null,
+        "basis": "无经独立验证的通用科学阈值"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "产生待复核候选；模型置信度不等于科学真实性或缺陷严重程度。",
+      "programRole": "保留新运行冻结状态，按样本去重、计分和排序。",
+      "dimensionIds": [
+        "annotationQuality"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 0,
+      "currentCandidateRecords": 3693,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "未冻结通用科学容差；候选筛查阈值不作为科学确认标准。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C36",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C37",
+      "defectType": "L3-07",
+      "name": "虚标",
+      "object": "样本及对象定位",
+      "criterion": "虚标检测为模型候选；缺参考或未检出不能证明虚标。",
+      "threshold": {
+        "value": null,
+        "basis": "无经独立验证的通用科学阈值"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "产生待复核候选；模型置信度不等于科学真实性或缺陷严重程度。",
+      "programRole": "保留新运行冻结状态，按样本去重、计分和排序。",
+      "dimensionIds": [
+        "annotationQuality"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 0,
+      "currentCandidateRecords": 424,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "未冻结通用科学容差；候选筛查阈值不作为科学确认标准。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C37",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C38",
+      "defectType": "L3-MIS",
+      "name": "覆盖不足或覆盖过度",
+      "object": "样本及对象定位",
+      "criterion": "覆盖差异需独立区域参考；尚无冻结科学阈值。",
+      "threshold": {
+        "value": null,
+        "basis": "无经独立验证的通用科学阈值"
+      },
+      "statusMap": "confirmed + scoreEligible=true进入技术计分；candidate保持verdict=undetermined、scoreEligible=false；类别词表规则确认不等于独立科学核验。",
+      "evidence": "来源运行report/packages/<dirId>/findings.jsonl中的findingId、locator、evidence；保留原始输入路径和哈希核验状态。",
+      "modelRole": "产生待复核候选；模型置信度不等于科学真实性或缺陷严重程度。",
+      "programRole": "保留新运行冻结状态，按样本去重、计分和排序。",
+      "dimensionIds": [
+        "annotationQuality"
+      ],
+      "ruleVersion": "eight-class-ledger-1.0",
+      "implementation": "implemented_evidence_gated",
+      "sourceResult": "/staff/tangjiarui/OPC/package_quality_runs/b_fresh_roadshow12_20261109/report/packages/<dirId>/findings.jsonl",
+      "currentConfirmedRecords": 0,
+      "currentCandidateRecords": 700,
+      "program": "source/src/spaceqa_agent/quality_ledger.py:analyze_sample",
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "aggregationFunction": "quality_ledger.aggregate；对既有状态聚合，不等于在聚合时重新执行原始检查。",
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount",
+      "tolerance": "未冻结通用科学容差；候选筛查阈值不作为科学确认标准。",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C38",
+      "skill": {
+        "id": "current-input-fine-checks",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "registrationStatus": "registered",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "threshold_location": "source/src/spaceqa_agent/quality_ledger.py; model thresholds are frozen_policy.json, not scientific tolerances",
+      "specVersion": "DEL4-executable-20261110-v2"
+    },
+    {
+      "checkId": "C41",
+      "dimension": "coverageDistribution",
+      "name": "声明类别/事件覆盖",
+      "inputs": "发布方目标类别集合与独立认可的类别映射",
+      "metric": "q=已达到最低样本数的必需分层数/必需分层数",
+      "decision": "目标集合、每层n_min、统计单位先冻结；缺层为不通过；没有目标为待判定",
+      "tolerance": "0个未达标必需层；n_min待用途确定，不能按模型预测类别自证",
+      "basis": "R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C41",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "coverageDistribution"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C41 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C42",
+      "dimension": "coverageDistribution",
+      "name": "时空与观测条件覆盖",
+      "inputs": "目标时间区间、空间网格、站点/通道及计划采样",
+      "metric": "q=满足声明覆盖的目标单元数/全部必需目标单元数；连续时间另报有效区间并集/目标区间并集",
+      "decision": "仅按声明采样计划检查；稀疏抽样不能按连续观测要求扣分",
+      "tolerance": "时间/空间栅格来自目标协议；不自动用AIA原生12秒要求稀疏PNG",
+      "basis": "R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C42",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "coverageDistribution"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C42 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C43",
+      "dimension": "coverageDistribution",
+      "name": "分布与代表性",
+      "inputs": "独立目标分布p*及当前分布p，固定分箱",
+      "metric": "报告TV=0.5*sum(abs(p-p*))；候选效用q=1-TV",
+      "decision": "没有目标分布只描述，不判均衡好坏；多轴分别报告，冻结轴权重",
+      "tolerance": "TV通过阈值待外部任务验证；不能把任意0.1当文献标准",
+      "basis": "R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C43",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "coverageDistribution"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C43 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C44",
+      "dimension": "coverageDistribution",
+      "name": "划分独立与重复泄漏",
+      "inputs": "train/val/test清单、事件/来源组标识、文件哈希",
+      "metric": "q=1-跨划分共享组涉及的去重样本数/被检查样本数",
+      "decision": "只有协议要求来源隔离时才能判泄漏；增强版本需按源组核查；无划分任务可不适用",
+      "tolerance": "要求独立时跨划分同源重叠容差0；哈希仅检字节相同，不覆盖全部近重复",
+      "basis": "R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C44",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "coverageDistribution"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C44 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C45",
+      "dimension": "traceability",
+      "name": "数据身份与版本完整性",
+      "inputs": "数据集ID、发布版本、文件清单与哈希",
+      "metric": "q=身份版本及清单校验通过文件数/应检文件数",
+      "decision": "检查应提供材料；缺证据待判定；明确承诺提供而缺失可判文档交付缺陷",
+      "tolerance": "哈希精确一致；匿名ID可接受，不要求公开个人身份",
+      "basis": "R1",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C45",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "traceability"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C45 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C46",
+      "dimension": "traceability",
+      "name": "处理与标注来源链",
+      "inputs": "原始来源→处理→标注→发布的版本、参数、输入输出引用",
+      "metric": "q=全部必需来源字段可验证的记录数/应有来源记录数",
+      "decision": "HEK脱敏ID无法外部回查时允许受控映射；只有auto字段不能认定来源已完备",
+      "tolerance": "必需链环缺失0作为完整性目标；无访问权限则待判定而非造假判断",
+      "basis": "R1,R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C46",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "traceability"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C46 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C47",
+      "dimension": "traceability",
+      "name": "文档与实测一致性",
+      "inputs": "声明格式、样本数、通道、单位、覆盖及实测清单",
+      "metric": "q=核验一致的声明数/应核验声明数",
+      "decision": "文本含糊或测量不可得待判定；依字段精度归一化后比较",
+      "tolerance": "整数与类别精确；浮点按字段分辨率/误差预算，未声明则待校准",
+      "basis": "R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C47",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "traceability"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C47 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C48",
+      "dimension": "usageConditions",
+      "name": "许可与授权链",
+      "inputs": "随包许可、授权主体、用途、期限、再分发限制",
+      "metric": "q=可核验且不冲突的必需授权条款数/必需条款数",
+      "decision": "受限许可不是低质量；无许可不推断可自由使用；权利冲突待人工核实",
+      "tolerance": "条款覆盖目标100%；这是文档完整度，不是法律有效性自动裁决",
+      "basis": "R1",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C48",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "usageConditions"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C48 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C49",
+      "dimension": "usageConditions",
+      "name": "任务适配与受限边界",
+      "inputs": "拟议用途、输入要求、标注定义、排除用途、已验证范围",
+      "metric": "q=有证据满足的用途前置条件数/该用途前置条件数",
+      "decision": "验收/入库/选数分别配置；科学精细分割不得直接用框填充代理证明适配",
+      "tolerance": "按用途契约冻结；不能用质量差作为不适用条件",
+      "basis": "R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C49",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "usageConditions"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C49 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    },
+    {
+      "checkId": "C50",
+      "dimension": "usageConditions",
+      "name": "访问及使用可行性",
+      "inputs": "授权范围内离线读取、格式依赖、保密与清理要求",
+      "metric": "q=实际验证通过的必需使用条件数/必需条件数",
+      "decision": "区分数据可读与评测软件离线运行；不下载或测试超授权资源",
+      "tolerance": "需离线用途时必需依赖可用率100%；仅文档声称不算实测",
+      "basis": "R1,R2",
+      "weight": 1,
+      "weight_basis": "项目拟议等权，仅在维度内；不是文献或官方指定",
+      "implementation": "implemented_evidence_gated",
+      "program": "source/src/spaceqa_agent/formal_checks.py:measure",
+      "threshold_location": "target_protocol.json/checks/C50",
+      "evidence": "版本化来源文件、声明指针、输入清单哈希、确定性测量结果",
+      "log_event": "proposed: check_started/check_finished/check_failed；尚未部署",
+      "status_mapping": {
+        "通过": "证据齐备且符合冻结条件",
+        "不通过": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "待判定": "证据/目标/校准不足、工具失败或检查未实现",
+        "不适用": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "model_role": "可抽取声明和推荐复核；不得独立确认许可、来源真实性或算分",
+      "dimensionIds": [
+        "usageConditions"
+      ],
+      "specVersion": "DEL4-executable-20261110-v2",
+      "productionRuleVersion": "DEL4-executable-20261110-v2",
+      "registrationStatus": "registered",
+      "executedInSourceRun": false,
+      "currentStatus": "undetermined",
+      "currentScore": null,
+      "statusMap": {
+        "pass": "证据齐备且符合冻结条件",
+        "fail": "证据齐备且违反有效契约；明确缺交材料只评价文档义务",
+        "undetermined": "证据/目标/校准不足、工具失败或检查未实现",
+        "not_applicable": "可机械验证的非适用前提，不能依据质量差或缺证据排除"
+      },
+      "programBindingStatus": "verified source binding; scientific evidence gates remain active",
+      "tool": "python -m spaceqa_agent scan --input INPUT --output NEW_OUTPUT --checks C50 --contract target_protocol.json",
+      "skill": {
+        "id": "formal-evidence-gated",
+        "version": "DEL4-executable-20261110-v2"
+      },
+      "logEvent": "started/completed/failed with runId,dirId,checkId,elapsedMs,resourcePeak,tokenUsage,retryCount"
+    }
+  ]
+}

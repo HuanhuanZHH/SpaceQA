@@ -1,0 +1,110 @@
+{
+  "evidenceId": "EV-4a4f4a4de279e8c510dd1733",
+  "findingId": "C31-7ea4349513709b99c03b",
+  "sourceCard": "04_评分卡/ULF_sample_0yu0mc7d5a.json",
+  "sourceFinding": {
+    "findingId": "C31-7ea4349513709b99c03b",
+    "checkId": "C31",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "ULF_sample_0yu0mc7d5a",
+    "sampleId": "ULF_sample_0yu0mc7d5a:cMcdkWXHhq3VDCltSOuJ.csv.json",
+    "defectType": "L0-01",
+    "aliasCodes": [
+      "L0-03"
+    ],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "file",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/091319f73a6cdfadaadf9e68525bf0d1adcb1067938215b2be40b6ac7e60fc3d/ULF_sample_0yu0mc7d5a/cMcdkWXHhq3VDCltSOuJ.csv.json",
+      "annotation_pointer": null,
+      "expected_data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/091319f73a6cdfadaadf9e68525bf0d1adcb1067938215b2be40b6ac7e60fc3d/ULF_sample_0yu0mc7d5a/cMcdkWXHhq3VDCltSOuJ.csv"
+    },
+    "detail": "标注存在，对应数据文件缺失",
+    "severity": {
+      "metric": "missing_file",
+      "value": 1.0,
+      "unit": "file",
+      "normalized": 1.0
+    },
+    "measurements": {},
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/091319f73a6cdfadaadf9e68525bf0d1adcb1067938215b2be40b6ac7e60fc3d/ULF_sample_0yu0mc7d5a/cMcdkWXHhq3VDCltSOuJ.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/091319f73a6cdfadaadf9e68525bf0d1adcb1067938215b2be40b6ac7e60fc3d/ULF_sample_0yu0mc7d5a/cMcdkWXHhq3VDCltSOuJ.csv",
+      "label_sha256": "9ac2a7622c8b2a254542157b74585cec01e98fe878942af6703c54d1a0ce10cd",
+      "data_sha256_from_inventory": null,
+      "data_hash_verification": "fresh input SHA256"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:31.516786+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "identifier": "id-002625",
+      "fileName": "cMcdkWXHhq3VDCltSOuJ.csv",
+      "labelCreateTime": "2026-09-29T08:05:20.319137Z",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "cMcdkWXHhq3VDCltSOuJ.csv",
+      "relativePath": ".",
+      "modality": "timeseries",
+      "fileFormat": "csv",
+      "startTime": "2016-05-17T04:00:00Z",
+      "endTime": "2016-05-17T04:59:59Z",
+      "timestamp": "2026-09-29T08:05:20.319144Z",
+      "project": "",
+      "observatoryType": "ground",
+      "observatoryName": "anonymous",
+      "dataType": "geomagnetic_timeseries"
+    },
+    "science_annotation": {
+      "observatory": "anonymous",
+      "network": "anonymous",
+      "instrument": "anonymous",
+      "components": [
+        "H",
+        "D",
+        "Z",
+        "T"
+      ],
+      "sampling_rate_hz": 1,
+      "duration_s": 3600,
+      "n_points": 3600,
+      "units": "nT (H/Z/T), deg (D)",
+      "level": "L1 (raw 1Hz)",
+      "dateObs": "2016-05-17T04:00:00Z"
+    },
+    "ulf_event_annotation": {
+      "has_events": true,
+      "event_count": 1,
+      "event_types": [
+        "Pi2"
+      ],
+      "matched_events": [
+        {
+          "start_dt": "2016-05-17T04:00:00",
+          "end_dt": "2016-05-17T15:40:00",
+          "kind": "Pi2",
+          "source": "F006/_entries_p2pi2.jsonl"
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "9ac2a7622c8b2a254542157b74585cec01e98fe878942af6703c54d1a0ce10cd",
+  "originalLabelHashMatches": true
+}

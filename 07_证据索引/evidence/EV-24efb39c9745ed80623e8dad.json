@@ -1,0 +1,695 @@
+{
+  "evidenceId": "EV-24efb39c9745ed80623e8dad",
+  "findingId": "C35-62c8de5cf1e4a16e529a",
+  "sourceCard": "04_评分卡/EPB_seg_sample_mc4t7fou91.json",
+  "sourceFinding": {
+    "findingId": "C35-62c8de5cf1e4a16e529a",
+    "checkId": "C35",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "EPB_seg_sample_mc4t7fou91",
+    "sampleId": "EPB_seg_sample_mc4t7fou91:LcQQukNdaoRwlNgZg65y.json",
+    "defectType": "L2-F",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/LcQQukNdaoRwlNgZg65y.json",
+      "annotation_pointer": "/basic_annotation/imgSize"
+    },
+    "detail": "声明尺寸[1024, 512]，PNG实测尺寸[1024, 1024]",
+    "severity": {
+      "metric": "max_relative_dimension_error",
+      "value": 0.5,
+      "unit": "ratio",
+      "normalized": 0.5
+    },
+    "measurements": {
+      "declared": [
+        1024,
+        512
+      ],
+      "actual": [
+        1024,
+        1024
+      ],
+      "max_pixel_error": 512
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/LcQQukNdaoRwlNgZg65y.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/LcQQukNdaoRwlNgZg65y.png",
+      "label_sha256": "82403f6ea0b66808d2acd8b7d4f7ba3bf3264ecc001680d3c7a9b19f60a51ffa",
+      "data_sha256_from_inventory": "41b1e6f29a2bebad8381f721d84d13032e7b139af4bf2b6157971581f03387e3",
+      "data_hash_verification": "fresh input SHA256"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:25.002701+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "LcQQukNdaoRwlNgZg65y.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "LcQQukNdaoRwlNgZg65y.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2014-03-02 00:07:12",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x512 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "EPB",
+            "points": [
+              [
+                279,
+                729
+              ],
+              [
+                278,
+                730
+              ],
+              [
+                277,
+                730
+              ],
+              [
+                276,
+                731
+              ],
+              [
+                275,
+                731
+              ],
+              [
+                274,
+                732
+              ],
+              [
+                273,
+                732
+              ],
+              [
+                272,
+                733
+              ],
+              [
+                271,
+                733
+              ],
+              [
+                270,
+                734
+              ],
+              [
+                269,
+                734
+              ],
+              [
+                268,
+                735
+              ],
+              [
+                265,
+                736
+              ],
+              [
+                263,
+                738
+              ],
+              [
+                262,
+                738
+              ],
+              [
+                262,
+                739
+              ],
+              [
+                258,
+                743
+              ],
+              [
+                258,
+                744
+              ],
+              [
+                257,
+                745
+              ],
+              [
+                257,
+                747
+              ],
+              [
+                256,
+                748
+              ],
+              [
+                256,
+                750
+              ],
+              [
+                255,
+                751
+              ],
+              [
+                255,
+                753
+              ],
+              [
+                254,
+                754
+              ],
+              [
+                254,
+                756
+              ],
+              [
+                252,
+                759
+              ],
+              [
+                252,
+                762
+              ],
+              [
+                251,
+                763
+              ],
+              [
+                251,
+                766
+              ],
+              [
+                250,
+                767
+              ],
+              [
+                250,
+                770
+              ],
+              [
+                249,
+                771
+              ],
+              [
+                249,
+                777
+              ],
+              [
+                250,
+                778
+              ],
+              [
+                250,
+                779
+              ],
+              [
+                251,
+                780
+              ],
+              [
+                251,
+                781
+              ],
+              [
+                252,
+                782
+              ],
+              [
+                252,
+                783
+              ],
+              [
+                253,
+                784
+              ],
+              [
+                253,
+                785
+              ],
+              [
+                256,
+                790
+              ],
+              [
+                256,
+                792
+              ],
+              [
+                258,
+                795
+              ],
+              [
+                258,
+                797
+              ],
+              [
+                259,
+                798
+              ],
+              [
+                259,
+                800
+              ],
+              [
+                260,
+                801
+              ],
+              [
+                260,
+                805
+              ],
+              [
+                261,
+                806
+              ],
+              [
+                261,
+                808
+              ],
+              [
+                262,
+                809
+              ],
+              [
+                263,
+                812
+              ],
+              [
+                270,
+                819
+              ],
+              [
+                270,
+                820
+              ],
+              [
+                274,
+                824
+              ],
+              [
+                274,
+                825
+              ],
+              [
+                276,
+                827
+              ],
+              [
+                276,
+                828
+              ],
+              [
+                278,
+                831
+              ],
+              [
+                278,
+                833
+              ],
+              [
+                279,
+                834
+              ],
+              [
+                279,
+                836
+              ],
+              [
+                280,
+                837
+              ],
+              [
+                280,
+                839
+              ],
+              [
+                288,
+                847
+              ],
+              [
+                288,
+                848
+              ],
+              [
+                289,
+                849
+              ],
+              [
+                289,
+                850
+              ],
+              [
+                290,
+                851
+              ],
+              [
+                290,
+                852
+              ],
+              [
+                291,
+                853
+              ],
+              [
+                292,
+                856
+              ],
+              [
+                297,
+                861
+              ],
+              [
+                298,
+                861
+              ],
+              [
+                299,
+                862
+              ],
+              [
+                300,
+                862
+              ],
+              [
+                302,
+                864
+              ],
+              [
+                303,
+                864
+              ],
+              [
+                305,
+                866
+              ],
+              [
+                305,
+                867
+              ],
+              [
+                308,
+                870
+              ],
+              [
+                308,
+                871
+              ],
+              [
+                309,
+                872
+              ],
+              [
+                310,
+                872
+              ],
+              [
+                311,
+                873
+              ],
+              [
+                315,
+                873
+              ],
+              [
+                316,
+                872
+              ],
+              [
+                317,
+                872
+              ],
+              [
+                319,
+                870
+              ],
+              [
+                319,
+                869
+              ],
+              [
+                320,
+                868
+              ],
+              [
+                320,
+                866
+              ],
+              [
+                321,
+                865
+              ],
+              [
+                321,
+                862
+              ],
+              [
+                322,
+                861
+              ],
+              [
+                322,
+                857
+              ],
+              [
+                323,
+                856
+              ],
+              [
+                323,
+                854
+              ],
+              [
+                322,
+                853
+              ],
+              [
+                322,
+                843
+              ],
+              [
+                321,
+                842
+              ],
+              [
+                321,
+                838
+              ],
+              [
+                319,
+                835
+              ],
+              [
+                319,
+                833
+              ],
+              [
+                318,
+                832
+              ],
+              [
+                318,
+                830
+              ],
+              [
+                316,
+                827
+              ],
+              [
+                316,
+                825
+              ],
+              [
+                315,
+                824
+              ],
+              [
+                315,
+                822
+              ],
+              [
+                314,
+                821
+              ],
+              [
+                314,
+                818
+              ],
+              [
+                313,
+                817
+              ],
+              [
+                313,
+                815
+              ],
+              [
+                312,
+                814
+              ],
+              [
+                312,
+                811
+              ],
+              [
+                311,
+                810
+              ],
+              [
+                311,
+                779
+              ],
+              [
+                310,
+                778
+              ],
+              [
+                310,
+                774
+              ],
+              [
+                309,
+                773
+              ],
+              [
+                309,
+                771
+              ],
+              [
+                306,
+                766
+              ],
+              [
+                306,
+                764
+              ],
+              [
+                305,
+                763
+              ],
+              [
+                305,
+                761
+              ],
+              [
+                304,
+                760
+              ],
+              [
+                304,
+                759
+              ],
+              [
+                303,
+                758
+              ],
+              [
+                303,
+                757
+              ],
+              [
+                300,
+                752
+              ],
+              [
+                300,
+                750
+              ],
+              [
+                299,
+                749
+              ],
+              [
+                299,
+                747
+              ],
+              [
+                298,
+                746
+              ],
+              [
+                298,
+                744
+              ],
+              [
+                297,
+                743
+              ],
+              [
+                296,
+                740
+              ],
+              [
+                293,
+                737
+              ],
+              [
+                290,
+                736
+              ],
+              [
+                288,
+                734
+              ],
+              [
+                287,
+                734
+              ],
+              [
+                282,
+                730
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "LcQQukNdaoRwlNgZg65y.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "28.11203952576278N",
+        "northmostPointLongitude": "101.7406245057246E",
+        "area": "333112.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSnapshotSourceSha256": "82403f6ea0b66808d2acd8b7d4f7ba3bf3264ecc001680d3c7a9b19f60a51ffa",
+  "originalLabelHashMatches": true
+}

@@ -1,0 +1,1001 @@
+{
+  "version": "six-observation-20261106-v2",
+  "samples": 16,
+  "dimensions": {
+    "completeness": {
+      "id": "completeness",
+      "name": "完整性",
+      "displayScore": 96.875,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "文件与标注可读取",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 32,
+      "scopeChecksApplicable": 32,
+      "scopeCounts": {
+        "pass": 31,
+        "fail": 1
+      },
+      "scoreBounds": [
+        96.875,
+        96.875
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-C1",
+          "name": "引用数据文件存在",
+          "counts": {
+            "pass": 15,
+            "fail": 1
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "completeness",
+              "checkId": "S6-C1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "completeness",
+              "checkId": "S6-C1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            },
+            {
+              "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+              "dimension": "completeness",
+              "checkId": "S6-C1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "exists": false
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "67b93f2407c4df592079f9ef7e052fd8f962f94cc7ff91d9e86aa3e5748bce1e"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-C2",
+          "name": "标注JSON可解析",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "completeness",
+              "checkId": "S6-C2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": "JSON对象解析成功",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "completeness",
+              "checkId": "S6-C2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": "JSON对象解析成功",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        }
+      ],
+      "reason": "文件与标注可读取；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "annotation_quality": {
+      "id": "annotation_quality",
+      "name": "标注质量",
+      "displayScore": 100.0,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "类别、几何及事件时段结构一致性",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 6,
+      "scopeChecksApplicable": 6,
+      "scopeCounts": {
+        "not_applicable": 42,
+        "pass": 6
+      },
+      "scoreBounds": [
+        100.0,
+        100.0
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-A1",
+          "name": "对象类别符合当前任务词表",
+          "counts": {
+            "not_applicable": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前无类别对象，或未配置可核验词表",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前无类别对象，或未配置可核验词表",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-A2",
+          "name": "给定几何顶点有限且面积非零",
+          "counts": {
+            "not_applicable": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前对象未提供图像几何",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前对象未提供图像几何",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-A3",
+          "name": "给定事件起止可解析且顺序有效",
+          "counts": {
+            "not_applicable": 10,
+            "pass": 6
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前未提供事件时段对象",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "annotation_quality",
+              "checkId": "S6-A3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "当前未提供事件时段对象",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        }
+      ],
+      "reason": "类别、几何及事件时段结构一致性；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "sample_correspondence": {
+      "id": "sample_correspondence",
+      "name": "样本对应",
+      "displayScore": 96.875,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "文件名、引用和尺寸对应",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 32,
+      "scopeChecksApplicable": 32,
+      "scopeCounts": {
+        "pass": 31,
+        "not_applicable": 16,
+        "fail": 1
+      },
+      "scoreBounds": [
+        96.875,
+        96.875
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-P1",
+          "name": "标注声明文件名与数据文件对应",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "00JxyUyvaV03UYrZg937.csv",
+                "actual": "00JxyUyvaV03UYrZg937.csv"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/basic_annotation/fileName"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "00uvFJeztf9V6XBUVGYM.csv",
+                "actual": "00uvFJeztf9V6XBUVGYM.csv"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/basic_annotation/fileName"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-P2",
+          "name": "登记数据引用可定位到当前包",
+          "counts": {
+            "pass": 15,
+            "fail": 1
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "exists": true
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            },
+            {
+              "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "expected": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+                "exists": false
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "67b93f2407c4df592079f9ef7e052fd8f962f94cc7ff91d9e86aa3e5748bce1e"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-P3",
+          "name": "显式声明尺寸与实测尺寸一致",
+          "counts": {
+            "not_applicable": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "CSV没有图像尺寸",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "sample_correspondence",
+              "checkId": "S6-P3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "not_applicable",
+              "detail": "CSV没有图像尺寸",
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        }
+      ],
+      "reason": "文件名、引用和尺寸对应；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "coverage_distribution": {
+      "id": "coverage_distribution",
+      "name": "覆盖与分布",
+      "displayScore": 93.75,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "已声明数量、类别和时间范围一致性",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 48,
+      "scopeChecksApplicable": 48,
+      "scopeCounts": {
+        "pass": 45,
+        "fail": 3
+      },
+      "scoreBounds": [
+        93.75,
+        93.75
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-D1",
+          "name": "声明对象数量等于实际记录数量",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": 0,
+                "actual": 0
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/ulf_event_annotation/event_count"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": 0,
+                "actual": 0
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/ulf_event_annotation/event_count"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-D2",
+          "name": "声明类别集合与对象类别集合一致",
+          "counts": {
+            "fail": 3,
+            "pass": 13
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "declared": [
+                  "Pi2"
+                ],
+                "actual": []
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/ulf_event_annotation/event_types"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": [],
+                "actual": []
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/ulf_event_annotation/event_types"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-D3",
+          "name": "声明观测起止可解析且顺序有效",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "interval": [
+                  "2015-04-10T08:00:00",
+                  "2015-04-10T08:59:59"
+                ]
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "coverage_distribution",
+              "checkId": "S6-D3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "interval": [
+                  "2021-01-18T06:00:00",
+                  "2021-01-18T06:59:59"
+                ]
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        }
+      ],
+      "reason": "已声明数量、类别和时间范围一致性；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "documentation_provenance": {
+      "id": "documentation_provenance",
+      "name": "文档与来源追溯",
+      "displayScore": 100.0,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "标注头、版本与源文件追溯",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 80,
+      "scopeChecksApplicable": 80,
+      "scopeCounts": {
+        "pass": 80
+      },
+      "scoreBounds": [
+        100.0,
+        100.0
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-T1",
+          "name": "标注头记录文件名",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "00JxyUyvaV03UYrZg937.csv"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/label_header/fileName"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "00uvFJeztf9V6XBUVGYM.csv"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/label_header/fileName"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T2",
+          "name": "标注版本可定位",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "V1.0.0.0"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/label_header/labelVersion"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "V1.0.0.0"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/label_header/labelVersion"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T3",
+          "name": "标注生成时间可解析",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "2026-09-29T07:59:58.782456Z"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/label_header"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "2026-09-29T08:12:22.872348Z"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/label_header"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T4",
+          "name": "标注生成方法已记录",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T4",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "auto"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/label_header/annotationMethod"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T4",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "value": "auto"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/label_header/annotationMethod"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-T5",
+          "name": "当前标注SHA256与登记值一致",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T5",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8",
+                "actual": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "documentation_provenance",
+              "checkId": "S6-T5",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "expected": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa",
+                "actual": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        }
+      ],
+      "reason": "标注头、版本与源文件追溯；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    },
+    "usage_conditions": {
+      "id": "usage_conditions",
+      "name": "使用条件",
+      "displayScore": 97.91666666666667,
+      "scoreKind": "scoped_technical_observation",
+      "scoreLabel": "技术观测分",
+      "scope": "离线检查工具的技术接入条件",
+      "scopeCheckCoverage": 1.0,
+      "scopeChecksCompleted": 48,
+      "scopeChecksApplicable": 48,
+      "scopeCounts": {
+        "pass": 47,
+        "fail": 1
+      },
+      "scoreBounds": [
+        97.91666666666667,
+        97.91666666666667
+      ],
+      "criteria": [
+        {
+          "checkId": "S6-U1",
+          "name": "当前数据格式符合图像/时序输入约定",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "extension": ".csv",
+                "scope": "离线质量检查工具接入"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U1",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "extension": ".csv",
+                "scope": "离线质量检查工具接入"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-U2",
+          "name": "数据头可读取并识别",
+          "counts": {
+            "pass": 15,
+            "fail": 1
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "data_present": true,
+                "header_readable": true,
+                "scope": "文件头，不等于全量像素科学审查"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "data_present": true,
+                "header_readable": true,
+                "scope": "文件头，不等于全量像素科学审查"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            },
+            {
+              "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U2",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "fail",
+              "detail": {
+                "data_present": false,
+                "header_readable": false,
+                "scope": "文件头，不等于全量像素科学审查"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+                "annotation_pointer": null
+              },
+              "labelSha256": "67b93f2407c4df592079f9ef7e052fd8f962f94cc7ff91d9e86aa3e5748bce1e"
+            }
+          ]
+        },
+        {
+          "checkId": "S6-U3",
+          "name": "模态声明与当前文件类型一致",
+          "counts": {
+            "pass": 16
+          },
+          "examples": [
+            {
+              "sampleId": "f79f7f13f612abb29e64105764e28e7c9e3ef905238138564f19d52214ddb48c",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "timeseries",
+                "actual": "csv"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00JxyUyvaV03UYrZg937.csv",
+                "annotation_pointer": "/basic_annotation/modality"
+              },
+              "labelSha256": "05be6ffe92131e9f3490e221f59a33dd845f3875c8f243fae70b08e1653617f8"
+            },
+            {
+              "sampleId": "0e82db022f602a4c3cf4397e797de79526a90fea24d50be9124b7a031924eb9b",
+              "dimension": "usage_conditions",
+              "checkId": "S6-U3",
+              "ruleVersion": "six-observation-20261106-v2",
+              "status": "pass",
+              "detail": {
+                "declared": "timeseries",
+                "actual": "csv"
+              },
+              "locator": {
+                "label_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv.json",
+                "data_path": "/input/ULF_sample_xfnogkdey9/00uvFJeztf9V6XBUVGYM.csv",
+                "annotation_pointer": "/basic_annotation/modality"
+              },
+              "labelSha256": "03d04594aca1e08c31d4792a168def453fdc7ad5957f46f109ab9118e0c411fa"
+            }
+          ]
+        }
+      ],
+      "reason": "离线检查工具的技术接入条件；按实际可核验检查的通过率计分，证据未决单列，不计作通过或失败。",
+      "formalScore": null
+    }
+  },
+  "formula": "100 * pass / (pass + fail); 证据未决保留在适用分母及区间中，不计为通过或失败；不适用单列",
+  "scope": "六维技术观测画像；区别于完整科学质量分和官方成绩",
+  "formalEvaluation": {
+    "eligible": false,
+    "score": null,
+    "blockers": [
+      "未在输入清单中声明已提供规范、字段字典、用途和可比性材料"
+    ],
+    "rule": "六维正式分仅在六维适用检查完成、规范材料齐全且实现与规范一致时计算"
+  },
+  "limitations": [
+    "覆盖分布只核对声明与记录的一致性，不证明总体代表性。",
+    "匿名化身份不扣分；追溯分仅核验标注头、版本及文件链路，不认证原始观测来源。",
+    "使用条件分仅针对离线质量检查工具的技术接入，不确认许可、再分发权或特定科学用途。"
+  ],
+  "runId": "LTH-20261110T024329Z-ecf52cd8"
+}

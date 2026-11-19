@@ -1,0 +1,147 @@
+{
+  "evidenceId": "EV-801f2410c5d75a77a52a8f99",
+  "findingId": "REFRESH-aef2b6996727c8558dcf",
+  "sourceCard": "04_评分卡/ULF_sample_ta382376ar.json",
+  "sourceFinding": {
+    "findingId": "REFRESH-aef2b6996727c8558dcf",
+    "checkId": "C34",
+    "ruleVersion": "fresh-localization-20261105-v1",
+    "dirId": "ULF_sample_ta382376ar",
+    "sampleId": "ULF_sample_ta382376ar:zxrzIfzQZVdAnJ9W1q9_.csv.json",
+    "defectType": "L2-T",
+    "sourceKind": "frozen_eight_class_plus_time_context",
+    "detail": "新一轮八类时段候选对应此输入事件记录；区间为被质疑的输入起止时段。CSV坐标信息仅作上下文，数值t轴不提供独立UTC原点。缺独立真实端点，不能把该区间称为已证实错误时段或真实偏差量。",
+    "locator": {
+      "type": "timeInterval",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/zxrzIfzQZVdAnJ9W1q9_.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/zxrzIfzQZVdAnJ9W1q9_.csv",
+      "annotation_pointer": "/ulf_event_annotation/matched_events/1",
+      "timeInterval": [
+        "2013-11-28T03:50:00+00:00",
+        "2013-11-28T04:40:00+00:00"
+      ],
+      "time_unit": "ISO8601 UTC",
+      "interval_source": "questioned_input_event_record_not_independent_true_endpoint",
+      "time_axis_domain": {
+        "kind": "numeric_axis",
+        "column": "t",
+        "columnIndex": 0,
+        "firstValue": 0.0,
+        "lastValue": 3599.0,
+        "unit": "not declared by CSV header",
+        "source": "actual CSV first and last rows",
+        "independent_absolute_time_mapping_established": false,
+        "interpretation": "Raw numeric axis only; no independent UTC origin is supplied by this CSV."
+      },
+      "scientific_endpoint_reference_available": false
+    },
+    "measurements": {
+      "declared_event_interval": [
+        "2013-11-28T03:50:00+00:00",
+        "2013-11-28T04:40:00+00:00"
+      ],
+      "interval_role": "questioned_input_event_interval",
+      "independent_endpoint_reference_available": false,
+      "actual_csv_numeric_axis": {
+        "kind": "numeric_axis",
+        "column": "t",
+        "columnIndex": 0,
+        "firstValue": 0.0,
+        "lastValue": 3599.0,
+        "unit": "not declared by CSV header",
+        "source": "actual CSV first and last rows",
+        "independent_absolute_time_mapping_established": false,
+        "interpretation": "Raw numeric axis only; no independent UTC origin is supplied by this CSV."
+      }
+    },
+    "severity": null,
+    "confidence": null,
+    "fusion_class_probability": 0.9935483336448669,
+    "weighted_burden": 0.9935483336448669,
+    "candidate_trigger": "questioned_input_event_interval",
+    "scientific_confirmation": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "scoreEligible": false,
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/zxrzIfzQZVdAnJ9W1q9_.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/2eeb18108c5a17bbd48db1380a73e35db06d4ee97905ef9357f1b44aceff39c5/ULF_sample_ta382376ar/zxrzIfzQZVdAnJ9W1q9_.csv",
+      "label_sha256": "ab9a3638045f3828b32b040641880c601182b47f42eb2cf9dc51d5b26808ebc2"
+    },
+    "probability": null,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:34.128433+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "identifier": "id-004532",
+      "fileName": "zxrzIfzQZVdAnJ9W1q9_.csv",
+      "labelCreateTime": "2026-09-29T08:07:01.225417Z",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "zxrzIfzQZVdAnJ9W1q9_.csv",
+      "relativePath": ".",
+      "modality": "timeseries",
+      "fileFormat": "csv",
+      "startTime": "2013-11-28T02:37:37Z",
+      "endTime": "2013-11-28T04:22:22Z",
+      "timestamp": "2026-09-29T08:07:01.225423Z",
+      "project": "",
+      "observatoryType": "ground",
+      "observatoryName": "anonymous",
+      "dataType": "geomagnetic_timeseries"
+    },
+    "science_annotation": {
+      "observatory": "anonymous",
+      "network": "anonymous",
+      "instrument": "anonymous",
+      "components": [
+        "H",
+        "D",
+        "Z",
+        "T"
+      ],
+      "sampling_rate_hz": 1,
+      "duration_s": 3600,
+      "n_points": 3600,
+      "units": "nT (H/Z/T), deg (D)",
+      "level": "L1 (raw 1Hz)",
+      "dateObs": "2013-11-28T03:00:00Z"
+    },
+    "ulf_event_annotation": {
+      "has_events": true,
+      "event_count": 2,
+      "event_types": [
+        "Pi2"
+      ],
+      "matched_events": [
+        {
+          "start_dt": "2013-11-28T03:00:00",
+          "end_dt": "2013-11-28T03:30:00",
+          "kind": "Pi2",
+          "source": "F006/_entries_p2pi2.jsonl"
+        },
+        {
+          "start_dt": "2013-11-28T03:50:00",
+          "end_dt": "2013-11-28T04:40:00",
+          "kind": "Pi2",
+          "source": "F006/_entries_p2pi2.jsonl"
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "ab9a3638045f3828b32b040641880c601182b47f42eb2cf9dc51d5b26808ebc2",
+  "originalLabelHashMatches": true
+}

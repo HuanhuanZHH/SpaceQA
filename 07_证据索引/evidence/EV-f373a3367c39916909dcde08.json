@@ -1,0 +1,117 @@
+{
+  "evidenceId": "EV-f373a3367c39916909dcde08",
+  "findingId": "REFRESH-c5939c19448b47bd06e9",
+  "sourceCard": "04_评分卡/ULF_sample_xfnogkdey9.json",
+  "sourceFinding": {
+    "findingId": "REFRESH-c5939c19448b47bd06e9",
+    "checkId": "C33",
+    "ruleVersion": "fresh-localization-20261105-v1",
+    "dirId": "ULF_sample_xfnogkdey9",
+    "sampleId": "ULF_sample_xfnogkdey9:Wr38jEd3AtXXhvEWaiG9.csv.json",
+    "defectType": "L2-P",
+    "sourceKind": "within_annotation_consistency",
+    "detail": "事件明细类别'Pi3'与该标注声明的event_types['Pi2']不一致；保留为类别候选，不自动证明物理类别错误。",
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/Wr38jEd3AtXXhvEWaiG9.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/Wr38jEd3AtXXhvEWaiG9.csv",
+      "annotation_pointer": "/ulf_event_annotation/matched_events/1/kind"
+    },
+    "measurements": {
+      "actual": "Pi3",
+      "allowed": [
+        "Pi2"
+      ],
+      "contract_source": "within-current-label event_types summary, not independent scientific truth"
+    },
+    "severity": null,
+    "confidence": null,
+    "fusion_class_probability": 0.9948965311050415,
+    "weighted_burden": 0.9948965311050415,
+    "candidate_trigger": "model_category_positive_and_summary_conflict",
+    "scientific_confirmation": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "scoreEligible": false,
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/Wr38jEd3AtXXhvEWaiG9.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/Wr38jEd3AtXXhvEWaiG9.csv",
+      "label_sha256": "baa7b52a9546c23d4b317a6039c0822a4e6bb2161ae53d945355ece739c10832"
+    },
+    "probability": null,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:35.484887+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "identifier": "id-001715",
+      "fileName": "Wr38jEd3AtXXhvEWaiG9.csv",
+      "labelCreateTime": "2026-09-29T08:04:26.770802Z",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "Wr38jEd3AtXXhvEWaiG9.csv",
+      "relativePath": ".",
+      "modality": "timeseries",
+      "fileFormat": "csv",
+      "startTime": "2014-01-24T22:00:00Z",
+      "endTime": "2014-01-24T22:59:59Z",
+      "timestamp": "2026-09-29T08:04:26.770810Z",
+      "project": "",
+      "observatoryType": "ground",
+      "observatoryName": "anonymous",
+      "dataType": "geomagnetic_timeseries"
+    },
+    "science_annotation": {
+      "observatory": "anonymous",
+      "network": "anonymous",
+      "instrument": "anonymous",
+      "components": [
+        "H",
+        "D",
+        "Z",
+        "T"
+      ],
+      "sampling_rate_hz": 1,
+      "duration_s": 3600,
+      "n_points": 3600,
+      "units": "nT (H/Z/T), deg (D)",
+      "level": "L1 (raw 1Hz)",
+      "dateObs": "2014-01-24T22:00:00Z"
+    },
+    "ulf_event_annotation": {
+      "has_events": true,
+      "event_count": 2,
+      "event_types": [
+        "Pi2"
+      ],
+      "matched_events": [
+        {
+          "start_dt": "2014-01-24T22:30:00",
+          "end_dt": "2014-01-24T22:40:00",
+          "kind": "Pi3",
+          "source": "F006/_entries_p2pi2.jsonl"
+        },
+        {
+          "start_dt": "2014-01-24T22:50:00",
+          "end_dt": "2014-01-25T00:00:00",
+          "kind": "Pi3",
+          "source": "F006/_entries_p2pi2.jsonl"
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "baa7b52a9546c23d4b317a6039c0822a4e6bb2161ae53d945355ece739c10832",
+  "originalLabelHashMatches": true
+}

@@ -1,0 +1,60 @@
+specVersion: "2.0.0"
+ruleVersion: "2026-11-08-quality-contract"
+authoritative: false
+authorityNote: "项目实现规格；官方容差以组委会正式文件为准"
+statuses: [通过, 不通过, 待判定, 不适用]
+dimensions:
+  completeness:
+    name: 完整性
+    checks: [file_exists, label_parse, fields, shape_type_missingness]
+  annotationQuality:
+    name: 标注质量
+    checks: [class_contract, geometry, temporal_order, boundary, missing, spurious]
+  sampleCorrespondence:
+    name: 样本对应关系
+    checks: [reference_resolution, one_to_one, spatial_size]
+  coverageDistribution:
+    name: 覆盖与分布
+    checks: [class_event_time_statistics, duplicate_leakage, expected_distribution]
+  traceability:
+    name: 文档与来源追溯
+    checks: [documentation, dictionary, version, processing_chain, sha256]
+  usageConditions:
+    name: 使用条件
+    checks: [purpose, permission, limitation, comparability]
+denominator:
+  sample: "all registered samples, including samples with missing evidence"
+  check: "applicable checks; not_applicable excluded only when contract says so"
+  missingProbability: "retain in N and report separately"
+tolerances:
+  status: project_default_not_official
+  bbox:
+    iouThreshold: 0.5
+    normalizedCenterDistanceThreshold: 0.05
+  polygon:
+    iouThreshold: 0.5
+    boundaryHausdorffPixel: 3.0
+  timeInterval:
+    endpointToleranceSeconds: 2.0
+    overlapRatioThreshold: 0.5
+  metadata:
+    relativeDimensionError: 0.02
+referencePolicy:
+  independentReferenceRequiredFor: [L2-G, L3-06, L3-07, L3-MIS, semantic_L2-P, semantic_L2-T]
+  withoutReference: candidate
+pollutionIndex:
+  formula: "100 * sum(p_i,c where p_i,c >= threshold_c) / N"
+  thresholds: {L0-01: 0.5, L2-G: 0.5, L2-P: 0.5, L2-T: 0.5, L2-F: 0.5, L3-06: 0.5, L3-07: 0.5, L3-MIS: 0.5}
+  direction: lower_is_better
+  overlapAllowed: true
+  ranking: "ascending; genuine ties retained"
+expertOutlierPolicy:
+  method: median_mad
+  zThreshold: 3.5
+  minimumExperts: 3
+  aggregate: trimmed_mean
+  recordExcludedExperts: true
+formalClaimPolicy:
+  officialPRF1: "requires independent per-sample truth and locator matching"
+  fullSixDimensionScore: "requires all applicable checks and supplied normative materials"
+  uncomputable: "null; never impute zero or one hundred"

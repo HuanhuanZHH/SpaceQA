@@ -1,0 +1,166 @@
+{
+  "tools": [
+    {
+      "name": "inventory",
+      "version": "0.6.0",
+      "entrypoint": "opc_agent.check_c01",
+      "deterministic": true,
+      "checks": [
+        "C01"
+      ],
+      "timeoutSeconds": 900,
+      "retryLimit": 0,
+      "failureMode": "pending",
+      "inputSchema": {
+        "type": "dataset-directory"
+      },
+      "outputSchema": {
+        "type": "findings-and-evidence"
+      },
+      "resourceProfile": {
+        "network": "disabled",
+        "writes": "OUTPUT_ROOT only"
+      }
+    },
+    {
+      "name": "relationship-validator",
+      "version": "0.6.0",
+      "entrypoint": "opc_agent.check_c02/check_c03",
+      "deterministic": true,
+      "checks": [
+        "C02",
+        "C03"
+      ],
+      "timeoutSeconds": 900,
+      "retryLimit": 0,
+      "failureMode": "pending",
+      "inputSchema": {
+        "type": "dataset-directory"
+      },
+      "outputSchema": {
+        "type": "findings-and-evidence"
+      },
+      "resourceProfile": {
+        "network": "disabled",
+        "writes": "OUTPUT_ROOT only"
+      }
+    },
+    {
+      "name": "annotation-validator",
+      "version": "0.6.0",
+      "entrypoint": "opc_agent.check_c04..check_c09",
+      "deterministic": true,
+      "checks": [
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "timeoutSeconds": 7200,
+      "retryLimit": 0,
+      "failureMode": "pending",
+      "inputSchema": {
+        "type": "dataset-directory"
+      },
+      "outputSchema": {
+        "type": "findings-and-evidence"
+      },
+      "resourceProfile": {
+        "network": "disabled",
+        "writes": "OUTPUT_ROOT only"
+      }
+    },
+    {
+      "name": "sibling-differ",
+      "version": "0.6.0",
+      "entrypoint": "opc_agent.apply_reference_checks",
+      "deterministic": true,
+      "checks": [
+        "C10"
+      ],
+      "timeoutSeconds": 3600,
+      "retryLimit": 0,
+      "failureMode": "pending",
+      "inputSchema": {
+        "type": "dataset-directory"
+      },
+      "outputSchema": {
+        "type": "findings-and-evidence"
+      },
+      "resourceProfile": {
+        "network": "disabled",
+        "writes": "OUTPUT_ROOT only"
+      }
+    },
+    {
+      "name": "documentation-validator",
+      "version": "0.6.0",
+      "entrypoint": "opc_agent.check_c11/check_c12",
+      "deterministic": true,
+      "checks": [
+        "C11",
+        "C12"
+      ],
+      "timeoutSeconds": 60,
+      "retryLimit": 0,
+      "failureMode": "pending",
+      "inputSchema": {
+        "type": "dataset-directory"
+      },
+      "outputSchema": {
+        "type": "findings-and-evidence"
+      },
+      "resourceProfile": {
+        "network": "disabled",
+        "writes": "OUTPUT_ROOT only"
+      }
+    },
+    {
+      "name": "fine_current_input_scan",
+      "version": "20261110-repair",
+      "entrypoint": "spaceqa_agent.fine_scan.run",
+      "checks": [
+        "C31",
+        "C32",
+        "C33",
+        "C34",
+        "C35",
+        "C36",
+        "C37",
+        "C38"
+      ],
+      "timeoutSeconds": 900,
+      "retryLimit": 0,
+      "failureMode": "pending",
+      "scope": "mechanical current-input checks; model/reference checks explicitly pending",
+      "inputSchema": {
+        "type": "family-prefixed-package"
+      },
+      "outputSchema": {
+        "type": "sample-results-findings-receipt-log"
+      }
+    },
+    {
+      "name": "formal_contract_checks",
+      "version": "1.0",
+      "checks": [
+        "C41",
+        "C42",
+        "C43",
+        "C44",
+        "C45",
+        "C46",
+        "C47",
+        "C48",
+        "C49",
+        "C50"
+      ],
+      "entrypoint": "python -m spaceqa_agent scan --input INPUT --output OUTPUT --checks CHECK --contract CONTRACT",
+      "timeoutSeconds": 180,
+      "retryLimit": 0,
+      "resourcePolicy": "CPU only; measured process peak; offline; no API"
+    }
+  ]
+}

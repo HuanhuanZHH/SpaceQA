@@ -1,0 +1,359 @@
+{
+  "dirId": "EPB_seg_sample_qmn05l7r91",
+  "datasetId": "EPB_seg_sample",
+  "datasetVersion": "v34",
+  "registeredSamples": 788,
+  "missingPairedData": 0,
+  "operation": "archive_only_no_new_inference",
+  "sourceRunId": null,
+  "sourceExportId": "EXPORT-LTH-B-20261110",
+  "sourceTraceRun": "b_fresh_roadshow12_20261109",
+  "officialArchiveSha256": "89dab2f6d8a5011e2cf2ad6070cf69463f8692f9784a342431ee2a4327082eab",
+  "sourceFiles": {
+    "scorecard.json": {
+      "path": "13_六维评分修复_20261110/归档验收依据/原运行/packages/EPB_seg_sample_qmn05l7r91/scorecard.json",
+      "sha256": "4a1ea8cbdf4e46327a34ba16a26694bac4218af56db8fabdbc05859c001cf7b7"
+    },
+    "findings.jsonl": {
+      "path": "13_六维评分修复_20261110/归档验收依据/原运行/packages/EPB_seg_sample_qmn05l7r91/findings.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "samples.jsonl": {
+      "path": "13_六维评分修复_20261110/归档验收依据/原运行/packages/EPB_seg_sample_qmn05l7r91/samples.jsonl",
+      "sha256": "86667910ff010847ebfee29cb645a7a086c95aad495d84757dd61a5adce545b0"
+    }
+  },
+  "dimensions": [
+    {
+      "dimId": "completeness",
+      "name": "完整性",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "字段齐备、重复标注和取值自洽的全范围检查记录",
+      "checkIds": [
+        "C31"
+      ],
+      "observed": {
+        "scope": "C31 登记配对存在性",
+        "verdict": "pass",
+        "registered": 788,
+        "missing": 0,
+        "score": 100.0
+      }
+    },
+    {
+      "dimId": "annotationQuality",
+      "name": "标注质量",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "独立标注参考及已验证的空间、时间容差",
+      "checkIds": [
+        "C32",
+        "C33",
+        "C34",
+        "C36",
+        "C37",
+        "C38"
+      ],
+      "observed": {
+        "scope": "已执行的规则与候选筛查",
+        "score": 100.0,
+        "confirmed": 0,
+        "candidates": 0
+      }
+    },
+    {
+      "dimId": "sampleCorrespondence",
+      "name": "样本对应",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "受影响样本的图像或测量证据，以及适用的对象身份对照",
+      "checkIds": [
+        "C31",
+        "C35"
+      ],
+      "observed": {
+        "scope": "已执行的规则与候选筛查",
+        "score": 100.0,
+        "confirmed": 0,
+        "candidates": 0
+      }
+    },
+    {
+      "dimId": "coverageDistribution",
+      "name": "覆盖与分布",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "目标类别与最低数、目标覆盖网格、独立分布与容差、划分协议",
+      "checkIds": [
+        "C41",
+        "C42",
+        "C43",
+        "C44"
+      ],
+      "observed": {
+        "scope": "归档 S6 限定观测",
+        "checks": {
+          "S6-D1": {
+            "not_applicable": 788
+          },
+          "S6-D2": {
+            "not_applicable": 788
+          },
+          "S6-D3": {
+            "pass": 788
+          }
+        }
+      }
+    },
+    {
+      "dimId": "traceability",
+      "name": "文档与来源追溯",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "独立核验的来源和处理链、声明与实测的对照证据",
+      "checkIds": [
+        "C45",
+        "C46",
+        "C47"
+      ],
+      "observed": {
+        "scope": "归档 S6 限定观测",
+        "checks": {
+          "S6-T1": {
+            "pass": 788
+          },
+          "S6-T2": {
+            "pass": 788
+          },
+          "S6-T3": {
+            "pass": 788
+          },
+          "S6-T4": {
+            "pass": 788
+          },
+          "S6-T5": {
+            "pass": 788
+          }
+        }
+      }
+    },
+    {
+      "dimId": "usageConditions",
+      "name": "使用条件",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "验收、入库和选数各用途的实际授权、约束和审核记录",
+      "checkIds": [
+        "C48",
+        "C49",
+        "C50"
+      ],
+      "observed": {
+        "scope": "归档 S6 限定观测",
+        "checks": {
+          "S6-U1": {
+            "pass": 788
+          },
+          "S6-U2": {
+            "pass": 788
+          },
+          "S6-U3": {
+            "pass": 788
+          }
+        }
+      }
+    }
+  ],
+  "checkResults": {
+    "C31": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 788,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C32": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C33": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C34": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C35": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 788,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C36": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C37": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C38": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C41": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C41.evidence.json",
+      "sha256": "f1fb3f4d38e09fe344729da8e3e1a00a64cf1dee4c4c3ee3d6907cffa817891b"
+    },
+    "C42": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C42.evidence.json",
+      "sha256": "b71197b32c9ec7416a13636956decb5959255b7ed079b5b45859ccfb10fd03cc"
+    },
+    "C43": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C43.evidence.json",
+      "sha256": "0fa790af28aed97e78b1624176340bd84d7b8e7e2442450d2543cd46edffe1a5"
+    },
+    "C44": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C44.evidence.json",
+      "sha256": "be555c3844a4fe7886fca2e91169639a0357c630ffb9b2d0c98a8b1c6870f858"
+    },
+    "C45": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C45.evidence.json",
+      "sha256": "a3f539dd2192f9373a46060c1541f9bf6e46b96a9b574ed57c7e4705b27c422e"
+    },
+    "C46": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C46.evidence.json",
+      "sha256": "c8cffb0ca56c1ea6c5da27e213579f66831d198503d07e55619ced4f1d51f8da"
+    },
+    "C47": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C47.evidence.json",
+      "sha256": "f3acf1340df5c15cad6aa001c350fb9352c0561ece146987f5999c5876bd8748"
+    },
+    "C48": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C48.evidence.json",
+      "sha256": "b386e19920414f92965b2616b9cf1769e10ea46d487ac4ac3c808a45aa1f8689"
+    },
+    "C49": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C49.evidence.json",
+      "sha256": "e6dec42e0861dbed2fbddd198774e2f9b8f30c018649ea7157fc510449c9ce29"
+    },
+    "C50": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_qmn05l7r91/C50.evidence.json",
+      "sha256": "b12cac8b1049ae769c3da99c24b4ecde430ade71ce553b3e931a688a9322f8e9"
+    }
+  },
+  "formalAcceptance": "evidence_incomplete",
+  "fullQualityScore": null,
+  "observedTechnicalScore": 100.0,
+  "technicalRankGlobal": 1,
+  "approvedWeightPolicySha256": "2cf88dfa960cd38fca4d5cb5cf68318a7348cfb61ae43c9cebdf35a832059e30"
+}

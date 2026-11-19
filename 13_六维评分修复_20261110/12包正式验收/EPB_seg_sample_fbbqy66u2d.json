@@ -1,0 +1,647 @@
+{
+  "dirId": "EPB_seg_sample_fbbqy66u2d",
+  "datasetId": "EPB_seg_sample",
+  "datasetVersion": "v34",
+  "registeredSamples": 788,
+  "missingPairedData": 18,
+  "operation": "archive_only_no_new_inference",
+  "sourceRunId": null,
+  "sourceExportId": "EXPORT-LTH-B-20261110",
+  "sourceTraceRun": "b_fresh_roadshow12_20261109",
+  "officialArchiveSha256": "5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50",
+  "sourceFiles": {
+    "scorecard.json": {
+      "path": "13_六维评分修复_20261110/归档验收依据/原运行/packages/EPB_seg_sample_fbbqy66u2d/scorecard.json",
+      "sha256": "aeb8d16f9483287bcd3b89aa3a990fc6913573e52d16e3515f13e13fedb7cb90"
+    },
+    "findings.jsonl": {
+      "path": "13_六维评分修复_20261110/归档验收依据/原运行/packages/EPB_seg_sample_fbbqy66u2d/findings.jsonl",
+      "sha256": "9f5162c9dc5f5afbd491173382bb0754502b612ebb0137ec578997aa73d98ca5"
+    },
+    "samples.jsonl": {
+      "path": "13_六维评分修复_20261110/归档验收依据/原运行/packages/EPB_seg_sample_fbbqy66u2d/samples.jsonl",
+      "sha256": "620ecf57358d325965a5e717521d4b46647765640bd579c399952bdbd1623131"
+    }
+  },
+  "dimensions": [
+    {
+      "dimId": "completeness",
+      "name": "完整性",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "字段齐备、重复标注和取值自洽的全范围检查记录",
+      "checkIds": [
+        "C31"
+      ],
+      "observed": {
+        "scope": "C31 登记配对存在性",
+        "verdict": "fail",
+        "registered": 788,
+        "missing": 18,
+        "score": 97.71573604060913
+      }
+    },
+    {
+      "dimId": "annotationQuality",
+      "name": "标注质量",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "独立标注参考及已验证的空间、时间容差",
+      "checkIds": [
+        "C32",
+        "C33",
+        "C34",
+        "C36",
+        "C37",
+        "C38"
+      ],
+      "observed": {
+        "scope": "已执行的规则与候选筛查",
+        "score": 84.8984771573604,
+        "confirmed": 88,
+        "candidates": 134
+      }
+    },
+    {
+      "dimId": "sampleCorrespondence",
+      "name": "样本对应",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "受影响样本的图像或测量证据，以及适用的对象身份对照",
+      "checkIds": [
+        "C31",
+        "C35"
+      ],
+      "observed": {
+        "scope": "已执行的规则与候选筛查",
+        "score": 92.38578680203045,
+        "confirmed": 60,
+        "candidates": 0
+      }
+    },
+    {
+      "dimId": "coverageDistribution",
+      "name": "覆盖与分布",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "目标类别与最低数、目标覆盖网格、独立分布与容差、划分协议",
+      "checkIds": [
+        "C41",
+        "C42",
+        "C43",
+        "C44"
+      ],
+      "observed": {
+        "scope": "归档 S6 限定观测",
+        "checks": {
+          "S6-D1": {
+            "not_applicable": 788
+          },
+          "S6-D2": {
+            "not_applicable": 788
+          },
+          "S6-D3": {
+            "pass": 788
+          }
+        }
+      }
+    },
+    {
+      "dimId": "traceability",
+      "name": "文档与来源追溯",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "独立核验的来源和处理链、声明与实测的对照证据",
+      "checkIds": [
+        "C45",
+        "C46",
+        "C47"
+      ],
+      "observed": {
+        "scope": "归档 S6 限定观测",
+        "checks": {
+          "S6-T1": {
+            "pass": 788
+          },
+          "S6-T2": {
+            "pass": 788
+          },
+          "S6-T3": {
+            "pass": 788
+          },
+          "S6-T4": {
+            "pass": 788
+          },
+          "S6-T5": {
+            "pass": 788
+          }
+        }
+      }
+    },
+    {
+      "dimId": "usageConditions",
+      "name": "使用条件",
+      "verdict": "undetermined",
+      "score": null,
+      "range": null,
+      "grade": "undetermined",
+      "meaning": "完整维度证据不足，限定范围的结论见 observed",
+      "missingBasis": "验收、入库和选数各用途的实际授权、约束和审核记录",
+      "checkIds": [
+        "C48",
+        "C49",
+        "C50"
+      ],
+      "observed": {
+        "scope": "归档 S6 限定观测",
+        "checks": {
+          "S6-U1": {
+            "pass": 788
+          },
+          "S6-U2": {
+            "pass": 770,
+            "fail": 18
+          },
+          "S6-U3": {
+            "pass": 788
+          }
+        }
+      }
+    }
+  ],
+  "checkResults": {
+    "C31": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 770,
+        "fail": 18,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 18,
+      "candidateFindingCount": 0,
+      "findingIds": [
+        "C31-8dd5545a29fe79565c06",
+        "C31-466c2f6c409b2daa9a46",
+        "C31-f513b5ff3386f24e2983",
+        "C31-943f1cb6d0a12fc48c31",
+        "C31-5f6c51299373355f13c7",
+        "C31-6f6212952700a5db7587",
+        "C31-866a38467a77d0d19cc4",
+        "C31-b70ed505b6c913e40598",
+        "C31-aa44e1cfa0b2b88646b5",
+        "C31-803593112157b6d2c848",
+        "C31-6fcbf6426aada0a21b87",
+        "C31-712094b73cbf8c930d45",
+        "C31-32d4fc9d89a1a50b3252",
+        "C31-58dea34184fcbed622b9",
+        "C31-d8cd29ec421a5ec56946",
+        "C31-1f771a9cc7869e9f0b48",
+        "C31-ace5e9efa50fcb27468a",
+        "C31-82690e52e93271e2c015"
+      ]
+    },
+    "C32": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C33": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 82,
+        "undetermined": 706,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 88,
+      "candidateFindingCount": 0,
+      "findingIds": [
+        "C33-f6544739bc2514aeb843",
+        "C33-9d675926c9188463e625",
+        "C33-cea4019f788279891fa7",
+        "C33-e61397d7035a3701d6e4",
+        "C33-a6e3d2cdc980ffd28ff5",
+        "C33-68d0f4492f2034dd1398",
+        "C33-3686a0311268ae9c0722",
+        "C33-3183586a868b0c98592e",
+        "C33-4155afb776ae9b1e21da",
+        "C33-601486f54082f076680e",
+        "C33-8233d662864facfb9c14",
+        "C33-916b97572a67b42b8e4a",
+        "C33-03b5f0166d9fcf792357",
+        "C33-b2d5395d4ac6ee65ba5a",
+        "C33-0d5afcfc0107a5028912",
+        "C33-4514cd9929a15805717d",
+        "C33-dfaca3ef3eb4eb81f094",
+        "C33-6e80f642e87a17d6fa6a",
+        "C33-fcb679643f87286eebac",
+        "C33-66137646f51a0ab66439",
+        "C33-eb3586fee040176a9cc7",
+        "C33-0f08fb766fb8e7553de7",
+        "C33-e3085db941cfad2eb045",
+        "C33-ea528e991e153a8a5712",
+        "C33-d2150c1504f709735d43",
+        "C33-1ecdb20972cf784db6ba",
+        "C33-7093fd23b466914e685e",
+        "C33-1e0d886884e9e9e0a54d",
+        "C33-8ad4d264a5da8921c998",
+        "C33-da65b5a5f4170825f207",
+        "C33-3e182c025cca0db9c35c",
+        "C33-2e9de3b3d6a2b76cf984",
+        "C33-5a5b9cbfa059536f3f7d",
+        "C33-b89c9d2bf5f2a1995082",
+        "C33-95401c9f7de104ec6d1b",
+        "C33-982a0a87646543d90e9c",
+        "C33-f6aae5f3690e8537aecf",
+        "C33-4486809b58c5187e834b",
+        "C33-fe678a73c20665d55f3f",
+        "C33-98e93c9f24c0f9f58c9b",
+        "C33-0d268520d40f7901a46c",
+        "C33-3f533cc6bf060f49070e",
+        "C33-8e2cd8e2f308b1b28ae5",
+        "C33-396f62afaa7a0712778a",
+        "C33-d9e7277a87d2b07c43a6",
+        "C33-8a149b0ad256b09a32f1",
+        "C33-51a3de1734042c680dd1",
+        "C33-f155389e9bc808ef7371",
+        "C33-e486223765deececab61",
+        "C33-3161e6d7aadc22fe416b",
+        "C33-cf46657420c3871273c1",
+        "C33-7376e7635ed44c70e741",
+        "C33-d35fe83f2ef263d182d9",
+        "C33-6f20d5c0d6972ecd2832",
+        "C33-e9832952653d4acd511c",
+        "C33-6d0ccb25725f36866182",
+        "C33-510d36591c6a97805dfe",
+        "C33-5869188e37d1f76cacbf",
+        "C33-85622b65dee30a652d95",
+        "C33-3693c9ba659eaad1c865",
+        "C33-58b361e2b109fe32219f",
+        "C33-8203d075bf7415b418f3",
+        "C33-8e098f2c672a2a665bd1",
+        "C33-5d77c8a5ed5bff947610",
+        "C33-6a86c864d2cdd58f4b8e",
+        "C33-3ee0ee3d0bbc8e38d09c",
+        "C33-27995598a52e45f0ce22",
+        "C33-940765add3c56635b50b",
+        "C33-3a143c5b68b2ea6be554",
+        "C33-bf382063b52cc39ad2eb",
+        "C33-de34fa72de5ab878f5be",
+        "C33-7e41e1cb5f5945ab45b4",
+        "C33-3df62e1b5dd73df6f61b",
+        "C33-2f3238b8f51b048687f9",
+        "C33-d7eac74cbb32f3bc4a3a",
+        "C33-31111e3735e595e60bd8",
+        "C33-638f7fd243a4fdb790dd",
+        "C33-15d94c275d5479b7f64c",
+        "C33-18a869514e52c6d0fffe",
+        "C33-9c6652225957282b325f",
+        "C33-817f3d8af0718d30518d",
+        "C33-f1efbfc273ea649daa29",
+        "C33-e2f08eac26c478117df3",
+        "C33-79b044a3aff73991162b",
+        "C33-ab3346df0db64ece58f4",
+        "C33-aba541f95e67b995b1b0",
+        "C33-a1b581191ef0e73af9ad",
+        "C33-cfa08c30dc9dd0c088f0"
+      ]
+    },
+    "C34": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C35": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 728,
+        "fail": 42,
+        "undetermined": 18,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 42,
+      "candidateFindingCount": 0,
+      "findingIds": [
+        "C35-32b0852296b4acec5a80",
+        "C35-12b71f1b626aaae2bb03",
+        "C35-db8e6e3fb48b0e21a019",
+        "C35-3a23c6fa8eab84957c09",
+        "C35-1a60ea8e04c54ff085b4",
+        "C35-bab57b4b498619081594",
+        "C35-0ed175c4e5d75214dfbd",
+        "C35-38ea30c380df22583d4c",
+        "C35-bb0bc7e915621d3bba38",
+        "C35-f5a9e5ac0d4f7b879f07",
+        "C35-4275601936ac914ffe85",
+        "C35-f0def425c19184e26654",
+        "C35-b6cc2853b4e2ce20e1c5",
+        "C35-53025779f44fb311e31e",
+        "C35-2934933bad13d6b0258a",
+        "C35-129d9d95e4b5e5df3f34",
+        "C35-57b6c54c0966680cd18a",
+        "C35-1c59880aa82958c7ac52",
+        "C35-5a0df012c799133bf1af",
+        "C35-4a17abd593c97a0446f7",
+        "C35-03632784fde1bef9f201",
+        "C35-dba383cc3a3b89f9a49b",
+        "C35-1611bb82aa19316b8f5b",
+        "C35-df7313bc1b9fc1d58ea2",
+        "C35-ae3aa334c0fd4430b172",
+        "C35-70b93ee8a948fbf14ddf",
+        "C35-bb11797af89744a406f2",
+        "C35-7ef571a8eecb434e059f",
+        "C35-d73dc8af4dfdf70a7ac7",
+        "C35-000a4ef05fb6f5fbcdf8",
+        "C35-82d82c3f0b38e553f69d",
+        "C35-c5614df27a121be73d00",
+        "C35-19d728e380fd7dc01cc7",
+        "C35-ba07c81d46a8bc0c3bb8",
+        "C35-5e2e87df15e05ffe70f1",
+        "C35-e6a14dd224a7ac64f3ad",
+        "C35-5c6041eae52cc0f6bae8",
+        "C35-67e73b0be15e451edb78",
+        "C35-e5c3ab5d893a247a0c94",
+        "C35-4180027051717081895d",
+        "C35-5c1dd8fed75f15a6eed2",
+        "C35-1ee0998d41a2be7fe5e0"
+      ]
+    },
+    "C36": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 71,
+      "findingIds": [
+        "NEURAL-f95cafff5ade4b37c551",
+        "NEURAL-62043ee8940b8ec002d4",
+        "NEURAL-70c8fad5bfaf31bb563e",
+        "NEURAL-a58fc33cb1d30c046015",
+        "NEURAL-c887c7f195488f7e58d4",
+        "NEURAL-b6f8586e57a533207036",
+        "NEURAL-86c16a7d8c01636540c5",
+        "NEURAL-9ffefae63415b31de123",
+        "NEURAL-b40bf3311b34fbbd7d32",
+        "NEURAL-dfceb0709ca7bdc56b2d",
+        "NEURAL-ae2ee4f73e22463ba720",
+        "NEURAL-bb7a08ed92daa9001c0c",
+        "NEURAL-9404cc6aeac5c86d3caf",
+        "NEURAL-605fc0c7a1875440c2f3",
+        "NEURAL-b32835613f369296d84a",
+        "NEURAL-57f47142f25a3f6bdebf",
+        "NEURAL-0c8ba8e31516b8c7d8b5",
+        "NEURAL-98290760985959d7b943",
+        "NEURAL-4451ce71dc8a6ba01f74",
+        "NEURAL-0756932675a805c67c92",
+        "NEURAL-df4409d1f4ab3b485b7d",
+        "NEURAL-d717a512df5e0891391f",
+        "NEURAL-a5b3dfeb7eb5cb05fc94",
+        "NEURAL-799aeb6c0dd70baf09a6",
+        "NEURAL-d308550d61039c0a0d09",
+        "NEURAL-348cfc1cc561914d6878",
+        "NEURAL-83de9fb642ec14294b02",
+        "NEURAL-813890b083a968ab9a0d",
+        "NEURAL-51cab14d50a9371242c0",
+        "NEURAL-110a2dffb2bde137cbd8",
+        "NEURAL-1b3e9d2fa8f8460a4eb7",
+        "NEURAL-13aff6e0b3f8263855fb",
+        "NEURAL-bec35050c6ae38398fdf",
+        "NEURAL-66969a430de20c8f308a",
+        "NEURAL-254804985d42406e6360",
+        "NEURAL-efdebe9cf065a1af9f7e",
+        "NEURAL-fbdad11579f89bbdf74b",
+        "NEURAL-200a89c51f8b63c04422",
+        "NEURAL-fb0b926293adb69a2624",
+        "NEURAL-2715bc1d143b243977be",
+        "NEURAL-bdee94e3db42b5fa6b24",
+        "NEURAL-8b698b79f069be0f1aad",
+        "NEURAL-e6750802a33ececb617c",
+        "NEURAL-d4e9b47e2f01d311378c",
+        "NEURAL-817e4eab0acfc8308a9b",
+        "NEURAL-dc392fef1c0c092d868d",
+        "NEURAL-e09ec11527177f7352d3",
+        "NEURAL-4f7a72e50b33a516419a",
+        "NEURAL-ec3b32db59fade2a170c",
+        "NEURAL-ccabadc4c37c0e03453e",
+        "NEURAL-7f7f39044f26e102bde1",
+        "NEURAL-3f76a9229ea96fe5bc1d",
+        "NEURAL-2977d41ca697607bbab0",
+        "NEURAL-a23408fc5d107ba03976",
+        "NEURAL-d5a4c706548699515903",
+        "NEURAL-3cd7977c58a4eaba83ef",
+        "NEURAL-699135bda87ac36c2821",
+        "NEURAL-364d16014f333844faa9",
+        "NEURAL-166a399407a82444a49d",
+        "NEURAL-8fd59391362f2dbc9b36",
+        "NEURAL-5a3b9c587c21b7fc602b",
+        "NEURAL-b94304fe4a1791e91bde",
+        "NEURAL-714b55d69d09db010ae6",
+        "NEURAL-d8a404b8d46a98c16229",
+        "NEURAL-1c3ed915a0bc440d340c",
+        "NEURAL-39a87f30c19cf95f8848",
+        "NEURAL-b7642fbd5e14c0572b37",
+        "NEURAL-0feac0da1d5ad8a7a590",
+        "NEURAL-00aa717ea3ac8934a46d",
+        "NEURAL-7df30ea11238bd3de907",
+        "NEURAL-62e7ab6830566ab51bde"
+      ]
+    },
+    "C37": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 63,
+      "findingIds": [
+        "REFRESH-07099cd50ebd246067e2",
+        "REFRESH-22cd0b8e4a30d346fab9",
+        "C37-cd47c370552a356211b6",
+        "REFRESH-a79ffb7361f53f2e8db5",
+        "REFRESH-07bf23363cda06d4b0c1",
+        "REFRESH-00a510abfd4ce63fdc49",
+        "REFRESH-7bb372c11ebf89240e4c",
+        "REFRESH-77ec035c67c9ad9c82f1",
+        "C37-f44380cb3dabd6513c54",
+        "C37-398db000b39727b7c3e4",
+        "C37-8ff9153adc986cb2a1ca",
+        "REFRESH-f5a65cc73adf4e03ed06",
+        "REFRESH-b5254781d4a89ed08c72",
+        "REFRESH-ef57dca2a2e263008231",
+        "REFRESH-c9629ba58afa08a193fa",
+        "REFRESH-75f25d94e0b87b8eae31",
+        "REFRESH-2d27c2a8bfea041c59d7",
+        "REFRESH-148a65e6117dd08a12dd",
+        "REFRESH-97c1b7733d19400c8405",
+        "REFRESH-8b854faff539753b5837",
+        "REFRESH-7d07487efd9aaa98cfdb",
+        "REFRESH-a878c07401e9941894c8",
+        "REFRESH-43389fae64bb1c94a150",
+        "REFRESH-5358d771cfe880e51ed3",
+        "REFRESH-f1ec784e7466eb359025",
+        "C37-119d435f2f23c4d2bfac",
+        "C37-21be02557e66c426fc82",
+        "REFRESH-91b9b61e440b92b795b5",
+        "REFRESH-15c3898a84fd3fc555fc",
+        "REFRESH-d69ac044684cf910a44e",
+        "REFRESH-2fc3d09bce8e9bd92ff7",
+        "REFRESH-37793ba779f6e210be5f",
+        "REFRESH-2e669ddc3837a1deccbf",
+        "REFRESH-a05de6ea9337523ec2e2",
+        "REFRESH-6bff573d084aea24135a",
+        "REFRESH-32460b1fbc117a6c47d8",
+        "C37-bdf0650551ab10e98d14",
+        "C37-9c6fd1b5cdc25601ce32",
+        "C37-37e69709c20e4598aa4c",
+        "REFRESH-26d34ef7c79a6a9c4d6c",
+        "REFRESH-16f12fc1a8b2d8eace73",
+        "REFRESH-19fb0226f0a750138a61",
+        "REFRESH-ec1d35317e5e77bf8d04",
+        "REFRESH-13396728bc33ed6a9246",
+        "REFRESH-d824c8d95c25cd9fb5b1",
+        "C37-59601d956dda673e0b9c",
+        "REFRESH-fb42a1e267f9c06acd3c",
+        "REFRESH-1c5374d779edaf7ad3a8",
+        "REFRESH-f43cf47d5e881da7c18e",
+        "REFRESH-677e2d9bf3044c89707d",
+        "REFRESH-154fb881b338f5ad8820",
+        "REFRESH-0c25ef28dabc206227dd",
+        "REFRESH-57b3511698907ce0d9b8",
+        "REFRESH-79607552dc91a5735dfc",
+        "REFRESH-f05c15e6da83352857d4",
+        "REFRESH-43d87eaece1e60d92916",
+        "C37-5ad3847dec54087d0aa6",
+        "REFRESH-5ab7be2a060a6967b7b1",
+        "C37-3403fcfd768921063980",
+        "REFRESH-65938357102a1c4a385f",
+        "REFRESH-65df73f6a68151c7b849",
+        "REFRESH-c8a2a18b0c418f9b6bb3",
+        "REFRESH-03095fb29b02bc3e0702"
+      ]
+    },
+    "C38": {
+      "scope": "历史样本检查账本及独立汇总的问题清单",
+      "sampleStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "confirmedFindingCount": 0,
+      "candidateFindingCount": 0,
+      "findingIds": []
+    },
+    "C41": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C41.evidence.json",
+      "sha256": "99c85e7ebb9a718e71fa4f315e7bcadd6faa4d97ca86f5566fd763e06e23f349"
+    },
+    "C42": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C42.evidence.json",
+      "sha256": "dc0f0c823f19786c11b3f06f5b1b575aaf5418b86c6a48a7d170e2bf62957c04"
+    },
+    "C43": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C43.evidence.json",
+      "sha256": "e1b36748dee15f55b9c826549ce141eef4ce830679fa4bfc2ed7e3e92b1c2384"
+    },
+    "C44": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C44.evidence.json",
+      "sha256": "dbd2aa07826d7d9e59726076aa4fd5a3a72e719cef564c41a93c36a656059e43"
+    },
+    "C45": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C45.evidence.json",
+      "sha256": "aa9b1e3356746f7873244d0f880444739e15d2c7f0953ea648cd1cdf4eea3d9d"
+    },
+    "C46": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C46.evidence.json",
+      "sha256": "1ab55dcc687d3b81f2923ee1b7a5ca926a4ecd88ec90c1a4f988ff3bbcc4fda3"
+    },
+    "C47": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C47.evidence.json",
+      "sha256": "6f9f540066533bbf580972d502fc255c4a3eb5a934023715d794cef5694f088d"
+    },
+    "C48": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C48.evidence.json",
+      "sha256": "e9c0083ea0437651d2fe57b17d0f1456349f07e4d84483b92f0247c38d77cdc3"
+    },
+    "C49": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C49.evidence.json",
+      "sha256": "f444a6c5e29bf84b3b788e4fadf6d4ec73210c51df2a3002c665fa872acd1133"
+    },
+    "C50": {
+      "scope": "已归档的扩展检查实际运行",
+      "status": "undetermined",
+      "reason": "Missing versioned target and basis",
+      "evidencePath": "repair_20261110/formal_replay/EPB_seg_sample_fbbqy66u2d/C50.evidence.json",
+      "sha256": "1b11f2ff57661c21dad5f1ef82bd41fc41f9c68e78bf26ae9f4553e89d58fd75"
+    }
+  },
+  "formalAcceptance": "evidence_incomplete",
+  "fullQualityScore": null,
+  "observedTechnicalScore": 82.86802030456852,
+  "technicalRankGlobal": 9,
+  "approvedWeightPolicySha256": "2cf88dfa960cd38fca4d5cb5cf68318a7348cfb61ae43c9cebdf35a832059e30"
+}

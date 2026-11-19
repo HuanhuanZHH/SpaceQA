@@ -1,0 +1,569 @@
+{
+  "evidenceId": "EV-9dd1692e3d3880a568d63944",
+  "findingId": "C33-e3085db941cfad2eb045",
+  "sourceCard": "04_评分卡/EPB_seg_sample_fbbqy66u2d.json",
+  "sourceFinding": {
+    "findingId": "C33-e3085db941cfad2eb045",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "EPB_seg_sample_fbbqy66u2d",
+    "sampleId": "EPB_seg_sample_fbbqy66u2d:EGSQt4DVBMqzRgyU8fZw.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/EGSQt4DVBMqzRgyU8fZw.json",
+      "annotation_pointer": "/science_annotation/mask/shapes/0/label",
+      "bbox": [
+        321.42,
+        755.99,
+        422.6,
+        936.66
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/EGSQt4DVBMqzRgyU8fZw.png"
+    },
+    "detail": "类别'__OOV__'不属于声明的任务类别集合['EPB']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 1.0,
+      "unit": "ratio",
+      "normalized": 1.0
+    },
+    "measurements": {
+      "actual": "__OOV__",
+      "allowed": [
+        "EPB"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 1.0,
+      "invalid_object_count": 1,
+      "classified_object_count": 1
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/EGSQt4DVBMqzRgyU8fZw.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/EGSQt4DVBMqzRgyU8fZw.png",
+      "label_sha256": "8b37d63b83c9d71d05b9df8a71f4be04520f92c2537570ec23da5e1075a7b4cb",
+      "data_sha256_from_inventory": "93b98679f0e69c051dee2f61434dbd079c971699e65127bdc0f6f17f4a2aaaf9",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:23.596695+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "EGSQt4DVBMqzRgyU8fZw.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "EGSQt4DVBMqzRgyU8fZw.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2015-02-14 21:21:14",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x1024 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "__OOV__",
+            "points": [
+              [
+                388.53,
+                755.99
+              ],
+              [
+                387.49,
+                757.02
+              ],
+              [
+                384.4,
+                757.02
+              ],
+              [
+                383.36,
+                758.05
+              ],
+              [
+                381.3,
+                758.05
+              ],
+              [
+                378.2,
+                760.12
+              ],
+              [
+                376.14,
+                760.12
+              ],
+              [
+                369.94,
+                763.22
+              ],
+              [
+                367.88,
+                765.28
+              ],
+              [
+                363.75,
+                767.35
+              ],
+              [
+                358.59,
+                772.51
+              ],
+              [
+                348.26,
+                777.67
+              ],
+              [
+                343.1,
+                782.83
+              ],
+              [
+                342.07,
+                784.9
+              ],
+              [
+                342.07,
+                786.96
+              ],
+              [
+                341.04,
+                787.99
+              ],
+              [
+                341.04,
+                790.06
+              ],
+              [
+                338.97,
+                793.16
+              ],
+              [
+                338.97,
+                795.22
+              ],
+              [
+                335.87,
+                800.38
+              ],
+              [
+                335.87,
+                802.45
+              ],
+              [
+                333.81,
+                806.58
+              ],
+              [
+                333.81,
+                809.67
+              ],
+              [
+                332.78,
+                810.71
+              ],
+              [
+                332.78,
+                814.84
+              ],
+              [
+                331.74,
+                815.87
+              ],
+              [
+                330.71,
+                825.16
+              ],
+              [
+                328.65,
+                829.29
+              ],
+              [
+                328.65,
+                832.39
+              ],
+              [
+                327.62,
+                833.42
+              ],
+              [
+                327.62,
+                836.52
+              ],
+              [
+                326.58,
+                837.55
+              ],
+              [
+                326.58,
+                841.68
+              ],
+              [
+                325.55,
+                842.71
+              ],
+              [
+                325.55,
+                848.91
+              ],
+              [
+                324.52,
+                849.94
+              ],
+              [
+                324.52,
+                855.1
+              ],
+              [
+                323.49,
+                856.13
+              ],
+              [
+                323.49,
+                863.36
+              ],
+              [
+                322.45,
+                864.39
+              ],
+              [
+                322.45,
+                869.55
+              ],
+              [
+                321.42,
+                871.62
+              ],
+              [
+                322.45,
+                872.65
+              ],
+              [
+                322.45,
+                874.72
+              ],
+              [
+                324.52,
+                878.84
+              ],
+              [
+                325.55,
+                888.14
+              ],
+              [
+                327.62,
+                890.2
+              ],
+              [
+                328.65,
+                890.2
+              ],
+              [
+                335.87,
+                897.43
+              ],
+              [
+                338.97,
+                903.62
+              ],
+              [
+                341.04,
+                905.69
+              ],
+              [
+                343.1,
+                906.72
+              ],
+              [
+                345.17,
+                906.72
+              ],
+              [
+                346.2,
+                907.75
+              ],
+              [
+                348.26,
+                907.75
+              ],
+              [
+                354.46,
+                910.85
+              ],
+              [
+                360.65,
+                916.01
+              ],
+              [
+                361.68,
+                916.01
+              ],
+              [
+                365.81,
+                920.14
+              ],
+              [
+                366.85,
+                920.14
+              ],
+              [
+                370.98,
+                923.24
+              ],
+              [
+                373.04,
+                923.24
+              ],
+              [
+                374.07,
+                924.27
+              ],
+              [
+                376.14,
+                924.27
+              ],
+              [
+                377.17,
+                925.3
+              ],
+              [
+                379.24,
+                925.3
+              ],
+              [
+                380.27,
+                926.34
+              ],
+              [
+                385.43,
+                927.37
+              ],
+              [
+                392.66,
+                931.5
+              ],
+              [
+                395.75,
+                931.5
+              ],
+              [
+                396.79,
+                932.53
+              ],
+              [
+                401.95,
+                933.56
+              ],
+              [
+                407.11,
+                936.66
+              ],
+              [
+                410.21,
+                936.66
+              ],
+              [
+                412.27,
+                935.63
+              ],
+              [
+                415.37,
+                931.5
+              ],
+              [
+                418.47,
+                925.3
+              ],
+              [
+                418.47,
+                922.21
+              ],
+              [
+                419.5,
+                921.17
+              ],
+              [
+                418.47,
+                919.11
+              ],
+              [
+                418.47,
+                907.75
+              ],
+              [
+                417.43,
+                906.72
+              ],
+              [
+                417.43,
+                903.62
+              ],
+              [
+                418.47,
+                902.59
+              ],
+              [
+                418.47,
+                889.17
+              ],
+              [
+                419.5,
+                888.14
+              ],
+              [
+                419.5,
+                879.88
+              ],
+              [
+                420.53,
+                878.84
+              ],
+              [
+                420.53,
+                871.62
+              ],
+              [
+                421.56,
+                870.59
+              ],
+              [
+                421.56,
+                860.26
+              ],
+              [
+                422.6,
+                859.23
+              ],
+              [
+                422.6,
+                839.61
+              ],
+              [
+                421.56,
+                838.58
+              ],
+              [
+                420.53,
+                831.35
+              ],
+              [
+                419.5,
+                830.32
+              ],
+              [
+                418.47,
+                825.16
+              ],
+              [
+                415.37,
+                820.0
+              ],
+              [
+                415.37,
+                817.93
+              ],
+              [
+                413.3,
+                813.8
+              ],
+              [
+                411.24,
+                811.74
+              ],
+              [
+                407.11,
+                802.45
+              ],
+              [
+                405.04,
+                800.38
+              ],
+              [
+                405.04,
+                798.32
+              ],
+              [
+                400.92,
+                791.09
+              ],
+              [
+                400.92,
+                773.54
+              ],
+              [
+                394.72,
+                762.18
+              ],
+              [
+                394.72,
+                760.12
+              ],
+              [
+                393.69,
+                758.05
+              ],
+              [
+                391.62,
+                755.99
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "EGSQt4DVBMqzRgyU8fZw.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "26.370811759985287N",
+        "northmostPointLongitude": "107.3554274678485E",
+        "area": "96956.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSnapshotSourceSha256": "8b37d63b83c9d71d05b9df8a71f4be04520f92c2537570ec23da5e1075a7b4cb",
+  "originalLabelHashMatches": true
+}

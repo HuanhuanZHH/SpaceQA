@@ -1,0 +1,10 @@
+STEP 1/4: FROM localhost/spaceqa-agent:0.6.1-final-r4-20261110
+STEP 2/4: COPY source/src/spaceqa_agent/ /staff/tangjiarui/OPC/spaceqa-agent/src/spaceqa_agent/
+--> a86da46746c
+STEP 3/4: COPY source/runtime/ /opt/spaceqa/
+--> 538155d2e3c
+STEP 4/4: COPY source/scripts/audit_evaluation.py /opt/spaceqa/audit_evaluation.py
+COMMIT localhost/spaceqa-agent:dev-rebuild-validation-20261110
+--> d846e7e6c5f
+Successfully tagged localhost/spaceqa-agent:dev-rebuild-validation-20261110
+d846e7e6c5f9678c1e9369129500e7b8b7193f0c547ded10b85ec3ad83d433a7

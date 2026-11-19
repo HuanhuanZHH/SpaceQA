@@ -1,0 +1,21 @@
+{
+  "command": [
+    "podman",
+    "--root",
+    "/tmp/spaceqa-release-clean-20261110/storage",
+    "--runroot",
+    "/tmp/spaceqa-release-clean-20261110/runroot",
+    "--storage-driver=vfs",
+    "--storage-opt",
+    "vfs.ignore_chown_errors=true",
+    "--cgroup-manager=cgroupfs",
+    "--events-backend=file",
+    "--runtime=/staff/tangjiarui/OPC/LTH\u56e2\u961f-SpaceQA\u667a\u80fd\u4f53/repair_20261110/runtime_candidate/clean_crun"
+  ],
+  "environment": {
+    "XDG_RUNTIME_DIR": "/tmp/spaceqa-release-clean-20261110/runtime",
+    "XDG_CONFIG_HOME": "/tmp/spaceqa-release-clean-20261110/config",
+    "XDG_CACHE_HOME": "/tmp/spaceqa-release-clean-20261110/cache",
+    "TMPDIR": "/tmp/spaceqa-release-clean-20261110/tmp"
+  }
+}

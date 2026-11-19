@@ -1,0 +1,28 @@
+{
+  "command": [
+    "podman",
+    "--root",
+    "/tmp/spaceqa-final-icarus1-20261110/storage",
+    "--runroot",
+    "/tmp/spaceqa-final-icarus1-20261110/runroot",
+    "--storage-driver=vfs",
+    "--storage-opt",
+    "vfs.ignore_chown_errors=true",
+    "--cgroup-manager=cgroupfs",
+    "--events-backend=file",
+    "--runtime=/staff/tangjiarui/OPC/LTH\u56e2\u961f-SpaceQA\u667a\u80fd\u4f53/repair_20261110/runtime_candidate/runtime_icarus1/crun"
+  ],
+  "environment": {
+    "XDG_RUNTIME_DIR": "/tmp/spaceqa-final-icarus1-20261110/runtime",
+    "XDG_CONFIG_HOME": "/tmp/spaceqa-final-icarus1-20261110/config",
+    "XDG_CACHE_HOME": "/tmp/spaceqa-final-icarus1-20261110/cache",
+    "TMPDIR": "/tmp/spaceqa-final-icarus1-20261110/tmp"
+  },
+  "gpuUuid": "GPU-72e2221a-83b6-60bf-ee18-7587ccd188ca",
+  "gpuIndex": 1,
+  "driverPath": "/staff/tangjiarui/OPC/LTH\u56e2\u961f-SpaceQA\u667a\u80fd\u4f53/repair_20261110/runtime_candidate/host-driver-icarus1",
+  "imageId": "9dc9faaf070a4e5a98cb0642f6a3d0299a15a17c6a811c3d27d3da23dd97d323",
+  "loadSeconds": 425.36053109169006,
+  "storeInitiallyEmpty": true,
+  "tag": "localhost/spaceqa-agent:0.6.1-final-r4-20261110"
+}

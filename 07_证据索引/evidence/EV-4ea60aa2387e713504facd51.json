@@ -1,0 +1,214 @@
+{
+  "evidenceId": "EV-4ea60aa2387e713504facd51",
+  "findingId": "NEURAL-83de9fb642ec14294b02",
+  "sourceCard": "04_评分卡/EPB_seg_sample_fbbqy66u2d.json",
+  "sourceFinding": {
+    "findingId": "NEURAL-83de9fb642ec14294b02",
+    "checkId": "C36",
+    "ruleVersion": "eight-localizer-20261104",
+    "dirId": "EPB_seg_sample_fbbqy66u2d",
+    "sampleId": "EPB_seg_sample_fbbqy66u2d:Qd4vu2LQA1Tcryt8YKwU.json",
+    "defectType": "L3-06",
+    "sourceKind": "independent_RGB_model",
+    "detail": "unmatched_independent_target；原始图像预测与当前标注对比，尚未获独立科学确认",
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/Qd4vu2LQA1Tcryt8YKwU.png",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/Qd4vu2LQA1Tcryt8YKwU.png",
+      "bbox": [
+        405.3333333333333,
+        658.6666666666666,
+        509.3333333333333,
+        938.6666666666666
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "frame_id": "26cd1e7fbf01e9dfdcf218ec8139ccdbee4290745617d72cfaf5b7970f032e2b",
+      "annotation_pointer": null
+    },
+    "severity": {
+      "metric": "unmatched_predicted_target",
+      "value": 1.0,
+      "unit": "object"
+    },
+    "measurements": {
+      "predicted_component_pixels": 2263
+    },
+    "confidence": 0.9650042653083801,
+    "fusion_class_probability": 0.0,
+    "fusion_group_probability": 0.976610992358639,
+    "candidate_trigger": "fresh_coarse_count_investigation",
+    "risk_weight_source": "GCD-C fallback",
+    "weighted_burden": 0.976610992358639,
+    "checkpoint_sha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+    "scoreEligible": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/Qd4vu2LQA1Tcryt8YKwU.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5f75097e1ed2fc55cd45bc2dc98e53f0b0265458fc14a4281b281c19fd65bf50/EPB_seg_sample_fbbqy66u2d/Qd4vu2LQA1Tcryt8YKwU.png",
+      "data_sha256": "26cd1e7fbf01e9dfdcf218ec8139ccdbee4290745617d72cfaf5b7970f032e2b",
+      "label_sha256": "1edfd0c1c88686c44801d8443556cd838a0b927760114ea007baa3c3af7138ac"
+    },
+    "probability": 0.9650042653083801,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:23.702821+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "Qd4vu2LQA1Tcryt8YKwU.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "Qd4vu2LQA1Tcryt8YKwU.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2015-02-16 02:41:31",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x1024 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "EPB",
+            "points": [
+              [
+                504,
+                877
+              ],
+              [
+                503,
+                878
+              ],
+              [
+                503,
+                883
+              ],
+              [
+                502,
+                884
+              ],
+              [
+                502,
+                887
+              ],
+              [
+                503,
+                888
+              ],
+              [
+                504,
+                888
+              ],
+              [
+                505,
+                887
+              ],
+              [
+                505,
+                882
+              ],
+              [
+                504,
+                881
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          },
+          {
+            "label": "EPB",
+            "points": [
+              [
+                322.88,
+                814.2
+              ],
+              [
+                321.83,
+                815.25
+              ],
+              [
+                321.83,
+                820.49
+              ],
+              [
+                320.78,
+                821.54
+              ],
+              [
+                320.78,
+                824.69
+              ],
+              [
+                321.83,
+                825.74
+              ],
+              [
+                322.88,
+                825.74
+              ],
+              [
+                323.93,
+                824.69
+              ],
+              [
+                323.93,
+                819.45
+              ],
+              [
+                322.88,
+                818.4
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "Qd4vu2LQA1Tcryt8YKwU.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "26.82215909873233N",
+        "northmostPointLongitude": "102.42372200889132E",
+        "area": "159056.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSnapshotSourceSha256": "1edfd0c1c88686c44801d8443556cd838a0b927760114ea007baa3c3af7138ac",
+  "originalLabelHashMatches": true
+}

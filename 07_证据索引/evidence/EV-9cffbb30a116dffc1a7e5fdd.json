@@ -1,0 +1,526 @@
+{
+  "evidenceId": "EV-9cffbb30a116dffc1a7e5fdd",
+  "findingId": "NEURAL-736169f57c6fcaaf1127",
+  "sourceCard": "04_评分卡/EPB_seg_sample_z443g9dgh7.json",
+  "sourceFinding": {
+    "findingId": "NEURAL-736169f57c6fcaaf1127",
+    "checkId": "C36",
+    "ruleVersion": "eight-localizer-20261104",
+    "dirId": "EPB_seg_sample_z443g9dgh7",
+    "sampleId": "EPB_seg_sample_z443g9dgh7:Ffi1UHTA9c1TDUfWqZgz.json",
+    "defectType": "L3-06",
+    "sourceKind": "independent_RGB_model",
+    "detail": "unmatched_independent_target；原始图像预测与当前标注对比，尚未获独立科学确认",
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5332b7aaae96e753aae0f9480b1790ae22c7186f049fdaead072b368feed2e6f/EPB_seg_sample_z443g9dgh7/Ffi1UHTA9c1TDUfWqZgz.png",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5332b7aaae96e753aae0f9480b1790ae22c7186f049fdaead072b368feed2e6f/EPB_seg_sample_z443g9dgh7/Ffi1UHTA9c1TDUfWqZgz.png",
+      "bbox": [
+        642.6666666666666,
+        608.0,
+        674.6666666666666,
+        698.6666666666666
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "frame_id": "78fe40026ee44d664a146b9e9aeb328baf1eb3ee0f788a080226988064e8ffeb",
+      "annotation_pointer": null
+    },
+    "severity": {
+      "metric": "unmatched_predicted_target",
+      "value": 1.0,
+      "unit": "object"
+    },
+    "measurements": {
+      "predicted_component_pixels": 289
+    },
+    "confidence": 0.9382839798927307,
+    "fusion_class_probability": 0.0,
+    "fusion_group_probability": 0.9769464514117905,
+    "candidate_trigger": "fresh_coarse_count_investigation",
+    "risk_weight_source": "GCD-C fallback",
+    "weighted_burden": 0.9769464514117905,
+    "checkpoint_sha256": "2493d25206db1f47de265a28ad34e35d24b8186ca34160211fc023b290dd0c2b",
+    "scoreEligible": false,
+    "findingStage": "candidate",
+    "verdict": "undetermined",
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5332b7aaae96e753aae0f9480b1790ae22c7186f049fdaead072b368feed2e6f/EPB_seg_sample_z443g9dgh7/Ffi1UHTA9c1TDUfWqZgz.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/5332b7aaae96e753aae0f9480b1790ae22c7186f049fdaead072b368feed2e6f/EPB_seg_sample_z443g9dgh7/Ffi1UHTA9c1TDUfWqZgz.png",
+      "data_sha256": "78fe40026ee44d664a146b9e9aeb328baf1eb3ee0f788a080226988064e8ffeb",
+      "label_sha256": "2818f62c99a72414488183def1987aff4213acd3808a03645f84093a1b9f45e1"
+    },
+    "probability": 0.9382839798927307,
+    "impact": {
+      "label": "模型候选需复核"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:26.870966+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "Ffi1UHTA9c1TDUfWqZgz.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "Ffi1UHTA9c1TDUfWqZgz.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2015-03-13 22:40:19",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x1024 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "__OOV__",
+            "points": [
+              [
+                644,
+                374
+              ],
+              [
+                630,
+                378
+              ],
+              [
+                620,
+                387
+              ],
+              [
+                617,
+                393
+              ],
+              [
+                615,
+                403
+              ],
+              [
+                615,
+                425
+              ],
+              [
+                621,
+                450
+              ],
+              [
+                623,
+                489
+              ],
+              [
+                627,
+                503
+              ],
+              [
+                635,
+                517
+              ],
+              [
+                640,
+                537
+              ],
+              [
+                643,
+                585
+              ],
+              [
+                640,
+                598
+              ],
+              [
+                639,
+                618
+              ],
+              [
+                646,
+                655
+              ],
+              [
+                646,
+                671
+              ],
+              [
+                644,
+                687
+              ],
+              [
+                645,
+                706
+              ],
+              [
+                647,
+                716
+              ],
+              [
+                651,
+                726
+              ],
+              [
+                658,
+                735
+              ],
+              [
+                662,
+                743
+              ],
+              [
+                670,
+                751
+              ],
+              [
+                679,
+                768
+              ],
+              [
+                693,
+                784
+              ],
+              [
+                696,
+                785
+              ],
+              [
+                709,
+                771
+              ],
+              [
+                713,
+                764
+              ],
+              [
+                720,
+                738
+              ],
+              [
+                730,
+                715
+              ],
+              [
+                734,
+                696
+              ],
+              [
+                734,
+                670
+              ],
+              [
+                733,
+                669
+              ],
+              [
+                734,
+                611
+              ],
+              [
+                735,
+                610
+              ],
+              [
+                733,
+                568
+              ],
+              [
+                728,
+                556
+              ],
+              [
+                725,
+                553
+              ],
+              [
+                709,
+                546
+              ],
+              [
+                698,
+                536
+              ],
+              [
+                697,
+                515
+              ],
+              [
+                699,
+                503
+              ],
+              [
+                699,
+                484
+              ],
+              [
+                690,
+                450
+              ],
+              [
+                689,
+                423
+              ],
+              [
+                685,
+                408
+              ],
+              [
+                676,
+                393
+              ],
+              [
+                670,
+                387
+              ],
+              [
+                648,
+                374
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          },
+          {
+            "label": "__OOV__",
+            "points": [
+              [
+                724.6,
+                477.16
+              ],
+              [
+                712.52,
+                480.61
+              ],
+              [
+                703.89,
+                488.38
+              ],
+              [
+                701.3,
+                493.56
+              ],
+              [
+                699.57,
+                502.19
+              ],
+              [
+                699.57,
+                521.18
+              ],
+              [
+                704.75,
+                542.76
+              ],
+              [
+                706.48,
+                576.43
+              ],
+              [
+                709.93,
+                588.52
+              ],
+              [
+                716.83,
+                600.6
+              ],
+              [
+                721.15,
+                617.87
+              ],
+              [
+                723.74,
+                659.31
+              ],
+              [
+                721.15,
+                670.53
+              ],
+              [
+                720.29,
+                687.79
+              ],
+              [
+                726.33,
+                719.73
+              ],
+              [
+                726.33,
+                733.55
+              ],
+              [
+                724.6,
+                747.36
+              ],
+              [
+                725.47,
+                763.76
+              ],
+              [
+                727.19,
+                772.39
+              ],
+              [
+                730.65,
+                781.03
+              ],
+              [
+                736.69,
+                788.8
+              ],
+              [
+                740.14,
+                795.7
+              ],
+              [
+                747.05,
+                802.61
+              ],
+              [
+                754.82,
+                817.28
+              ],
+              [
+                766.9,
+                831.1
+              ],
+              [
+                769.49,
+                831.96
+              ],
+              [
+                780.72,
+                819.87
+              ],
+              [
+                784.17,
+                813.83
+              ],
+              [
+                790.21,
+                791.39
+              ],
+              [
+                798.85,
+                771.53
+              ],
+              [
+                802.3,
+                755.13
+              ],
+              [
+                802.3,
+                732.68
+              ],
+              [
+                801.44,
+                731.82
+              ],
+              [
+                802.3,
+                681.75
+              ],
+              [
+                803.16,
+                680.89
+              ],
+              [
+                801.44,
+                644.63
+              ],
+              [
+                797.12,
+                634.27
+              ],
+              [
+                794.53,
+                631.68
+              ],
+              [
+                780.72,
+                625.64
+              ],
+              [
+                771.22,
+                617.0
+              ],
+              [
+                770.36,
+                598.88
+              ],
+              [
+                772.08,
+                588.52
+              ],
+              [
+                772.08,
+                572.11
+              ],
+              [
+                764.31,
+                542.76
+              ],
+              [
+                763.45,
+                519.46
+              ],
+              [
+                760.0,
+                506.51
+              ],
+              [
+                752.23,
+                493.56
+              ],
+              [
+                747.05,
+                488.38
+              ],
+              [
+                728.06,
+                477.16
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "Ffi1UHTA9c1TDUfWqZgz.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "28.009904461181822N",
+        "northmostPointLongitude": "100.84087038566226E",
+        "area": "394464.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSnapshotSourceSha256": "2818f62c99a72414488183def1987aff4213acd3808a03645f84093a1b9f45e1",
+  "originalLabelHashMatches": true
+}

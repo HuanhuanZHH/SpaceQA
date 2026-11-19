@@ -1,0 +1,39 @@
+{
+  "name": "opc-evidence-first-agent",
+  "version": "0.6.0",
+  "orchestration": "pipeline",
+  "entrypoint": "python3 /app/opc_agent.py scan",
+  "modelToolAllowlist": [],
+  "decisionPoints": [
+    {
+      "id": "select-reference",
+      "trigger": "two or more sibling quality versions",
+      "fallback": "pending semantic checks"
+    },
+    {
+      "id": "score",
+      "trigger": "checks complete",
+      "fallback": "exclude uncomputable dimensions"
+    }
+  ],
+  "concurrency": "single-process deterministic",
+  "state": "run-local output only",
+  "globalSeed": 20261021,
+  "subAgents": [],
+  "runtime": {
+    "python": ">=3.10",
+    "network": "disabled",
+    "accelerator": "optional; deterministic rules run without one"
+  },
+  "guardrails": {
+    "input": "read-only",
+    "writeAllowlist": [
+      "OUTPUT_ROOT"
+    ],
+    "network": "disabled",
+    "modelTokenQuota": 0,
+    "auditHook": "08_运行日志/run.log.jsonl"
+  },
+  "noSubAgentReason": "All scored arithmetic and evidence generation are deterministic; independent model contexts would add variance without improving the current verified checks.",
+  "release": "spaceqa-agent-0.6.0"
+}

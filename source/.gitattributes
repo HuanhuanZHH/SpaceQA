@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+# JSON/CSV source snapshots may contain original CRLF/BOM bytes.
+*.json -text
+*.csv -text
+# Historical scientific code and reference files are byte-identical snapshots.
+experiments/** -text -whitespace
+reproducibility/legacy_runtime/** -text -whitespace
+reproducibility/external_preprocessing/** -text -whitespace
+results/reference/** -text -whitespace
+configs/dispatch_20_models.json -text
+spec/** -text -whitespace
+src/spaceqa_agent/assets/** -text -whitespace
+benchmark/** -whitespace

@@ -1,0 +1,116 @@
+{
+  "evidenceId": "EV-da9d62066a08407dc4bacdc3",
+  "findingId": "C31-075561276592a4898af2",
+  "sourceCard": "04_评分卡/ULF_sample_xfnogkdey9.json",
+  "sourceFinding": {
+    "findingId": "C31-075561276592a4898af2",
+    "checkId": "C31",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "ULF_sample_xfnogkdey9",
+    "sampleId": "ULF_sample_xfnogkdey9:rcmoGPagcv7A0KaPI61b.csv.json",
+    "defectType": "L0-01",
+    "aliasCodes": [
+      "L0-03"
+    ],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "file",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/rcmoGPagcv7A0KaPI61b.csv.json",
+      "annotation_pointer": null,
+      "expected_data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/rcmoGPagcv7A0KaPI61b.csv"
+    },
+    "detail": "标注存在，对应数据文件缺失",
+    "severity": {
+      "metric": "missing_file",
+      "value": 1.0,
+      "unit": "file",
+      "normalized": 1.0
+    },
+    "measurements": {},
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/rcmoGPagcv7A0KaPI61b.csv.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/9d61eb70382ac1c76a18e6b4ed3ff11f2561387306e49286de8d86791046ada8/ULF_sample_xfnogkdey9/rcmoGPagcv7A0KaPI61b.csv",
+      "label_sha256": "9eb34c923c79d03566956484f0234007b38e4eab311659e50c4f8e8c64a06e48",
+      "data_sha256_from_inventory": null,
+      "data_hash_verification": "fresh input SHA256"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:35.883273+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "identifier": "id-008258",
+      "fileName": "rcmoGPagcv7A0KaPI61b.csv",
+      "labelCreateTime": "2026-09-29T07:59:53.161845Z",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "rcmoGPagcv7A0KaPI61b.csv",
+      "relativePath": ".",
+      "modality": "timeseries",
+      "fileFormat": "csv",
+      "startTime": "2014-05-16T09:00:00Z",
+      "endTime": "2014-05-16T09:59:59Z",
+      "timestamp": "2026-09-29T07:59:53.161853Z",
+      "project": "",
+      "observatoryType": "ground",
+      "observatoryName": "anonymous",
+      "dataType": "geomagnetic_timeseries"
+    },
+    "science_annotation": {
+      "observatory": "anonymous",
+      "network": "anonymous",
+      "instrument": "anonymous",
+      "components": [
+        "H",
+        "D",
+        "Z",
+        "T"
+      ],
+      "sampling_rate_hz": 1,
+      "duration_s": 3600,
+      "n_points": 3600,
+      "units": "nT (H/Z/T), deg (D)",
+      "level": "L1 (raw 1Hz)",
+      "dateObs": "2014-05-16T09:00:00Z"
+    },
+    "ulf_event_annotation": {
+      "has_events": true,
+      "event_count": 2,
+      "event_types": [
+        "Pi2"
+      ],
+      "matched_events": [
+        {
+          "start_dt": "2014-05-16T09:20:00",
+          "end_dt": "2014-05-16T09:30:00",
+          "kind": "Pi2",
+          "source": "F006/_entries_p2pi2.jsonl"
+        },
+        {
+          "start_dt": "2014-05-16T09:40:00",
+          "end_dt": "2014-05-16T09:50:00",
+          "kind": "Pi2",
+          "source": "F006/_entries_p2pi2.jsonl"
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "9eb34c923c79d03566956484f0234007b38e4eab311659e50c4f8e8c64a06e48",
+  "originalLabelHashMatches": true
+}

@@ -1,0 +1,726 @@
+{
+  "finding": {
+    "findingId": "C33-3dbf4796423ba0ae1cc3",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "EPB_seg_sample_z443g9dgh7",
+    "sampleId": "8b04fd0af616999d362f75706dc8bbaf6b4cc49799181de58e04553451883a60",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "imageRegion",
+      "path": "/input/EPB_seg_sample_z443g9dgh7/0zMxw97U_lLJx6EhspR_.json",
+      "annotation_pointer": "/science_annotation/mask/shapes/0/label",
+      "bbox": [
+        474,
+        789,
+        543,
+        936
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "data_path": "/input/EPB_seg_sample_z443g9dgh7/0zMxw97U_lLJx6EhspR_.png"
+    },
+    "detail": "类别'__OOV__'不属于声明的任务类别集合['EPB']；依据：Frozen task-family vocabulary; technical contract, not independent scientific truth",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 1.0,
+      "unit": "ratio",
+      "normalized": 1.0,
+      "tolerance": null,
+      "unavailableReason": "No calibrated physical severity or tolerance; model probabilities are not degree measurements"
+    },
+    "measurements": {
+      "actual": "__OOV__",
+      "allowed": [
+        "EPB"
+      ],
+      "contract_source": "Frozen task-family vocabulary; technical contract, not independent scientific truth",
+      "affected_object_fraction": 1.0,
+      "invalid_object_count": 1,
+      "classified_object_count": 1
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/input/EPB_seg_sample_z443g9dgh7/0zMxw97U_lLJx6EhspR_.json",
+      "data_path": "/input/EPB_seg_sample_z443g9dgh7/0zMxw97U_lLJx6EhspR_.png",
+      "label_sha256": "bab248ac28036c3d837076788c2a652e362abff1dd1f7363f39e6d97fd220b9a",
+      "data_sha256_from_inventory": "16eb8a28336b57e131166678680503fa271db9f9c799331fe083e6473946276f",
+      "data_hash_verification": "fresh SHA256"
+    },
+    "runId": "LTH-20261110T024219Z-eafd2294",
+    "datasetId": "EPB_seg_sample",
+    "datasetVersion": "V0.0.0.1",
+    "status": "fail",
+    "evidenceRef": [
+      "EV-c9d5e63fbd5a0aa977e0cf3e"
+    ],
+    "affectedScope": {
+      "unit": "registered_sample",
+      "numerator": 1,
+      "denominator": 16
+    },
+    "criticality": "general",
+    "basis": {
+      "ruleVersion": "eight-class-ledger-1.0",
+      "source": null,
+      "scientificGroundTruth": false
+    },
+    "notApplicableReason": null,
+    "confirmedOrPending": "confirmed"
+  },
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "0zMxw97U_lLJx6EhspR_.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "0zMxw97U_lLJx6EhspR_.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2014-03-31 02:36:35",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x1024 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "__OOV__",
+            "points": [
+              [
+                487,
+                789
+              ],
+              [
+                486,
+                790
+              ],
+              [
+                485,
+                790
+              ],
+              [
+                481,
+                794
+              ],
+              [
+                481,
+                795
+              ],
+              [
+                479,
+                797
+              ],
+              [
+                479,
+                798
+              ],
+              [
+                476,
+                803
+              ],
+              [
+                476,
+                805
+              ],
+              [
+                475,
+                806
+              ],
+              [
+                475,
+                813
+              ],
+              [
+                474,
+                814
+              ],
+              [
+                474,
+                824
+              ],
+              [
+                477,
+                829
+              ],
+              [
+                477,
+                831
+              ],
+              [
+                479,
+                834
+              ],
+              [
+                479,
+                836
+              ],
+              [
+                480,
+                837
+              ],
+              [
+                480,
+                838
+              ],
+              [
+                481,
+                839
+              ],
+              [
+                482,
+                842
+              ],
+              [
+                484,
+                844
+              ],
+              [
+                484,
+                845
+              ],
+              [
+                486,
+                847
+              ],
+              [
+                486,
+                848
+              ],
+              [
+                488,
+                850
+              ],
+              [
+                488,
+                851
+              ],
+              [
+                492,
+                855
+              ],
+              [
+                492,
+                856
+              ],
+              [
+                494,
+                859
+              ],
+              [
+                494,
+                861
+              ],
+              [
+                496,
+                864
+              ],
+              [
+                496,
+                867
+              ],
+              [
+                497,
+                868
+              ],
+              [
+                497,
+                871
+              ],
+              [
+                498,
+                872
+              ],
+              [
+                498,
+                876
+              ],
+              [
+                499,
+                877
+              ],
+              [
+                499,
+                881
+              ],
+              [
+                500,
+                882
+              ],
+              [
+                500,
+                886
+              ],
+              [
+                501,
+                887
+              ],
+              [
+                501,
+                892
+              ],
+              [
+                502,
+                893
+              ],
+              [
+                502,
+                898
+              ],
+              [
+                503,
+                899
+              ],
+              [
+                503,
+                903
+              ],
+              [
+                504,
+                904
+              ],
+              [
+                504,
+                918
+              ],
+              [
+                505,
+                919
+              ],
+              [
+                505,
+                922
+              ],
+              [
+                506,
+                923
+              ],
+              [
+                506,
+                924
+              ],
+              [
+                507,
+                925
+              ],
+              [
+                508,
+                928
+              ],
+              [
+                512,
+                933
+              ],
+              [
+                512,
+                934
+              ],
+              [
+                513,
+                934
+              ],
+              [
+                514,
+                935
+              ],
+              [
+                516,
+                935
+              ],
+              [
+                517,
+                936
+              ],
+              [
+                521,
+                936
+              ],
+              [
+                522,
+                935
+              ],
+              [
+                524,
+                935
+              ],
+              [
+                525,
+                934
+              ],
+              [
+                526,
+                934
+              ],
+              [
+                529,
+                931
+              ],
+              [
+                530,
+                931
+              ],
+              [
+                531,
+                930
+              ],
+              [
+                534,
+                929
+              ],
+              [
+                542,
+                921
+              ],
+              [
+                542,
+                920
+              ],
+              [
+                543,
+                919
+              ],
+              [
+                543,
+                917
+              ],
+              [
+                542,
+                916
+              ],
+              [
+                542,
+                913
+              ],
+              [
+                541,
+                912
+              ],
+              [
+                541,
+                909
+              ],
+              [
+                540,
+                908
+              ],
+              [
+                540,
+                904
+              ],
+              [
+                539,
+                903
+              ],
+              [
+                539,
+                901
+              ],
+              [
+                538,
+                900
+              ],
+              [
+                538,
+                898
+              ],
+              [
+                537,
+                897
+              ],
+              [
+                537,
+                895
+              ],
+              [
+                535,
+                892
+              ],
+              [
+                535,
+                890
+              ],
+              [
+                533,
+                887
+              ],
+              [
+                533,
+                884
+              ],
+              [
+                532,
+                883
+              ],
+              [
+                532,
+                880
+              ],
+              [
+                531,
+                879
+              ],
+              [
+                531,
+                876
+              ],
+              [
+                530,
+                875
+              ],
+              [
+                530,
+                871
+              ],
+              [
+                529,
+                870
+              ],
+              [
+                529,
+                868
+              ],
+              [
+                528,
+                867
+              ],
+              [
+                528,
+                865
+              ],
+              [
+                527,
+                864
+              ],
+              [
+                527,
+                862
+              ],
+              [
+                526,
+                861
+              ],
+              [
+                526,
+                859
+              ],
+              [
+                525,
+                858
+              ],
+              [
+                525,
+                856
+              ],
+              [
+                524,
+                855
+              ],
+              [
+                524,
+                854
+              ],
+              [
+                523,
+                853
+              ],
+              [
+                523,
+                852
+              ],
+              [
+                522,
+                851
+              ],
+              [
+                522,
+                850
+              ],
+              [
+                521,
+                849
+              ],
+              [
+                521,
+                848
+              ],
+              [
+                520,
+                847
+              ],
+              [
+                520,
+                846
+              ],
+              [
+                519,
+                845
+              ],
+              [
+                518,
+                842
+              ],
+              [
+                516,
+                840
+              ],
+              [
+                516,
+                839
+              ],
+              [
+                515,
+                838
+              ],
+              [
+                515,
+                836
+              ],
+              [
+                513,
+                833
+              ],
+              [
+                513,
+                831
+              ],
+              [
+                512,
+                830
+              ],
+              [
+                512,
+                828
+              ],
+              [
+                511,
+                827
+              ],
+              [
+                511,
+                825
+              ],
+              [
+                510,
+                824
+              ],
+              [
+                510,
+                821
+              ],
+              [
+                509,
+                820
+              ],
+              [
+                509,
+                817
+              ],
+              [
+                508,
+                816
+              ],
+              [
+                508,
+                813
+              ],
+              [
+                507,
+                812
+              ],
+              [
+                507,
+                810
+              ],
+              [
+                506,
+                809
+              ],
+              [
+                506,
+                807
+              ],
+              [
+                505,
+                806
+              ],
+              [
+                505,
+                805
+              ],
+              [
+                504,
+                804
+              ],
+              [
+                503,
+                801
+              ],
+              [
+                495,
+                793
+              ],
+              [
+                494,
+                793
+              ],
+              [
+                489,
+                789
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "0zMxw97U_lLJx6EhspR_.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "20.805170658331516N",
+        "northmostPointLongitude": "103.35767539470991E",
+        "area": "19116.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSha256": "bab248ac28036c3d837076788c2a652e362abff1dd1f7363f39e6d97fd220b9a",
+  "inputMount": "/input",
+  "originalDataPath": "/input/EPB_seg_sample_z443g9dgh7/0zMxw97U_lLJx6EhspR_.png",
+  "capturedBy": "publish_run-20261110",
+  "runId": "LTH-20261110T024219Z-eafd2294"
+}

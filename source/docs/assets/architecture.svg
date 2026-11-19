@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">SpaceQA Agent evidence-first data flow</title>
+  <desc id="desc">Input packages flow through inventory, deterministic checks, expert dispatch, HGB7 fusion, evidence, scoring, ranking, and audit.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#eaf3ff"/><stop offset="1" stop-color="#d8e9ff"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#fff5df"/><stop offset="1" stop-color="#ffe9b8"/></linearGradient>
+    <linearGradient id="green" x1="0" x2="1"><stop stop-color="#edf9f1"/><stop offset="1" stop-color="#d7f0df"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#1d3557" flood-opacity=".12"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#54708d"/></marker>
+    <style>
+      .title{font:700 28px system-ui,'Microsoft YaHei',sans-serif;fill:#14314f}.subtitle{font:15px system-ui,'Microsoft YaHei',sans-serif;fill:#627b94}.head{font:700 17px system-ui,'Microsoft YaHei',sans-serif;fill:#173c5c}.body{font:13px system-ui,'Microsoft YaHei',sans-serif;fill:#46627d}.small{font:12px system-ui,'Microsoft YaHei',sans-serif;fill:#68819b}.box{stroke:#a9c1d8;stroke-width:1.5;rx:16}.line{stroke:#54708d;stroke-width:2.4;fill:none;marker-end:url(#arrow)}.dashed{stroke:#7e9ab4;stroke-width:2;stroke-dasharray:8 7;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="760" fill="#f7fafc"/>
+  <text x="70" y="60" class="title">SpaceQA Agent · evidence-first quality assessment</text>
+  <text x="70" y="90" class="subtitle">规则确认提供可计分事实，21 个专家提供可复核候选，最终由固定程序生成八类画像、六维观测和排序。</text>
+
+  <rect x="70" y="150" width="220" height="108" class="box" fill="url(#blue)" filter="url(#shadow)"/>
+  <text x="180" y="187" text-anchor="middle" class="head">输入数据包</text>
+  <text x="180" y="214" text-anchor="middle" class="body">PNG / CSV + JSON 标签</text>
+  <text x="180" y="237" text-anchor="middle" class="small">AIA · HMI · CME · EPB · DMSP · ULF</text>
+
+  <rect x="350" y="150" width="230" height="108" class="box" fill="url(#blue)" filter="url(#shadow)"/>
+  <text x="465" y="187" text-anchor="middle" class="head">清单与哈希</text>
+  <text x="465" y="214" text-anchor="middle" class="body">配对、尺寸、时间、版本</text>
+  <text x="465" y="237" text-anchor="middle" class="small">缺失引用保留，不删除原始记录</text>
+
+  <path d="M290 204 H350" class="line"/>
+
+  <rect x="650" y="125" width="260" height="158" class="box" fill="url(#green)" filter="url(#shadow)"/>
+  <text x="780" y="160" text-anchor="middle" class="head">确定性规则检查</text>
+  <text x="780" y="188" text-anchor="middle" class="body">文件 / 标签对应</text>
+  <text x="780" y="212" text-anchor="middle" class="body">尺寸、字段、参数、时间</text>
+  <text x="780" y="236" text-anchor="middle" class="body">来源和运行记录</text>
+  <text x="780" y="264" text-anchor="middle" class="small">可直接核验 → 确认问题</text>
+  <path d="M580 204 H650" class="line"/>
+
+  <rect x="650" y="360" width="260" height="190" class="box" fill="url(#blue)" filter="url(#shadow)"/>
+  <text x="780" y="395" text-anchor="middle" class="head">21 个基础专家</text>
+  <text x="780" y="425" text-anchor="middle" class="body">Qwen3-VL · U-Net / YOLO</text>
+  <text x="780" y="449" text-anchor="middle" class="body">DINO · I-JEPA · GBDT</text>
+  <text x="780" y="473" text-anchor="middle" class="body">学生 / 蒸馏 / 剪枝模型</text>
+  <text x="780" y="508" text-anchor="middle" class="small">输出八类概率、区域或时段候选</text>
+  <path d="M580 204 C610 204 610 430 650 430" class="line"/>
+
+  <rect x="980" y="300" width="260" height="150" class="box" fill="url(#gold)" filter="url(#shadow)"/>
+  <text x="1110" y="337" text-anchor="middle" class="head">HGB7 / 八类融合</text>
+  <text x="1110" y="365" text-anchor="middle" class="body">专家概率 + 类型 + 结构特征</text>
+  <text x="1110" y="389" text-anchor="middle" class="body">冻结阈值和路由策略</text>
+  <text x="1110" y="423" text-anchor="middle" class="small">候选与规则事实分开保存</text>
+  <path d="M910 430 H980" class="line"/>
+  <path d="M910 204 C950 204 950 350 980 350" class="line"/>
+
+  <rect x="980" y="525" width="260" height="108" class="box" fill="url(#green)" filter="url(#shadow)"/>
+  <text x="1110" y="562" text-anchor="middle" class="head">证据、评分与排序</text>
+  <text x="1110" y="589" text-anchor="middle" class="body">八类画像 · 六维技术观测</text>
+  <text x="1110" y="613" text-anchor="middle" class="small">污染指数、质量排序和回查链接</text>
+  <path d="M1110 450 V525" class="line"/>
+
+  <rect x="1270" y="285" width="90" height="165" rx="14" fill="#f1f5fa" stroke="#c2d0df"/>
+  <text x="1315" y="320" text-anchor="middle" class="head" font-size="14">审计</text>
+  <text x="1315" y="350" text-anchor="middle" class="small">文件</text>
+  <text x="1315" y="374" text-anchor="middle" class="small">样本</text>
+  <text x="1315" y="398" text-anchor="middle" class="small">区域</text>
+  <text x="1315" y="422" text-anchor="middle" class="small">日志</text>
+  <path d="M1240 579 C1280 579 1260 420 1270 420" class="line"/>
+
+  <rect x="70" y="620" width="800" height="72" rx="14" fill="#fff" stroke="#d5e1ed"/>
+  <text x="90" y="648" class="head" font-size="14">可选 LLM 解释层</text>
+  <text x="90" y="674" class="body">DeepSeek / Qwen OpenAI 兼容接口只组织已有证据与自然语言说明，不改变缺陷、分数、排序或哈希。</text>
+  <path d="M780 550 C680 610 500 620 380 620" class="dashed"/>
+</svg>

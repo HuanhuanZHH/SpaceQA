@@ -1,0 +1,78 @@
+{
+  "status": "pass",
+  "independent_reconstructed_test_samples": 18450,
+  "independent_confusion_checks": 120,
+  "selected_P0_false_positive_samples": 19,
+  "selected_P0_samples": 3690,
+  "selected_model_artifact_bytes": {
+    "unetpp": 2430653,
+    "yolov8_segment_backbone": 5858311,
+    "pruned_seed20261101": 692247,
+    "model_G.pkl": 539311,
+    "model_C.pkl": 546775,
+    "model_D.pkl": 544735,
+    "vectorizer.pkl": 17483
+  },
+  "total_selected_model_artifact_bytes": 10629515,
+  "deployment_size_note": "Model artifacts only; additional initialization files, source, feature code, dependencies, container still separate",
+  "selected_summary": {
+    "variant": "val_selected_gbdt_extension",
+    "records": 18450,
+    "overall": {
+      "TP": 3165,
+      "FP": 273,
+      "FN": 325,
+      "TN": 38472,
+      "precision": 0.9205933682373473,
+      "recall": 0.9068767908309455,
+      "F1": 0.9136836027713626,
+      "FPR": 0.007046070460704607
+    },
+    "overall_all_tiers": {
+      "TP": 3165,
+      "FP": 292,
+      "FN": 325,
+      "TN": 49523,
+      "precision": 0.9155336997396587,
+      "recall": 0.9068767908309455,
+      "F1": 0.9111846840362746,
+      "FPR": 0.005861688246512095
+    },
+    "macro_F1_24": 0.8302402183928241,
+    "P1_macro_F1_6": 0.7500924116325202,
+    "P0_sample_FPR": 0.005149051490514906,
+    "P0_family_macro_sample_FPR": 0.004372310591868479,
+    "groups": {
+      "G": {
+        "TP": 428,
+        "FP": 84,
+        "FN": 115,
+        "TN": 13073,
+        "precision": 0.8359375,
+        "recall": 0.7882136279926335,
+        "F1": 0.8113744075829384,
+        "FPR": 0.006384434141521624
+      },
+      "C": {
+        "TP": 58,
+        "FP": 8,
+        "FN": 180,
+        "TN": 14514,
+        "precision": 0.8787878787878788,
+        "recall": 0.24369747899159663,
+        "F1": 0.3815789473684211,
+        "FPR": 0.0005508883073956756
+      },
+      "D": {
+        "TP": 2679,
+        "FP": 181,
+        "FN": 30,
+        "TN": 10885,
+        "precision": 0.9367132867132867,
+        "recall": 0.9889258028792912,
+        "F1": 0.9621116897108997,
+        "FPR": 0.016356407012470632
+      }
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "evidenceId": "EV-befdb9ebaae43d38f8040c69",
+  "findingId": "C35-dd2c0679800576154c39",
+  "sourceCard": "04_评分卡/EPB_seg_sample_mc4t7fou91.json",
+  "sourceFinding": {
+    "findingId": "C35-dd2c0679800576154c39",
+    "checkId": "C35",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "EPB_seg_sample_mc4t7fou91",
+    "sampleId": "EPB_seg_sample_mc4t7fou91:A4dLWXCUfw_ZIut7ROpP.json",
+    "defectType": "L2-F",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/A4dLWXCUfw_ZIut7ROpP.json",
+      "annotation_pointer": "/basic_annotation/imgSize"
+    },
+    "detail": "声明尺寸[1024, 512]，PNG实测尺寸[1024, 1024]",
+    "severity": {
+      "metric": "max_relative_dimension_error",
+      "value": 0.5,
+      "unit": "ratio",
+      "normalized": 0.5
+    },
+    "measurements": {
+      "declared": [
+        1024,
+        512
+      ],
+      "actual": [
+        1024,
+        1024
+      ],
+      "max_pixel_error": 512
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/A4dLWXCUfw_ZIut7ROpP.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/A4dLWXCUfw_ZIut7ROpP.png",
+      "label_sha256": "d333adcfa1325542c2a37f6da6104531c15a0b6fcb78dd34b6871d5504383b46",
+      "data_sha256_from_inventory": "34191131c083f501a542d9a1dc24897ec7e148112b73ff8ac5b6e3b1c79a55af",
+      "data_hash_verification": "fresh input SHA256"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:24.663320+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "A4dLWXCUfw_ZIut7ROpP.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "A4dLWXCUfw_ZIut7ROpP.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2014-09-28 20:45:34",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x512 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "EPB",
+            "points": [
+              [
+                598,
+                857
+              ],
+              [
+                598,
+                858
+              ],
+              [
+                597,
+                859
+              ],
+              [
+                597,
+                860
+              ],
+              [
+                596,
+                861
+              ],
+              [
+                596,
+                863
+              ],
+              [
+                595,
+                864
+              ],
+              [
+                595,
+                865
+              ],
+              [
+                594,
+                866
+              ],
+              [
+                594,
+                869
+              ],
+              [
+                593,
+                870
+              ],
+              [
+                593,
+                872
+              ],
+              [
+                594,
+                873
+              ],
+              [
+                594,
+                874
+              ],
+              [
+                595,
+                875
+              ],
+              [
+                595,
+                876
+              ],
+              [
+                596,
+                877
+              ],
+              [
+                596,
+                878
+              ],
+              [
+                597,
+                879
+              ],
+              [
+                597,
+                881
+              ],
+              [
+                598,
+                882
+              ],
+              [
+                598,
+                884
+              ],
+              [
+                599,
+                883
+              ],
+              [
+                599,
+                879
+              ],
+              [
+                600,
+                878
+              ],
+              [
+                600,
+                864
+              ],
+              [
+                599,
+                863
+              ],
+              [
+                599,
+                859
+              ],
+              [
+                598,
+                858
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "A4dLWXCUfw_ZIut7ROpP.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "24.39247411451567N",
+        "northmostPointLongitude": "99.42972823851655E",
+        "area": "220436.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSnapshotSourceSha256": "d333adcfa1325542c2a37f6da6104531c15a0b6fcb78dd34b6871d5504383b46",
+  "originalLabelHashMatches": true
+}

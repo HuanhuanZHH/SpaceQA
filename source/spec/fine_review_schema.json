@@ -1,0 +1,349 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "checks",
+    "defects",
+    "limitations"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "L0-01",
+        "L0-03",
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "properties": {
+        "L0-01": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L0-03": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L2-G": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L2-P": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L2-T": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L2-F": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L3-06": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L3-07": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "L3-MIS": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pass",
+                "fail",
+                "undetermined",
+                "not_applicable"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "defects": {
+      "type": "array",
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "defect_class",
+          "locator",
+          "confidence",
+          "severity",
+          "explanation"
+        ],
+        "properties": {
+          "defect_class": {
+            "enum": [
+              "L0-01",
+              "L0-03",
+              "L2-G",
+              "L2-P",
+              "L2-T",
+              "L2-F",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "severity": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "metric",
+                  "value",
+                  "unit"
+                ],
+                "properties": {
+                  "metric": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "unit": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          },
+          "locator": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "annotation_pointer",
+              "bbox",
+              "time_interval"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "file",
+                  "record",
+                  "bbox",
+                  "timeInterval"
+                ]
+              },
+              "annotation_pointer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "bbox": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                ]
+              },
+              "time_interval": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

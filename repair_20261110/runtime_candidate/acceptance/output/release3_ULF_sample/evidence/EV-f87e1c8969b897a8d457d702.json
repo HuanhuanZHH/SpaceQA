@@ -1,0 +1,119 @@
+{
+  "finding": {
+    "findingId": "C31-1afa1466a3da4e85eeb7",
+    "checkId": "C31",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "ULF_sample_xfnogkdey9",
+    "sampleId": "d0f102a58dfada7a787d5f9cf58419e8261ad14d4e17d7822c5ff4d392a3ac4f",
+    "defectType": "L0-01",
+    "aliasCodes": [
+      "L0-03"
+    ],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "file",
+      "path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+      "annotation_pointer": null,
+      "expected_data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv"
+    },
+    "detail": "标注存在，对应数据文件缺失",
+    "severity": {
+      "metric": "missing_file",
+      "value": 1.0,
+      "unit": "file",
+      "normalized": 1.0,
+      "tolerance": null,
+      "unavailableReason": "No calibrated physical severity or tolerance; model probabilities are not degree measurements"
+    },
+    "measurements": {},
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv.json",
+      "data_path": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+      "label_sha256": "67b93f2407c4df592079f9ef7e052fd8f962f94cc7ff91d9e86aa3e5748bce1e",
+      "data_sha256_from_inventory": null,
+      "data_hash_verification": "fresh SHA256"
+    },
+    "runId": "LTH-20261110T024329Z-ecf52cd8",
+    "datasetId": "ULF_sample",
+    "datasetVersion": "V1.0.0.0",
+    "status": "fail",
+    "evidenceRef": [
+      "EV-f87e1c8969b897a8d457d702"
+    ],
+    "affectedScope": {
+      "unit": "registered_sample",
+      "numerator": 1,
+      "denominator": 16
+    },
+    "criticality": "critical",
+    "basis": {
+      "ruleVersion": "eight-class-ledger-1.0",
+      "source": null,
+      "scientificGroundTruth": false
+    },
+    "notApplicableReason": null,
+    "confirmedOrPending": "confirmed"
+  },
+  "labelSnapshot": {
+    "label_header": {
+      "identifier": "id-008938",
+      "fileName": "0w18Dy2aNK40_FQtg5ne.csv",
+      "labelCreateTime": "2026-09-29T08:14:05.856368Z",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "0w18Dy2aNK40_FQtg5ne.csv",
+      "relativePath": ".",
+      "modality": "timeseries",
+      "fileFormat": "csv",
+      "startTime": "2015-10-26T04:00:00Z",
+      "endTime": "2015-10-26T04:59:59Z",
+      "timestamp": "2026-09-29T08:14:05.856375Z",
+      "project": "",
+      "observatoryType": "ground",
+      "observatoryName": "anonymous",
+      "dataType": "geomagnetic_timeseries"
+    },
+    "science_annotation": {
+      "observatory": "anonymous",
+      "network": "anonymous",
+      "instrument": "anonymous",
+      "components": [
+        "H",
+        "D",
+        "Z",
+        "T"
+      ],
+      "sampling_rate_hz": 1,
+      "duration_s": 3600,
+      "n_points": 3600,
+      "units": "nT (H/Z/T), deg (D)",
+      "level": "L1 (raw 1Hz)",
+      "dateObs": "2015-10-26T04:00:00Z"
+    },
+    "ulf_event_annotation": {
+      "has_events": false,
+      "event_count": 0,
+      "event_types": [],
+      "matched_events": []
+    }
+  },
+  "labelSha256": "67b93f2407c4df592079f9ef7e052fd8f962f94cc7ff91d9e86aa3e5748bce1e",
+  "inputMount": "/input",
+  "originalDataPath": "/input/ULF_sample_xfnogkdey9/0w18Dy2aNK40_FQtg5ne.csv",
+  "capturedBy": "publish_run-20261110",
+  "runId": "LTH-20261110T024329Z-ecf52cd8"
+}

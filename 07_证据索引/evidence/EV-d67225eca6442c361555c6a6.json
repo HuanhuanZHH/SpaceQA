@@ -1,0 +1,379 @@
+{
+  "evidenceId": "EV-d67225eca6442c361555c6a6",
+  "findingId": "C35-eb6d162961a388c50219",
+  "sourceCard": "04_评分卡/EPB_seg_sample_mc4t7fou91.json",
+  "sourceFinding": {
+    "findingId": "C35-eb6d162961a388c50219",
+    "checkId": "C35",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "EPB_seg_sample_mc4t7fou91",
+    "sampleId": "EPB_seg_sample_mc4t7fou91:WHG0bkh4f2oLST4Zh3AD.json",
+    "defectType": "L2-F",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/WHG0bkh4f2oLST4Zh3AD.json",
+      "annotation_pointer": "/basic_annotation/imgSize"
+    },
+    "detail": "声明尺寸[1024, 512]，PNG实测尺寸[1024, 1024]",
+    "severity": {
+      "metric": "max_relative_dimension_error",
+      "value": 0.5,
+      "unit": "ratio",
+      "normalized": 0.5
+    },
+    "measurements": {
+      "declared": [
+        1024,
+        512
+      ],
+      "actual": [
+        1024,
+        1024
+      ],
+      "max_pixel_error": 512
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/WHG0bkh4f2oLST4Zh3AD.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/fcb84e8c5bc23a5f15aea7953b60c79d9b817debfc6bea48800ec3063791fd1e/EPB_seg_sample_mc4t7fou91/WHG0bkh4f2oLST4Zh3AD.png",
+      "label_sha256": "74b7b0236b452f849ced97b91966e09508d61213eee89b6821e9a421a9a21a76",
+      "data_sha256_from_inventory": "279c9b50fd712e3b1fe00e61f4a576d5ee97902a2d454d917f9a64c051df9267",
+      "data_hash_verification": "fresh input SHA256"
+    }
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:25.256033+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "WHG0bkh4f2oLST4Zh3AD.png",
+      "labelCreatTime": "2026-03-16 12:03:30",
+      "annotator": "anonymous",
+      "labelVersion": "V0.0.0.1",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "anonymous",
+      "annotationMethod": "manual"
+    },
+    "basic_annotation": {
+      "fileName": "WHG0bkh4f2oLST4Zh3AD.png",
+      "relativePath": "dataset_root/data/",
+      "modality": "image",
+      "fileFormat": "PNG",
+      "timestamp": "2015-03-20 01:02:02",
+      "project": "anonymous",
+      "observatoryType": "groundbased",
+      "observatoryName": "anonymous",
+      "equipment": "anonymous",
+      "observationObject": "Earth's atmosphere",
+      "latitude": "25N",
+      "longitude": "104E",
+      "wavelength": "630nm",
+      "imgSize": "1024x512 pixels",
+      "bitPix": "24bit",
+      "timeResolution": "3min",
+      "spatialResolution": "2.0km@250km,zenith direction"
+    },
+    "science_annotation": {
+      "evenType": "Equatorial Plasma Bubble",
+      "mask": {
+        "version": "5.1.1",
+        "flags": {},
+        "shapes": [
+          {
+            "label": "EPB",
+            "points": [
+              [
+                406,
+                851
+              ],
+              [
+                405,
+                852
+              ],
+              [
+                404,
+                852
+              ],
+              [
+                402,
+                854
+              ],
+              [
+                401,
+                854
+              ],
+              [
+                399,
+                856
+              ],
+              [
+                399,
+                857
+              ],
+              [
+                398,
+                858
+              ],
+              [
+                398,
+                859
+              ],
+              [
+                397,
+                860
+              ],
+              [
+                397,
+                861
+              ],
+              [
+                396,
+                862
+              ],
+              [
+                396,
+                863
+              ],
+              [
+                395,
+                864
+              ],
+              [
+                395,
+                865
+              ],
+              [
+                393,
+                867
+              ],
+              [
+                393,
+                869
+              ],
+              [
+                392,
+                870
+              ],
+              [
+                392,
+                883
+              ],
+              [
+                391,
+                884
+              ],
+              [
+                391,
+                888
+              ],
+              [
+                392,
+                889
+              ],
+              [
+                392,
+                896
+              ],
+              [
+                393,
+                897
+              ],
+              [
+                393,
+                903
+              ],
+              [
+                394,
+                904
+              ],
+              [
+                394,
+                908
+              ],
+              [
+                395,
+                909
+              ],
+              [
+                395,
+                914
+              ],
+              [
+                396,
+                915
+              ],
+              [
+                396,
+                918
+              ],
+              [
+                400,
+                922
+              ],
+              [
+                401,
+                922
+              ],
+              [
+                403,
+                924
+              ],
+              [
+                404,
+                924
+              ],
+              [
+                406,
+                926
+              ],
+              [
+                407,
+                926
+              ],
+              [
+                408,
+                927
+              ],
+              [
+                409,
+                926
+              ],
+              [
+                410,
+                926
+              ],
+              [
+                411,
+                925
+              ],
+              [
+                412,
+                925
+              ],
+              [
+                414,
+                923
+              ],
+              [
+                415,
+                923
+              ],
+              [
+                417,
+                921
+              ],
+              [
+                417,
+                920
+              ],
+              [
+                418,
+                919
+              ],
+              [
+                418,
+                918
+              ],
+              [
+                417,
+                917
+              ],
+              [
+                417,
+                908
+              ],
+              [
+                416,
+                907
+              ],
+              [
+                416,
+                886
+              ],
+              [
+                415,
+                885
+              ],
+              [
+                415,
+                877
+              ],
+              [
+                414,
+                876
+              ],
+              [
+                414,
+                864
+              ],
+              [
+                415,
+                863
+              ],
+              [
+                415,
+                858
+              ],
+              [
+                416,
+                857
+              ],
+              [
+                415,
+                856
+              ],
+              [
+                415,
+                855
+              ],
+              [
+                414,
+                854
+              ],
+              [
+                413,
+                854
+              ],
+              [
+                411,
+                852
+              ],
+              [
+                410,
+                852
+              ],
+              [
+                409,
+                851
+              ]
+            ],
+            "group_id": null,
+            "shape_type": "polygon",
+            "flags": {}
+          }
+        ],
+        "imagePath": "WHG0bkh4f2oLST4Zh3AD.png",
+        "imageData": null,
+        "imageHeight": 1024,
+        "imageWidth": 1024
+      },
+      "varList": {
+        "northmostPointLatitude": "24.565859268238327N",
+        "northmostPointLongitude": "105.78003059308342E",
+        "area": "65548.0km²"
+      }
+    },
+    "extension_annotation": {}
+  },
+  "labelSnapshotSourceSha256": "74b7b0236b452f849ced97b91966e09508d61213eee89b6821e9a421a9a21a76",
+  "originalLabelHashMatches": true
+}

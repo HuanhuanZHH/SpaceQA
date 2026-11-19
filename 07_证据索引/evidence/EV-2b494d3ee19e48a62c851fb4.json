@@ -1,0 +1,169 @@
+{
+  "evidenceId": "EV-2b494d3ee19e48a62c851fb4",
+  "findingId": "C33-db756ccefb09fc9e905e",
+  "sourceCard": "04_评分卡/AIA_AR_sample_p86y2cz08y.json",
+  "sourceFinding": {
+    "findingId": "C33-db756ccefb09fc9e905e",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_p86y2cz08y",
+    "sampleId": "AIA_AR_sample_p86y2cz08y:gXDeIaUBYBqZf4e61A5u.png.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "annotationRecord",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/gXDeIaUBYBqZf4e61A5u.png.json",
+      "annotation_pointer": "/hek_event_annotation/matched_events/1/event_type"
+    },
+    "detail": "类别'CH'不属于声明的任务类别集合['AR']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 0.5,
+      "unit": "ratio",
+      "normalized": 0.5
+    },
+    "measurements": {
+      "actual": "CH",
+      "allowed": [
+        "AR"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 0.5,
+      "invalid_object_count": 1,
+      "classified_object_count": 2
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/gXDeIaUBYBqZf4e61A5u.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/gXDeIaUBYBqZf4e61A5u.png",
+      "label_sha256": "3c683dc10371252fccedc74e556955333d2e9802fba2589069858aab5a5fea20",
+      "data_sha256_from_inventory": "34f4e489faa280ddec4051d07ed774160db03938e1684ff107412f351fee8790",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:18.904640+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "gXDeIaUBYBqZf4e61A5u.png",
+      "labelCreateTime": "2026-09-28T18:50:37.292022",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "gXDeIaUBYBqZf4e61A5u.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2021-03-12T20:44:00",
+      "endTime": "2021-03-12T20:44:00",
+      "timestamp": "2026-09-28T18:50:37.292080",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "0335",
+      "dateObs": "2021-03-12T20:44:00",
+      "dateEnd": null,
+      "tObs": "2021-03-12T20:44:00Z",
+      "rsunObs": 965.7972356973964,
+      "dpcLevel": null,
+      "dsunObs": 148644896065.84305,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 2,
+      "image_time": "2021-03-12T20:44:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-006696",
+          "kb_archivid": "id-006697",
+          "solar_object_locator": "id-006696",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2021-03-12 20:00:00",
+          "event_endtime": "2021-03-13 00:00:00",
+          "ar_noaanum": "12809",
+          "area_atdiskcenter": "256276416.0",
+          "unsignedflux": "393.4632",
+          "highsheararea": "474946208.0",
+          "meangradienttotal": "145.71099853515625",
+          "meangradienthorz": "73.40899658203125",
+          "meangradientvert": "145.80099487304688",
+          "meaninclinationgamma": "35.79100036621094",
+          "meantwistalpha": "0.0021920599974691868",
+          "meanshearangle": "20.97800064086914",
+          "meanvertcurrentdensity": "1.03324294090271",
+          "meancurrenthelicity": "0.0005788700073026121",
+          "absnetcurrenthelicity": "0.4000000059604645",
+          "unsignedcurrenthelicity": "41.56399917602539",
+          "log_r_value": "0.0",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": null
+        },
+        {
+          "SOL_standard": "id-006698",
+          "kb_archivid": "id-006699",
+          "solar_object_locator": "id-006698",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2021-03-12 20:00:00",
+          "event_endtime": "2021-03-13 00:00:00",
+          "ar_noaanum": "12808",
+          "area_atdiskcenter": "683592000.0",
+          "unsignedflux": "6967.43212890625",
+          "highsheararea": "11728297984.0",
+          "meangradienttotal": "108.38899993896484",
+          "meangradienthorz": "40.018001556396484",
+          "meangradientvert": "110.03800201416016",
+          "meaninclinationgamma": "30.260000228881836",
+          "meantwistalpha": "-0.01357869990170002",
+          "meanshearangle": "26.134000778198242",
+          "meanvertcurrentdensity": "0.033118851482868195",
+          "meancurrenthelicity": "-0.004165139980614185",
+          "absnetcurrenthelicity": "45.95399856567383",
+          "unsignedcurrenthelicity": "392.3269958496094",
+          "log_r_value": "2.450000047683716",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": null,
+          "concept_swapped": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "3c683dc10371252fccedc74e556955333d2e9802fba2589069858aab5a5fea20",
+  "originalLabelHashMatches": true
+}

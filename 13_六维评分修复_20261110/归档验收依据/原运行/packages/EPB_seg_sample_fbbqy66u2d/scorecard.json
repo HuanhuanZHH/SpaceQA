@@ -1,0 +1,3108 @@
+{
+  "version": "eight-class-ledger-1.0",
+  "dirId": "EPB_seg_sample_fbbqy66u2d",
+  "family": "EPB_seg_sample",
+  "sampleCount": 788,
+  "confirmedProblemSamples": 135,
+  "observedTechnicalScore": 82.86802030456852,
+  "fullQualityScore": null,
+  "officialScore": null,
+  "officialPrecision": null,
+  "officialRecall": null,
+  "officialF1": null,
+  "scoringFormula": "100*(1-distinct confirmed eligible problem samples / all registered label samples)",
+  "scoreMeaning": "已实现范围内的观测技术分；不是软件得分、完整质量分或官方q",
+  "defects": {
+    "L0-01": {
+      "name": "数据文件缺失",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 18,
+      "locatedInstances": 18,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 770,
+        "fail": 18,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 770,
+        "fail": 18,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.02284263959390863,
+      "proportionEstimate": 0.02284263959390863,
+      "proportionBounds": [
+        0.02284263959390863,
+        0.02284263959390863
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 1.0
+    },
+    "L2-G": {
+      "name": "边界与位置偏差",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-P": {
+      "name": "类别标注错误",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 82,
+      "locatedInstances": 88,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 82,
+        "undetermined": 706,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 82,
+        "undetermined": 706,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.10406091370558376,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.10406091370558376,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.10406091370558376
+    },
+    "L2-T": {
+      "name": "时段起止时刻抖动",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-F": {
+      "name": "元数据尺寸矛盾",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 42,
+      "locatedInstances": 42,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 728,
+        "fail": 42,
+        "undetermined": 18,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 728,
+        "fail": 42,
+        "undetermined": 18,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0532994923857868,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0532994923857868,
+        0.07614213197969544
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.9771573604060914
+    },
+    "L3-06": {
+      "name": "漏标",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 32,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-07": {
+      "name": "虚标",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 50,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-MIS": {
+      "name": "覆盖不足或覆盖过度",
+      "denominator": 788,
+      "applicableSamples": 788,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 788,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    }
+  },
+  "dimensions": [
+    {
+      "id": "completeness",
+      "name": "完整性",
+      "defectCodes": [
+        "L0-01"
+      ],
+      "confirmedSamples": 18,
+      "denominator": 788,
+      "observedTechnicalScore": 97.71573604060913,
+      "score": 97.71573604060913,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 788,
+      "completedChecks": 788,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "annotationQuality",
+      "name": "标注质量",
+      "defectCodes": [
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "confirmedSamples": 119,
+      "denominator": 788,
+      "observedTechnicalScore": 84.8984771573604,
+      "score": null,
+      "state": "fail",
+      "checkCoverage": 0.154459753444525,
+      "applicableCheckDenominator": 5516,
+      "completedChecks": 852,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "sampleCorrespondence",
+      "name": "样本对应",
+      "defectCodes": [
+        "L0-01",
+        "L2-F"
+      ],
+      "confirmedSamples": 60,
+      "denominator": 788,
+      "observedTechnicalScore": 92.38578680203045,
+      "score": null,
+      "state": "fail",
+      "checkCoverage": 0.9885786802030457,
+      "applicableCheckDenominator": 1576,
+      "completedChecks": 1558,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "coverageDistribution",
+      "name": "覆盖与分布",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "traceability",
+      "name": "文档与来源追溯",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "usageConditions",
+      "name": "使用条件",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    }
+  ],
+  "severity": [
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:8CYFRB3TewCtxV2HgTws.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-8dd5545a29fe79565c06"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:AAosVwXJX5brA_hHYwQd.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-466c2f6c409b2daa9a46"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:BXnOBF3qrcdGd5Vg6aDJ.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-f513b5ff3386f24e2983"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:DBJtr3VNE3v_Sbb1PYkS.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-943f1cb6d0a12fc48c31"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:EqBS5EszcxbYLsXaPbQf.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-5f6c51299373355f13c7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:FQ3mGqg0treImKKgmcT1.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-6f6212952700a5db7587"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:KYL7AvdaiZYXBv1Ve6oV.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-866a38467a77d0d19cc4"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:M2G0pUVwrLWN_3TFj0o3.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-b70ed505b6c913e40598"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ODNDL9j9pQ0hEbumzKvg.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-aa44e1cfa0b2b88646b5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:RVNdFHQjIflKO6vw9ov8.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-803593112157b6d2c848"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:U0r8LX3VML6n8_V33nTI.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-6fcbf6426aada0a21b87"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:XkkqjEOeUsHpPTtiaiS9.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-712094b73cbf8c930d45"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:_TpKFbpCcbhrZEHPSI8V.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-32d4fc9d89a1a50b3252"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:_njg_UajJhqAHK9qN7hH.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-58dea34184fcbed622b9"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:fWPE8cXgKnBls5RytlBD.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-d8cd29ec421a5ec56946"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:g0Myu4oOLt9iNda0xkzR.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-1f771a9cc7869e9f0b48"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:oTyl76I6aLDaasIbV_cY.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-ace5e9efa50fcb27468a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:qOzw8rxXXiM6cEZyL8eg.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-82690e52e93271e2c015"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:24g5vGev4fKxOlQ__NWW.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-f6544739bc2514aeb843"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:2xbB3KhfNzdBJH5B9ozQ.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-9d675926c9188463e625"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:4F9PxIGaPtIwjOjoU4wK.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-cea4019f788279891fa7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:5sdlKxmO90gkjNMG7Z5s.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-e61397d7035a3701d6e4"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:6Vx9Qbeb2kumPfFdluyv.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-a6e3d2cdc980ffd28ff5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:7XkWLjTr1qGzEuIZUNXI.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-68d0f4492f2034dd1398"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:7o209nIMXz0TFSwpUnnA.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3686a0311268ae9c0722",
+        "C33-3183586a868b0c98592e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:8Y3Ldef2SFLSrkcFb8am.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-4155afb776ae9b1e21da"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:93m2XvedC_zFY54fKJ6c.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-601486f54082f076680e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:9Q3wJyug5DCoJUAzhJPm.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-8233d662864facfb9c14"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:9hob7aKdtNOnlMkuu9_U.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-916b97572a67b42b8e4a",
+        "C33-03b5f0166d9fcf792357"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:9xB9jAA3ok3TADCW5mvO.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-b2d5395d4ac6ee65ba5a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ATKGdWnlyNT9cdbi_Zk0.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-0d5afcfc0107a5028912",
+        "C33-4514cd9929a15805717d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:AneMO_FuzapQ5KUOgaS2.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-dfaca3ef3eb4eb81f094"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Ay5C4tupimIkdM3OXj_E.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-6e80f642e87a17d6fa6a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:CPA9WpLq6JvB5MlHI9fF.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-fcb679643f87286eebac"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:CxHK7b96QzZ5dubT3WN_.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-66137646f51a0ab66439"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:E0roaLdg9iPZe94wml4y.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-eb3586fee040176a9cc7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:E2pRL4kpyBm25JvSSnPc.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-0f08fb766fb8e7553de7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:EGSQt4DVBMqzRgyU8fZw.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-e3085db941cfad2eb045"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:FQ3mGqg0treImKKgmcT1.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-ea528e991e153a8a5712"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:FV4AaPy4oLWtSwFkS7Y3.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-d2150c1504f709735d43"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:HW1jcIsQf6V_lmGZ9czh.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-1ecdb20972cf784db6ba"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:IkdHQxajfnPj2tge45ly.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-7093fd23b466914e685e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:InbOAwQe3PIanOFpNBKf.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-1e0d886884e9e9e0a54d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:K08WOrp8MXdu8fMaUk6W.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-8ad4d264a5da8921c998"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:LxPzjm3Me3qGydaLTKW4.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-da65b5a5f4170825f207"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:MIs1YIYJFTEdTUC3cose.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3e182c025cca0db9c35c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Mxnij3LNkbMwYG5KD0J4.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-2e9de3b3d6a2b76cf984"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:O6PDwgLYfZC0i9jKEHQ_.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-5a5b9cbfa059536f3f7d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:PFRzSPSkaUR32_nNPgYy.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-b89c9d2bf5f2a1995082"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:PbmFzgKjy6zjW4t_w8kg.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-95401c9f7de104ec6d1b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:R1j1c5NBSZMqCeu4Axv2.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-982a0a87646543d90e9c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:U826ec0j8sQBGjMG8j5h.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-f6aae5f3690e8537aecf"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:WZ2czNYSyP74QCtb_KaA.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-4486809b58c5187e834b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:WdW4w24Xbay9LIf_i1YP.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-fe678a73c20665d55f3f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:WmOrAgmbagG4TpjZJzvc.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-98e93c9f24c0f9f58c9b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Y1ZKK_l3eophrkxZGabw.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-0d268520d40f7901a46c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:YFq6b_HnOvLXOfwTm8vb.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3f533cc6bf060f49070e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Y_hkRXnZJsfYHsx8WUTr.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-8e2cd8e2f308b1b28ae5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:YjTmg5kJPQ1rbkCFPlIQ.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-396f62afaa7a0712778a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Z1Z93k29LXRCS1O6aDck.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-d9e7277a87d2b07c43a6"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ZQhpBj4vkzPR3vqTx8pw.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-8a149b0ad256b09a32f1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ZXm0vjjAWpgk2faeAJ9r.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-51a3de1734042c680dd1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ZcZIe7sZNygLS4lbKbee.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-f155389e9bc808ef7371"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:_qT2QOhkGLzJQEjM3mac.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-e486223765deececab61"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:a908vz9jOyvm8DHu0GxL.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3161e6d7aadc22fe416b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:cPXE0bHzyKHVJUV8A2e1.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-cf46657420c3871273c1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:defIDTKZaHLzF4mJWCm5.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-7376e7635ed44c70e741"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:eF9gJkOUIqxuWTQrg_TX.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-d35fe83f2ef263d182d9"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:eJSezaL8G3lcVC0xiO3Y.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-6f20d5c0d6972ecd2832"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:f47SE1glk6iMvSUHmaBp.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-e9832952653d4acd511c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:fNz3WGpPbreY6IkpSi9v.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-6d0ccb25725f36866182"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:fdeigT6ZCuVYvgHrLt7A.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-510d36591c6a97805dfe"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:g0Myu4oOLt9iNda0xkzR.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-5869188e37d1f76cacbf"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:iD4KBKTBNHW1aumHUzj1.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-85622b65dee30a652d95"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:j1JTT8JTv22tk99lUOTm.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3693c9ba659eaad1c865"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:jlZscgES9WTxSAmIYsGA.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-58b361e2b109fe32219f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:jw8ePyiz1uZAvSfYsUyU.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-8203d075bf7415b418f3"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:k2rgmGGrX_VFab2CZT3x.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-8e098f2c672a2a665bd1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:k62vnW_LKXsDgntNLuPL.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-5d77c8a5ed5bff947610"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:kIlt7LCN7OeaDH0JGRwT.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-6a86c864d2cdd58f4b8e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:lBqDXQEs9MmWay53aOCt.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3ee0ee3d0bbc8e38d09c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:lOK9b1Bw2Y2ACzxE0bdb.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-27995598a52e45f0ce22"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:lUtE9l1ZG2OH6_oONLaB.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-940765add3c56635b50b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:lgeafvb8kWSnuoOz6J8j.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3a143c5b68b2ea6be554"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:mN9DNLlowEHxpOpfuqNt.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-bf382063b52cc39ad2eb"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:oG4F_pRKbkQ3yyMM9KBo.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-de34fa72de5ab878f5be"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:pMRUo9vs7y8PQcCmmWzf.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-7e41e1cb5f5945ab45b4"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:r3LEL3SNiT2xGBHcE60B.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-3df62e1b5dd73df6f61b",
+        "C33-2f3238b8f51b048687f9"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:r_CiNQD3SCsbyfnmecYA.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-d7eac74cbb32f3bc4a3a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:sBio9UPrD66yBMN9KxQ0.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-31111e3735e595e60bd8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:sTiJ7CljUGCGpvCba9Yw.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-638f7fd243a4fdb790dd"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:sYSNRvZQ_PF2t0DS7ODl.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-15d94c275d5479b7f64c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:txKfoHkeb0Zgsc2ufKxc.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-18a869514e52c6d0fffe"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:u5BtN08WrAkdX6YYVDoo.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-9c6652225957282b325f",
+        "C33-817f3d8af0718d30518d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:uDYukUlgbiZV2PXXDMD7.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-f1efbfc273ea649daa29"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:uymun7oHz_iGyqOe5Kq4.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-e2f08eac26c478117df3"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:vhF6tiXSIhrsAFVl63fc.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-79b044a3aff73991162b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:vor2fgV5QK31aRStYFPG.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-ab3346df0db64ece58f4",
+        "C33-aba541f95e67b995b1b0"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:w2CPDXMcB4Xdmpgr6tWV.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-a1b581191ef0e73af9ad"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:zNZ_7vBCBasIiFuDYmqG.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-cfa08c30dc9dd0c088f0"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:2KKzxROcF9GHYym46zRB.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-32b0852296b4acec5a80"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:5jfc2rr1OYq_MZS0mA5p.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-12b71f1b626aaae2bb03"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:6hd0Q60TmHBWPzgWcALg.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-db8e6e3fb48b0e21a019"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:8Ov3BbPW2Vq5tYDxHNAM.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-3a23c6fa8eab84957c09"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Ay5C4tupimIkdM3OXj_E.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-1a60ea8e04c54ff085b4"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:BiHrgO0JQLotdNXbvO_9.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-bab57b4b498619081594"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:CrOzb__uiJtontX6IqCL.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-0ed175c4e5d75214dfbd"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:DknRE4cLxwczPluLDilr.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-38ea30c380df22583d4c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:EmjdZmjZ1Y0Du9fQhvf3.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-bb0bc7e915621d3bba38"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:F4vTBgYt7IjHPf5V9456.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-f5a9e5ac0d4f7b879f07"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:FV4AaPy4oLWtSwFkS7Y3.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-4275601936ac914ffe85"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:GSWLgeQtSa_IdHm2vqUf.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-f0def425c19184e26654"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:HSTQ6L2cslV77l4aLrI7.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-b6cc2853b4e2ce20e1c5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Hd9qjPnCC_tL4PnY9hER.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-53025779f44fb311e31e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ITbIRSY9i9IIDl5oECj_.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-2934933bad13d6b0258a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:J1bYFw3I1S_LnlSUUFSy.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-129d9d95e4b5e5df3f34"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:KIX3w1UeRX9KWgo4za05.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-57b6c54c0966680cd18a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:NOHDde3PWpxZ9WRsWORo.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-1c59880aa82958c7ac52"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:QVSafS5cS8ZMYoD7ARTT.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-5a0df012c799133bf1af"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:Szh5V7ArVoXX19WoJKoD.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-4a17abd593c97a0446f7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:TPZAT1frXdYblrDaM9ka.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-03632784fde1bef9f201"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:V6m9uIz0e_HZtd7PiKzi.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-dba383cc3a3b89f9a49b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:_YDJwgO7iFmenVeyo5FL.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-1611bb82aa19316b8f5b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:aWT0ZE_BRPU378TRxI2c.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-df7313bc1b9fc1d58ea2"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:arUjODX9cUwQgfgGCyj6.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-ae3aa334c0fd4430b172"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:aveKOjRQ5XoNTulKAIip.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-70b93ee8a948fbf14ddf"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:ckavB2VGeF0DWu1X3qH2.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-bb11797af89744a406f2"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:iZ20pS1LIkryKKlUA5CV.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-7ef571a8eecb434e059f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:jhCPuaVWw0TzNbEVbxnR.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-d73dc8af4dfdf70a7ac7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:k2rgmGGrX_VFab2CZT3x.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-000a4ef05fb6f5fbcdf8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:kxNpD3nyTtl77w89gbEg.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-82d82c3f0b38e553f69d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:lgeafvb8kWSnuoOz6J8j.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-c5614df27a121be73d00"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:oIKonitWuVAvQjZpEQQ0.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-19d728e380fd7dc01cc7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:qdkKbdIGv762sNCTwbDN.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-ba07c81d46a8bc0c3bb8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:qwgd_NS71tRfpyxJnRcw.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-5e2e87df15e05ffe70f1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:rtYSj_P6qBnRIa2LxCnG.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-e6a14dd224a7ac64f3ad"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:tUYrqM95RpUzry0ApPRH.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-5c6041eae52cc0f6bae8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:uO22Y9qCAF02iP9O_nlP.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-67e73b0be15e451edb78"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:xU71KwNu5MOuMgMOHjbX.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-e5c3ab5d893a247a0c94"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:xZNj_8i2fb3xwjxu5fXT.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-4180027051717081895d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:xgyLior1q5eHVTK8Hkkw.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-5c1dd8fed75f15a6eed2"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "EPB_seg_sample_fbbqy66u2d",
+      "sampleId": "EPB_seg_sample_fbbqy66u2d:zNZ_7vBCBasIiFuDYmqG.json",
+      "defectType": "L2-F",
+      "metric": "max_relative_dimension_error",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C35-1ee0998d41a2be7fe5e0"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    }
+  ],
+  "scientificCheckCoverage": 0.26015228426395937,
+  "applicableChecks": 6304,
+  "completedChecks": 1640,
+  "distribution": {
+    "emptyAnnotations": 6,
+    "emptyAnnotationRatio": 0.007614213197969543,
+    "objectCount": 832,
+    "meanObjectDensity": 1.0558375634517767,
+    "categoryHistogram": {
+      "EPB": 744,
+      "__OOV__": 88
+    },
+    "temporal": {
+      "observedWindows": 788,
+      "first": "2014-02-22T21:51:27",
+      "last": "2022-11-14T22:42:15",
+      "positiveGapCount": 787,
+      "maxPositiveGapSeconds": 88544755.0,
+      "overlappingWindows": 0,
+      "interpretation": "标注声明的观测时间分布；缺连续覆盖目标，不把抽样日期间隔直接当缺陷"
+    },
+    "interpretation": "空标注与分布差异是描述统计；没有目标/事件参考时不等于漏标或虚标"
+  },
+  "provenance": {
+    "labelVersions": {
+      "V0.0.0.1": 788
+    },
+    "anonymousAuthors": 788,
+    "interpretation": "匿名化按发放约定处理；不能当作来源错误扣分"
+  },
+  "usage": {
+    "acceptance": "undetermined",
+    "ingestion": "conditional",
+    "selection": "conditional",
+    "advice": "隔离缺文件/契约冲突记录；定位疑点进入人工复核后再用于科学选数"
+  },
+  "pollution": {
+    "formula": "100 * sum(probability_i,c for probability_i,c >= threshold_c) / N",
+    "sampleCount": 788,
+    "thresholds": {
+      "L0-01": 0.5,
+      "L2-G": 0.5,
+      "L2-P": 0.5,
+      "L2-T": 0.5,
+      "L2-F": 0.5,
+      "L3-06": 0.5,
+      "L3-07": 0.5,
+      "L3-MIS": 0.5
+    },
+    "defects": {
+      "L0-01": {
+        "threshold": 0.5,
+        "overThresholdSamples": 18,
+        "probabilitySum": 18.0,
+        "pollutionIndexContribution": 2.284263959390863,
+        "missingProbabilitySamples": 770,
+        "sampleDetails": [
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:8CYFRB3TewCtxV2HgTws.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:AAosVwXJX5brA_hHYwQd.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:BXnOBF3qrcdGd5Vg6aDJ.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:DBJtr3VNE3v_Sbb1PYkS.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:EqBS5EszcxbYLsXaPbQf.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:FQ3mGqg0treImKKgmcT1.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:KYL7AvdaiZYXBv1Ve6oV.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:M2G0pUVwrLWN_3TFj0o3.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ODNDL9j9pQ0hEbumzKvg.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:RVNdFHQjIflKO6vw9ov8.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:U0r8LX3VML6n8_V33nTI.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:XkkqjEOeUsHpPTtiaiS9.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:_TpKFbpCcbhrZEHPSI8V.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:_njg_UajJhqAHK9qN7hH.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:fWPE8cXgKnBls5RytlBD.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:g0Myu4oOLt9iNda0xkzR.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:oTyl76I6aLDaasIbV_cY.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:qOzw8rxXXiM6cEZyL8eg.json",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-G": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 788,
+        "sampleDetails": []
+      },
+      "L2-P": {
+        "threshold": 0.5,
+        "overThresholdSamples": 82,
+        "probabilitySum": 82.0,
+        "pollutionIndexContribution": 10.406091370558375,
+        "missingProbabilitySamples": 706,
+        "sampleDetails": [
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:24g5vGev4fKxOlQ__NWW.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:2xbB3KhfNzdBJH5B9ozQ.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:4F9PxIGaPtIwjOjoU4wK.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:5sdlKxmO90gkjNMG7Z5s.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:6Vx9Qbeb2kumPfFdluyv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:7XkWLjTr1qGzEuIZUNXI.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:7o209nIMXz0TFSwpUnnA.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:8Y3Ldef2SFLSrkcFb8am.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:93m2XvedC_zFY54fKJ6c.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:9Q3wJyug5DCoJUAzhJPm.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:9hob7aKdtNOnlMkuu9_U.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:9xB9jAA3ok3TADCW5mvO.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ATKGdWnlyNT9cdbi_Zk0.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:AneMO_FuzapQ5KUOgaS2.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Ay5C4tupimIkdM3OXj_E.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:CPA9WpLq6JvB5MlHI9fF.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:CxHK7b96QzZ5dubT3WN_.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:E0roaLdg9iPZe94wml4y.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:E2pRL4kpyBm25JvSSnPc.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:EGSQt4DVBMqzRgyU8fZw.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:FQ3mGqg0treImKKgmcT1.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:FV4AaPy4oLWtSwFkS7Y3.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:HW1jcIsQf6V_lmGZ9czh.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:IkdHQxajfnPj2tge45ly.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:InbOAwQe3PIanOFpNBKf.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:K08WOrp8MXdu8fMaUk6W.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:LxPzjm3Me3qGydaLTKW4.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:MIs1YIYJFTEdTUC3cose.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Mxnij3LNkbMwYG5KD0J4.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:O6PDwgLYfZC0i9jKEHQ_.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:PFRzSPSkaUR32_nNPgYy.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:PbmFzgKjy6zjW4t_w8kg.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:R1j1c5NBSZMqCeu4Axv2.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:U826ec0j8sQBGjMG8j5h.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:WZ2czNYSyP74QCtb_KaA.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:WdW4w24Xbay9LIf_i1YP.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:WmOrAgmbagG4TpjZJzvc.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Y1ZKK_l3eophrkxZGabw.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:YFq6b_HnOvLXOfwTm8vb.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Y_hkRXnZJsfYHsx8WUTr.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:YjTmg5kJPQ1rbkCFPlIQ.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Z1Z93k29LXRCS1O6aDck.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ZQhpBj4vkzPR3vqTx8pw.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ZXm0vjjAWpgk2faeAJ9r.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ZcZIe7sZNygLS4lbKbee.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:_qT2QOhkGLzJQEjM3mac.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:a908vz9jOyvm8DHu0GxL.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:cPXE0bHzyKHVJUV8A2e1.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:defIDTKZaHLzF4mJWCm5.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:eF9gJkOUIqxuWTQrg_TX.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:eJSezaL8G3lcVC0xiO3Y.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:f47SE1glk6iMvSUHmaBp.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:fNz3WGpPbreY6IkpSi9v.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:fdeigT6ZCuVYvgHrLt7A.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:g0Myu4oOLt9iNda0xkzR.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:iD4KBKTBNHW1aumHUzj1.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:j1JTT8JTv22tk99lUOTm.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:jlZscgES9WTxSAmIYsGA.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:jw8ePyiz1uZAvSfYsUyU.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:k2rgmGGrX_VFab2CZT3x.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:k62vnW_LKXsDgntNLuPL.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:kIlt7LCN7OeaDH0JGRwT.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:lBqDXQEs9MmWay53aOCt.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:lOK9b1Bw2Y2ACzxE0bdb.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:lUtE9l1ZG2OH6_oONLaB.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:lgeafvb8kWSnuoOz6J8j.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:mN9DNLlowEHxpOpfuqNt.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:oG4F_pRKbkQ3yyMM9KBo.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:pMRUo9vs7y8PQcCmmWzf.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:r3LEL3SNiT2xGBHcE60B.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:r_CiNQD3SCsbyfnmecYA.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:sBio9UPrD66yBMN9KxQ0.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:sTiJ7CljUGCGpvCba9Yw.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:sYSNRvZQ_PF2t0DS7ODl.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:txKfoHkeb0Zgsc2ufKxc.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:u5BtN08WrAkdX6YYVDoo.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:uDYukUlgbiZV2PXXDMD7.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:uymun7oHz_iGyqOe5Kq4.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:vhF6tiXSIhrsAFVl63fc.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:vor2fgV5QK31aRStYFPG.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:w2CPDXMcB4Xdmpgr6tWV.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:zNZ_7vBCBasIiFuDYmqG.json",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-T": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 788,
+        "sampleDetails": []
+      },
+      "L2-F": {
+        "threshold": 0.5,
+        "overThresholdSamples": 42,
+        "probabilitySum": 42.0,
+        "pollutionIndexContribution": 5.32994923857868,
+        "missingProbabilitySamples": 746,
+        "sampleDetails": [
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:2KKzxROcF9GHYym46zRB.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:5jfc2rr1OYq_MZS0mA5p.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:6hd0Q60TmHBWPzgWcALg.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:8Ov3BbPW2Vq5tYDxHNAM.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Ay5C4tupimIkdM3OXj_E.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:BiHrgO0JQLotdNXbvO_9.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:CrOzb__uiJtontX6IqCL.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:DknRE4cLxwczPluLDilr.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:EmjdZmjZ1Y0Du9fQhvf3.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:F4vTBgYt7IjHPf5V9456.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:FV4AaPy4oLWtSwFkS7Y3.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:GSWLgeQtSa_IdHm2vqUf.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:HSTQ6L2cslV77l4aLrI7.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Hd9qjPnCC_tL4PnY9hER.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ITbIRSY9i9IIDl5oECj_.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:J1bYFw3I1S_LnlSUUFSy.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:KIX3w1UeRX9KWgo4za05.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:NOHDde3PWpxZ9WRsWORo.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:QVSafS5cS8ZMYoD7ARTT.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Szh5V7ArVoXX19WoJKoD.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:TPZAT1frXdYblrDaM9ka.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:V6m9uIz0e_HZtd7PiKzi.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:_YDJwgO7iFmenVeyo5FL.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:aWT0ZE_BRPU378TRxI2c.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:arUjODX9cUwQgfgGCyj6.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:aveKOjRQ5XoNTulKAIip.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ckavB2VGeF0DWu1X3qH2.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:iZ20pS1LIkryKKlUA5CV.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:jhCPuaVWw0TzNbEVbxnR.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:k2rgmGGrX_VFab2CZT3x.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:kxNpD3nyTtl77w89gbEg.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:lgeafvb8kWSnuoOz6J8j.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:oIKonitWuVAvQjZpEQQ0.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:qdkKbdIGv762sNCTwbDN.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:qwgd_NS71tRfpyxJnRcw.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:rtYSj_P6qBnRIa2LxCnG.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:tUYrqM95RpUzry0ApPRH.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:uO22Y9qCAF02iP9O_nlP.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:xU71KwNu5MOuMgMOHjbX.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:xZNj_8i2fb3xwjxu5fXT.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:xgyLior1q5eHVTK8Hkkw.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:zNZ_7vBCBasIiFuDYmqG.json",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L3-06": {
+        "threshold": 0.5,
+        "overThresholdSamples": 32,
+        "probabilitySum": 30.85028511285782,
+        "pollutionIndexContribution": 3.9150108011240885,
+        "missingProbabilitySamples": 756,
+        "sampleDetails": [
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:2VkMhJuhITy8oK3wqiNe.json",
+            "probability": 0.9818687438964844
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:7eT_hqatqt0NbpzHAhW0.json",
+            "probability": 0.956929624080658
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:8GNF51hKzsowQRyK6HtJ.json",
+            "probability": 0.9754157662391663
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:9V19WRXLrYuciX_Yu75u.json",
+            "probability": 0.9769293069839478
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:9hob7aKdtNOnlMkuu9_U.json",
+            "probability": 0.9611691832542419
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:BLUO5A5kvFJT8ER_BKKT.json",
+            "probability": 0.9605779051780701
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:E52riOIyI9rB_qRPe8q7.json",
+            "probability": 0.9111689925193787
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:FlLI4vdiGfmWNfcFz2iG.json",
+            "probability": 0.9789480566978455
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:G7BKwmPIgIkgUlyrqLIe.json",
+            "probability": 0.9744181036949158
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:JkJdtKxwtxDPbzDm0GQl.json",
+            "probability": 0.9306890964508057
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:KBuATaRwFDjmY38QW4f_.json",
+            "probability": 0.9260706305503845
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Nxdx55qTqR4AKw1IZQWh.json",
+            "probability": 0.9622716903686523
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:Qd4vu2LQA1Tcryt8YKwU.json",
+            "probability": 0.9650042653083801
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:RI0WPVcjTnACgKRD1wWH.json",
+            "probability": 0.9457812309265137
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:S_yEOejg7ZFcgsxXvFMN.json",
+            "probability": 0.9508293271064758
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:StuHfgpD9n9rzq8RP_wd.json",
+            "probability": 0.9695958495140076
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:TqP77oh23Tvci77EChYB.json",
+            "probability": 0.9746046662330627
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:W8lSzmRbeFKRUpqlANgN.json",
+            "probability": 0.962678849697113
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:WWyIkX6OnTSxAm_aDGLJ.json",
+            "probability": 0.9663227200508118
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:gxx7B6jcltcKmlB3uEzw.json",
+            "probability": 0.9442349076271057
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:j5em6cAScV0feKZsGyyD.json",
+            "probability": 0.9684963822364807
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:jSVWxuz0RAGZIB8ZYcwW.json",
+            "probability": 0.9671027660369873
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:kdi_bEYGJABBZJUBPOWG.json",
+            "probability": 0.9942646622657776
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:r3LEL3SNiT2xGBHcE60B.json",
+            "probability": 0.9870275855064392
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:stqMQvbmjQu382jCbw8y.json",
+            "probability": 0.9932059049606323
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:trecEvBVzSDqV7eGmvfk.json",
+            "probability": 0.9413419365882874
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:upFR9HueHt4yoP6fpw99.json",
+            "probability": 0.9707382321357727
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:vor2fgV5QK31aRStYFPG.json",
+            "probability": 0.9902069568634033
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:wdmSvGppy2e4G9dSuKhN.json",
+            "probability": 0.9588752388954163
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:wtq2AdFCOm83225Ec1dj.json",
+            "probability": 0.9862573146820068
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:znOMvIaVgcbzG5Fl7IRY.json",
+            "probability": 0.9567057490348816
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:zzlqyUEusY9uqLdRgEXf.json",
+            "probability": 0.9605534672737122
+          }
+        ]
+      },
+      "L3-07": {
+        "threshold": 0.5,
+        "overThresholdSamples": 12,
+        "probabilitySum": 11.746404647827148,
+        "pollutionIndexContribution": 1.4906604883029375,
+        "missingProbabilitySamples": 776,
+        "sampleDetails": [
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:7eT_hqatqt0NbpzHAhW0.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:9hob7aKdtNOnlMkuu9_U.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:ATKGdWnlyNT9cdbi_Zk0.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:BLUO5A5kvFJT8ER_BKKT.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:RF6mfZzAS0RrholTyumK.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:RI0WPVcjTnACgKRD1wWH.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:bFgLXrbkIQejz4uZE11U.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:boXPOiDw12yQ6B2NOj69.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:gGyFA0ewl397ntI7BNrd.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:kdi_bEYGJABBZJUBPOWG.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:upFR9HueHt4yoP6fpw99.json",
+            "probability": 0.9788670539855957
+          },
+          {
+            "sampleId": "EPB_seg_sample_fbbqy66u2d:wdmSvGppy2e4G9dSuKhN.json",
+            "probability": 0.9788670539855957
+          }
+        ]
+      },
+      "L3-MIS": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 788,
+        "sampleDetails": []
+      }
+    },
+    "pollutionIndex": 23.425975857954946,
+    "rankingDirection": "ascending",
+    "meaning": "模型/规则观测污染指数；越低越好。八类缺陷允许同一样本重复计入；没有独立真值时不是官方污染率。"
+  },
+  "localizationPolicy": {
+    "tolerances": {
+      "bbox": {
+        "iouThreshold": 0.5,
+        "normalizedCenterDistanceThreshold": 0.05
+      },
+      "polygon": {
+        "iouThreshold": 0.5,
+        "boundaryHausdorffPixel": 3.0
+      },
+      "timeInterval": {
+        "endpointToleranceSeconds": 2.0,
+        "overlapRatioThreshold": 0.5
+      },
+      "metadata": {
+        "relativeDimensionError": 0.02
+      }
+    },
+    "referenceRequired": true,
+    "withoutReference": "candidate; 不将模型输出自证为命中"
+  },
+  "expertOutlierPolicy": {
+    "method": "median_mad",
+    "zThreshold": 3.5,
+    "minimumExperts": 3,
+    "aggregate": "trimmed_mean",
+    "recordExcludedExperts": true
+  },
+  "freshImageForwards": 770,
+  "candidateSamples": 50,
+  "foundSamples": 179,
+  "foundRatio": 0.22715736040609136,
+  "rankGlobalDisplay": 8,
+  "rankInDatasetDisplay": 2,
+  "technicalCompetitionRank": 9,
+  "tiedDirectoryIds": [],
+  "rankAuthority": "pollutionIndex ascending; 同分目录名顺序仅供显示，不能声称真实质量不并列",
+  "detectionVersion": "AQuA2-original7-latest-omission-20261109"
+}

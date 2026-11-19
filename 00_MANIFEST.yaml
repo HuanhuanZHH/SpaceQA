@@ -1,0 +1,900 @@
+{
+  "schema": "spaceqa-delivery-manifest-2.3",
+  "project": "SpaceQA",
+  "team": "LTH",
+  "teamName": "LTH团队",
+  "version": "v23-final-delivery-evidence-20261110",
+  "status": "frozen_delivery_technical_results_complete_scientific_limits_disclosed",
+  "evaluationScope": {
+    "datasetFamilies": [
+      "AIA",
+      "EPB",
+      "ULF"
+    ],
+    "datasetVersion": "v34",
+    "dirCount": 12,
+    "dirIds": [
+      "AIA_AR_sample_3mogtggl50",
+      "AIA_AR_sample_7qn2pdeube",
+      "AIA_AR_sample_p86y2cz08y",
+      "AIA_AR_sample_z4h764sf2d",
+      "EPB_seg_sample_fbbqy66u2d",
+      "EPB_seg_sample_mc4t7fou91",
+      "EPB_seg_sample_qmn05l7r91",
+      "EPB_seg_sample_z443g9dgh7",
+      "ULF_sample_09b7y3z4hn",
+      "ULF_sample_0yu0mc7d5a",
+      "ULF_sample_ta382376ar",
+      "ULF_sample_xfnogkdey9"
+    ],
+    "scorecardDirectory": "04_评分卡",
+    "sampleCount": 24782,
+    "meaning": "Historical root 12-package result scope; not a claim of a new 12-package full run",
+    "scoreMeaning": "Main ranking uses confirmed-plus-pending sample union; six observed dimension scores are separately complete."
+  },
+  "deliverables": [
+    {
+      "id": "DEL-1",
+      "paths": [
+        "01_方案规划.md"
+      ],
+      "fileCount": 1,
+      "bytes": 32576,
+      "status": "present"
+    },
+    {
+      "id": "DEL-2",
+      "paths": [
+        "image",
+        "source",
+        "agent"
+      ],
+      "fileCount": 535,
+      "bytes": 19790269076,
+      "status": "R4_runtime_previously_validated"
+    },
+    {
+      "id": "DEL-3",
+      "paths": [
+        "02_部署与使用说明.md"
+      ],
+      "fileCount": 1,
+      "bytes": 10262,
+      "status": "present"
+    },
+    {
+      "id": "DEL-4",
+      "paths": [
+        "03_评价规范.md",
+        "03_评价规范.yaml"
+      ],
+      "fileCount": 2,
+      "bytes": 210398,
+      "status": "implemented_protocol_evidence_gated"
+    },
+    {
+      "id": "DEL-5",
+      "paths": [
+        "04_评分卡"
+      ],
+      "fileCount": 24,
+      "bytes": 159234694,
+      "status": "12_scores_with_complete_technical_dimensions"
+    },
+    {
+      "id": "DEL-6",
+      "paths": [
+        "05_排序表"
+      ],
+      "fileCount": 2,
+      "bytes": 8920,
+      "status": "confirmed_plus_pending_union_ranking"
+    },
+    {
+      "id": "DEL-7",
+      "paths": [
+        "06_问题清单"
+      ],
+      "fileCount": 3,
+      "bytes": 31736645,
+      "status": "historical_confirmed_and_candidates_retained"
+    },
+    {
+      "id": "DEL-8",
+      "paths": [
+        "07_证据索引"
+      ],
+      "fileCount": 10855,
+      "bytes": 187901726,
+      "status": "portable_evidence"
+    },
+    {
+      "id": "DEL-9",
+      "paths": [
+        "08_运行日志/run.log.jsonl"
+      ],
+      "fileCount": 1,
+      "bytes": 92576193,
+      "status": "native_runtime_validation_separate_from_historical_12_results"
+    },
+    {
+      "id": "DEL-10",
+      "paths": [
+        "08_运行日志/system_env.txt",
+        "08_运行日志/seeds.yaml"
+      ],
+      "fileCount": 2,
+      "bytes": 4612,
+      "status": "present_scope_declared"
+    },
+    {
+      "id": "DEL-11",
+      "paths": [
+        "09_未完成事项说明.md"
+      ],
+      "fileCount": 1,
+      "bytes": 3824,
+      "status": "disclosed"
+    },
+    {
+      "id": "DEL-12",
+      "paths": [
+        "10_演示视频.mp4"
+      ],
+      "fileCount": 1,
+      "bytes": 3609326,
+      "status": "retained_existing_results_walkthrough"
+    }
+  ],
+  "selfCheck": {
+    "structure": "08_运行日志/交付整理/交付核查回执.json",
+    "checksum": "SHA256SUMS.txt",
+    "fullScientificAcceptance": false,
+    "criticalRecallGateVerified": false,
+    "fixedFilesExpected": 53,
+    "nativeRuntime": "image/acceptance.json",
+    "formalEvidenceReview": "13_六维评分修复_20261110/12包正式验收/验收回执.json",
+    "ppt": "retained_unchanged_user_instruction",
+    "new12PackageReruns": 0,
+    "items": [
+      {
+        "check": "fixed_53_files",
+        "passed": true,
+        "detail": {
+          "count": 53,
+          "missing": []
+        }
+      },
+      {
+        "check": "three_datasets_twelve_directories",
+        "passed": true,
+        "detail": [
+          "AIA_AR_sample_3mogtggl50",
+          "AIA_AR_sample_7qn2pdeube",
+          "AIA_AR_sample_p86y2cz08y",
+          "AIA_AR_sample_z4h764sf2d",
+          "EPB_seg_sample_fbbqy66u2d",
+          "EPB_seg_sample_mc4t7fou91",
+          "EPB_seg_sample_qmn05l7r91",
+          "EPB_seg_sample_z443g9dgh7",
+          "ULF_sample_09b7y3z4hn",
+          "ULF_sample_0yu0mc7d5a",
+          "ULF_sample_ta382376ar",
+          "ULF_sample_xfnogkdey9"
+        ]
+      },
+      {
+        "check": "complete_source_and_dependencies",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "manifest_scope_matches_cards",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "manifest_DEL1_through_DEL12",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "unique_finding_ids",
+        "passed": true,
+        "detail": 10817
+      },
+      {
+        "check": "finding_fields",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "finding_directory_identity",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "evidence_schema",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "unique_evidence_ids",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "evidence_finding_closure",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "evidence_actual_bytes_and_sha256",
+        "passed": true,
+        "detail": {
+          "checked": 10817,
+          "hashes_checked": true,
+          "bad": []
+        }
+      },
+      {
+        "check": "score_recompute:AIA_AR_sample_3mogtggl50",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 294,
+          "denominator": 1838,
+          "score": 84.00435255712732
+        }
+      },
+      {
+        "check": "card_finding_ids:AIA_AR_sample_3mogtggl50",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:AIA_AR_sample_3mogtggl50",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:AIA_AR_sample_3mogtggl50",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:AIA_AR_sample_3mogtggl50",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:AIA_AR_sample_7qn2pdeube",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 83,
+          "denominator": 1838,
+          "score": 95.4842219804135
+        }
+      },
+      {
+        "check": "card_finding_ids:AIA_AR_sample_7qn2pdeube",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:AIA_AR_sample_7qn2pdeube",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:AIA_AR_sample_7qn2pdeube",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:AIA_AR_sample_7qn2pdeube",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:AIA_AR_sample_p86y2cz08y",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 445,
+          "denominator": 1838,
+          "score": 75.78890097932536
+        }
+      },
+      {
+        "check": "card_finding_ids:AIA_AR_sample_p86y2cz08y",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:AIA_AR_sample_p86y2cz08y",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:AIA_AR_sample_p86y2cz08y",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:AIA_AR_sample_p86y2cz08y",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:AIA_AR_sample_z4h764sf2d",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 0,
+          "denominator": 1838,
+          "score": 100.0
+        }
+      },
+      {
+        "check": "card_finding_ids:AIA_AR_sample_z4h764sf2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:AIA_AR_sample_z4h764sf2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:AIA_AR_sample_z4h764sf2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:AIA_AR_sample_z4h764sf2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:EPB_seg_sample_fbbqy66u2d",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 135,
+          "denominator": 788,
+          "score": 82.86802030456852
+        }
+      },
+      {
+        "check": "card_finding_ids:EPB_seg_sample_fbbqy66u2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:EPB_seg_sample_fbbqy66u2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:EPB_seg_sample_fbbqy66u2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:EPB_seg_sample_fbbqy66u2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:EPB_seg_sample_mc4t7fou91",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 267,
+          "denominator": 787,
+          "score": 66.07369758576874
+        }
+      },
+      {
+        "check": "card_finding_ids:EPB_seg_sample_mc4t7fou91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:EPB_seg_sample_mc4t7fou91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:EPB_seg_sample_mc4t7fou91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:EPB_seg_sample_mc4t7fou91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:EPB_seg_sample_qmn05l7r91",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 0,
+          "denominator": 788,
+          "score": 100.0
+        }
+      },
+      {
+        "check": "card_finding_ids:EPB_seg_sample_qmn05l7r91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:EPB_seg_sample_qmn05l7r91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:EPB_seg_sample_qmn05l7r91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:EPB_seg_sample_qmn05l7r91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:EPB_seg_sample_z443g9dgh7",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 364,
+          "denominator": 787,
+          "score": 53.74841168996187
+        }
+      },
+      {
+        "check": "card_finding_ids:EPB_seg_sample_z443g9dgh7",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:EPB_seg_sample_z443g9dgh7",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:EPB_seg_sample_z443g9dgh7",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:EPB_seg_sample_z443g9dgh7",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:ULF_sample_09b7y3z4hn",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 0,
+          "denominator": 3570,
+          "score": 100.0
+        }
+      },
+      {
+        "check": "card_finding_ids:ULF_sample_09b7y3z4hn",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:ULF_sample_09b7y3z4hn",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:ULF_sample_09b7y3z4hn",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:ULF_sample_09b7y3z4hn",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:ULF_sample_0yu0mc7d5a",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 55,
+          "denominator": 3570,
+          "score": 98.45938375350141
+        }
+      },
+      {
+        "check": "card_finding_ids:ULF_sample_0yu0mc7d5a",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:ULF_sample_0yu0mc7d5a",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:ULF_sample_0yu0mc7d5a",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:ULF_sample_0yu0mc7d5a",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:ULF_sample_ta382376ar",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 11,
+          "denominator": 3570,
+          "score": 99.69187675070029
+        }
+      },
+      {
+        "check": "card_finding_ids:ULF_sample_ta382376ar",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:ULF_sample_ta382376ar",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:ULF_sample_ta382376ar",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:ULF_sample_ta382376ar",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "score_recompute:ULF_sample_xfnogkdey9",
+        "passed": true,
+        "detail": {
+          "confirmedSamples": 36,
+          "denominator": 3570,
+          "score": 98.99159663865547
+        }
+      },
+      {
+        "check": "card_finding_ids:ULF_sample_xfnogkdey9",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_six_dimensions:ULF_sample_xfnogkdey9",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_four_state_counts:ULF_sample_xfnogkdey9",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "card_evidence_ids:ULF_sample_xfnogkdey9",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_schema_and_scope",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:AIA_AR_sample_z4h764sf2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:EPB_seg_sample_qmn05l7r91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:ULF_sample_09b7y3z4hn",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:ULF_sample_ta382376ar",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:ULF_sample_xfnogkdey9",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:ULF_sample_0yu0mc7d5a",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:AIA_AR_sample_7qn2pdeube",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:AIA_AR_sample_3mogtggl50",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:EPB_seg_sample_fbbqy66u2d",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:AIA_AR_sample_p86y2cz08y",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:EPB_seg_sample_mc4t7fou91",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "ranking_recompute:EPB_seg_sample_z443g9dgh7",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "roadshow_schema",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "roadshow_score_rounding",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "display_evidence_schema",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "display_ids_and_provenance",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "check": "log_required_fields_and_UTC",
+        "passed": true,
+        "detail": {
+          "rows": 118526,
+          "missingFieldRows": 0,
+          "badUtcRows": 0
+        }
+      },
+      {
+        "check": "real_failure_records_retained",
+        "passed": true,
+        "detail": {
+          "started": 59264,
+          "completed": 59260,
+          "failed": 2
+        }
+      },
+      {
+        "check": "image_under_20_decimal_GB",
+        "passed": true,
+        "detail": 19783508992
+      },
+      {
+        "check": "docker_save_archive_manifest",
+        "passed": true,
+        "detail": [
+          "localhost/spaceqa-agent:0.6.1-final-r4-20261110"
+        ]
+      },
+      {
+        "check": "video_H264_under_five_minutes",
+        "passed": true,
+        "detail": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264"
+            }
+          ],
+          "format": {
+            "duration": "79.200000"
+          }
+        }
+      },
+      {
+        "check": "approved_weight_policy_preserved",
+        "passed": true,
+        "detail": "2cf88dfa960cd38fca4d5cb5cf68318a7348cfb61ae43c9cebdf35a832059e30"
+      },
+      {
+        "check": "PPT_bytes_unchanged",
+        "passed": true,
+        "detail": "9d693a3c8a216b37c674447b85c4a8795afdce1d5559aa65e6672bbdcd06cf37"
+      }
+    ],
+    "fixedFilesVerified": 53,
+    "structuralAuditStatus": "structural_pass_scientific_partial",
+    "currentRanking": "08_运行日志/交付整理/含待核排序回执.json",
+    "currentTechnicalSixDimensions": "13_六维评分修复_20261110/六维证据覆盖复算/score.json",
+    "complianceReview": "08_运行日志/交付整理/封版复核说明.md",
+    "independentObservedTests": {
+      "index": "08_运行日志/独立实测复核/README.md",
+      "C31": {
+        "receipt": "08_运行日志/独立实测复核/c31/receipt.json",
+        "TP": 272,
+        "FP": 0,
+        "FN": 0
+      },
+      "C35": {
+        "receipt": "08_运行日志/独立实测复核/c35/receipt.json",
+        "TP": 255,
+        "FP": 0,
+        "FN": 0,
+        "undetermined": 134
+      },
+      "officialCriticalDefectRecallVerified": false
+    }
+  },
+  "declarations": {
+    "newPackageEvaluations": 0,
+    "newModelCalls": 0,
+    "pptContentModified": false,
+    "pptSha256": "9d693a3c8a216b37c674447b85c4a8795afdce1d5559aa65e6672bbdcd06cf37",
+    "fullQualityScoresAvailable": false,
+    "officialGroundTruthAvailable": false,
+    "historicalRunIdNotInvented": true,
+    "incompleteEvidenceRetainsUndetermined": true,
+    "allExistingNumericResultsPreserved": false,
+    "technicalResultsNotCompetitionScores": true,
+    "originalConfirmedOnlyScoreRetained": true,
+    "sixObservedScorePackageCount": 12,
+    "sixObservedScoresAreEvidenceBounds": true
+  },
+  "roadshowMaterials": {
+    "technicalPlan": "11_展示材料/技术方案_LTH团队_SpaceQA智能体.pptx",
+    "results": "11_展示材料/路演结果_LTH团队.csv",
+    "evidence": "11_展示材料/证据表_LTH团队.csv",
+    "runRecord": "11_展示材料/运行记录.txt"
+  },
+  "image": {
+    "path": "image/LTH_image.tar",
+    "tag": "localhost/spaceqa-agent:0.6.1-final-r4-20261110",
+    "imageId": "9dc9faaf070a4e5a98cb0642f6a3d0299a15a17c6a811c3d27d3da23dd97d323",
+    "bytes": 19783508992,
+    "sha256": "4ed612123e2b97898719e5b3f439c0d910e10726c80fb5d270e6666e02b18a18",
+    "acceptance": "image/acceptance.json"
+  },
+  "runtimeValidationScope": {
+    "report": "repair_20261110/runtime_candidate/运行修复验证.md",
+    "receipt": "repair_20261110/runtime_candidate/RUNTIME_VALIDATION.json",
+    "successfulFullPackages": 2,
+    "successfulSmokeRuns": 3,
+    "fullPackageRecords": 3676,
+    "smokeRecords": 48,
+    "freshTwoFullRounds": false,
+    "runs": [
+      {
+        "runId": "LTH-20261110T031743Z-02100d10",
+        "dirId": "AIA_AR_sample_3mogtggl50",
+        "kind": "full_package_success",
+        "status": "completed"
+      },
+      {
+        "runId": "LTH-20261110T031732Z-c55ef24b",
+        "dirId": "AIA_AR_sample_7qn2pdeube",
+        "kind": "full_package_success",
+        "status": "completed"
+      },
+      {
+        "runId": "LTH-20261110T034436Z-8eb62f84",
+        "dirId": "AIA_AR_sample_p86y2cz08y",
+        "kind": "smoke_success",
+        "status": "completed"
+      },
+      {
+        "runId": "LTH-20261110T034547Z-445e0435",
+        "dirId": "EPB_seg_sample_z443g9dgh7",
+        "kind": "smoke_success",
+        "status": "completed"
+      },
+      {
+        "runId": "LTH-20261110T034644Z-7d73a2ea",
+        "dirId": "ULF_sample_xfnogkdey9",
+        "kind": "smoke_success",
+        "status": "completed"
+      },
+      {
+        "runId": "LTH-20261110T024924Z-d10d63fe",
+        "dirId": "AIA_AR_sample_3mogtggl50",
+        "kind": "failed_before_shm_fix",
+        "status": "failed"
+      },
+      {
+        "runId": "LTH-20261110T025312Z-0c6e4b09",
+        "dirId": "AIA_AR_sample_7qn2pdeube",
+        "kind": "failed_before_shm_fix",
+        "status": "failed"
+      }
+    ]
+  },
+  "sixDimensionScoring": {
+    "componentDirectory": "13_六维评分修复_20261110",
+    "entrypoint": "13_六维评分修复_20261110/rescore_six_dimensions.py",
+    "validation": "13_六维评分修复_20261110/validation_summary.json",
+    "mode": "CPU postprocessing of actual existing inference; no new model forward",
+    "implementationVersion": "formal-1.1-20261110-sixdim",
+    "currentImageIntegration": false,
+    "weightApprovalStatus": "approved",
+    "fullScoreEvidenceComplete": false,
+    "weightPolicy": "13_六维评分修复_20261110/approved_weight_policy.json",
+    "archiveReview": "13_六维评分修复_20261110/12包正式验收/验收回执.json",
+    "archiveReviewMatrix": "13_六维评分修复_20261110/12包正式验收/六维验收矩阵.csv",
+    "newModelRuns": 0,
+    "formalPackagesScored": 0,
+    "observedScores": "13_六维评分修复_20261110/技术六维复算/score.json",
+    "observedPackagesScored": 12,
+    "coverageAdjustedScores": "13_六维评分修复_20261110/六维证据覆盖复算/score.json"
+  },
+  "checksumScope": {
+    "algorithm": "SHA-256",
+    "included": "All regular payload files",
+    "excluded": [
+      "SHA256SUMS.txt",
+      "历史备查_20261110/**",
+      "交付归档/**"
+    ],
+    "command": "sha256sum -c --strict SHA256SUMS.txt"
+  },
+  "archive": {
+    "path": "交付归档/LTH_SpaceQA_v23_20261110_final.tar",
+    "topLevel": "LTH",
+    "excludes": [
+      "历史备查_20261110",
+      "交付归档"
+    ],
+    "verificationReceipt": "交付归档/LTH_SpaceQA_v23_20261110_final.tar.sha256",
+    "priorVersion": "交付归档/LTH_SpaceQA_v23_20261110_coverage.tar"
+  },
+  "packagingLog": "08_运行日志/交付整理/整理记录.json",
+  "readme": "README.md",
+  "navigation": "交付导航.html",
+  "frozenUtc": "2026-11-10T07:21:41.980976+00:00",
+  "publishedResultScoring": {
+    "id": "confirmedPlusPendingScenarioScore",
+    "score": "100*(1-union(confirmed_score_eligible,candidate)/registered_samples)",
+    "deduplication": "unique sample IDs",
+    "ties": "competition ranking on exact error rate",
+    "registeredSamples": 24782,
+    "affectedSamples": 3658,
+    "sixDimensions": "six equally weighted scoped observations, separate from ranking score",
+    "sixDimensionReport": "13_六维评分修复_20261110/技术六维复算/score.json",
+    "formalSixDimensionScoreAvailable": false,
+    "issueVerdictsPreserved": true
+  },
+  "publishedEvidenceCoverageScoring": {
+    "mainRankingUnchanged": true,
+    "observedEvidenceDimensionCount": 6,
+    "weights": "equal six dimensions",
+    "dimensionScore": "mean of verified pass/applicable units across registered checks",
+    "dimensionRange": "lower verified pass; upper verified pass plus unresolved, divided by applicable",
+    "missingPolicy": "unknown remains applicable; confirmed not_applicable excluded; never relabelled as failure",
+    "technicalEvidenceOnly": true,
+    "completeScientificScoreAvailable": false,
+    "priorScopedObservationPreserved": true,
+    "scoreReport": "13_六维评分修复_20261110/六维证据覆盖复算/score.json"
+  }
+}

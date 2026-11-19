@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "check": "frozen_checkpoint_inference_replay",
+  "models": [
+    {
+      "route": "dino_finetune",
+      "checkpoint_sha256": "d38a561126cf6f4ff220faa69722adabcaff5e0e879833e664b14df7b2bf011b",
+      "all_context_samples": {
+        "samples": 16,
+        "max_probability_delta": 0.0,
+        "mean_probability_delta": 0.0,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "first_historical_batch": {
+        "samples": 16,
+        "max_probability_delta": 0.0,
+        "mean_probability_delta": 0.0,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "selected_heldout_families": {
+        "AIA_AR_sample": {
+          "samples": 2,
+          "max_probability_delta": 0.0,
+          "mean_probability_delta": 0.0,
+          "within_tolerance": true,
+          "threshold_decisions_match": true,
+          "changed_decision_bits": 0
+        }
+      }
+    },
+    {
+      "route": "resnet18_unet",
+      "checkpoint_sha256": "e8cf151ce0f006c55e86a69369920986418e7c199b79c417f2ed228355f822f4",
+      "all_context_samples": {
+        "samples": 32,
+        "max_probability_delta": 0.0016480088233947754,
+        "mean_probability_delta": 2.644425125216306e-05,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "first_historical_batch": {
+        "samples": 16,
+        "max_probability_delta": 0.0016480088233947754,
+        "mean_probability_delta": 5.2868699034055076e-05,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "selected_heldout_families": {
+        "HMI_AR_sample": {
+          "samples": 2,
+          "max_probability_delta": 0.0,
+          "mean_probability_delta": 0.0,
+          "within_tolerance": true,
+          "threshold_decisions_match": true,
+          "changed_decision_bits": 0
+        }
+      }
+    },
+    {
+      "route": "yolo11_detect_backbone",
+      "checkpoint_sha256": "4ebbb5cc1d36e6a33b3656b3b4841e5b11bd22c025e862b2cb5e81000b132b01",
+      "all_context_samples": {
+        "samples": 48,
+        "max_probability_delta": 0.0012614130973815918,
+        "mean_probability_delta": 4.387798086814677e-05,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "first_historical_batch": {
+        "samples": 16,
+        "max_probability_delta": 0.00011723046191036701,
+        "mean_probability_delta": 1.0079866021269387e-05,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "selected_heldout_families": {
+        "DMSP_SSUSI": {
+          "samples": 2,
+          "max_probability_delta": 9.412167401023908e-08,
+          "mean_probability_delta": 3.137389133674636e-08,
+          "within_tolerance": true,
+          "threshold_decisions_match": true,
+          "changed_decision_bits": 0
+        },
+        "ULF_sample": {
+          "samples": 2,
+          "max_probability_delta": 0.0006096959114074707,
+          "mean_probability_delta": 0.0002032319704691569,
+          "within_tolerance": true,
+          "threshold_decisions_match": true,
+          "changed_decision_bits": 0
+        }
+      }
+    },
+    {
+      "route": "yolov8_segment_backbone",
+      "checkpoint_sha256": "17d6c52c8fc2b7920bdf5757e578f81e61c129f84846bc240e7896afaffe35f8",
+      "all_context_samples": {
+        "samples": 32,
+        "max_probability_delta": 0.0015717148780822754,
+        "mean_probability_delta": 3.035107143113528e-05,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "first_historical_batch": {
+        "samples": 16,
+        "max_probability_delta": 0.0015717148780822754,
+        "mean_probability_delta": 3.713638457736031e-05,
+        "within_tolerance": true,
+        "threshold_decisions_match": true,
+        "changed_decision_bits": 0
+      },
+      "selected_heldout_families": {
+        "EPB_seg_sample": {
+          "samples": 2,
+          "max_probability_delta": 0.0003183111548423767,
+          "mean_probability_delta": 0.00010611029461908099,
+          "within_tolerance": true,
+          "threshold_decisions_match": true,
+          "changed_decision_bits": 0
+        }
+      }
+    }
+  ],
+  "policy_sha256": "f9d561725c606db29fc94a08a01fcabc8398654519890e9d9562b78bd4746cfa",
+  "model_count": 4,
+  "batch_size": 16,
+  "image_size_height_width": [
+    384,
+    768
+  ],
+  "autocast_dtype": "bfloat16",
+  "absolute_probability_tolerance": 0.005,
+  "gpu_name": "NVIDIA A100-PCIE-40GB",
+  "torch_version": "2.9.0+cu128",
+  "families_using_rules_only": [
+    "CME_C2_sample"
+  ],
+  "training_performed": false,
+  "original_run_modified": false,
+  "sample_identifiers_in_output": false,
+  "limitation": "Small replay; no new accuracy estimate. Batch contexts are reconstructed from nonmissing inventory order; historical resumed batches may differ."
+}

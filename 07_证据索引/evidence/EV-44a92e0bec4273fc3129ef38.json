@@ -1,0 +1,235 @@
+{
+  "evidenceId": "EV-44a92e0bec4273fc3129ef38",
+  "findingId": "C33-dcb79907fa25e21a1446",
+  "sourceCard": "04_评分卡/AIA_AR_sample_p86y2cz08y.json",
+  "sourceFinding": {
+    "findingId": "C33-dcb79907fa25e21a1446",
+    "checkId": "C33",
+    "ruleVersion": "eight-class-ledger-1.0",
+    "dirId": "AIA_AR_sample_p86y2cz08y",
+    "sampleId": "AIA_AR_sample_p86y2cz08y:KAJgxQ_JveIAcSSrbUlb.png.json",
+    "defectType": "L2-P",
+    "aliasCodes": [],
+    "verdict": "fail",
+    "findingStage": "confirmed",
+    "sourceKind": "b_original_vocabulary_rule",
+    "scoreEligible": true,
+    "locator": {
+      "type": "imageRegion",
+      "path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/KAJgxQ_JveIAcSSrbUlb.png.json",
+      "annotation_pointer": "/hek_event_annotation/matched_events/1/event_type",
+      "bbox": [
+        769.8,
+        2836.6,
+        819.4,
+        2876.7
+      ],
+      "coordinate_system": "image_pixels",
+      "origin": "top_left",
+      "axis_order": "xy",
+      "image_size": [
+        4096,
+        4096
+      ],
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/KAJgxQ_JveIAcSSrbUlb.png"
+    },
+    "detail": "类别'CH'不属于声明的任务类别集合['AR']；依据：frozen participant vocabulary; technical candidate only",
+    "severity": {
+      "metric": "affected_object_fraction",
+      "value": 0.3333333333333333,
+      "unit": "ratio",
+      "normalized": 0.3333333333333333
+    },
+    "measurements": {
+      "actual": "CH",
+      "allowed": [
+        "AR"
+      ],
+      "contract_source": "frozen participant vocabulary; technical candidate only",
+      "affected_object_fraction": 0.3333333333333333,
+      "invalid_object_count": 1,
+      "classified_object_count": 3
+    },
+    "probability": 1.0,
+    "impact": {
+      "label": "待根据任务语义复核影响"
+    },
+    "evidence": {
+      "label_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/label/KAJgxQ_JveIAcSSrbUlb.png.json",
+      "data_path": "/staff/tangjiarui/OPC/opc-agent/runs/roadshow-evaluation-20261101/extracted/0aa6e327d57bc77c44f8d2bb2565e46957fdb24fb480d8dcbbdadbcfe5d63a52/AIA_AR_sample_p86y2cz08y/data/KAJgxQ_JveIAcSSrbUlb.png",
+      "label_sha256": "bb9175f387e5ad40565e00a394939e549d52f7f39983d266245900540857b8f7",
+      "data_sha256_from_inventory": "caba16cea7c999a44620f585a5d3995d6c9db84a1c656803478d332f1266449b",
+      "data_hash_verification": "fresh input SHA256"
+    },
+    "scientificStatus": "undetermined"
+  },
+  "captureKind": "historical_record_export",
+  "capturedBy": "lth-repair-export/20261110",
+  "capturedAt": "2026-11-10T02:07:16.192316+00:00",
+  "originalObservationReexecuted": false,
+  "labelSnapshot": {
+    "label_header": {
+      "fileName": "KAJgxQ_JveIAcSSrbUlb.png",
+      "labelCreateTime": "2026-09-28T18:49:17.348180",
+      "annotator": "anonymous",
+      "labelVersion": "V1.0.0.0",
+      "repositoryName": "anonymous",
+      "repositoryEmail": "",
+      "annotationMethod": "auto",
+      "softwareName": "anonymous",
+      "softwareVersion": "1.0"
+    },
+    "basic_annotation": {
+      "fileName": "KAJgxQ_JveIAcSSrbUlb.png",
+      "relativePath": "data/",
+      "modality": "image",
+      "fileFormat": "png",
+      "startTime": "2020-03-31T04:20:00",
+      "endTime": "2020-03-31T04:20:00",
+      "timestamp": "2026-09-28T18:49:17.348217",
+      "project": "",
+      "observatoryType": "space",
+      "observatoryName": "anonymous",
+      "imageType": "data_image"
+    },
+    "science_annotation": {
+      "telescop": "anonymous",
+      "instrume": "anonymous",
+      "detector": null,
+      "wavelnth": "1700",
+      "dateObs": "2020-03-31T04:20:00",
+      "dateEnd": null,
+      "tObs": "2020-03-31T04:20:00Z",
+      "rsunObs": 960.370198,
+      "dpcLevel": null,
+      "dsunObs": 149484880038.33,
+      "obsMode": null,
+      "lvlNum": 1.5
+    },
+    "hek_event_annotation": {
+      "has_events": true,
+      "event_count": 3,
+      "image_time": "2020-03-31T04:20:00",
+      "event_types": [
+        "AR"
+      ],
+      "matched_events": [
+        {
+          "SOL_standard": "id-006423",
+          "kb_archivid": "id-006425",
+          "solar_object_locator": "id-006424",
+          "event_type": "AR",
+          "eventtype": "1",
+          "concept": "Active Region",
+          "event_starttime": "2020-03-31 03:40:22",
+          "event_endtime": "2020-03-31 07:40:22",
+          "event_npixels": "23094",
+          "event_clippedspatial": "T",
+          "area_atdiskcenter": "19736474338.3604",
+          "area_atdiskcenteruncert": "599705984",
+          "area_raw": "4359980032",
+          "area_unit": "km2",
+          "area_uncert": "141158000",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "anonymous",
+          "obs_meanwavel": "1.71e-06",
+          "bbox_polygon_pixel": null
+        },
+        {
+          "SOL_standard": "id-006426",
+          "kb_archivid": "id-006427",
+          "solar_object_locator": "id-006426",
+          "event_type": "CH",
+          "eventtype": "1",
+          "concept": "Coronal Hole",
+          "event_starttime": "2020-03-31 04:00:00",
+          "event_endtime": "2020-03-31 08:00:00",
+          "ar_noaanum": "12759",
+          "area_atdiskcenter": "117730936",
+          "area_unit": "km2",
+          "unsignedflux": "955.5617",
+          "magfluxunit": "emx",
+          "highsheararea": "1934730880",
+          "highshearareaunit": "km2",
+          "meangradienttotal": "94.97899627685547",
+          "meangradienthorz": "44.15299987792969",
+          "meangradientvert": "95.13300323486328",
+          "gradientunit": "g/mm",
+          "meaninclinationgamma": "32.34299850463867",
+          "meantwistalpha": "-0.016136160120368004",
+          "meanshearangle": "24.944000244140625",
+          "twistunit": "1/mm",
+          "meanvertcurrentdensity": "-0.26064833998680115",
+          "meancurrenthelicity": "-0.007843879982829094",
+          "absnetcurrenthelicity": "24.70800018310547",
+          "unsignedcurrenthelicity": "166.38800048828125",
+          "currenthelicityunit": "(g^2)/m",
+          "currentdensityunit": "ma/(m^2)",
+          "currentunit": "amperes",
+          "log_r_value": "3.244999885559082",
+          "obs_observatory": "anonymous",
+          "obs_instrument": "anonymous",
+          "obs_channelid": "BLOS",
+          "obs_meanwavel": "5e-05",
+          "bbox_polygon_pixel": [
+            [
+              769.8,
+              2836.6
+            ],
+            [
+              804.1,
+              2844.0
+            ],
+            [
+              819.4,
+              2876.7
+            ],
+            [
+              785.8,
+              2869.4
+            ],
+            [
+              769.8,
+              2836.6
+            ]
+          ],
+          "concept_swapped": true
+        },
+        {
+          "SOL_standard": "FABRICATED-72385d032450",
+          "kb_archivid": null,
+          "event_type": "AR",
+          "concept": "Active Region",
+          "event_starttime": "2020-03-31T04:20:00",
+          "event_endtime": "2020-03-31T04:20:00",
+          "bbox_polygon_pixel": [
+            [
+              3154.0,
+              1478.2
+            ],
+            [
+              3323.1,
+              1478.2
+            ],
+            [
+              3323.1,
+              1587.4
+            ],
+            [
+              3154.0,
+              1587.4
+            ],
+            [
+              3154.0,
+              1478.2
+            ]
+          ],
+          "fabricated": true
+        }
+      ]
+    }
+  },
+  "labelSnapshotSourceSha256": "bb9175f387e5ad40565e00a394939e549d52f7f39983d266245900540857b8f7",
+  "originalLabelHashMatches": true
+}

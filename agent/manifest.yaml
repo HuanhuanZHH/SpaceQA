@@ -1,0 +1,48 @@
+{
+  "name": "spaceqa-release-agent",
+  "version": "0.6.1",
+  "orchestration": "pipeline",
+  "entrypoint": "python3 /opt/spaceqa/entry.py",
+  "modelToolAllowlist": [],
+  "decisionPoints": [
+    {
+      "id": "applicability",
+      "trigger": "family and evidence prerequisites",
+      "fallback": "undetermined when evidence missing; not_applicable only with verified scope"
+    },
+    {
+      "id": "score",
+      "trigger": "check completion",
+      "fallback": "technical observation only; six-dimensional score null unless all evidence and approved weights are available"
+    },
+    {
+      "id": "B-route",
+      "trigger": "current AIA/HMI missing-label candidate",
+      "fallback": "retain unknown geometry; candidates do not rewrite labels"
+    }
+  ],
+  "concurrency": "one full evaluation per allocated GPU; CPU DataLoader workers inside each run",
+  "state": "new output directory per native runId; no prediction reuse",
+  "globalSeed": 20261104,
+  "subAgents": [],
+  "runtime": {
+    "python": "3.10.20",
+    "network": "disabled for evaluation; loopback only for release viewer",
+    "accelerator": "CUDA for 21 experts and conditional B; CPU for rule/formal scans",
+    "sharedMemory": "2 GiB for full inference"
+  },
+  "guardrails": {
+    "input": "read-only",
+    "writeAllowlist": [
+      "OUTPUT_ROOT"
+    ],
+    "network": "disabled",
+    "modelTokenQuota": null,
+    "auditHook": "08_运行日志/run.log.jsonl",
+    "modelTokenQuotaMeaning": "No external model API. Local model token count is not instrumented; model forward coverage is logged."
+  },
+  "noSubAgentReason": "Published inference is a fixed expert pipeline, not autonomous multi-agent dialogue.",
+  "release": "spaceqa-agent-0.6.1-r4",
+  "configurationScope": "Release deployment declaration. Image-embedded agent assets preserve a build-time legacy metadata snapshot; execution uses entry.py and the registered C31-C38/C41-C50 adapters. This document corrects metadata without changing inference.",
+  "bModuleSeed": 20261109
+}

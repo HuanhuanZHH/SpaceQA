@@ -1,0 +1,2143 @@
+{
+  "benchmark": "controlled OPC multi-family ablation",
+  "fixture": {
+    "families": [
+      "AIA_AR_sample",
+      "HMI_AR_sample",
+      "CME_C2_sample",
+      "EPB_seg_sample",
+      "DMSP_SSUSI",
+      "ULF_sample"
+    ],
+    "tiers": [
+      "clean",
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "packageCount": 30,
+    "samplesPerPackage": 20,
+    "isHiddenSetEstimate": false
+  },
+  "metricBoundary": {
+    "classMetric": "package x canonical defect class, not hidden location-level D",
+    "tierMetric": "all 10 pairwise tier comparisons within each of 6 families",
+    "severityMetric": "synthetic monotonic injection only, not official S_Q"
+  },
+  "candidates": [
+    {
+      "candidate": "A_schema_pairing",
+      "checks": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "elapsedSeconds": 1.198744,
+      "peakPythonMemoryBytes": 5765334,
+      "runSummary": {
+        "runId": "RUN-9CE9ACCE6A5D",
+        "datasetCount": 30,
+        "findingCount": 216,
+        "confirmedDefectCount": 150,
+        "pendingCount": 0,
+        "output": "C:\\Users\\jiaryWin\\AppData\\Local\\Temp\\tmp5j06_n0g\\run-A_schema_pairing"
+      },
+      "packageClassPresence": {
+        "unit": "package x canonical defect class",
+        "canonicalization": "L0-01 and L0-03 collapse to L0-MISSING because their published observations are indistinguishable",
+        "truePositive": 24,
+        "falsePositive": 0,
+        "falseNegative": 94,
+        "precision": 1.0,
+        "recall": 0.2033898305084746,
+        "f1": 0.33802816901408456,
+        "byFamily": {
+          "AIA_AR_sample": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 17,
+            "recall": 0.19047619047619047
+          },
+          "CME_C2_sample": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 8,
+            "recall": 0.3333333333333333
+          },
+          "DMSP_SSUSI": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 20,
+            "recall": 0.16666666666666666
+          },
+          "EPB_seg_sample": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 20,
+            "recall": 0.16666666666666666
+          },
+          "HMI_AR_sample": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 17,
+            "recall": 0.19047619047619047
+          },
+          "ULF_sample": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 12,
+            "recall": 0.25
+          }
+        },
+        "packages": [
+          {
+            "datasetId": "AIA_AR_sample_0000000000",
+            "family": "AIA_AR_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "AIA_AR_sample_1111111111",
+            "family": "AIA_AR_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P"
+            ]
+          },
+          {
+            "datasetId": "AIA_AR_sample_2222222222",
+            "family": "AIA_AR_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "AIA_AR_sample_3333333333",
+            "family": "AIA_AR_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "AIA_AR_sample_4444444444",
+            "family": "AIA_AR_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_0000000000",
+            "family": "CME_C2_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_1111111111",
+            "family": "CME_C2_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_2222222222",
+            "family": "CME_C2_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_3333333333",
+            "family": "CME_C2_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_4444444444",
+            "family": "CME_C2_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_0000000000",
+            "family": "DMSP_SSUSI",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_1111111111",
+            "family": "DMSP_SSUSI",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_2222222222",
+            "family": "DMSP_SSUSI",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_3333333333",
+            "family": "DMSP_SSUSI",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_4444444444",
+            "family": "DMSP_SSUSI",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_0000000000",
+            "family": "EPB_seg_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_1111111111",
+            "family": "EPB_seg_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_2222222222",
+            "family": "EPB_seg_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_3333333333",
+            "family": "EPB_seg_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_4444444444",
+            "family": "EPB_seg_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_0000000000",
+            "family": "HMI_AR_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_1111111111",
+            "family": "HMI_AR_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_2222222222",
+            "family": "HMI_AR_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_3333333333",
+            "family": "HMI_AR_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_4444444444",
+            "family": "HMI_AR_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_0000000000",
+            "family": "ULF_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_1111111111",
+            "family": "ULF_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_2222222222",
+            "family": "ULF_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_3333333333",
+            "family": "ULF_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_4444444444",
+            "family": "ULF_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ]
+          }
+        ]
+      },
+      "tierPairwise": {
+        "comparablePairs": 60,
+        "correctPairs": 60,
+        "ties": 0,
+        "accuracyWithTiesWrong": 1.0
+      },
+      "severityMonotonicity": {
+        "coverageStrictIncrease": {
+          "comparableConsecutivePairs": 87,
+          "correctPairs": 18,
+          "accuracy": 0.20689655172413793
+        },
+        "meanSeverityStrictIncrease": {
+          "classes": [
+            "L2-F",
+            "L2-G",
+            "L2-T",
+            "L3-MIS"
+          ],
+          "comparableConsecutivePairs": 0,
+          "correctPairs": 0,
+          "accuracy": null
+        }
+      },
+      "cleanFailures": {
+        "count": 0,
+        "byType": {},
+        "note": "Includes non-official structural findings; useful for schema compatibility regression testing."
+      },
+      "pendingCount": 0,
+      "audit": {
+        "runDirectory": "C:\\Users\\jiaryWin\\AppData\\Local\\Temp\\tmp5j06_n0g\\run-A_schema_pairing",
+        "runId": "RUN-9CE9ACCE6A5D",
+        "status": "pass",
+        "findingCount": 216,
+        "evidenceCount": 216,
+        "datasetCount": 30,
+        "enabledCheckCount": 3,
+        "completedLogPairs": 90,
+        "errors": []
+      },
+      "findingsSha256": "ac5718c20916ee234bd5c38bb117f1214a0ea8d6d69b30df407d3c948f43fc21"
+    },
+    {
+      "candidate": "B_single_package_rules",
+      "checks": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "elapsedSeconds": 8.588737,
+      "peakPythonMemoryBytes": 7150931,
+      "runSummary": {
+        "runId": "RUN-022DCF67D3F5",
+        "datasetCount": 30,
+        "findingCount": 594,
+        "confirmedDefectCount": 380,
+        "pendingCount": 5,
+        "output": "C:\\Users\\jiaryWin\\AppData\\Local\\Temp\\tmp5j06_n0g\\run-B_single_package_rules"
+      },
+      "packageClassPresence": {
+        "unit": "package x canonical defect class",
+        "canonicalization": "L0-01 and L0-03 collapse to L0-MISSING because their published observations are indistinguishable",
+        "truePositive": 56,
+        "falsePositive": 0,
+        "falseNegative": 62,
+        "precision": 1.0,
+        "recall": 0.4745762711864407,
+        "f1": 0.6436781609195402,
+        "byFamily": {
+          "AIA_AR_sample": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 13,
+            "recall": 0.38095238095238093
+          },
+          "CME_C2_sample": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 4,
+            "recall": 0.6666666666666666
+          },
+          "DMSP_SSUSI": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 12,
+            "recall": 0.5
+          },
+          "EPB_seg_sample": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 12,
+            "recall": 0.5
+          },
+          "HMI_AR_sample": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 13,
+            "recall": 0.38095238095238093
+          },
+          "ULF_sample": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 8,
+            "recall": 0.5
+          }
+        },
+        "packages": [
+          {
+            "datasetId": "AIA_AR_sample_0000000000",
+            "family": "AIA_AR_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "AIA_AR_sample_1111111111",
+            "family": "AIA_AR_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G"
+            ]
+          },
+          {
+            "datasetId": "AIA_AR_sample_2222222222",
+            "family": "AIA_AR_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "AIA_AR_sample_3333333333",
+            "family": "AIA_AR_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "AIA_AR_sample_4444444444",
+            "family": "AIA_AR_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_0000000000",
+            "family": "CME_C2_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_1111111111",
+            "family": "CME_C2_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_2222222222",
+            "family": "CME_C2_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_3333333333",
+            "family": "CME_C2_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "CME_C2_sample_4444444444",
+            "family": "CME_C2_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_0000000000",
+            "family": "DMSP_SSUSI",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_1111111111",
+            "family": "DMSP_SSUSI",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_2222222222",
+            "family": "DMSP_SSUSI",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_3333333333",
+            "family": "DMSP_SSUSI",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "DMSP_SSUSI_4444444444",
+            "family": "DMSP_SSUSI",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_0000000000",
+            "family": "EPB_seg_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_1111111111",
+            "family": "EPB_seg_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_2222222222",
+            "family": "EPB_seg_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_3333333333",
+            "family": "EPB_seg_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "EPB_seg_sample_4444444444",
+            "family": "EPB_seg_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_0000000000",
+            "family": "HMI_AR_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_1111111111",
+            "family": "HMI_AR_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_2222222222",
+            "family": "HMI_AR_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_3333333333",
+            "family": "HMI_AR_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "HMI_AR_sample_4444444444",
+            "family": "HMI_AR_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-G",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_0000000000",
+            "family": "ULF_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_1111111111",
+            "family": "ULF_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_2222222222",
+            "family": "ULF_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_3333333333",
+            "family": "ULF_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          },
+          {
+            "datasetId": "ULF_sample_4444444444",
+            "family": "ULF_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M"
+            ],
+            "falsePositive": [],
+            "missed": [
+              "L2-P",
+              "L2-T"
+            ]
+          }
+        ]
+      },
+      "tierPairwise": {
+        "comparablePairs": 60,
+        "correctPairs": 60,
+        "ties": 0,
+        "accuracyWithTiesWrong": 1.0
+      },
+      "severityMonotonicity": {
+        "coverageStrictIncrease": {
+          "comparableConsecutivePairs": 87,
+          "correctPairs": 39,
+          "accuracy": 0.4482758620689655
+        },
+        "meanSeverityStrictIncrease": {
+          "classes": [
+            "L2-F",
+            "L2-G",
+            "L2-T",
+            "L3-MIS"
+          ],
+          "comparableConsecutivePairs": 6,
+          "correctPairs": 6,
+          "accuracy": 1.0
+        }
+      },
+      "cleanFailures": {
+        "count": 0,
+        "byType": {},
+        "note": "Includes non-official structural findings; useful for schema compatibility regression testing."
+      },
+      "pendingCount": 5,
+      "audit": {
+        "runDirectory": "C:\\Users\\jiaryWin\\AppData\\Local\\Temp\\tmp5j06_n0g\\run-B_single_package_rules",
+        "runId": "RUN-022DCF67D3F5",
+        "status": "pass",
+        "findingCount": 594,
+        "evidenceCount": 594,
+        "datasetCount": 30,
+        "enabledCheckCount": 9,
+        "completedLogPairs": 270,
+        "errors": []
+      },
+      "findingsSha256": "64c3124803c3779c98e0276f42144ef9edf7746cc7a647e515b1d58069813379"
+    },
+    {
+      "candidate": "C_rules_plus_sibling_diff",
+      "checks": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "elapsedSeconds": 14.471324,
+      "peakPythonMemoryBytes": 8346796,
+      "runSummary": {
+        "runId": "RUN-4CF86AA59C66",
+        "datasetCount": 30,
+        "findingCount": 1250,
+        "confirmedDefectCount": 970,
+        "pendingCount": 65,
+        "output": "C:\\Users\\jiaryWin\\AppData\\Local\\Temp\\tmp5j06_n0g\\run-C_rules_plus_sibling_diff"
+      },
+      "packageClassPresence": {
+        "unit": "package x canonical defect class",
+        "canonicalization": "L0-01 and L0-03 collapse to L0-MISSING because their published observations are indistinguishable",
+        "truePositive": 118,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "byFamily": {
+          "AIA_AR_sample": {
+            "tp": 21,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "CME_C2_sample": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "DMSP_SSUSI": {
+            "tp": 24,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EPB_seg_sample": {
+            "tp": 24,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "HMI_AR_sample": {
+            "tp": 21,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "ULF_sample": {
+            "tp": 16,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          }
+        },
+        "packages": [
+          {
+            "datasetId": "AIA_AR_sample_0000000000",
+            "family": "AIA_AR_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "AIA_AR_sample_1111111111",
+            "family": "AIA_AR_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "AIA_AR_sample_2222222222",
+            "family": "AIA_AR_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "AIA_AR_sample_3333333333",
+            "family": "AIA_AR_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "AIA_AR_sample_4444444444",
+            "family": "AIA_AR_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_0000000000",
+            "family": "CME_C2_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_1111111111",
+            "family": "CME_C2_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_2222222222",
+            "family": "CME_C2_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_3333333333",
+            "family": "CME_C2_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "CME_C2_sample_4444444444",
+            "family": "CME_C2_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_0000000000",
+            "family": "DMSP_SSUSI",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_1111111111",
+            "family": "DMSP_SSUSI",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_2222222222",
+            "family": "DMSP_SSUSI",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_3333333333",
+            "family": "DMSP_SSUSI",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "DMSP_SSUSI_4444444444",
+            "family": "DMSP_SSUSI",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_0000000000",
+            "family": "EPB_seg_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_1111111111",
+            "family": "EPB_seg_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_2222222222",
+            "family": "EPB_seg_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_3333333333",
+            "family": "EPB_seg_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "EPB_seg_sample_4444444444",
+            "family": "EPB_seg_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-F",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_0000000000",
+            "family": "HMI_AR_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_1111111111",
+            "family": "HMI_AR_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_2222222222",
+            "family": "HMI_AR_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_3333333333",
+            "family": "HMI_AR_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "HMI_AR_sample_4444444444",
+            "family": "HMI_AR_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-G",
+              "L2-P",
+              "L3-06",
+              "L3-07",
+              "L3-MIS"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_0000000000",
+            "family": "ULF_sample",
+            "tier": "clean",
+            "expected": [],
+            "predicted": [],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_1111111111",
+            "family": "ULF_sample",
+            "tier": "P1",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_2222222222",
+            "family": "ULF_sample",
+            "tier": "P2",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_3333333333",
+            "family": "ULF_sample",
+            "tier": "P3",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          },
+          {
+            "datasetId": "ULF_sample_4444444444",
+            "family": "ULF_sample",
+            "tier": "P4",
+            "expected": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "predicted": [
+              "L0-MISSING",
+              "L2-M",
+              "L2-P",
+              "L2-T"
+            ],
+            "falsePositive": [],
+            "missed": []
+          }
+        ]
+      },
+      "tierPairwise": {
+        "comparablePairs": 60,
+        "correctPairs": 60,
+        "ties": 0,
+        "accuracyWithTiesWrong": 1.0
+      },
+      "severityMonotonicity": {
+        "coverageStrictIncrease": {
+          "comparableConsecutivePairs": 87,
+          "correctPairs": 80,
+          "accuracy": 0.9195402298850575
+        },
+        "meanSeverityStrictIncrease": {
+          "classes": [
+            "L2-F",
+            "L2-G",
+            "L2-T",
+            "L3-MIS"
+          ],
+          "comparableConsecutivePairs": 28,
+          "correctPairs": 28,
+          "accuracy": 1.0
+        }
+      },
+      "cleanFailures": {
+        "count": 0,
+        "byType": {},
+        "note": "Includes non-official structural findings; useful for schema compatibility regression testing."
+      },
+      "pendingCount": 65,
+      "audit": {
+        "runDirectory": "C:\\Users\\jiaryWin\\AppData\\Local\\Temp\\tmp5j06_n0g\\run-C_rules_plus_sibling_diff",
+        "runId": "RUN-4CF86AA59C66",
+        "status": "pass",
+        "findingCount": 1250,
+        "evidenceCount": 1250,
+        "datasetCount": 30,
+        "enabledCheckCount": 12,
+        "completedLogPairs": 360,
+        "errors": []
+      },
+      "findingsSha256": "f6f6f0107e839fdc485b2b311836eb715bfab839282b419172a08c8ec6a37d47"
+    },
+    {
+      "candidate": "D_weak_clean_reference_anomaly",
+      "scope": "package anomaly and ordinal tier screening only; no defect class or location output",
+      "supervision": "one clean package identity per family; no defect-class or location labels",
+      "features": [
+        "changed label payload ratio",
+        "label-count delta",
+        "data filename-set delta"
+      ],
+      "elapsedSeconds": 0.735999,
+      "packageClassPresence": null,
+      "cleanVsPollutedAuc": 1.0,
+      "tierPairwise": {
+        "comparablePairs": 60,
+        "correctPairs": 60,
+        "ties": 0,
+        "accuracyWithTiesWrong": 1.0
+      },
+      "scores": {
+        "AIA_AR_sample_0000000000": 0.0,
+        "AIA_AR_sample_1111111111": 0.1,
+        "AIA_AR_sample_2222222222": 0.6,
+        "AIA_AR_sample_3333333333": 1.2,
+        "AIA_AR_sample_4444444444": 1.6,
+        "CME_C2_sample_0000000000": 0.0,
+        "CME_C2_sample_1111111111": 0.1,
+        "CME_C2_sample_2222222222": 0.4,
+        "CME_C2_sample_3333333333": 0.8,
+        "CME_C2_sample_4444444444": 1.2,
+        "DMSP_SSUSI_0000000000": 0.0,
+        "DMSP_SSUSI_1111111111": 0.15,
+        "DMSP_SSUSI_2222222222": 0.6,
+        "DMSP_SSUSI_3333333333": 1.2,
+        "DMSP_SSUSI_4444444444": 1.6,
+        "EPB_seg_sample_0000000000": 0.0,
+        "EPB_seg_sample_1111111111": 0.15,
+        "EPB_seg_sample_2222222222": 0.6,
+        "EPB_seg_sample_3333333333": 1.2,
+        "EPB_seg_sample_4444444444": 1.6,
+        "HMI_AR_sample_0000000000": 0.0,
+        "HMI_AR_sample_1111111111": 0.1,
+        "HMI_AR_sample_2222222222": 0.6,
+        "HMI_AR_sample_3333333333": 1.2,
+        "HMI_AR_sample_4444444444": 1.6,
+        "ULF_sample_0000000000": 0.0,
+        "ULF_sample_1111111111": 0.1,
+        "ULF_sample_2222222222": 0.4,
+        "ULF_sample_3333333333": 0.8,
+        "ULF_sample_4444444444": 1.2
+      },
+      "limitation": "A high anomaly score cannot identify L2/L3 semantics and payload hashes are sensitive to benign metadata changes."
+    }
+  ],
+  "determinism": {
+    "candidate": "C_rules_plus_sibling_diff",
+    "repeatFindingsIdentical": true,
+    "firstSha256": "f6f6f0107e839fdc485b2b311836eb715bfab839282b419172a08c8ec6a37d47",
+    "secondSha256": "f6f6f0107e839fdc485b2b311836eb715bfab839282b419172a08c8ec6a37d47"
+  }
+}

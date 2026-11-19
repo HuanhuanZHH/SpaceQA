@@ -1,0 +1,26 @@
+services:
+  spaceqa:
+    image: spaceqa-agent:0.3.0-rules
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: none
+    read_only: true
+    user: "${SPACEQA_UID:-10001}:${SPACEQA_GID:-10001}"
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    command:
+      - scan
+      - --input
+      - /input
+      - --output
+      - /output/result
+      - --seed
+      - "20261021"
+    volumes:
+      - "${OPC_INPUT:?set OPC_INPUT to the package or publish root}:/input:ro"
+      - "${OPC_OUTPUT:?set OPC_OUTPUT to a writable output parent}:/output:rw"
+    tmpfs:
+      - /tmp:size=64m,noexec,nosuid,nodev

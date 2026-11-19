@@ -1,0 +1,2264 @@
+{
+  "version": "eight-class-ledger-1.0",
+  "dirId": "AIA_AR_sample_7qn2pdeube",
+  "family": "AIA_AR_sample",
+  "sampleCount": 1838,
+  "confirmedProblemSamples": 83,
+  "observedTechnicalScore": 95.4842219804135,
+  "fullQualityScore": null,
+  "officialScore": null,
+  "officialPrecision": null,
+  "officialRecall": null,
+  "officialF1": null,
+  "scoringFormula": "100*(1-distinct confirmed eligible problem samples / all registered label samples)",
+  "scoreMeaning": "已实现范围内的观测技术分；不是软件得分、完整质量分或官方q",
+  "defects": {
+    "L0-01": {
+      "name": "数据文件缺失",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 3,
+      "locatedInstances": 3,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 1835,
+        "fail": 3,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 1835,
+        "fail": 3,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.001632208922742111,
+      "proportionEstimate": 0.001632208922742111,
+      "proportionBounds": [
+        0.001632208922742111,
+        0.001632208922742111
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 1.0
+    },
+    "L2-G": {
+      "name": "边界与位置偏差",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 17,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-P": {
+      "name": "类别标注错误",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 80,
+      "locatedInstances": 140,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 80,
+        "undetermined": 1758,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 80,
+        "undetermined": 1758,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.04352557127312296,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.04352557127312296,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.04352557127312296
+    },
+    "L2-T": {
+      "name": "时段起止时刻抖动",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-F": {
+      "name": "元数据尺寸矛盾",
+      "denominator": 1838,
+      "applicableSamples": 3,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3,
+        "not_applicable": 1835
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3,
+        "not_applicable": 1835
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        0.001632208922742111
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-06": {
+      "name": "漏标",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 130,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-07": {
+      "name": "虚标",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 1,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-MIS": {
+      "name": "覆盖不足或覆盖过度",
+      "denominator": 1838,
+      "applicableSamples": 1838,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 22,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 1838,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    }
+  },
+  "dimensions": [
+    {
+      "id": "completeness",
+      "name": "完整性",
+      "defectCodes": [
+        "L0-01"
+      ],
+      "confirmedSamples": 3,
+      "denominator": 1838,
+      "observedTechnicalScore": 99.83677910772579,
+      "score": 99.83677910772579,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 1838,
+      "completedChecks": 1838,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "annotationQuality",
+      "name": "标注质量",
+      "defectCodes": [
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "confirmedSamples": 80,
+      "denominator": 1838,
+      "observedTechnicalScore": 95.6474428726877,
+      "score": null,
+      "state": "fail",
+      "checkCoverage": 0.007252289003716798,
+      "applicableCheckDenominator": 11031,
+      "completedChecks": 80,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "sampleCorrespondence",
+      "name": "样本对应",
+      "defectCodes": [
+        "L0-01",
+        "L2-F"
+      ],
+      "confirmedSamples": 3,
+      "denominator": 1838,
+      "observedTechnicalScore": 99.83677910772579,
+      "score": null,
+      "state": "fail",
+      "checkCoverage": 0.9983704508419338,
+      "applicableCheckDenominator": 1841,
+      "completedChecks": 1838,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "coverageDistribution",
+      "name": "覆盖与分布",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "traceability",
+      "name": "文档与来源追溯",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "usageConditions",
+      "name": "使用条件",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    }
+  ],
+  "severity": [
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:I10kgFQ4PXesXs5CrVqV.png.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-76d512fdfb59ee02acac"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:RwVGIAS691lYvglyjDvQ.png.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-6e0d07253a8c5c0dff3b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:tqrCcYzoKS_Ta2dRNvK2.png.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-04a61d0c558ca967f436"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:0Z1zsDUReibzxy1dcX25.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C33-0362f3bdca709ca8eabf"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 4
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:1mTMPSjEqfzJK52G0wZK.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.12903225806451613,
+      "findingIds": [
+        "C33-faef5ec03ab6e476865c",
+        "C33-07fb7cc4b46b28ae312a",
+        "C33-afb20f257dbebcdb5605",
+        "C33-0d9bc7764232aa696e6c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 50
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:2OIQETAHerrK_HBK2r6B.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-a79eef49cc247c7d01f4"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:3CJweBkg0P_JAqADhjI6.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2727272727272727,
+      "findingIds": [
+        "C33-4e2b547c2d8cb14c5863",
+        "C33-03fc605567ae617ba176",
+        "C33-ff6cbc056475c24079e1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 18
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:4ChCwUK0zsFDrkVEc4rH.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.05,
+      "findingIds": [
+        "C33-c45218ad64eef1b968ee"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 77
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:5Z2EiVOsckNql2AyTm5q.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.05263157894736842,
+      "findingIds": [
+        "C33-f14937814b60d7a93b5f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 74
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:5b5wWJxxHxC23nUrM5xe.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.19047619047619047,
+      "findingIds": [
+        "C33-71da94294643e4d6145b",
+        "C33-a526b67be4ffd73823c1",
+        "C33-7433ed4c9f1b5624d726",
+        "C33-c1908d900bc097fcd09d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 31
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:637NAgUbTMu1rdB_NNM1.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.14285714285714285,
+      "findingIds": [
+        "C33-a82ab33ae054749d0a96"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 43
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:6dGxGq5slLp5ke7QB3yt.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.16666666666666666,
+      "findingIds": [
+        "C33-6fe82f94ce8b6137cd50"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 34
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:7QUgPs90oQmiQx0ye7v6.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-22732b3b5d3701c3d459",
+        "C33-a35925f1f3efd940bc88"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:7p8Fk0xYa4Nr4KLOG_ff.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-eec1348da97fbcfff2c9"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:83v7ZIqdCPKx1Z88rh7O.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-bd7c78d1e3ad3fa59963"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:8NKI94Kc9oveMLjJNphj.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-7857db344f03512c9bef"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:8Q0fXKUNbCM1shw3ZAtB.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-741e9ca5899dae32cf9a",
+        "C33-79cb668d1e61e9b1542d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:9A2MFAuta61346vFYnpg.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.14285714285714285,
+      "findingIds": [
+        "C33-e4f527d6175e8449a073"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 43
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:A26JBiZtYN8SUkMLgPwt.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.5,
+      "findingIds": [
+        "C33-2d0593f3cec390453e77",
+        "C33-dce85574432d99535cfa"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 4
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:AV6U28PqNDUTEUhktyoA.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.03571428571428571,
+      "findingIds": [
+        "C33-fe55c0dab1afb3bf535f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 79
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:At39gkSiQVaNk8Zrpy4O.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.25,
+      "findingIds": [
+        "C33-aa303954a41dfc410cfb",
+        "C33-931822976732a4809bf6"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 19
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:BGkUl7Rd8nMoRrAGDMFJ.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.15,
+      "findingIds": [
+        "C33-b50af55a667072d60bc4",
+        "C33-60d3db4bf34bd9227074",
+        "C33-82bf4457941ca154987b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 41
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:C9apZu_a1VbUCipFutrV.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.18181818181818182,
+      "findingIds": [
+        "C33-6bce19d6f91561077760",
+        "C33-d622e8a1a7b6c5b48987"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 32
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:CCGu1ffndV2vvHDYUKHU.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.14814814814814814,
+      "findingIds": [
+        "C33-3ea4d6615978d11934c0",
+        "C33-7757d5ba53bf6adc1d5f",
+        "C33-ef2b030060ebbd9c865f",
+        "C33-6e37b6c601406513ca5a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 42
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:CNvcNmyi0jaX0g2vjqXu.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-17b1e02efd1241e5d6c9",
+        "C33-8f1065e08d24fc4b320e",
+        "C33-ea8fe1779b0cba471e1b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:CSUbjoTiWFV_HJi_gwV5.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2857142857142857,
+      "findingIds": [
+        "C33-5a2ad382a56aa6cc5b4d",
+        "C33-c31e2bdf90523ce9fcf4",
+        "C33-5fb382f772aac95c4c5c",
+        "C33-cdecb96ced399c384ec6"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 17
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:Cv9WGsIQQHWqWkAL_i3Z.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-c00d0d9636d315bb9fcc",
+        "C33-e0875f54d48da5948a8e"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:DEfJUeZpteICsPIn1dMM.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.10714285714285714,
+      "findingIds": [
+        "C33-f058af58e023ea9ded3d",
+        "C33-85fcb0a93da36aa3d920",
+        "C33-12d876c7827891568af9"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 57
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:DXmrmupzeEmKwEE1IRYJ.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1111111111111111,
+      "findingIds": [
+        "C33-1b9a056eb23f481a23f7"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 53
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:EdAzdyzmxjH1daygkqEr.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-bf3d873b50dd159124a0"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:F4wsoRseatFMFBNU7nsL.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.18181818181818182,
+      "findingIds": [
+        "C33-4ce1f2f7bc3f79d42b37",
+        "C33-0365dc0cb58f4a7ea906"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 32
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:Fnte2rpwiIMAodh6aqpl.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.25,
+      "findingIds": [
+        "C33-1088e121342d176cadea"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 19
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:GIU8e2LMaATTc1N6MU2W.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.15789473684210525,
+      "findingIds": [
+        "C33-d7b00c649a9606026475",
+        "C33-544964da69bbe437a61d",
+        "C33-6f5ce5f69ea7c580ba43"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 39
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:IVfD7nNkaKXuAVu1h8Ga.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.03333333333333333,
+      "findingIds": [
+        "C33-540b791673c721dae665"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 80
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:IXwH9NZxY0x8NqPh2Hko.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.08333333333333333,
+      "findingIds": [
+        "C33-d5e9f31b15bacb753869"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 67
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:KoNJ8O24W6XuR0SZ9nHu.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.11764705882352941,
+      "findingIds": [
+        "C33-f37233d9f6efb4d95c57",
+        "C33-f8a5c4d36edc0343fcc5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 51
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:KtixJjA78U9iIPgtdOed.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.11764705882352941,
+      "findingIds": [
+        "C33-a1d5e200c7e9738029a2",
+        "C33-06eb95b34fdf767329f5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 51
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:N2rxDdYG_0iQvUd2mMC0.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1111111111111111,
+      "findingIds": [
+        "C33-a2df650952a76aed601d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 53
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:ObZDwc36KWmqDDAmU80j.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-ef9824d6730468b2c908"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:QS0BD0gkkzKnf7aKs0lu.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-1b334360e53cea951635"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:QWRNim8c2t9IaonhX3Kn.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.14285714285714285,
+      "findingIds": [
+        "C33-4944b4d229bb957b23c1",
+        "C33-ea5419e69e2fe994ca97",
+        "C33-00ff06ea11fd71b8e8f5",
+        "C33-0e061d165d219b382210"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 43
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:QkfFJdq2RaCJE_fjZVtJ.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-6b10e5f54987ae3aaafb"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:R41aL0mh3yVyQkzUTxF7.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.16666666666666666,
+      "findingIds": [
+        "C33-647a331757aeb97d7a36"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 34
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:REVtXgvXLV_FjHrYLKQu.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.14285714285714285,
+      "findingIds": [
+        "C33-5f0655b6427dc86e6827"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 43
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:Se2OlyWf4eCI8cr5tEUi.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-21d17934b85048454015"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:TV4DioFNHG4uD5jITkJb.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.07692307692307693,
+      "findingIds": [
+        "C33-27265efab949e4e80c22"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 70
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:TW8eCPmJYNGBLQD8wbEA.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.08163265306122448,
+      "findingIds": [
+        "C33-c062a26d653f82e61732",
+        "C33-a46e114784be32fee4c2",
+        "C33-7014c40d911380f66cdc",
+        "C33-692e00361ccf01051c74"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 69
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:T_nm3mTHGBinUwpRyBu9.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.13636363636363635,
+      "findingIds": [
+        "C33-b24e34407510f5e90486",
+        "C33-f5355c2e59815fa2ba20",
+        "C33-0a350848f9d431d54e5d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 48
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:UJDkNLHOMrdMcMXJLYo9.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.09523809523809523,
+      "findingIds": [
+        "C33-f12b925066c4aa932a2a",
+        "C33-59f51ceafa0176061c6b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 66
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:UcBXfPxT3hfdv6nSjvxl.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.6666666666666666,
+      "findingIds": [
+        "C33-6d8e135f69a5652c7a13",
+        "C33-909effc43da27430715a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 3
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:YpYqRuWqNDx5m9tV7NWD.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.25,
+      "findingIds": [
+        "C33-c4b8644fa63d4d571153",
+        "C33-f1c74022dcd5d8830d78"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 19
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:ZyD3msbhCS1z1tmnUuq1.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3,
+      "findingIds": [
+        "C33-63d7213033b1be205e6f",
+        "C33-427d6b7ff6b408599e36",
+        "C33-2da210fa680416158744"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 16
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:_JBbtVhAzfV2TQaQv3f4.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.14285714285714285,
+      "findingIds": [
+        "C33-919a4a761215815a6952",
+        "C33-a10a284d16ac5c9676f9",
+        "C33-434ee9927ca77b97a2b6"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 43
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:_XUO5xwiEWgymLaURZWR.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.16666666666666666,
+      "findingIds": [
+        "C33-48abbbe55cef4561702d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 34
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:_dPxQXZ6aGg9IThhhYxF.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-44a46f2fbd1d8939bd14"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:aAYa_JCzsyRwe8UioM93.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.13333333333333333,
+      "findingIds": [
+        "C33-7796d0e93849ad861238",
+        "C33-b8f445d40cccd7177038",
+        "C33-24cb4820478c1c06656f",
+        "C33-236cb59ca83cf1bbf743"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 49
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:aGnpGJVMuFXqJd6ypk7P.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.06666666666666667,
+      "findingIds": [
+        "C33-ec7d1ed4b57d6ac29d58"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 72
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:c0j721aroGNaEKVLaKjl.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-3af9da4ad7610fb2aa71",
+        "C33-b39e8f9fdde6a2ec612b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:cer3YQ998W3AjZMIZVAn.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-f9a0c102378b58a8fa16"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:dK_5Kyi0y3yIUTqRwKTc.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-e52fb7783b6c262d5d91"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:dSsovOFjr1Lw_MAggvC5.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-c57d1d993fda7ab1beac"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:etiUXdYENmJsAOjxRt4X.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.10526315789473684,
+      "findingIds": [
+        "C33-4dd43a24b965696c1afc",
+        "C33-40cbd9490bd0530cd809"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 58
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:ix_spDhiNbFbVk61FVtB.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-79a287f12c400385e363",
+        "C33-f2cb3a1a61757fe77bc4",
+        "C33-918862752134337b6983"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:kD7AqDS7BdlS48RzoC9M.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.08333333333333333,
+      "findingIds": [
+        "C33-121eb8510fceaa0fa5fd"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 67
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:l0MXnw8xQ1SjdKYpZb96.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.05263157894736842,
+      "findingIds": [
+        "C33-5d561a3498b7a79436b3"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 74
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:lZiPMabL7HVa1Zefln7m.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.16666666666666666,
+      "findingIds": [
+        "C33-b1b208811daf68bdf390"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 34
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:n3bbL7cSTHICUw8DQi_4.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.0625,
+      "findingIds": [
+        "C33-4b0aff163489825415fa"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 73
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:ne7cYCRh3V1hoG4x_DWZ.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-8f7f1535c943d17d3b62"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:oJcXV_preOseqm73oSxH.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.15789473684210525,
+      "findingIds": [
+        "C33-1cd2667aff2e9becd181",
+        "C33-eff2ff4a85a60f1cf933",
+        "C33-8d16d46b7fae01a808e5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 39
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:oW8L4RR4G8tGJiqe_Nxa.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.07142857142857142,
+      "findingIds": [
+        "C33-bfa3eebfb04959ef8d2d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 71
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:pKGsURCLjG8zRYX_9lC4.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1111111111111111,
+      "findingIds": [
+        "C33-3a7162863d3140878025"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 53
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:r2e9LCxlHFM4FDHGX69b.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.3333333333333333,
+      "findingIds": [
+        "C33-84db06d5eb6797709fdc"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 6
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:rCgXbfe6Xdo75NdaWpNj.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.25,
+      "findingIds": [
+        "C33-c4d0cb5b5df33cf1b89f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 19
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:rXY_n1CMOkuYmuZPf5qf.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.25,
+      "findingIds": [
+        "C33-ef5b58ecbaadb57afe1d",
+        "C33-5d75db43d0e77008ddff",
+        "C33-928f33c9815236315b67",
+        "C33-6c2a0303e1c451ea5009"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 19
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:tI7UjhAK7oCOwR4W8980.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-06f4ed2ca584bd4f7958"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:umlC9vWvRf1oYiekX2Gg.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.04878048780487805,
+      "findingIds": [
+        "C33-fdd5dfb15ccbe96b40f4",
+        "C33-7d5e3d46c1fab4c09a39"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 78
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:vJpzWaos0v6int3qXbPF.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-df8e3fa2286a428ac460"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:vaoys8vBnh2JchiMC6Ay.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.05263157894736842,
+      "findingIds": [
+        "C33-3b3ba621ebb1eba43a62"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 74
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:vntK_71AndzhOyJ13CHx.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1111111111111111,
+      "findingIds": [
+        "C33-a26472ee9bf03a7850c4"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 53
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:wmGDBZabVuGDYN_8bCEe.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.16666666666666666,
+      "findingIds": [
+        "C33-ad04224bba51055b270b"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 34
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:xCO2kSbZhXf1PhrlVzji.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.1,
+      "findingIds": [
+        "C33-b92d7eac712911a448a5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 59
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:yZrxbNcZ4B_DyhHPuIdg.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 0.2,
+      "findingIds": [
+        "C33-c6d8452a130ce666f415",
+        "C33-5e6e9b68bbc87eb6f101"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 24
+    },
+    {
+      "dirId": "AIA_AR_sample_7qn2pdeube",
+      "sampleId": "AIA_AR_sample_7qn2pdeube:yeW7WOdZhnFzmARqNicn.png.json",
+      "defectType": "L2-P",
+      "metric": "affected_object_fraction",
+      "unit": "ratio",
+      "severity": 1.0,
+      "findingIds": [
+        "C33-e39dafad68a57131da52"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    }
+  ],
+  "scientificCheckCoverage": 0.1490403294739296,
+  "applicableChecks": 12869,
+  "completedChecks": 1918,
+  "distribution": {
+    "emptyAnnotations": 1011,
+    "emptyAnnotationRatio": 0.5500544069640914,
+    "objectCount": 7256,
+    "meanObjectDensity": 3.9477693144722523,
+    "categoryHistogram": {
+      "AR": 7116,
+      "CH": 140
+    },
+    "temporal": {
+      "observedWindows": 1838,
+      "first": "2015-02-27T02:08:00",
+      "last": "2026-03-02T10:26:00",
+      "positiveGapCount": 744,
+      "maxPositiveGapSeconds": 3609600.0,
+      "overlappingWindows": 0,
+      "interpretation": "标注声明的观测时间分布；缺连续覆盖目标，不把抽样日期间隔直接当缺陷"
+    },
+    "interpretation": "空标注与分布差异是描述统计；没有目标/事件参考时不等于漏标或虚标"
+  },
+  "provenance": {
+    "labelVersions": {
+      "V1.0.0.0": 1838
+    },
+    "anonymousAuthors": 1838,
+    "interpretation": "匿名化按发放约定处理；不能当作来源错误扣分"
+  },
+  "usage": {
+    "acceptance": "undetermined",
+    "ingestion": "conditional",
+    "selection": "conditional",
+    "advice": "隔离缺文件/契约冲突记录；定位疑点进入人工复核后再用于科学选数"
+  },
+  "pollution": {
+    "formula": "100 * sum(probability_i,c for probability_i,c >= threshold_c) / N",
+    "sampleCount": 1838,
+    "thresholds": {
+      "L0-01": 0.5,
+      "L2-G": 0.5,
+      "L2-P": 0.5,
+      "L2-T": 0.5,
+      "L2-F": 0.5,
+      "L3-06": 0.5,
+      "L3-07": 0.5,
+      "L3-MIS": 0.5
+    },
+    "defects": {
+      "L0-01": {
+        "threshold": 0.5,
+        "overThresholdSamples": 3,
+        "probabilitySum": 3.0,
+        "pollutionIndexContribution": 0.1632208922742111,
+        "missingProbabilitySamples": 1835,
+        "sampleDetails": [
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:I10kgFQ4PXesXs5CrVqV.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:RwVGIAS691lYvglyjDvQ.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:tqrCcYzoKS_Ta2dRNvK2.png.json",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-G": {
+        "threshold": 0.5,
+        "overThresholdSamples": 17,
+        "probabilitySum": 14.925704181194305,
+        "pollutionIndexContribution": 0.8120622514251526,
+        "missingProbabilitySamples": 1821,
+        "sampleDetails": [
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:2OIQETAHerrK_HBK2r6B.png.json",
+            "probability": 0.869462788105011
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:637NAgUbTMu1rdB_NNM1.png.json",
+            "probability": 0.8647589683532715
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:8NKI94Kc9oveMLjJNphj.png.json",
+            "probability": 0.7381554245948792
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:At39gkSiQVaNk8Zrpy4O.png.json",
+            "probability": 0.8945515155792236
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:CSUbjoTiWFV_HJi_gwV5.png.json",
+            "probability": 0.8576942086219788
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:EdAzdyzmxjH1daygkqEr.png.json",
+            "probability": 0.9117897748947144
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:IXwH9NZxY0x8NqPh2Hko.png.json",
+            "probability": 0.896122932434082
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:N2rxDdYG_0iQvUd2mMC0.png.json",
+            "probability": 0.8779296875
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:REVtXgvXLV_FjHrYLKQu.png.json",
+            "probability": 0.8875240683555603
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Se2OlyWf4eCI8cr5tEUi.png.json",
+            "probability": 0.8977636098861694
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ZyD3msbhCS1z1tmnUuq1.png.json",
+            "probability": 0.8720169067382812
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:kD7AqDS7BdlS48RzoC9M.png.json",
+            "probability": 0.8738353252410889
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ne7cYCRh3V1hoG4x_DWZ.png.json",
+            "probability": 0.9087433218955994
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:pKGsURCLjG8zRYX_9lC4.png.json",
+            "probability": 0.8713414669036865
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:rXY_n1CMOkuYmuZPf5qf.png.json",
+            "probability": 0.8829977512359619
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:wmGDBZabVuGDYN_8bCEe.png.json",
+            "probability": 0.9043408632278442
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:xCO2kSbZhXf1PhrlVzji.png.json",
+            "probability": 0.9166755676269531
+          }
+        ]
+      },
+      "L2-P": {
+        "threshold": 0.5,
+        "overThresholdSamples": 80,
+        "probabilitySum": 80.0,
+        "pollutionIndexContribution": 4.352557127312296,
+        "missingProbabilitySamples": 1758,
+        "sampleDetails": [
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:0Z1zsDUReibzxy1dcX25.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:1mTMPSjEqfzJK52G0wZK.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:2OIQETAHerrK_HBK2r6B.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:3CJweBkg0P_JAqADhjI6.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:4ChCwUK0zsFDrkVEc4rH.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:5Z2EiVOsckNql2AyTm5q.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:5b5wWJxxHxC23nUrM5xe.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:637NAgUbTMu1rdB_NNM1.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:6dGxGq5slLp5ke7QB3yt.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:7QUgPs90oQmiQx0ye7v6.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:7p8Fk0xYa4Nr4KLOG_ff.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:83v7ZIqdCPKx1Z88rh7O.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:8NKI94Kc9oveMLjJNphj.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:8Q0fXKUNbCM1shw3ZAtB.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:9A2MFAuta61346vFYnpg.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:A26JBiZtYN8SUkMLgPwt.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:AV6U28PqNDUTEUhktyoA.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:At39gkSiQVaNk8Zrpy4O.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:BGkUl7Rd8nMoRrAGDMFJ.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:C9apZu_a1VbUCipFutrV.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:CCGu1ffndV2vvHDYUKHU.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:CNvcNmyi0jaX0g2vjqXu.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:CSUbjoTiWFV_HJi_gwV5.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Cv9WGsIQQHWqWkAL_i3Z.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:DEfJUeZpteICsPIn1dMM.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:DXmrmupzeEmKwEE1IRYJ.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:EdAzdyzmxjH1daygkqEr.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:F4wsoRseatFMFBNU7nsL.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Fnte2rpwiIMAodh6aqpl.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:GIU8e2LMaATTc1N6MU2W.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:IVfD7nNkaKXuAVu1h8Ga.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:IXwH9NZxY0x8NqPh2Hko.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:KoNJ8O24W6XuR0SZ9nHu.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:KtixJjA78U9iIPgtdOed.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:N2rxDdYG_0iQvUd2mMC0.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ObZDwc36KWmqDDAmU80j.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:QS0BD0gkkzKnf7aKs0lu.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:QWRNim8c2t9IaonhX3Kn.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:QkfFJdq2RaCJE_fjZVtJ.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:R41aL0mh3yVyQkzUTxF7.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:REVtXgvXLV_FjHrYLKQu.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Se2OlyWf4eCI8cr5tEUi.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:TV4DioFNHG4uD5jITkJb.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:TW8eCPmJYNGBLQD8wbEA.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:T_nm3mTHGBinUwpRyBu9.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:UJDkNLHOMrdMcMXJLYo9.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:UcBXfPxT3hfdv6nSjvxl.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:YpYqRuWqNDx5m9tV7NWD.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ZyD3msbhCS1z1tmnUuq1.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:_JBbtVhAzfV2TQaQv3f4.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:_XUO5xwiEWgymLaURZWR.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:_dPxQXZ6aGg9IThhhYxF.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:aAYa_JCzsyRwe8UioM93.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:aGnpGJVMuFXqJd6ypk7P.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:c0j721aroGNaEKVLaKjl.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:cer3YQ998W3AjZMIZVAn.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:dK_5Kyi0y3yIUTqRwKTc.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:dSsovOFjr1Lw_MAggvC5.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:etiUXdYENmJsAOjxRt4X.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ix_spDhiNbFbVk61FVtB.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:kD7AqDS7BdlS48RzoC9M.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:l0MXnw8xQ1SjdKYpZb96.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:lZiPMabL7HVa1Zefln7m.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:n3bbL7cSTHICUw8DQi_4.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ne7cYCRh3V1hoG4x_DWZ.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:oJcXV_preOseqm73oSxH.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:oW8L4RR4G8tGJiqe_Nxa.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:pKGsURCLjG8zRYX_9lC4.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:r2e9LCxlHFM4FDHGX69b.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:rCgXbfe6Xdo75NdaWpNj.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:rXY_n1CMOkuYmuZPf5qf.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:tI7UjhAK7oCOwR4W8980.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:umlC9vWvRf1oYiekX2Gg.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:vJpzWaos0v6int3qXbPF.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:vaoys8vBnh2JchiMC6Ay.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:vntK_71AndzhOyJ13CHx.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:wmGDBZabVuGDYN_8bCEe.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:xCO2kSbZhXf1PhrlVzji.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:yZrxbNcZ4B_DyhHPuIdg.png.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:yeW7WOdZhnFzmARqNicn.png.json",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-T": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 1838,
+        "sampleDetails": []
+      },
+      "L2-F": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 1838,
+        "sampleDetails": []
+      },
+      "L3-06": {
+        "threshold": 0.5,
+        "overThresholdSamples": 31,
+        "probabilitySum": 20.559722900390625,
+        "pollutionIndexContribution": 1.118592105570763,
+        "missingProbabilitySamples": 1708,
+        "sampleDetails": [
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:03AlIg3vQRYEYnEUC20p.png.json",
+            "probability": 0.6352871656417847
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:06w4O7yPa3m7lZ8nnKMm.png.json",
+            "probability": 0.5731838345527649
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:0Z1zsDUReibzxy1dcX25.png.json",
+            "probability": 0.7290287613868713
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:6u8lvWOiwmCPm5WSst6f.png.json",
+            "probability": 0.8873125314712524
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:7RV200ysoWOG6kFXBh0z.png.json",
+            "probability": 0.6772890686988831
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:7p8Fk0xYa4Nr4KLOG_ff.png.json",
+            "probability": 0.5888710618019104
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:A26JBiZtYN8SUkMLgPwt.png.json",
+            "probability": 0.727953314781189
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Am1OzKTzJuZpx8ZfOMZv.png.json",
+            "probability": 0.7760128974914551
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:DRTfyYUmepyigOrZ7Okw.png.json",
+            "probability": 0.8221889138221741
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Eh8_rsEQxxRv18MdRpm2.png.json",
+            "probability": 0.5831610560417175
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:GQ6N0rExF80O4EPYF_wJ.png.json",
+            "probability": 0.6070240139961243
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:HGbTj16dDz_SxX4QIWWc.png.json",
+            "probability": 0.5887095928192139
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:IBMK_m_Y5JKIEhnOW2_v.png.json",
+            "probability": 0.816533088684082
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:O9SYVDkkn372tY2vZoHQ.png.json",
+            "probability": 0.8873125314712524
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:SSxMJEEQrLy8rvBtSL5v.png.json",
+            "probability": 0.8257033824920654
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:SZSVV6Wsfpvnjg5mJheN.png.json",
+            "probability": 0.5669031143188477
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:UkHWXUzGtugINNnX8tfl.png.json",
+            "probability": 0.7135367393493652
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Y8qj1EhWsp5IydQCqkqP.png.json",
+            "probability": 0.5946325659751892
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:YpYqRuWqNDx5m9tV7NWD.png.json",
+            "probability": 0.5750486254692078
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:_Gh0iolD8HdEhHIl8FG3.png.json",
+            "probability": 0.5669031143188477
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:c0j721aroGNaEKVLaKjl.png.json",
+            "probability": 0.5078691244125366
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:cMVKxrianl0LWA4lE6ke.png.json",
+            "probability": 0.605032205581665
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:dK_5Kyi0y3yIUTqRwKTc.png.json",
+            "probability": 0.5948835611343384
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:eqqXDy2TdOOuAlx24kFw.png.json",
+            "probability": 0.5519111156463623
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:gC13W6ujBy6ZolXE3QRd.png.json",
+            "probability": 0.5412067174911499
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:hscKtszNh_ft_dd6Y1g2.png.json",
+            "probability": 0.7798415422439575
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:muM1500T5NzGIRiC2kUM.png.json",
+            "probability": 0.5731838345527649
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:n_Gz3FBQM52nCL_zf7cU.png.json",
+            "probability": 0.5248626470565796
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:rQmr_hsqCBfkQDdwIM1I.png.json",
+            "probability": 0.8221889138221741
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:vntK_71AndzhOyJ13CHx.png.json",
+            "probability": 0.5106021165847778
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:wOEZd8eCGE09Lfar1qqf.png.json",
+            "probability": 0.8055457472801208
+          }
+        ]
+      },
+      "L3-07": {
+        "threshold": 0.5,
+        "overThresholdSamples": 1,
+        "probabilitySum": 0.7259687185287476,
+        "pollutionIndexContribution": 0.03949775400047593,
+        "missingProbabilitySamples": 1837,
+        "sampleDetails": [
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:1mTMPSjEqfzJK52G0wZK.png.json",
+            "probability": 0.7259687185287476
+          }
+        ]
+      },
+      "L3-MIS": {
+        "threshold": 0.5,
+        "overThresholdSamples": 21,
+        "probabilitySum": 17.276016294956207,
+        "pollutionIndexContribution": 0.9399355982021875,
+        "missingProbabilitySamples": 1816,
+        "sampleDetails": [
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:1mTMPSjEqfzJK52G0wZK.png.json",
+            "probability": 0.7024304866790771
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:2OIQETAHerrK_HBK2r6B.png.json",
+            "probability": 0.8605915904045105
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:637NAgUbTMu1rdB_NNM1.png.json",
+            "probability": 0.8647589683532715
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:83v7ZIqdCPKx1Z88rh7O.png.json",
+            "probability": 0.6993326544761658
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:At39gkSiQVaNk8Zrpy4O.png.json",
+            "probability": 0.8878240585327148
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:CSUbjoTiWFV_HJi_gwV5.png.json",
+            "probability": 0.8348633050918579
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:EdAzdyzmxjH1daygkqEr.png.json",
+            "probability": 0.9045261740684509
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:IXwH9NZxY0x8NqPh2Hko.png.json",
+            "probability": 0.896122932434082
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ObZDwc36KWmqDDAmU80j.png.json",
+            "probability": 0.8841970562934875
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:Se2OlyWf4eCI8cr5tEUi.png.json",
+            "probability": 0.8977636098861694
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ZyD3msbhCS1z1tmnUuq1.png.json",
+            "probability": 0.9799198508262634
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:_XUO5xwiEWgymLaURZWR.png.json",
+            "probability": 0.6028736233711243
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:cer3YQ998W3AjZMIZVAn.png.json",
+            "probability": 0.6889849305152893
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:kD7AqDS7BdlS48RzoC9M.png.json",
+            "probability": 0.8842236399650574
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:l0MXnw8xQ1SjdKYpZb96.png.json",
+            "probability": 0.8688020706176758
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:ne7cYCRh3V1hoG4x_DWZ.png.json",
+            "probability": 0.9060549736022949
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:r2e9LCxlHFM4FDHGX69b.png.json",
+            "probability": 0.7471795082092285
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:rCgXbfe6Xdo75NdaWpNj.png.json",
+            "probability": 0.5670408606529236
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:rXY_n1CMOkuYmuZPf5qf.png.json",
+            "probability": 0.8829977512359619
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:xCO2kSbZhXf1PhrlVzji.png.json",
+            "probability": 0.9232434034347534
+          },
+          {
+            "sampleId": "AIA_AR_sample_7qn2pdeube:yeW7WOdZhnFzmARqNicn.png.json",
+            "probability": 0.7922848463058472
+          }
+        ]
+      }
+    },
+    "pollutionIndex": 7.425865728785086,
+    "rankingDirection": "ascending",
+    "meaning": "模型/规则观测污染指数；越低越好。八类缺陷允许同一样本重复计入；没有独立真值时不是官方污染率。"
+  },
+  "localizationPolicy": {
+    "tolerances": {
+      "bbox": {
+        "iouThreshold": 0.5,
+        "normalizedCenterDistanceThreshold": 0.05
+      },
+      "polygon": {
+        "iouThreshold": 0.5,
+        "boundaryHausdorffPixel": 3.0
+      },
+      "timeInterval": {
+        "endpointToleranceSeconds": 2.0,
+        "overlapRatioThreshold": 0.5
+      },
+      "metadata": {
+        "relativeDimensionError": 0.02
+      }
+    },
+    "referenceRequired": true,
+    "withoutReference": "candidate; 不将模型输出自证为命中"
+  },
+  "expertOutlierPolicy": {
+    "method": "median_mad",
+    "zThreshold": 3.5,
+    "minimumExperts": 3,
+    "aggregate": "trimmed_mean",
+    "recordExcludedExperts": true
+  },
+  "freshImageForwards": 1835,
+  "candidateSamples": 144,
+  "foundSamples": 154,
+  "foundRatio": 0.08378672470076169,
+  "rankGlobalDisplay": 7,
+  "rankInDatasetDisplay": 2,
+  "technicalCompetitionRank": 7,
+  "tiedDirectoryIds": [],
+  "rankAuthority": "pollutionIndex ascending; 同分目录名顺序仅供显示，不能声称真实质量不并列",
+  "detectionVersion": "AQuA2-original7-latest-omission-20261109"
+}

@@ -1,0 +1,1122 @@
+{
+  "version": "eight-class-ledger-1.0",
+  "dirId": "ULF_sample_xfnogkdey9",
+  "family": "ULF_sample",
+  "sampleCount": 3570,
+  "confirmedProblemSamples": 36,
+  "observedTechnicalScore": 98.99159663865547,
+  "fullQualityScore": null,
+  "officialScore": null,
+  "officialPrecision": null,
+  "officialRecall": null,
+  "officialF1": null,
+  "scoringFormula": "100*(1-distinct confirmed eligible problem samples / all registered label samples)",
+  "scoreMeaning": "已实现范围内的观测技术分；不是软件得分、完整质量分或官方q",
+  "defects": {
+    "L0-01": {
+      "name": "数据文件缺失",
+      "denominator": 3570,
+      "applicableSamples": 3570,
+      "confirmedSamples": 36,
+      "locatedInstances": 36,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 3534,
+        "fail": 36,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 3534,
+        "fail": 36,
+        "undetermined": 0,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.010084033613445379,
+      "proportionEstimate": 0.010084033613445379,
+      "proportionBounds": [
+        0.010084033613445379,
+        0.010084033613445379
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 1.0
+    },
+    "L2-G": {
+      "name": "边界与位置偏差",
+      "denominator": 3570,
+      "applicableSamples": 0,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 3570
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 3570
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": 0.0,
+      "proportionBounds": [
+        0.0,
+        0.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": null
+    },
+    "L2-P": {
+      "name": "类别标注错误",
+      "denominator": 3570,
+      "applicableSamples": 3570,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 13,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-T": {
+      "name": "时段起止时刻抖动",
+      "denominator": 3570,
+      "applicableSamples": 3570,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 528,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L2-F": {
+      "name": "元数据尺寸矛盾",
+      "denominator": 3570,
+      "applicableSamples": 0,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 3570
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 3570
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": 0.0,
+      "proportionBounds": [
+        0.0,
+        0.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": null
+    },
+    "L3-06": {
+      "name": "漏标",
+      "denominator": 3570,
+      "applicableSamples": 3570,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-07": {
+      "name": "虚标",
+      "denominator": 3570,
+      "applicableSamples": 3570,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 3570,
+        "not_applicable": 0
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": null,
+      "proportionBounds": [
+        0.0,
+        1.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": 0.0
+    },
+    "L3-MIS": {
+      "name": "覆盖不足或覆盖过度",
+      "denominator": 3570,
+      "applicableSamples": 0,
+      "confirmedSamples": 0,
+      "locatedInstances": 0,
+      "candidateSamples": 0,
+      "statusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 3570
+      },
+      "scopeStatusCounts": {
+        "pass": 0,
+        "fail": 0,
+        "undetermined": 0,
+        "not_applicable": 3570
+      },
+      "observedConfirmedProportion": 0.0,
+      "proportionEstimate": 0.0,
+      "proportionBounds": [
+        0.0,
+        0.0
+      ],
+      "relativeError": null,
+      "relativeErrorReason": "缺独立逐样本真值，不能用模型输出自证误差",
+      "scientificCheckCompletion": null
+    }
+  },
+  "dimensions": [
+    {
+      "id": "completeness",
+      "name": "完整性",
+      "defectCodes": [
+        "L0-01"
+      ],
+      "confirmedSamples": 36,
+      "denominator": 3570,
+      "observedTechnicalScore": 98.99159663865547,
+      "score": 98.99159663865547,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 3570,
+      "completedChecks": 3570,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "annotationQuality",
+      "name": "标注质量",
+      "defectCodes": [
+        "L2-G",
+        "L2-P",
+        "L2-T",
+        "L2-F",
+        "L3-06",
+        "L3-07",
+        "L3-MIS"
+      ],
+      "confirmedSamples": 0,
+      "denominator": 3570,
+      "observedTechnicalScore": 100.0,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": 0.0,
+      "applicableCheckDenominator": 14280,
+      "completedChecks": 0,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "sampleCorrespondence",
+      "name": "样本对应",
+      "defectCodes": [
+        "L0-01",
+        "L2-F"
+      ],
+      "confirmedSamples": 36,
+      "denominator": 3570,
+      "observedTechnicalScore": 98.99159663865547,
+      "score": 98.99159663865547,
+      "state": "fail",
+      "checkCoverage": 1.0,
+      "applicableCheckDenominator": 3570,
+      "completedChecks": 3570,
+      "reason": "仅当前可验证检查范围的技术分；完整维度分须覆盖全部适用检查"
+    },
+    {
+      "id": "coverageDistribution",
+      "name": "覆盖与分布",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "traceability",
+      "name": "文档与来源追溯",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    },
+    {
+      "id": "usageConditions",
+      "name": "使用条件",
+      "defectCodes": [],
+      "confirmedSamples": 0,
+      "denominator": 0,
+      "observedTechnicalScore": null,
+      "score": null,
+      "state": "undetermined",
+      "checkCoverage": null,
+      "applicableCheckDenominator": 0,
+      "completedChecks": 0,
+      "reason": "有统计与用途结论；缺预期覆盖基准/可核验来源/用途验收阈值，不虚构数值"
+    }
+  ],
+  "severity": [
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:0w18Dy2aNK40_FQtg5ne.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-47171529d9c4f66977d6"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:2FPSWegnAZdWTHWG1sQX.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-3bf1ac7dc93b5b5346a8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:3JshiQF7Q7sWIAhYaHk_.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-c64674846b39dd1d0462"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:5Jx7LIqmOfjR7FFDzXky.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-5fd3c90ae7c8117f510f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:9d9k8mVXzhcNwxvCJ02m.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-2ce4bccb099300fe6c0d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:C1nXEfest2CAjKUqX0r7.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-f6dccd43b0dbf6e3ecca"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:Efpe9cAIBb_esaeKYKPl.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-73ffad6095f3d596b52f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:Eo3f0v2z852nyw0gMwTC.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-126e216efb267761ee0a"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:FLXt5IeN0GTScAGaJtGd.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-98c9b88ea46b41f3b4de"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:FlhunTLzfKHLDRoRkDHi.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-d8fd2b9168e0ac450f79"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:KMA5lHOc1J6OpQDdIR5C.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-6f6e804f21bc4fc963e3"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:NunWmTsqaFnqfIb3xTao.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-6040b9b26afbe9e3d8ff"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:Oad22n6gIfM5bDsNJ0hV.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-15431b481a96aa56c8fd"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:SHg_oHRjmO28NuOeJWWm.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-ce4036d95576f1cd6dd1"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:SqxvaBsIRmavbhEojB2B.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-fdfbf578d98ed7652d27"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:WZ8viF7rfiYReiRA3qyo.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-089b4eba40ef815bbb70"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:_FcJka6nTt7sJfossRki.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-55d537ab6691773018cd"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:aCHOfs3ftD2VcOucuSfZ.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-cd2cfdca234d302e2047"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:cima1c5gXPcV89ulB8bM.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-aba4772693729c2acfa0"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:cleqv7IYM8TZKtYi_7SP.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-d537fc8870869dae004d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:hXUxyfFIRbYc6iiGrZaj.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-853ad2d2849afe8ab0fc"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:lDgCO17H2kGAq6MaAvBf.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-c6f8d54c6cbce07f0286"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:lyBnpfDsvapCI3p8n_wU.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-311efa4b41a9a328a265"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:n59c6s52im1Q4kMsmoj9.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-7f4132fb221d907ac033"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:n84KnWeff8m_aPHzW3pq.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-29295c2b46af47bd8e7f"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:nk098OAe5SioNGLet93j.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-fe4d5cb927c05be9446d"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:o9zqqaVUPz_IIWtWDE_i.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-0f0faaca2ceb0060d645"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:oP_OSr3ow2gj5xHNMYWf.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-183eaeaecc0b1e4c324c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:rKXgksFrvNrowcYX6XHa.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-adbb32b4481152b854c5"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:rcmoGPagcv7A0KaPI61b.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-075561276592a4898af2"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:s_jUT8hqUZOZxkjn0y7F.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-cdaba7dd88c2ba78cf24"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:t2ytac2dCbFHLroceOJH.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-5827d9a022a03859660c"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:v7hQy44Hfpfe0YYTJQkJ.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-fc8bec4a6635e941cf85"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:wRJGZ7e6IUNQQWfAKTAQ.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-826cee15808240701df8"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:weIN3jqLKkBxVhcIhvax.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-15c457d7c0d4651f62cb"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    },
+    {
+      "dirId": "ULF_sample_xfnogkdey9",
+      "sampleId": "ULF_sample_xfnogkdey9:xhcMkhUiJXzclTHUThht.csv.json",
+      "defectType": "L0-01",
+      "metric": "missing_file",
+      "unit": "file",
+      "severity": 1.0,
+      "findingIds": [
+        "C31-2d3b406b969310fe0a00"
+      ],
+      "orderingBasis": "同一缺陷、同一计量定义与单位；值越大越严重，置信度不参与",
+      "severityRank": 1
+    }
+  ],
+  "scientificCheckCoverage": 0.2,
+  "applicableChecks": 17850,
+  "completedChecks": 3570,
+  "distribution": {
+    "emptyAnnotations": 2293,
+    "emptyAnnotationRatio": 0.642296918767507,
+    "objectCount": 1530,
+    "meanObjectDensity": 0.42857142857142855,
+    "categoryHistogram": {
+      "Pi2": 1516,
+      "Pc3": 6,
+      "Pc5": 5,
+      "Pi3": 3
+    },
+    "temporal": {
+      "observedWindows": 3570,
+      "first": "2013-02-13T09:00:00",
+      "last": "2022-10-21T12:59:59",
+      "positiveGapCount": 3371,
+      "maxPositiveGapSeconds": 1472401.0,
+      "overlappingWindows": 198,
+      "interpretation": "标注声明的观测时间分布；缺连续覆盖目标，不把抽样日期间隔直接当缺陷"
+    },
+    "interpretation": "空标注与分布差异是描述统计；没有目标/事件参考时不等于漏标或虚标"
+  },
+  "provenance": {
+    "labelVersions": {
+      "V1.0.0.0": 3570
+    },
+    "anonymousAuthors": 3570,
+    "interpretation": "匿名化按发放约定处理；不能当作来源错误扣分"
+  },
+  "usage": {
+    "acceptance": "undetermined",
+    "ingestion": "conditional",
+    "selection": "conditional",
+    "advice": "隔离缺文件/契约冲突记录；定位疑点进入人工复核后再用于科学选数"
+  },
+  "pollution": {
+    "formula": "100 * sum(probability_i,c for probability_i,c >= threshold_c) / N",
+    "sampleCount": 3570,
+    "thresholds": {
+      "L0-01": 0.5,
+      "L2-G": 0.5,
+      "L2-P": 0.5,
+      "L2-T": 0.5,
+      "L2-F": 0.5,
+      "L3-06": 0.5,
+      "L3-07": 0.5,
+      "L3-MIS": 0.5
+    },
+    "defects": {
+      "L0-01": {
+        "threshold": 0.5,
+        "overThresholdSamples": 36,
+        "probabilitySum": 36.0,
+        "pollutionIndexContribution": 1.0084033613445378,
+        "missingProbabilitySamples": 3534,
+        "sampleDetails": [
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:0w18Dy2aNK40_FQtg5ne.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:2FPSWegnAZdWTHWG1sQX.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:3JshiQF7Q7sWIAhYaHk_.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:5Jx7LIqmOfjR7FFDzXky.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:9d9k8mVXzhcNwxvCJ02m.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:C1nXEfest2CAjKUqX0r7.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:Efpe9cAIBb_esaeKYKPl.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:Eo3f0v2z852nyw0gMwTC.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:FLXt5IeN0GTScAGaJtGd.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:FlhunTLzfKHLDRoRkDHi.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:KMA5lHOc1J6OpQDdIR5C.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:NunWmTsqaFnqfIb3xTao.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:Oad22n6gIfM5bDsNJ0hV.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:SHg_oHRjmO28NuOeJWWm.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:SqxvaBsIRmavbhEojB2B.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:WZ8viF7rfiYReiRA3qyo.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:_FcJka6nTt7sJfossRki.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:aCHOfs3ftD2VcOucuSfZ.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:cima1c5gXPcV89ulB8bM.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:cleqv7IYM8TZKtYi_7SP.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:hXUxyfFIRbYc6iiGrZaj.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:lDgCO17H2kGAq6MaAvBf.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:lyBnpfDsvapCI3p8n_wU.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:n59c6s52im1Q4kMsmoj9.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:n84KnWeff8m_aPHzW3pq.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:nk098OAe5SioNGLet93j.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:o9zqqaVUPz_IIWtWDE_i.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:oP_OSr3ow2gj5xHNMYWf.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:rKXgksFrvNrowcYX6XHa.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:rcmoGPagcv7A0KaPI61b.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:s_jUT8hqUZOZxkjn0y7F.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:t2ytac2dCbFHLroceOJH.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:v7hQy44Hfpfe0YYTJQkJ.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:wRJGZ7e6IUNQQWfAKTAQ.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:weIN3jqLKkBxVhcIhvax.csv.json",
+            "probability": 1.0
+          },
+          {
+            "sampleId": "ULF_sample_xfnogkdey9:xhcMkhUiJXzclTHUThht.csv.json",
+            "probability": 1.0
+          }
+        ]
+      },
+      "L2-G": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      },
+      "L2-P": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      },
+      "L2-T": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      },
+      "L2-F": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      },
+      "L3-06": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      },
+      "L3-07": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      },
+      "L3-MIS": {
+        "threshold": 0.5,
+        "overThresholdSamples": 0,
+        "probabilitySum": 0,
+        "pollutionIndexContribution": 0.0,
+        "missingProbabilitySamples": 3570,
+        "sampleDetails": []
+      }
+    },
+    "pollutionIndex": 1.0084033613445378,
+    "rankingDirection": "ascending",
+    "meaning": "模型/规则观测污染指数；越低越好。八类缺陷允许同一样本重复计入；没有独立真值时不是官方污染率。"
+  },
+  "localizationPolicy": {
+    "tolerances": {
+      "bbox": {
+        "iouThreshold": 0.5,
+        "normalizedCenterDistanceThreshold": 0.05
+      },
+      "polygon": {
+        "iouThreshold": 0.5,
+        "boundaryHausdorffPixel": 3.0
+      },
+      "timeInterval": {
+        "endpointToleranceSeconds": 2.0,
+        "overlapRatioThreshold": 0.5
+      },
+      "metadata": {
+        "relativeDimensionError": 0.02
+      }
+    },
+    "referenceRequired": true,
+    "withoutReference": "candidate; 不将模型输出自证为命中"
+  },
+  "expertOutlierPolicy": {
+    "method": "median_mad",
+    "zThreshold": 3.5,
+    "minimumExperts": 3,
+    "aggregate": "trimmed_mean",
+    "recordExcludedExperts": true
+  },
+  "freshImageForwards": 0,
+  "candidateSamples": 541,
+  "foundSamples": 577,
+  "foundRatio": 0.161624649859944,
+  "rankGlobalDisplay": 4,
+  "rankInDatasetDisplay": 3,
+  "technicalCompetitionRank": 5,
+  "tiedDirectoryIds": [],
+  "rankAuthority": "pollutionIndex ascending; 同分目录名顺序仅供显示，不能声称真实质量不并列",
+  "detectionVersion": "AQuA2-original7-latest-omission-20261109"
+}
